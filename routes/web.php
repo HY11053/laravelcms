@@ -20,3 +20,8 @@ Route::get('demo',function (){
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::group(['prefix' => 'admin'],function(){
+    Route::get('index','Admin\IndexController@index');
+    Route::get('category','Admin\CategoryController@index');
+});
