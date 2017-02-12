@@ -14,6 +14,6 @@ class ArticleController extends Controller
     }
     function Create()
     {
-        return view('admin.article_areate');
+        return view('admin.article_create');
     }
 }
