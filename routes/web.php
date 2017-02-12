@@ -23,5 +23,8 @@ Route::get('/home', 'HomeController@index');
 
 Route::group(['prefix' => 'admin'],function(){
     Route::get('index','Admin\IndexController@index');
-    Route::get('category','Admin\CategoryController@index');
+    Route::get('category','Admin\CategoryController@Index');
+    Route::get('category/create','Admin\CategoryController@Create');
+    Route::get('article','Admin\ArticleController@Index');
+    Route::get('article/create','Admin\ArticleController@Create');
 });
