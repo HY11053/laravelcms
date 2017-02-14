@@ -15,5 +15,9 @@ class CategoryController extends Controller
     function Create(){
         return view('admin.category_create');
     }
+
+    function PostCreate(Request $request){
+        dd($request->all());
+    }
 }
 
