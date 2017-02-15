@@ -104,16 +104,6 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox"> I agree to the <a href="#">terms and conditions</a>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                     <!-- /.tab-pane -->
                     <div class="tab-pane" id="timeline">
@@ -129,32 +119,22 @@
                             <!-- /.timeline-label -->
                             <!-- timeline item -->
                             <li>
-                                <i class="fa fa-envelope bg-blue"></i>
-
+                                <i class="fa fa-camera  bg-blue"></i>
                                 <div class="timeline-item">
                                     <span class="time"><i class="fa fa-clock-o"></i> 5 mins ago</span>
-
                                     <h3 class="timeline-header no-border"><a href="#">缩略图处理</a> 图片上传</h3>
                                     <div class="timeline-body">
-                                        <input id="input-2" name="image" type="file" class="file col-md-10" multiple data-show-upload="false" data-show-caption="true">
+                                        {{Form::file('image', array('class' => 'file col-md-10','id'=>'input-2','multiple data-show-upload'=>"false",'data-show-caption'=>"true"))}}
                                     </div>
                                 </div>
                             </li>
-                            <!-- END timeline item -->
-                            <!-- timeline item -->
-
-                            <!-- END timeline item -->
-                            <!-- timeline item -->
                             <li>
                                 <i class="fa fa-camera bg-purple"></i>
-
                                 <div class="timeline-item">
                                     <span class="time"><i class="fa fa-clock-o"></i> 2 days ago</span>
-
                                     <h3 class="timeline-header"><a href="#">图集处理</a> 批量上传图集</h3>
-
                                     <div class="timeline-body">
-                                        <input id="input-image-1" name="input-image" type="file" class="file-loading" accept="image/*">
+                                        {{Form::file('image', array('name'=>'input-image','class' => 'file-loading','id'=>'input-image-1','accept'=>'image/*'))}}
                                         <div id="kv-success-modal" class="modal fade">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
@@ -167,26 +147,20 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <input type="hidden" id="imagespic" name="imagespic" value="" />
+                                        {{Form::hidden('imagespic', '',array('id'=>'imagespic'))}}
                                     </div>
                                 </div>
                             </li>
-                            <!-- END timeline item -->
                             <!-- timeline time label -->
                             <li class="time-label">
                         <span class="bg-green">
                           3 Jan. 2014
                         </span>
                             </li>
-                            <!-- /.timeline-label -->
-                            <!-- timeline item -->
-
-                            <!-- END timeline item -->
                             <li>
                                 <i class="fa fa-clock-o bg-gray"></i>
                             </li>
                         </ul>
-
                     </div>
                     <!-- /.tab-pane -->
                     <div class=" tab-pane" id="activity">

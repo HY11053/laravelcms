@@ -28,4 +28,5 @@ Route::group(['prefix' => 'admin'],function(){
     Route::post('category/create','Admin\CategoryController@PostCreate')->name('category_create');
     Route::get('article','Admin\ArticleController@Index');
     Route::get('article/create','Admin\ArticleController@Create');
+    Route::post('article/create','Admin\ArticleController@PostCreate')->name('article_create');
 });

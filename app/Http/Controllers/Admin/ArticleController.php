@@ -16,4 +16,8 @@ class ArticleController extends Controller
     {
         return view('admin.article_create');
     }
+    function PostCreate(Request $request)
+    {
+        dd($request->all());
+    }
 }

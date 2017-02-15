@@ -1,7 +1,5 @@
 @extends('admin.layouts.admin_app')
-@section('title')
-    添加文档
-@stop
+@section('title')添加文档@stop
 @section('head')
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -35,128 +33,124 @@
 @section('content')
         <!-- row -->
         <div class="row">
+            {{Form::open(array('route' => 'article_create'))}}
             <div class="col-md-12">
                 <!-- The time line -->
                 <ul class="timeline">
+
                     <!-- timeline time label -->
                     <li class="time-label">
                   <span class="bg-red">
-                    10 Feb. 2014
+                     {{date("M j, Y")}}
                   </span>
                     </li>
                     <!-- /.timeline-label -->
                     <!-- timeline item -->
+
                     <li>
-                        <i class="fa fa-envelope bg-blue"></i>
+                        <i class="fa fa-pencil-square bg-blue"></i>
 
                         <div class="timeline-item">
-                            <span class="time"><i class="fa fa-clock-o"></i> 12:05</span>
+                            <span class="time"><i class="fa fa-clock-o"></i> {{date('H:i')}}</span>
 
                             <h3 class="timeline-header"><a href="#">文章基本信息|</a> 按需填写</h3>
 
                             <div class="timeline-body basic_info">
                                 <div class="form-group col-md-12">
-                                    <label class="control-label col-md-2 col-sm-3 col-xs-12">文章标题</label>
+                                    {{Form::label('title', '文章标题', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                     <div class="col-md-4 col-sm-9 col-xs-12">
-                                        <input type="text" class="form-control" name="title" placeholder="文章标题">
+                                        {{Form::text('title', '', array('class' => 'form-control','id'=>'title','placeholder'=>'文章标题'))}}
                                     </div>
                                 </div>
                                 <div class="form-group col-md-12">
                                     <label class="col-md-2 col-sm-3 col-xs-12 control-label">自定义文档属性</label>
                                     <div class="checkbox" style="margin-top: 0px;">
                                         <label>
-                                            <input type="checkbox" name="flags[]" value="h" class="flat-red"> 头条
+                                            {{Form::checkbox('flags[]', 'h',false,array('class'=>'flat-red'))}} 头条
                                         </label>
                                         <label>
-                                            <input type="checkbox" name="flags[]" value="p" class="flat-red"> 图片
+                                            {{Form::checkbox('flags[]', 'p',false,array('class'=>'flat-red'))}} 图片
                                         </label>
                                         <label>
-                                            <input type="checkbox" name="flags[]" value="c" class="flat-red"> 推荐
+                                            {{Form::checkbox('flags[]', 'c',false,array('class'=>'flat-red'))}} 推荐
                                         </label>
                                         <label>
-                                            <input type="checkbox" name="flags[]" value="f" class="flat-red"> 幻灯
+                                            {{Form::checkbox('flags[]', 'f',false,array('class'=>'flat-red'))}} 幻灯
                                         </label>
                                         <label>
-                                            <input type="checkbox" name="flags[]" value="s" class="flat-red"> 滚动
+                                            {{Form::checkbox('flags[]', 's',false,array('class'=>'flat-red'))}} 滚动
                                         </label>
                                         <label>
-                                            <input type="checkbox" name="flags[]" value="a" class="flat-red"> 特荐
+                                            {{Form::checkbox('flags[]', 'a',false,array('class'=>'flat-red'))}} 特荐
                                         </label>
                                     </div>
 
                                 </div>
                                 <div class="form-group col-md-12">
-                                    <label class="control-label col-md-2 col-sm-3 col-xs-12">简略标题 </label>
+                                    {{Form::label('shorttitle', '简略标题', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                     <div class="col-md-4 col-sm-9 col-xs-12">
-                                        <input type="text" class="form-control"  placeholder="短标题" name="shorttitle">
+                                        {{Form::text('shorttitle', '', array('class' => 'form-control','id'=>'shorttitle','placeholder'=>'短标题'))}}
                                     </div>
                                 </div>
 
                                 <div class="form-group col-md-12">
-                                    <label class="control-label col-md-2 col-sm-3 col-xs-12">tag标签</label>
+                                    {{Form::label('tags', 'tag标签', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                     <div class="col-md-4 col-sm-9 col-xs-12">
-                                        <input type="text"  id="tags" name="tags" class="form-control col-md-10" placeholder="文档tag标签"/>
+                                        {{Form::text('tags', '', array('class' => 'form-control','id'=>'tags','placeholder'=>'文档tag标签'))}}
                                     </div>
                                 </div>
                                 <div class="form-group col-md-12">
-                                    <label class="control-label col-md-2 col-sm-3 col-xs-12">关键字</label>
+                                    {{Form::label('keywords', '关键字', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                     <div class="col-md-4 col-sm-9 col-xs-12">
-                                        <input type="text" name="keywords" id="keywords" class="form-control col-md-10" placeholder="文档关键词"/>
+                                        {{Form::text('keywords', '', array('class' => 'form-control','id'=>'keywords','placeholder'=>'文档关键词'))}}
                                     </div>
                                 </div>
                                 <div class="form-group col-md-12">
-                                    <label class="control-label col-md-2 col-sm-3 col-xs-12">经纬度</label>
+                                    {{Form::label('country', '经纬度', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                     <div class="col-md-4 col-sm-9 col-xs-12">
-                                        <input type="text" name="country" id="country" class="form-control col-md-10" placeholder="填写地区名称即可"/>
+                                        {{Form::text('country', '', array('class' => 'form-control col-md-10','id'=>'country','placeholder'=>'填写地区名称即可'))}}
                                     </div>
                                 </div>
 
                                 <div class="form-group col-md-12 ">
-                                    <label class="control-label col-md-2 col-sm-3 col-xs-12">文章状态</label>
+                                    {{Form::label('iCheck', '文章状态', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                     <div class="radio col-md-4 col-sm-9 col-xs-12">
-                                        <input type="radio" class="flat-red" name="iCheck" checked value="1"> 已审核
-                                        <input type="radio" class="flat-red" name="iCheck" value="0"> 未审核
+                                        {{Form::radio('iCheck', '1', true,array('class'=>'flat-red'))}} 已审核
+                                        {{Form::radio('iCheck', '0', false,array('class'=>'flat-red'))}}未审核
                                     </div>
 
                                 </div>
                                 <div class="form-group col-md-12 ">
-                                    <label class="control-label col-md-2 col-sm-3 col-xs-12">预选发布时间</label>
+                                    {{Form::label('datepicker', '预选发布时间', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                     <div class="input-group date  col-md-4 col-sm-9 col-xs-12">
                                         <div class="input-group-addon">
                                             <i class="fa fa-calendar"></i>
                                         </div>
-                                        <input type="text" class="form-control pull-right" id="datepicker">
+                                        {{Form::text('datepicker', '', array('class' => 'form-control pull-right','id'=>'datepicker','placeholder'=>'点击选择时间'))}}
                                     </div>
-
-
                                 </div>
                             </div>
                             <div class="timeline-footer">
-                                <a class="btn btn-primary btn-xs">Read more</a>
-                                <a class="btn btn-danger btn-xs">Delete</a>
+                                <button class="btn btn-primary btn-xs">Read more</button>
                             </div>
                         </div>
                     </li>
                     <!-- END timeline item -->
                     <!-- timeline item -->
                     <li>
-                        <i class="fa fa-user bg-aqua"></i>
-
+                        <i class="fa fa-photo bg-aqua"></i>
                         <div class="timeline-item">
-                            <span class="time"><i class="fa fa-clock-o"></i> 5 mins ago</span>
-
+                            <span class="time"><i class="fa fa-clock-o"></i> {{date('D M j')}}</span>
                             <h3 class="timeline-header no-border"><a href="#">缩略图处理</a> 图片上传</h3>
                             <div class="timeline-body">
-                                <input id="input-2" name="image" type="file" class="file col-md-10" multiple data-show-upload="false" data-show-caption="true">
+                                {{Form::file('image',  array('class' => 'file col-md-10','id'=>'input-2','multiple data-show-upload'=>'false','data-show-caption'=>'true'))}}
                             </div>
                         </div>
-
-
                     </li>
                     <!-- END timeline item -->
                     <!-- timeline item -->
                     <li>
-                        <i class="fa fa-comments bg-yellow"></i>
+                        <i class="fa fa-user bg-yellow"></i>
 
                         <div class="timeline-item">
                             <span class="time"><i class="fa fa-clock-o"></i> 27 mins ago</span>
@@ -164,9 +158,96 @@
                             <h3 class="timeline-header"><a href="#">产品信息</a> 产品信息描述</h3>
 
                             <div class="timeline-body">
-                                Take me to your leader!
-                                Switzerland is small and neutral!
-                                We are more like Germany, ambitious and misunderstood!
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        {{Form::label('brandname', '品牌名称', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                            {{Form::text('brandname', '', array('class' => 'form-control col-md-10','id'=>'brandname','placeholder'=>'品牌名称'))}}
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        {{Form::label('brandtime', '成立时间', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                            {{Form::text('brandtime', '', array('class' => 'form-control col-md-10','id'=>'brandtime','placeholder'=>'1970-1-1'))}}
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        {{Form::label('brandorigin', '品牌发源地', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                            {{Form::text('brandorigin', '', array('class' => 'form-control col-md-10','id'=>'brandorigin','placeholder'=>'品牌发源地'))}}
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        {{Form::label('brandnum', '门店总数', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                            {{Form::text('brandnum', '', array('class' => 'form-control col-md-10','id'=>'brandnum','placeholder'=>'门店总数'))}}
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        {{Form::label('brandpay', '加盟费用', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                            {{Form::text('brandpay', '', array('class' => 'form-control col-md-10','id'=>'brandpay','placeholder'=>'加盟费用'))}}
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        {{Form::label('brandarea', '加盟区域', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                        <label class="control-label col-md-4 col-sm-3 col-xs-12">加盟区域</label>
+                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                            {{Form::text('brandarea', '', array('class' => 'form-control col-md-10','id'=>'brandarea','placeholder'=>'加盟区域'))}}
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        {{Form::label('brandmap', '经营范围', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                            {{Form::text('brandmap', '', array('class' => 'form-control col-md-10','id'=>'brandmap','placeholder'=>'brandmap'))}}
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        {{Form::label('brandperson', '加盟人群', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                            {{Form::text('brandmap', '', array('class' => 'form-control col-md-10','id'=>'brandmap','placeholder'=>'brandmap'))}}
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        {{Form::label('brandattch', '加盟意向人数', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                            <input type="text" name="brandattch" id="brandattch" class="form-control col-md-10" placeholder="加盟意向人数"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        {{Form::label('brandapply', '申请加盟人数', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                            <input type="text" name="brandapply" id="brandapply" class="form-control col-md-10" placeholder="申请加盟人数"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        {{Form::label('brandchat', '申请加盟人数', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                            <input type="text" name="brandchat" id="brandchat" class="form-control col-md-10" placeholder="开店所需面积"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        {{Form::label('brandgroup', '公司名称', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                            <input type="text" name="brandgroup" id="brandgroup" class="form-control col-md-10" placeholder="公司名称"/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        {{Form::label('brandaddr', '公司地址', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                            <input type="text" name="brandaddr" id="brandgarea" class="form-control col-md-10" placeholder="公司地址"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        {{Form::label('brandduty', '是否区域授权', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                        <div class="col-md-8 col-sm-9 col-xs-12">
+                                            <input type="text" name="brandduty" id="brandduty" class="form-control col-md-10" placeholder="是否区域授权"/>
+                                            <input type="hidden" name="mid" id="mid" class="form-control col-md-10" value="1"/>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="timeline-footer">
                                 <a class="btn btn-warning btn-flat btn-xs">View comment</a>
@@ -177,7 +258,7 @@
                     <!-- timeline time label -->
                     <li class="time-label">
                   <span class="bg-green">
-                    3 Jan. 2014
+                   {{date("M j, Y")}}
                   </span>
                     </li>
                     <!-- /.timeline-label -->
@@ -186,25 +267,34 @@
                         <i class="fa fa-camera bg-purple"></i>
 
                         <div class="timeline-item">
-                            <span class="time"><i class="fa fa-clock-o"></i> 2 days ago</span>
+                            <span class="time"><i class="fa fa-clock-o"></i> {{date('j, n,y')}}</span>
 
                             <h3 class="timeline-header"><a href="#">图集处理</a> 批量上传图集</h3>
 
                             <div class="timeline-body">
-                                <img src="http://placehold.it/150x100" alt="..." class="margin">
-                                <img src="http://placehold.it/150x100" alt="..." class="margin">
-                                <img src="http://placehold.it/150x100" alt="..." class="margin">
-                                <img src="http://placehold.it/150x100" alt="..." class="margin">
+                                {{Form::file('image', array('name'=>'input-image','class' => 'file-loading','id'=>'input-image-1','accept'=>'image/*'))}}
+                                <div id="kv-success-modal" class="modal fade">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                <h4 class="modal-title">Yippee!</h4>
+                                            </div>
+                                            <div id="kv-success-box" class="modal-body">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </li>
                     <!-- END timeline item -->
                     <!-- timeline item -->
                     <li>
-                        <i class="fa fa-video-camera bg-maroon"></i>
+                        <i class="fa fa-file-text bg-maroon"></i>
 
                         <div class="timeline-item">
-                            <span class="time"><i class="fa fa-clock-o"></i> 5 days ago</span>
+                            <span class="time"><i class="fa fa-clock-o"></i> {{date('H:m:s')}}</span>
 
                             <h3 class="timeline-header"><a href="#">文档处理</a>文章内容编辑</h3>
 
@@ -213,17 +303,20 @@
                                 <div style="display: none"><textarea  name="textareacontent" id="lawsContent"></textarea></div>
                             </div>
                             <div class="timeline-footer">
-                                <a href="#" class="btn btn-xs bg-maroon">See comments</a>
+                                <button type="submit"  class="btn btn-md bg-maroon">提交文档</button>
                             </div>
                         </div>
                     </li>
+
                     <!-- END timeline item -->
                     <li>
                         <i class="fa fa-clock-o bg-gray"></i>
                     </li>
                 </ul>
+
             </div>
             <!-- /.col -->
+            {!! Form::close() !!}
         </div>
         <!-- /.row -->
 
@@ -324,5 +417,20 @@
 
     <!-- /Custom Notification -->
     <script src="/js/fileinput.min.js"></script>
+    <script>
+        $("#input-image-1").fileinput({
+            uploadUrl: "/article/uploads",
+            allowedFileExtensions: ["jpg", "png", "gif"],
+            maxImageWidth: 300,
+            maxFileCount: 6,
+            resizeImage: true
+        }).on('filepreupload', function() {
+            $('#kv-success-box').html('');
+        }).on('fileuploaded', function(event, data) {
+            $('#kv-success-box').append(data.response.link);
+            $('#kv-success-modal').modal('show');
+            $("#imagespic").val($("#imagespic").val()+data.response.link+',');
+        });
+    </script>
 @stop
 

@@ -1,7 +1,5 @@
 @extends('admin.layouts.admin_app')
-@section('title')
-    网站栏目管理
-    @stop
+@section('title')网站栏目管理@stop
 @section('head')
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -32,7 +30,7 @@
 @section('content')
     <div class="row">
         <div class="col-md-12">
-            <a href="compose.html" class="btn btn-primary btn-block margin-bottom nleft">网站栏目管理</a>
+            <div class="btn btn-primary btn-block margin-bottom nleft"><span style="color: #ffffff">网站栏目管理</span> <a href="{{route('category_create')}}" style="color: #ffffff; display: inline-block; float: right;">添加栏目</a></div>
 
             <div class="box box-solid collapsed-box">
                 <div class="box-header with-border">
