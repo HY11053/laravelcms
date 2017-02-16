@@ -14,7 +14,7 @@ class CategoryController extends Controller
         $topnavs=Arctype::where('reid',0)->pluck('typename','id');
         foreach ($topnavs as $key=>$topnav)
         {
-        $sons=$this->getSontype($key);
+        $sons[]=$this->getSontype($key);
 
         }
         dd($sons);
@@ -25,7 +25,10 @@ class CategoryController extends Controller
     function Create($id=0){
         $thisnavinfos=Arctype::find($id);
         $allnavinfos=Arctype::pluck('typename','id');
-        $topid=empty(Arctype::where('id',$id)->value('topid'))?$thisnavinfos->id:Arctype::where('id',$id)->value('topid');
+        if($id!=0)
+        {
+            $topid=empty(Arctype::where('id',$id)->value('topid'))?$thisnavinfos->id:Arctype::where('id',$id)->value('topid');
+        }
         //dd($topid);
         return view('admin.category_create',compact('id','thisnavinfos','allnavinfos','topid'));
     }
@@ -75,12 +78,22 @@ class CategoryController extends Controller
      */
     function getSontype($id)
     {
-
-        $sons=Arctype::where('reid',$id)->pluck('typename','id');
-        foreach ($sons as $key=>$son){
-            $sons[]=empty(!$this->getSontype($key))?$this->getSontype($key):'';
+        //$id=6;
+        if(!empty(Arctype::where('reid',$id)->pluck('typename','id')->toArray()))
+        {
+            $typeinfos=Arctype::where('reid',$id)->pluck('typename','id')->toArray();
         }
-            return $sons;
+
+        //dd($typeinfos);
+        foreach ($typeinfos as $key=>$thistypeinfo){
+            if(!empty(Arctype::where('reid',$key)->pluck('typename','id')->toArray()))
+            {
+                $typeinfos[$key]=$this->getSontype($key);
+            }
+            //
+        }
+        dd($typeinfos);
+            //return $sons;
     }
 }
 
