@@ -58,9 +58,19 @@
                                 {{Form::text('typedir', '', array('class' => 'form-control','id'=>'typedir','placeholder'=>'栏目路径'))}}
                             </div>
                         </div>
+                        @if($id!=0)
+                        <div class="form-group">
+                            {{Form::label('selectd', '父级栏目', array('class' => 'col-sm-2 control-label'))}}
+                            <div class="col-sm-5">
+                                {{Form::select('selectd', $allnavinfos, "$thisnavinfos->id",array('class'=>'form-control select2','style'=>'width: 100%'))}}
+                            </div>
+                            {{Form::hidden('topid', "$topid",array('id'=>'topid'))}}
+                            {{Form::hidden('reid', "$thisnavinfos->id",array('id'=>'topid'))}}
+                        </div>
+                        @endif
 
                         <div class="form-group  ">
-                            {{Form::label('keywords', '目录相对位置', array('class' => 'col-sm-2 control-label'))}}
+                            {{Form::label('dirposition', '目录相对位置', array('class' => 'col-sm-2 control-label'))}}
                             <div class="col-sm-5 basic_info">
                                 {{Form::radio('dirposition', '1', true,array('class'=>"flat-red"))}} 站点根目录
                                 {{Form::radio('dirposition', '0',false,array('class'=>"flat-red"))}} 上级目录
@@ -97,10 +107,10 @@
                         </div>
 
                         <div class="form-group  ">
-                            {{Form::label('keywords', '是否允许发布文档', array('class' => 'col-sm-2 control-label'))}}
+                            {{Form::label('is_write', '是否允许发布文档', array('class' => 'col-sm-2 control-label'))}}
                             <div class="col-sm-5 basic_info">
-                                {{Form::radio('iCheck', '1', true,array('class'=>"flat-red"))}} 允许
-                                {{Form::radio('iCheck', '0',false,array('class'=>"flat-red"))}} 不允许
+                                {{Form::radio('is_write', '1', true,array('class'=>"flat-red"))}} 允许
+                                {{Form::radio('is_write', '0',false,array('class'=>"flat-red"))}} 不允许
                             </div>
                         </div>
 
@@ -165,7 +175,7 @@
                     <!-- /.tab-pane -->
                     <div class=" tab-pane" id="activity">
                         @include('admin.layouts.summernote')
-                        <div style="display: none"><textarea  name="textareacontent" id="lawsContent"></textarea></div>
+                        <div style="display: none"><textarea  name="contents" id="lawsContent"></textarea></div>
                     </div>
                     <!-- /.tab-pane -->
                 </div>
@@ -176,8 +186,16 @@
                 </div>
                 {!! Form::close() !!}
                         <!-- /.tab-content -->
+
             </div>
             <!-- /.nav-tabs-custom -->
+            @if(count($errors) > 0)
+                <ul class="alert alert-danger">
+                    @foreach($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            @endif
         </div>
         <!-- /.col -->
     </div>

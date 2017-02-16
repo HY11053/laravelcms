@@ -31,10 +31,10 @@
     <div class="row">
         <div class="col-md-12">
             <div class="btn btn-primary btn-block margin-bottom nleft"><span style="color: #ffffff">网站栏目管理</span> <a href="{{route('category_create')}}" style="color: #ffffff; display: inline-block; float: right;">添加栏目</a></div>
-
+            @foreach($topnavs as $topnav)
             <div class="box box-solid collapsed-box">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Folders</h3>
+                    <h3 class="box-title">{{$topnav}}</h3>
 
                     <div class="box-tools">
                         <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i>
@@ -99,6 +99,7 @@
                 </div>
                 <!-- /.box-body -->
             </div>
+            @endforeach
             <!-- /. box -->
             <div class="box box-solid">
                 <div class="box-header with-border">
