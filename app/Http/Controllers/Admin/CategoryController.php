@@ -11,30 +11,49 @@ class CategoryController extends Controller
 {
     //
     function Index(){
-        $topnavs=Arctype::where('reid',0)->pluck('typename','id');
-        foreach ($topnavs as $key=>$topnav)
-        {
-        $sons[]=$this->getSontype($key);
-
-        }
-        dd($sons);
+        $topnavs=Arctype::where('reid',0)->pluck('typename','id')->toArray();
         //dd($topnavs);
+        foreach ($topnavs as $typeid=>$topnav)
+        {
+            if(!empty(Arctype::where('reid',$typeid)->pluck('typename','id')->toArray())){
+                $topnavs=$this->RecursiveItems($typeid);
+                //print_r($topnavs);
+            }
+        }
+
         return view('admin.category',compact('topnavs'));
     }
+    /*
+     * 递归调用当前栏目子栏目
+     */
+    function RecursiveItems($typeid){
 
-    function Create($id=0){
-        $thisnavinfos=Arctype::find($id);
-        $allnavinfos=Arctype::pluck('typename','id');
-        if($id!=0)
+        /*$topnavs[$typeid]=[];
+        foreach ($topnavs as $topnav){
+            $topnavs[$typeid]['typename']=[$typeid=>$topnav];
+            $topnavs[$typeid]['next']=Arctype::where('reid',$typeid)->pluck('typename','id')->toArray();
+            dd($topnavs[$typeid]['next']);
+        }*/
+        $topnavs[$typeid]=[];
+        if(!empty(Arctype::where('reid',$typeid)->pluck('typename','id')->toArray()))
         {
-            $topid=empty(Arctype::where('id',$id)->value('topid'))?$thisnavinfos->id:Arctype::where('id',$id)->value('topid');
+            $typeinfos=Arctype::where('reid',$typeid)->pluck('typename','id')->toArray();
         }
-        //dd($topid);
-        return view('admin.category_create',compact('id','thisnavinfos','allnavinfos','topid'));
-    }
+        foreach ($typeinfos as $key=>$thistypeinfo){
+            if(!empty(Arctype::where('reid',$key)->pluck('typename','id')->toArray()))
+            {
+                $typeinfos[$key]=$this->RecursiveItems($key);
+            }
+            //
+        }
+        dd($typeinfos);
 
+
+        //return $topnavs;
+
+    }
     function PostCreate(StoreCategoryRequest $request){
-        //;
+
         $requestdata=$request->all();
         if(array_key_exists('image',$requestdata))
         {
@@ -73,27 +92,6 @@ class CategoryController extends Controller
         $img_relpath='/images/thread/'.date('Y/m/d/',time()). $fileName;
         return $img_relpath;
     }
-    /*
-     * 递归查询当前栏目子栏目
-     */
-    function getSontype($id)
-    {
-        //$id=6;
-        if(!empty(Arctype::where('reid',$id)->pluck('typename','id')->toArray()))
-        {
-            $typeinfos=Arctype::where('reid',$id)->pluck('typename','id')->toArray();
-        }
 
-        //dd($typeinfos);
-        foreach ($typeinfos as $key=>$thistypeinfo){
-            if(!empty(Arctype::where('reid',$key)->pluck('typename','id')->toArray()))
-            {
-                $typeinfos[$key]=$this->getSontype($key);
-            }
-            //
-        }
-        dd($typeinfos);
-            //return $sons;
-    }
 }
 
