@@ -31,7 +31,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="btn btn-primary btn-block margin-bottom nleft"><span style="color: #ffffff">网站栏目管理</span> <a href="{{route('category_create')}}" style="color: #ffffff; display: inline-block; float: right;">添加栏目</a></div>
-            @foreach($topnavs as $topnav)
+            @foreach($topnavs as $key=>$topnav)
             <div class="box box-solid collapsed-box">
                 <div class="box-header with-border">
                     <h3 class="box-title">{{$topnav}}</h3>
@@ -41,66 +41,56 @@
                         </button>
                     </div>
                 </div>
+                @if(isset($sons[$key]))
+                    <div class="box-body no-padding">
+                        <ul class="nav nav-pills nav-stacked">
+                            @foreach($sons as $keys=>$son)
+                                @if($key==$keys)
+
+                                        @if(is_array($son))
+                                            @foreach($son as $item)
+                                                @if(!is_array($item))
+                                                <li class="@if($loop->first)active @endif"><a href="#"><i class="fa fa-inbox"></i>{{$item}}<span class="label label-primary pull-right">12</span><span class="label label-danger pull-right">删除</span> <span class="label label-success pull-right">编辑</span> <span class="label label-warning pull-right">添加子类</span></a></li>
+                                               @else
+                                                <li class="active"><a href="#"><i class="fa fa-inbox"></i>{{$item['list']}}<span class="label label-primary pull-right">12</span><span class="label label-danger pull-right">删除</span> <span class="label label-success pull-right">编辑</span> <span class="label label-warning pull-right">添加子类</span></a></li>
+                                                @while(is_array($item))
+
+                                                    @endwhile
+                                            @endif
+                                                @endforeach
+                                        @endif
+
+
+
+                            @endif
+                                    @endforeach
+                        </ul>
+                    </div>
+            @endif
+            <!-- /.box-body -->
+
+            </div>
+            @endforeach
+            <!-- /. box -->
+            <div class="box box-solid">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Labels</h3>
+
+                    <div class="box-tools">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                        </button>
+                    </div>
+                </div>
                 <div class="box-body no-padding">
                     <ul class="nav nav-pills nav-stacked">
-                        <li class="active"><a href="#"><i class="fa fa-inbox"></i> Inbox
-                                <span class="label label-primary pull-right">12</span><span class="label label-danger pull-right">删除</span> <span class="label label-success pull-right">编辑</span> <span class="label label-warning pull-right">添加子类</span></a></li>
-                        <li><a href="#"><i class="fa fa-envelope-o"></i> Sent
-                                <span class="label label-primary pull-right">12</span><span class="label label-danger pull-right">删除</span> <span class="label label-success pull-right">编辑</span> <span class="label label-warning pull-right">添加子类</span></a>
-                            <div class="box box-solid collapsed-box">
-                                <div class="box-header with-border">
-                                    <h3 class="box-title">子级栏目</h3>
-
-                                    <div class="box-tools">
-                                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="box-body no-padding">
-                                    <ul class="nav nav-pills nav-stacked">
-                                        <li class="active"><a href="#"><i class="fa fa-inbox"></i> Inbox
-                                                <span class="label label-primary pull-right">12</span></a></li>
-                                        <li><a href="#"><i class="fa fa-envelope-o"></i> Sent</a></li>
-                                        <div class="box box-solid collapsed-box">
-                                            <div class="box-header with-border">
-                                                <h3 class="box-title">子级栏目</h3>
-
-                                                <div class="box-tools">
-                                                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div class="box-body no-padding">
-                                                <ul class="nav nav-pills nav-stacked">
-                                                    <li class="active"><a href="#"><i class="fa fa-inbox"></i> Inbox
-                                                            <span class="label label-primary pull-right">12</span><span class="label label-danger pull-right">删除</span> <span class="label label-success pull-right">编辑</span> <span class="label label-warning pull-right">添加子类</span></a></li>
-                                                    </li>
-                                                    <li><a href="#"><i class="fa fa-envelope-o"></i> Sent</a></li>
-                                                    <li><a href="#"><i class="fa fa-file-text-o"></i> Drafts</a></li>
-                                                    <li><a href="#"><i class="fa fa-filter"></i> Junk <span class="label label-warning pull-right">65</span></a>
-                                                    </li>
-                                                    <li><a href="#"><i class="fa fa-trash-o"></i> Trash</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <li><a href="#"><i class="fa fa-file-text-o"></i> Drafts</a></li>
-                                        <li><a href="#"><i class="fa fa-filter"></i> Junk <span class="label label-warning pull-right">65</span></a>
-                                        </li>
-                                        <li><a href="#"><i class="fa fa-trash-o"></i> Trash</a></li>
-                                    </ul>
-                                </div>
-                                </div>
-                        </li>
-                        <li><a href="#"><i class="fa fa-file-text-o"></i> Drafts</a></li>
-                        <li><a href="#"><i class="fa fa-filter"></i> Junk <span class="label label-warning pull-right">65</span></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-trash-o"></i> Trash</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o text-red"></i> Important</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> Promotions</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o text-light-blue"></i> Social</a></li>
                     </ul>
                 </div>
                 <!-- /.box-body -->
             </div>
-            @endforeach
-            <!-- /. box -->
+            <!-- /.box -->
         </div>
 
     </div>
