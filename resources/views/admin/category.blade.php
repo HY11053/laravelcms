@@ -52,7 +52,6 @@
                                                 @if(!is_array($item))
                                                 <li class="@if($loop->first)active @endif"><a href="#"><i class="fa fa-inbox"></i>{{$item}}<span class="label label-primary pull-right">12</span><span class="label label-danger pull-right">删除</span> <span class="label label-success pull-right">编辑</span> <span class="label label-warning pull-right">添加子类</span></a></li>
                                                @else
-                                                <li class="active"><a href="#"><i class="fa fa-inbox"></i>{{$item['list']}}<span class="label label-primary pull-right">12</span><span class="label label-danger pull-right">删除</span> <span class="label label-success pull-right">编辑</span> <span class="label label-warning pull-right">添加子类</span></a></li>
                                                 {{deli($item)}}
                                             @endif
                                                 @endforeach
