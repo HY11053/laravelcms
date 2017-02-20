@@ -32,12 +32,10 @@ function deli($arr){
                 echo " <li><a href=\"#\"><i class=\"fa fa-envelope-o\"></i> $value
                                 <span class=\"label label-primary pull-right\">12</span><span class=\"label label-danger pull-right\">删除</span> <span class=\"label label-success pull-right\">编辑</span> <span class=\"label label-warning pull-right\">添加子类</span></a></li>";
             }else{
-                foreach ($value as $item){
-                    print_r($item);
-                    if(!is_array($item)){
-                        echo "<div class=\"box box-solid collapsed-box\">
+                //print_r($value);
+                echo "<div class=\"box box-solid collapsed-box\">
                                             <div class=\"box-header with-border\">
-                                                <h3 class=\"box-title\">子级栏目</h3>
+                                                <h3 class=\"box-title\">|||||||||</h3>
 
                                                 <div class=\"box-tools\">
                                                     <button type=\"button\" class=\"btn btn-box-tool\" data-widget=\"collapse\"><i class=\"fa fa-plus\"></i>
@@ -45,23 +43,24 @@ function deli($arr){
                                                 </div>
                                             </div>
                                             <div class=\"box-body no-padding\">
-                                                <ul class=\"nav nav-pills nav-stacked\">
-                                                    <li class=\"active\"><a href=\"#\"><i class=\"fa fa-inbox\"></i>".$item." 
+                                                <ul class=\"nav nav-pills nav-stacked\">";
+                                                foreach ($value as $item){
+                                                    //print_r($item);
+                                                    if(!is_array($item)){
+                                                        echo "<li class=\"active\"><a href=\"#\"><i class=\"fa fa-inbox\"></i>".$item." 
                                                             <span class=\"label label-primary pull-right\">12</span><span class=\"label label-danger pull-right\">删除</span> <span class=\"label label-success pull-right\">编辑</span> <span class=\"label label-warning pull-right\">添加子类</span></a></li>
-                                                    </li>
-                                                   
-                                                </ul>
+                                                    </li>";
+                                                    }else{
+                                                        deli($item);
+                                                    }
+                                                }
+                                            echo "</ul>
                                             </div>
                                         </div>";
-                    }else{
-                        deli($item);
-                    }
-
-                }
+                                            }
 
 
 
-            }
 
         }
     }
