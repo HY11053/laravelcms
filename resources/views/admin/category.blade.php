@@ -41,18 +41,18 @@
                         </button>
                     </div>
                 </div>
-                @if(isset($sons[$key]))
+                @if(isset($recursivestypeinfos[$key]))
                     <div class="box-body no-padding">
                         <ul class="nav nav-pills nav-stacked">
-                            @foreach($sons as $keys=>$son)
+                            @foreach($recursivestypeinfos as $keys=>$recursivestypeinfo)
                                 @if($key==$keys)
-                                        @if(is_array($son))
-                                            @foreach($son as $item)
+                                        @if(is_array($recursivestypeinfo))
+                                            @foreach($recursivestypeinfo as $item)
                                                 @if(!is_array($item))
                                                 <li class="@if($loop->first)active @endif"><a href="#"><i class="fa fa-inbox"></i>{{$item}}<span class="label label-primary pull-right">12</span><span class="label label-danger pull-right">删除</span> <span class="label label-success pull-right">编辑</span> <span class="label label-warning pull-right">添加子类</span></a></li>
                                                @else
 
-                                                {{deli($item)}}
+                                                {{Recursivestypeinfos($item)}}
                                             @endif
                                                 @endforeach
                                         @endif

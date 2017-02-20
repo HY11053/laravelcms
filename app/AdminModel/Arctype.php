@@ -21,6 +21,7 @@ class Arctype extends Model
         'litpic',
         'contents',
         'dirposition',
+        'real_path',
     ];
     public function setFillable($fillable)
     {

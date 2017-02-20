@@ -67,7 +67,7 @@
                             {{Form::hidden('topid', "$topid",array('id'=>'topid'))}}
                             {{Form::hidden('reid', "$thisnavinfos->id",array('id'=>'topid'))}}
                         </div>
-                        @endif
+
 
                         <div class="form-group  ">
                             {{Form::label('dirposition', '目录相对位置', array('class' => 'col-sm-2 control-label'))}}
@@ -76,6 +76,7 @@
                                 {{Form::radio('dirposition', '0',false,array('class'=>"flat-red"))}} 上级目录
                             </div>
                         </div>
+                        @endif
 
                         <div class="form-group">
                             {{Form::label('sortrank', '栏目排序', array('class' => 'col-sm-2 control-label'))}}

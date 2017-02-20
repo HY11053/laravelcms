@@ -9,62 +9,54 @@ use App\Http\Controllers\Controller;
 
 class CategoryController extends Controller
 {
-    //
+    /**
+     * 网站后台栏目管理首页
+     * @param
+     *
+     * @return
+     */
     function Index(){
         $topnavs=Arctype::where('reid',0)->pluck('typename','id');
         foreach ($topnavs as $key=>$topnav)
         {
-            if(!empty(Arctype::where('reid',$key)->pluck('typename','id')->toArray())){
-                $sons[$key]=$this->getSontype($key);
+            if(!empty(Arctype::where('reid',$key)->pluck('typename','id')->toArray()))
+            {
+                $recursivestypeinfos[$key]=$this->GetRecursiveType($key);
             }
 
-
-        }
-        //dd($sons);
-        //dd($topnavs);
-        return view('admin.category',compact('topnavs','sons'));
-    }
-    /*
-  * 递归查询当前栏目子栏目
-  */
-    function getSontype($id)
-    {
-        $typeinfos=Arctype::where('reid',$id)->pluck('typename','id')->toArray();
-        if(!empty($typeinfos)){
-            foreach ($typeinfos as $key=>$son){
-
-                if(!empty($this->getSontype($key))){
-                    $sons[$key]['list']=$son;
-                    $sons[$key]['next']=$this->getSontype($key);
-                }else{
-                    $sons[$key]=$son;
-                }
-            }
-
-            return $sons;
         }
 
-
+        return view('admin.category',compact('topnavs','recursivestypeinfos'));
     }
 
-    /*
-     * 栏目创建
+
+    /**
+     * 栏目创建界面
+     * @param 栏目id
+     *
+     * @return
      */
-    function Create($id=0){
+    function Create($id=0)
+    {
         $thisnavinfos=Arctype::find($id);
         $allnavinfos=Arctype::pluck('typename','id');
-        if($id!=0){
+        if($id!=0)
+        {
             $topid=empty(Arctype::where('id',$id)->value('topid'))?$thisnavinfos->id:Arctype::where('id',$id)->value('topid');
         }
         //dd($topid);
         return view('admin.category_create',compact('id','thisnavinfos','allnavinfos','topid'));
     }
-    /*
-     * 栏目创建数据提交处理
+
+    /**
+     * 栏目创建提交数据处理
+     * @param request验证
+     *
+     * @return
      */
 
     function PostCreate(StoreCategoryRequest $request){
-        //;
+        //dd($request->all());
         $requestdata=$request->all();
         if(array_key_exists('image',$requestdata))
         {
@@ -74,18 +66,21 @@ class CategoryController extends Controller
         }
         if($requestdata['dirposition']==1)
         {
-            $requestdata['realpath']=$requestdata['typedir'];
+            $requestdata['real_path']=$requestdata['typedir'];
         }else
         {
-            $requestdata['realpath']=$requestdata['typedir'];
+            $requestdata['real_path']=$this->GetRealPath($request->input('reid')).'/'.$requestdata['typedir'];
         }
-        //dd($request->all());
+        //dd($requestdata);
         Arctype::create($requestdata);
 
 
     }
-    /*
-     * 栏目更改
+    /**
+     * 栏目编辑界面
+     * @param 栏目id
+     *
+     * @return
      */
     function Edit($id){
         $typeinfos=Arctype::findOrFail($id);
@@ -96,8 +91,11 @@ class CategoryController extends Controller
         }
         return view('admin.category_edit',compact('typeinfos','thisnavinfos','allnavinfos','topid','id'));
     }
-    /*
-     * 栏目更改数据提交
+    /**
+     * 栏目更改数据提交处理界面
+     * @param   request验证 ，栏目id
+     *
+     * @return redirect
      */
     function PostEdit(StoreCategoryRequest $request,$id)
     {
@@ -112,8 +110,11 @@ class CategoryController extends Controller
         Arctype::findOrFail($id)->update($requestdata);
         return redirect(action('Admin\CategoryController@Index'));
     }
-    /*
+    /**
      * 栏目删除
+     * @param   $request验证，栏目id
+     *
+     * @return redirect
      */
     function DeleteCategory(Request $request,$id){
         if(empty(Arctype::where('reid',$id)->value('id')))
@@ -125,10 +126,38 @@ class CategoryController extends Controller
         }
 
     }
-    /*
+
+    /**
+     * 递归当前栏目自栏目
+     * @param 栏目id
      *
-     * 图片上传
+     * @return arraydatas
+     */
+    function GetRecursiveType($id)
+    {
+        $typeinfos=Arctype::where('reid',$id)->pluck('typename','id')->toArray();
+        if(!empty($typeinfos))
+        {
+            foreach ($typeinfos as $key=>$typeinfo)
+            {
+                if(!empty($this->GetRecursiveType($key))){
+                    $typeinfoitems[$key]['list']=$typeinfo;
+                    $typeinfoitems[$key]['next']=$this->GetRecursiveType($key);
+                }else{
+                    $typeinfoitems[$key]=$typeinfo;
+                }
+            }
+
+            return $typeinfoitems;
+        }
+
+
+    }
+    /**
+     * 递归当前栏目自栏目
+     * @param $request请求信息
      *
+     * @return 上传后图片地址
      */
     function UploadImage($request){
         if(!$request->hasFile('image')){
@@ -149,5 +178,20 @@ class CategoryController extends Controller
         return $img_relpath;
     }
 
+    /**
+     * 递归当前栏目自栏目
+     * @param $reid 当前栏目reid
+     *
+     * @return 递归后的栏目实际地址
+     */
+    function GetRealPath($reid){
+        $relapath=Arctype::where('id',Arctype::where('id',$reid)->value('id'))->value('typedir');
+
+        if(Arctype::where('id',Arctype::where('id',$reid)->value('id'))->value('reid')!=0)
+        {
+            $relapath.='/'.$this->GetRealPath(Arctype::where('id',Arctype::where('id',$reid)->value('id'))->value('reid'));
+        }
+        return $relapath;
+    }
 }
 
