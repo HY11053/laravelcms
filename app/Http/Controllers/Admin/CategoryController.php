@@ -56,7 +56,6 @@ class CategoryController extends Controller
         if($id!=0){
             $topid=empty(Arctype::where('id',$id)->value('topid'))?$thisnavinfos->id:Arctype::where('id',$id)->value('topid');
         }
-
         //dd($topid);
         return view('admin.category_create',compact('id','thisnavinfos','allnavinfos','topid'));
     }
@@ -85,7 +84,47 @@ class CategoryController extends Controller
 
 
     }
+    /*
+     * 栏目更改
+     */
+    function Edit($id){
+        $typeinfos=Arctype::findOrFail($id);
+        $thisnavinfos=Arctype::find($id);
+        $allnavinfos=Arctype::pluck('typename','id');
+        if($id!=0){
+            $topid=empty(Arctype::where('id',$id)->value('topid'))?$thisnavinfos->id:Arctype::where('id',$id)->value('topid');
+        }
+        return view('admin.category_edit',compact('typeinfos','thisnavinfos','allnavinfos','topid','id'));
+    }
+    /*
+     * 栏目更改数据提交
+     */
+    function PostEdit(StoreCategoryRequest $request,$id)
+    {
+        $requestdata=$request->all();
+        if(array_key_exists('image',$requestdata))
+        {
+            $requestdata['litpic']=$this->UploadImage($request);
+        }else{
+            $requestdata['litpic']='';
+        }
+        //dd($requestdata);
+        Arctype::findOrFail($id)->update($requestdata);
+        return redirect(action('Admin\CategoryController@Index'));
+    }
+    /*
+     * 栏目删除
+     */
+    function DeleteCategory(Request $request,$id){
+        if(empty(Arctype::where('reid',$id)->value('id')))
+        {
+            Arctype::findOrFail($id)->delete();
+            return '栏目删除成功';
+        }else{
+            return '当前栏目包含子栏目，请先删除子栏目';
+        }
 
+    }
     /*
      *
      * 图片上传

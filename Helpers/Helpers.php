@@ -35,7 +35,7 @@ function deli($arr){
                 //print_r($value);
                 echo "<div class=\"box box-solid collapsed-box\">
                                             <div class=\"box-header with-border\">
-                                                <h3 class=\"box-title\">|||||||||</h3>
+                                                <h3 class=\"box-title\"><i class='fa fa-long-arrow-down' style='padding-left: 10px;'>sub colums</i></h3>
 
                                                 <div class=\"box-tools\">
                                                     <button type=\"button\" class=\"btn btn-box-tool\" data-widget=\"collapse\"><i class=\"fa fa-plus\"></i>
@@ -48,8 +48,7 @@ function deli($arr){
                                                     //print_r($item);
                                                     if(!is_array($item)){
                                                         echo "<li class=\"active\"><a href=\"#\"><i class=\"fa fa-inbox\"></i>".$item." 
-                                                            <span class=\"label label-primary pull-right\">12</span><span class=\"label label-danger pull-right\">删除</span> <span class=\"label label-success pull-right\">编辑</span> <span class=\"label label-warning pull-right\">添加子类</span></a></li>
-                                                    </li>";
+                                                            <span class=\"label label-primary pull-right\">12</span><span class=\"label label-danger pull-right\">删除</span> <span class=\"label label-success pull-right\">编辑</span> <span class=\"label label-warning pull-right\">添加子类</span></a></li>";
                                                     }else{
                                                         deli($item);
                                                     }

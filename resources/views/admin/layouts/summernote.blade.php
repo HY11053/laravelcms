@@ -6,7 +6,9 @@
                 <div class="ibox-content no-padding">
 
                     <div class="summernote" id="summernote">
-
+                        @if(isset($typeinfos->contents))
+                        {{$typeinfos->contents}}
+                            @endif
                     </div>
 
                 </div>
