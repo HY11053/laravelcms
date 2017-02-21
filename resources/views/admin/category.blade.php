@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="/AdminLTE/dist/css/skins/_all-skins.min.css">
     <!-- iCheck -->
     <link rel="stylesheet" href="/AdminLTE/plugins/iCheck/flat/blue.css">
+<style>
+    .spide_span{display: inline-block; float: right; margin-right: 20px;}
+    .spide_span span{padding: 5px; margin-left: 5px; font-weight: 400; cursor: pointer;}
+</style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -34,7 +38,13 @@
             @foreach($topnavs as $key=>$topnav)
             <div class="box box-solid collapsed-box">
                 <div class="box-header with-border">
-                    <h3 class="box-title">{{$topnav}}</h3>
+                    <h3 class="box-title ">{{$topnav}} </h3>
+                    <div class="spide_span">
+                        <span class="label label-primary pull-right">12</span>
+                        <span class="label label-danger pull-right" >删除</span>
+                        <span class="label label-success pull-right" onclick="link({{$key}},'admin/category/edit')">编辑</span>
+                        <span class="label label-warning pull-right" onclick="link({{$key}},'admin/category/create')">添加子类</span>
+                    </div>
 
                     <div class="box-tools">
                         <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i>
@@ -47,14 +57,7 @@
                             @foreach($recursivestypeinfos as $keys=>$recursivestypeinfo)
                                 @if($key==$keys)
                                         @if(is_array($recursivestypeinfo))
-                                            @foreach($recursivestypeinfo as $item)
-                                                @if(!is_array($item))
-                                                <li class="@if($loop->first)active @endif"><a href="#"><i class="fa fa-inbox"></i>{{$item}}<span class="label label-primary pull-right">12</span><span class="label label-danger pull-right">删除</span> <span class="label label-success pull-right">编辑</span> <span class="label label-warning pull-right">添加子类</span></a></li>
-                                               @else
-
-                                                {{Recursivestypeinfos($item)}}
-                                            @endif
-                                                @endforeach
+                                         {{Recursivestypeinfos($recursivestypeinfo)}}
                                         @endif
 
 
@@ -132,6 +135,11 @@
                 }
             });
         });
+    </script>
+    <script>
+        function link($id,$action) {
+            window.location.href='/'+$action+'/'+$id;
+        }
     </script>
     <!-- AdminLTE for demo purposes -->
     <script src="/AdminLTE/dist/js/demo.js"></script>

@@ -24,7 +24,7 @@ class ImagesUploadRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'input-image'=>'required|image|max:2000kb|Mimes:jpeg,jpg,gif,png,pneg'
         ];
     }
 }

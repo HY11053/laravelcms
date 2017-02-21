@@ -5,6 +5,7 @@
     @section('head')
             <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Bootstrap 3.3.6 -->
     <link rel="stylesheet" href="/AdminLTE/bootstrap/css/bootstrap.min.css">
     <!-- Font Awesome -->
@@ -162,7 +163,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        {{Form::hidden('imagespic', null,array('id'=>'imagespic'))}}
+                                        {{Form::hidden('typeimages', null,array('id'=>'imagespic'))}}
                                     </div>
                                 </div>
                             </li>
@@ -293,19 +294,44 @@
     </script>
 
     <script>
+
         $("#input-image-1").fileinput({
-            uploadUrl: "/article/uploads",
-            allowedFileExtensions: ["jpg", "png", "gif"],
-            maxImageWidth: 300,
+            uploadUrl: "/admin/upload/images",
+            uploadAsync: false,
+            minFileCount: 2,
             maxFileCount: 6,
-            resizeImage: true
-        }).on('filepreupload', function() {
-            $('#kv-success-box').html('');
+            overwriteInitial: false,
+            initialPreview: [
+                // IMAGE DATA
+                @foreach($pics as $pic)
+                        "{{$pic}}",
+                // IMAGE DATA
+                @endforeach
+
+
+            ],
+            initialPreviewAsData: true, // identify if you are sending preview data only and not the raw markup
+            initialPreviewFileType: 'image', // image is the default and can be overridden in config below
+            initialPreviewConfig: [
+                    @foreach($pics as $indexnum=>$pic)
+                {caption: "{{$indexnum+1}}", size: 827000, width: "120px", url: "/admin/file-delete-batch", key: [ {{$indexnum+1}} ,'{{$pic}}',{{$typeinfos->id}}]},
+                @endforeach
+
+            ],
+            purifyHtml: true, // this by default purifies HTML data for preview
+            uploadExtraData: {
+                img_key: "1000",
+                img_keywords: "happy, places",
+            }
+        }).on('filesorted', function(e, params) {
+            alert(222);
+            console.log('File sorted params', params);
         }).on('fileuploaded', function(event, data) {
-            $('#kv-success-box').append(data.response.link);
-            $('#kv-success-modal').modal('show');
             $("#imagespic").val($("#imagespic").val()+data.response.link+',');
+        }).on('filepreremoved', function(e, params) {
+            console.log('File sorted params', params);
         });
     </script>
+
 @stop
 

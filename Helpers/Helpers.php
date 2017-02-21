@@ -16,14 +16,18 @@ function Recursivestypeinfos($arr){
     if(!is_array($arr)){
         return false;
     }else{
-        foreach ($arr as $key=>$value){
-            if(!is_array($value))
-            {
-                echo " <li><a href=\"#\"><i class=\"fa fa-envelope-o\"></i> $value
-                                <span class=\"label label-primary pull-right\">12</span><span class=\"label label-danger pull-right\">删除</span> <span class=\"label label-success pull-right\">编辑</span> <span class=\"label label-warning pull-right\">添加子类</span></a></li>";
-            }else{
 
-                echo "<div class=\"box box-solid collapsed-box\">
+        foreach ($arr as $key=>$value){
+
+            if(is_array($value)){
+            foreach ($value as $values){
+                if(!is_array($values))
+                {
+                    echo " <li><a href=\"#\"><i class=\"fa fa-envelope-o\"></i> $values
+                                <span class=\"label label-primary pull-right\">12</span><span class=\"label label-danger pull-right\">删除</span> <span class=\"label label-success pull-right\" onclick=\"link({$key},'admin/category/edit')\">编辑</span> <span class=\"label label-warning pull-right\" onclick=\"link({$key},'admin/category/create')\">添加子类</span></a></li>";
+                }else{
+
+                    echo "<div class=\"box box-solid collapsed-box\">
                                             <div class=\"box-header with-border\">
                                                 <h3 class=\"box-title\"><i class='fa fa-long-arrow-down' style='padding-left: 10px;'>sub colums</i></h3>
 
@@ -34,19 +38,25 @@ function Recursivestypeinfos($arr){
                                             </div>
                                             <div class=\"box-body no-padding\">
                                                 <ul class=\"nav nav-pills nav-stacked\">";
-                                                foreach ($value as $item){
+                    foreach ($values as $item){
 
-                                                    if(!is_array($item)){
-                                                        echo "<li class=\"active\"><a href=\"#\"><i class=\"fa fa-inbox\"></i>".$item." 
-                                                            <span class=\"label label-primary pull-right\">12</span><span class=\"label label-danger pull-right\">删除</span> <span class=\"label label-success pull-right\">编辑</span> <span class=\"label label-warning pull-right\">添加子类</span></a></li>";
-                                                    }else{
-                                                        Recursivestypeinfos($item);
-                                                    }
-                                                }
-                                            echo "</ul>
+                        if(!is_array($item)){
+                            echo "<li class=\"active\"><a href=\"#\"><i class=\"fa fa-inbox\"></i>".$item." 
+                                                            <span class=\"label label-primary pull-right\">12</span><span class=\"label label-danger pull-right\">删除</span> <span class=\"label label-success pull-right\" onclick=\"link({$key},'admin/category/edit')\">编辑</span> <span class=\"label label-warning pull-right\" onclick=\"link({$key},'admin/category/create')\">添加子类</span></a></li>";
+                        }else{
+                            Recursivestypeinfos($item);
+                        }
+                    }
+                    echo "</ul>
                                             </div>
                                         </div>";
-                                            }
+                }
+
+            }
+            }else{
+                echo " <li><a href=\"#\"><i class=\"fa fa-envelope-o\"></i> $value
+                                <span class=\"label label-primary pull-right\">12</span><span class=\"label label-danger pull-right\">删除</span> <span class=\"label label-success pull-right\" onclick=\"link({$key},'admin/category/edit')\">编辑</span> <span class=\"label label-warning pull-right\" onclick=\"link({$key},'admin/category/create')\">添加子类</span></a></li>";
+            }
 
 
 

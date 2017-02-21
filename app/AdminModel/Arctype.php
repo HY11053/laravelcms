@@ -22,6 +22,7 @@ class Arctype extends Model
         'contents',
         'dirposition',
         'real_path',
+        'typeimages',
     ];
     public function setFillable($fillable)
     {

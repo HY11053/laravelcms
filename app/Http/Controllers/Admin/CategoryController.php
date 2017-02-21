@@ -89,7 +89,8 @@ class CategoryController extends Controller
         if($id!=0){
             $topid=empty(Arctype::where('id',$id)->value('topid'))?$thisnavinfos->id:Arctype::where('id',$id)->value('topid');
         }
-        return view('admin.category_edit',compact('typeinfos','thisnavinfos','allnavinfos','topid','id'));
+        $pics=array_filter(explode(',',Arctype::where('id',$id)->value('typeimages')));
+        return view('admin.category_edit',compact('typeinfos','thisnavinfos','allnavinfos','topid','id','pics'));
     }
     /**
      * 栏目更改数据提交处理界面

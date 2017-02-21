@@ -5,6 +5,7 @@
     @section('head')
             <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Bootstrap 3.3.6 -->
     <link rel="stylesheet" href="/AdminLTE/bootstrap/css/bootstrap.min.css">
     <!-- Font Awesome -->
@@ -67,7 +68,7 @@
                             {{Form::hidden('topid', "$topid",array('id'=>'topid'))}}
                             {{Form::hidden('reid', "$thisnavinfos->id",array('id'=>'topid'))}}
                         </div>
-
+                        @endif
 
                         <div class="form-group  ">
                             {{Form::label('dirposition', '目录相对位置', array('class' => 'col-sm-2 control-label'))}}
@@ -76,7 +77,7 @@
                                 {{Form::radio('dirposition', '0',false,array('class'=>"flat-red"))}} 上级目录
                             </div>
                         </div>
-                        @endif
+
 
                         <div class="form-group">
                             {{Form::label('sortrank', '栏目排序', array('class' => 'col-sm-2 control-label'))}}
@@ -158,7 +159,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        {{Form::hidden('imagespic', '',array('id'=>'imagespic'))}}
+                                        {{Form::hidden('typeimages', '',array('id'=>'imagespic'))}}
                                     </div>
                                 </div>
                             </li>
@@ -220,9 +221,6 @@
     <script src="/AdminLTE/plugins/iCheck/icheck.min.js"></script>
     <script src="/js/fileinput.min.js"></script>
     <script>
-
-
-
         $(document).ready(function() {
             $.ajaxSetup({
                 headers: {
@@ -289,7 +287,7 @@
 
     <script>
         $("#input-image-1").fileinput({
-            uploadUrl: "/article/uploads",
+            uploadUrl: "/admin/upload/images",
             allowedFileExtensions: ["jpg", "png", "gif"],
             maxImageWidth: 300,
             maxFileCount: 6,

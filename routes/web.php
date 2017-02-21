@@ -23,6 +23,8 @@ Route::get('/home', 'HomeController@index');
 
 Route::group(['prefix' => 'admin'],function(){
     Route::get('index','Admin\IndexController@index');
+    Route::post('upload/images','Admin\ImageUploadController@ImagesUpload');
+    Route::post('file-delete-batch','Admin\ImageUploadController@DeletePics');
     Route::get('category','Admin\CategoryController@Index');
     Route::get('category/create/{id?}','Admin\CategoryController@Create');
     Route::get('category/edit/{id}','Admin\CategoryController@Edit');

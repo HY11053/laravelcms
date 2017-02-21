@@ -24,11 +24,10 @@ class StoreCategoryRequest extends FormRequest
     public function rules()
     {
         return [
-            //
             'typename'=>'required',
-            'typedir'=>'required',
-            'dirposition'=>'required',
-            'is_write'=>'required'
+            'typedir'=>array('regex:/^[a-z0-9A-Z_]+[^\/]$/'),
+            'is_write'=>'required',
+            'sortrank'=>'required|numeric|min:0'
         ];
     }
 }
