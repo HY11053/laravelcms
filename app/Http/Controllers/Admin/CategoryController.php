@@ -86,11 +86,10 @@ class CategoryController extends Controller
         $typeinfos=Arctype::findOrFail($id);
         $thisnavinfos=Arctype::find($id);
         $allnavinfos=Arctype::pluck('typename','id');
-        if($id!=0){
-            $topid=empty(Arctype::where('id',$id)->value('topid'))?$thisnavinfos->id:Arctype::where('id',$id)->value('topid');
-        }
+        $topid=Arctype::where('id',$id)->value('topid');
+        $reid=Arctype::where('id',$id)->value('reid');
         $pics=array_filter(explode(',',Arctype::where('id',$id)->value('typeimages')));
-        return view('admin.category_edit',compact('typeinfos','thisnavinfos','allnavinfos','topid','id','pics'));
+        return view('admin.category_edit',compact('typeinfos','thisnavinfos','allnavinfos','topid','id','pics','reid'));
     }
     /**
      * 栏目更改数据提交处理界面
@@ -100,6 +99,11 @@ class CategoryController extends Controller
      */
     function PostEdit(StoreCategoryRequest $request,$id)
     {
+      dd($this->RecursiveReid($id,$request->input('reid')));
+        if($this->RecursiveReid($id,$request->input('reid'))){
+            exit('父级不可以移动到子级');
+        }
+        dd($request->all());
         $requestdata=$request->all();
         if(array_key_exists('image',$requestdata))
         {
@@ -107,9 +111,40 @@ class CategoryController extends Controller
         }else{
             $requestdata['litpic']='';
         }
+        if($requestdata['dirposition']==1)
+        {
+            $requestdata['real_path']=$requestdata['typedir'];
+        }else
+        {
+            $requestdata['real_path']=$this->GetRealPath($request->input('reid')).'/'.$requestdata['typedir'];
+        }
+
         //dd($requestdata);
         Arctype::findOrFail($id)->update($requestdata);
         return redirect(action('Admin\CategoryController@Index'));
+    }
+
+    /*
+     *
+     * 递归向上查找子级
+     */
+    function RecursiveReid($id,$reid)
+    {
+
+        $reid=Arctype::where('id',$reid)->value('reid');
+        if($id==$reid || Arctype::where('id',$reid)->value('reid')==0)
+        {
+        var_dump(222);
+            return 1;
+
+        }else{
+
+            $this->RecursiveReid($id,$reid);
+            var_dump(111);
+        }
+
+
+
     }
     /**
      * 栏目删除

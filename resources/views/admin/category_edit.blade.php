@@ -59,14 +59,12 @@
                                 {{Form::text('typedir', null, array('class' => 'form-control','id'=>'typedir','placeholder'=>'栏目路径'))}}
                             </div>
                         </div>
-                        @if($id!=0)
+                        @if($reid!=0)
                             <div class="form-group">
                                 {{Form::label('selectd', '父级栏目', array('class' => 'col-sm-2 control-label'))}}
                                 <div class="col-sm-5">
-                                    {{Form::select('selectd', $allnavinfos, "$thisnavinfos->id",array('class'=>'form-control select2','style'=>'width: 100%'))}}
+                                    {{Form::select('reid', $allnavinfos, "$thisnavinfos->id",array('class'=>'form-control select2','style'=>'width: 100%'))}}
                                 </div>
-                                {{Form::hidden('topid', "$topid",array('id'=>'topid'))}}
-                                {{Form::hidden('reid', "$thisnavinfos->id",array('id'=>'topid'))}}
                             </div>
                         @endif
                         <div class="form-group  ">
