@@ -20,6 +20,11 @@ Route::get('demo',function (){
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+Route::get('admin/login', 'Admin\AuthController@getLogin');
+Route::post('admin/login', 'Admin\AuthController@postLogin');
+Route::get('admin/register', 'Admin\AuthController@getRegister');
+Route::post('admin/register', 'Admin\AuthController@postRegister');
+Route::get('admin', 'AdminController@index');
 
 Route::group(['prefix' => 'admin'],function(){
     Route::get('index','Admin\IndexController@index');
