@@ -63,7 +63,7 @@
                             <div class="form-group">
                                 {{Form::label('selectd', '父级栏目', array('class' => 'col-sm-2 control-label'))}}
                                 <div class="col-sm-5">
-                                    {{Form::select('reid', $allnavinfos, "$thisnavinfos->id",array('class'=>'form-control select2','style'=>'width: 100%'))}}
+                                    {{Form::select('reid', $allnavinfos, "$thisnavinfos->reid",array('class'=>'form-control select2','style'=>'width: 100%'))}}
                                 </div>
                             </div>
                         @endif

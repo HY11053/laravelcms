@@ -22,7 +22,27 @@ function Recursivestypeinfos($arr){
             if(isset($value['list']))
             {
                 echo " <li><a href=\"#\"><i class=\"fa fa-envelope-o\"></i> {$value['list']}
-                                <span class=\"label label-primary pull-right\">12</span><span class=\"label label-danger pull-right\">删除</span> <span class=\"label label-success pull-right\" onclick=\"link({$key},'admin/category/edit')\">编辑</span> <span class=\"label label-warning pull-right\" onclick=\"link({$key},'admin/category/create')\">添加子类</span></a></li>";
+                                <span class=\"label label-primary pull-right\">12</span>
+                                <span class=\"label label-danger pull-right\" data-toggle=\"modal\" data-target=\".modal-sm{$key}\">删除</span>
+                                <div class=\"modal fade modal-sm{$key}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\">
+                            <div class=\"modal-dialog modal-s-m{$key} modal-sm\" role=\"document\">
+                                <div class=\"modal-content\">
+                                    <div class=\"modal-header\">
+                                        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">×</span></button>
+                                        <h5 class=\"modal-title\" id=\"mySmallModalLabel\">是否要删除栏目</h5>
+                                    </div>
+                                    <div class=\"modal-body\">
+                                        {$value['list']}
+                                    </div>
+                                    <div class=\"modal-footer\">
+                                        <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">返回</button>
+                                        <button type=\"button\" class=\"btn btn-primary\" id='btn-{$key}'  onclick=\"AjDelete({$key},'modal-s-m{$key}')\">删除</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                 <span class=\"label label-success pull-right\" onclick=\"link({$key},'admin/category/edit')\">编辑</span> 
+                                 <span class=\"label label-warning pull-right\" onclick=\"link({$key},'admin/category/create')\">添加子类</span></a></li>";
                 if (isset($value['next']))
                 {
                     echo "<div class=\"box box-solid collapsed-box\">
@@ -41,13 +61,52 @@ function Recursivestypeinfos($arr){
                         if(isset($items['list']))
                         {
 
-                            echo "<li class=\"active\"><a href=\"#\"><i class=\"fa fa-inbox\"></i>".$items['list']."<span class=\"label label-primary pull-right\">12</span><span class=\"label label-danger pull-right\">删除</span> <span class=\"label label-success pull-right\" onclick=\"link({$item},'admin/category/edit')\">编辑</span> <span class=\"label label-warning pull-right\" onclick=\"link({$item},'admin/category/create')\">添加子类</span></a></li>";
+                            echo "<li class=\"active\"><a href=\"#\"><i class=\"fa fa-inbox\"></i>".$items['list']."<span class=\"label label-primary pull-right\">12</span>
+                            <span class=\"label label-danger pull-right\" data-toggle=\"modal\" data-target=\".modal-sm{$item}\">删除</span>
+                            <div class=\"modal fade modal-sm{$item}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\">
+                            <div class=\"modal-dialog modal-s-m{$item} modal-sm\" role=\"document\">
+                                <div class=\"modal-content\">
+                                    <div class=\"modal-header\">
+                                        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">×</span></button>
+                                        <h5 class=\"modal-title\" id=\"mySmallModalLabel\">是否要删除栏目</h5>
+                                    </div>
+                                    <div class=\"modal-body\">
+                                        {$items['list']}
+                                    </div>
+                                    <div class=\"modal-footer\">
+                                        <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">返回</button>
+                                        <button type=\"button\" class=\"btn btn-primary\" id='btn-{$item}' onclick=\"AjDelete({$item},'modal-s-m{$item}')\">删除</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            
+                             <span class=\"label label-success pull-right\" onclick=\"link({$item},'admin/category/edit')\">编辑</span> <span class=\"label label-warning pull-right\" onclick=\"link({$item},'admin/category/create')\">添加子类</span></a></li>";
                             if(isset($items['next'])){
 
                                 Recursivestypeinfos($items['next']);
                             }
                         }else{
-                            echo "<li class=\"active\"><a href=\"#\"><i class=\"fa fa-inbox\"></i>".$items."  <span class=\"label label-primary pull-right\">12</span><span class=\"label label-danger pull-right\">删除</span> <span class=\"label label-success pull-right\" onclick=\"link({$item},'admin/category/edit')\">编辑</span> <span class=\"label label-warning pull-right\" onclick=\"link({$item},'admin/category/create')\">添加子类</span></a></li>";
+                            echo "<li class=\"active\"><a href=\"#\"><i class=\"fa fa-inbox\"></i>".$items."  <span class=\"label label-primary pull-right\">12</span>
+                            <span class=\"label label-danger pull-right\" data-toggle=\"modal\" data-target=\".modal-sm$item\">删除</span> 
+                            <div class=\"modal fade modal-sm{$item}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\">
+                            <div class=\"modal-dialog modal-sm modal-s-m{$item} \" role=\"document\">
+                                <div class=\"modal-content\">
+                                    <div class=\"modal-header\">
+                                        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">×</span></button>
+                                        <h5 class=\"modal-title\" id=\"mySmallModalLabel\">是否要删除栏目</h5>
+                                    </div>
+                                    <div class=\"modal-body\">
+                                        {$items}
+                                    </div>
+                                    <div class=\"modal-footer\">
+                                        <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">返回</button>
+                                        <button type=\"button\" class=\"btn btn-primary\" id='btn-{$item}'  onclick=\"AjDelete({$item},'modal-s-m{$item}')\" >删除</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <span class=\"label label-success pull-right\" onclick=\"link({$item},'admin/category/edit')\">编辑</span> <span class=\"label label-warning pull-right\" onclick=\"link({$item},'admin/category/create')\">添加子类</span></a></li>";
 
                         }
 
@@ -60,7 +119,26 @@ function Recursivestypeinfos($arr){
             }else{
             //print_r($value);
                 echo " <li><a href=\"#\"><i class=\"fa fa-envelope-o\"></i> {$value}
-                                <span class=\"label label-primary pull-right\">12</span><span class=\"label label-danger pull-right\">删除</span> <span class=\"label label-success pull-right\" onclick=\"link({$key},'admin/category/edit')\">编辑</span> <span class=\"label label-warning pull-right\" onclick=\"link({$key},'admin/category/create')\">添加子类</span></a></li>";
+                                <span class=\"label label-primary pull-right\">12</span>
+                                <span class=\"label label-danger pull-right\" data-toggle=\"modal\" data-target=\".modal-sm{$key}\">删除</span>
+                                <div class=\"modal fade modal-sm{$key}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\">
+                            <div class=\"modal-dialog modal-sm modal-s-m{$key} \" role=\"document\">
+                                <div class=\"modal-content\">
+                                    <div class=\"modal-header\">
+                                        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">×</span></button>
+                                        <h5 class=\"modal-title\" id=\"mySmallModalLabel\">是否要删除栏目</h5>
+                                    </div>
+                                    <div class=\"modal-body\">
+                                         {$value}
+                                    </div>
+                                    <div class=\"modal-footer\">
+                                        <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">返回</button>
+                                        <button type=\"button\" class=\"btn btn-primary\" id='btn-{$key}' onclick=\"AjDelete({$key},'modal-s-m{$key}')\">删除</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                 <span class=\"label label-success pull-right\" onclick=\"link({$key},'admin/category/edit')\">编辑</span> <span class=\"label label-warning pull-right\" onclick=\"link({$key},'admin/category/create')\">添加子类</span></a></li>";
 
             }
 

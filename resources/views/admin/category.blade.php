@@ -3,6 +3,7 @@
 @section('head')
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Bootstrap 3.3.6 -->
     <link rel="stylesheet" href="/AdminLTE/bootstrap/css/bootstrap.min.css">
     <!-- Font Awesome -->
@@ -41,7 +42,24 @@
                     <h3 class="box-title ">{{$topnav}} </h3>
                     <div class="spide_span">
                         <span class="label label-primary pull-right">12</span>
-                        <span class="label label-danger pull-right" >删除</span>
+                        <span class="label label-danger pull-right" data-toggle="modal" data-target=".modal-sm{{$key}}">删除</span>
+                        <div class="modal fade modal-sm{{$key}}" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel{{$key}}">
+                            <div class="modal-dialog modal-sm modal-s-m{{$key}}" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        <h5 class="modal-title" id="mySmallModalLabel{{$key}}">是否要删除栏目</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        {{$topnav}}
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">返回</button>
+                                        <button type="button" class="btn btn-primary" id="btn-{{$key}}" onclick="AjDelete({{$key}},'modal-s-m{{$key}}')">删除</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <span class="label label-success pull-right" onclick="link({{$key}},'admin/category/edit')">编辑</span>
                         <span class="label label-warning pull-right" onclick="link({{$key}},'admin/category/create')">添加子类</span>
                     </div>
@@ -136,10 +154,45 @@
             });
         });
     </script>
+
     <script>
+        $(document).ready(function() {
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            })
+        });
         function link($id,$action) {
             window.location.href='/'+$action+'/'+$id;
         }
+
+        function AjDelete (id,node) {
+            var id = id;
+            var node=node;
+           $.ajax({
+                    //提交数据的类型 POST GET
+                    type:"POST",
+                    //提交的网址
+                    url:"/admin/category/delete/"+id,
+                    //提交的数据
+                    data:{"id":id,'node':node},
+                    //返回数据的格式
+                    datatype: "html",    //"xml", "html", "script", "json", "jsonp", "text".
+                    success:function (response, stutas, xhr) {
+                        $(".modal-s-m"+id+" .modal-body").html(response);
+                        $("#btn-"+id).attr("disabled","disabled");
+
+                    }
+                });
+
+
+
+
+
+
+        }
+
     </script>
     <!-- AdminLTE for demo purposes -->
     <script src="/AdminLTE/dist/js/demo.js"></script>

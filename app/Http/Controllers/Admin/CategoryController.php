@@ -99,11 +99,9 @@ class CategoryController extends Controller
      */
     function PostEdit(StoreCategoryRequest $request,$id)
     {
-      dd($this->RecursiveReid($id,$request->input('reid')));
         if($this->RecursiveReid($id,$request->input('reid'))){
             exit('父级不可以移动到子级');
         }
-        dd($request->all());
         $requestdata=$request->all();
         if(array_key_exists('image',$requestdata))
         {
@@ -116,10 +114,12 @@ class CategoryController extends Controller
             $requestdata['real_path']=$requestdata['typedir'];
         }else
         {
-            $requestdata['real_path']=$this->GetRealPath($request->input('reid')).'/'.$requestdata['typedir'];
+            $requestdata['real_path']='';
+           foreach(array_reverse(explode('/',$this->GetRealPath($request->input('reid')))) as $realpaths){
+               $requestdata['real_path'].=$realpaths.'/';
+           };
+            $requestdata['real_path'].=$requestdata['typedir'];
         }
-
-        //dd($requestdata);
         Arctype::findOrFail($id)->update($requestdata);
         return redirect(action('Admin\CategoryController@Index'));
     }
@@ -130,18 +130,15 @@ class CategoryController extends Controller
      */
     function RecursiveReid($id,$reid)
     {
-
         $reid=Arctype::where('id',$reid)->value('reid');
-        if($id==$reid || Arctype::where('id',$reid)->value('reid')==0)
+
+        if($id==$reid )
         {
-        var_dump(222);
-            return 1;
-
-        }else{
-
-            $this->RecursiveReid($id,$reid);
-            var_dump(111);
+            return true;
+        }elseif(Arctype::where('id',$reid)->value('reid')==0){
+          return false;
         }
+        return $this->RecursiveReid($id,$reid);
 
 
 
@@ -153,6 +150,7 @@ class CategoryController extends Controller
      * @return redirect
      */
     function DeleteCategory(Request $request,$id){
+        
         if(empty(Arctype::where('reid',$id)->value('id')))
         {
             Arctype::findOrFail($id)->delete();
