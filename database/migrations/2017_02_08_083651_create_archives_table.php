@@ -16,12 +16,14 @@ class CreateArchivesTable extends Migration
         Schema::create('archives', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('typeid');
-            $table->integer('channelid');
             $table->integer('ismake');
             $table->integer('click');
-            $table->integer('weight');
             $table->string('title');
-            $table->string('shortitle');
+            $table->string('shorttitle');
+            $table->string('tags');
+            $table->string('country');
+            $table->timestamp('aftertime');
+            $table->integer('mid');
             $table->string('keywords');
             $table->string('description');
             $table->string('write');

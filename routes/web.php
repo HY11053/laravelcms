@@ -20,25 +20,25 @@ Route::get('demo',function (){
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
-Route::get('admin/login', 'Admin\AuthController@getLogin');
-Route::post('admin/login', 'Admin\AuthController@postLogin');
-Route::get('admin/register', 'Admin\AuthController@getRegister');
-Route::post('admin/register', 'Admin\AuthController@postRegister');
-Route::get('admin', 'AdminController@index');
 
-Route::group(['prefix' => 'admin'],function(){
-    Route::get('index','Admin\IndexController@index');
-    Route::post('upload/images','Admin\ImageUploadController@ImagesUpload');
+Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ()
+{
+    Route::get('login', 'LoginController@showLoginForm')->name('admin.login');
+    Route::post('login', 'LoginController@login');
+    Route::get('logout', 'LoginController@logout');
+    Route::get('dash', 'DashboardController@index');
+    Route::get('index','IndexController@index');
+    Route::post('upload/images','ImageUploadController@ImagesUpload');
     Route::post('file-delete-batch','Admin\ImageUploadController@DeletePics');
-    Route::get('category','Admin\CategoryController@Index');
-    Route::get('category/create/{id?}','Admin\CategoryController@Create');
-    Route::get('category/edit/{id}','Admin\CategoryController@Edit');
-    Route::post('category/create','Admin\CategoryController@PostCreate')->name('category_create');
-    Route::put('category/edit/{id}','Admin\CategoryController@PostEdit')->name('category_edit');
-    Route::post('category/delete/{id}','Admin\CategoryController@DeleteCategory');
-    Route::get('article','Admin\ArticleController@Index');
-    Route::get('article/create','Admin\ArticleController@Create');
-    Route::post('article/create','Admin\ArticleController@PostCreate')->name('article_create');
+    Route::get('category','CategoryController@Index');
+    Route::get('category/create/{id?}','CategoryController@Create');
+    Route::get('category/edit/{id}','CategoryController@Edit');
+    Route::post('category/create','CategoryController@PostCreate')->name('category_create');
+    Route::put('category/edit/{id}','CategoryController@PostEdit')->name('category_edit');
+    Route::post('category/delete/{id}','CategoryController@DeleteCategory');
+    Route::get('article','ArticleController@Index');
+    Route::get('article/create','ArticleController@Create');
+    Route::post('article/create','ArticleController@PostCreate')->name('article_create');
 });
 
 Route::resource('category','Admin\CategoryController');

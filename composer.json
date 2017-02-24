@@ -28,6 +28,7 @@
         },
         "files": [
             "Helpers/Helpers.php"
+
         ]
     },
     "autoload-dev": {

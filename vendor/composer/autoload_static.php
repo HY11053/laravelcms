@@ -318,7 +318,9 @@ class ComposerStaticInitfaeafb081b6d06a0f396feec709575f0
     public static $classMap = array (
         'AddFlagsToArchivesTable' => __DIR__ . '/../..' . '/database/migrations/2017_02_09_060302_add_flags_to_archives_table.php',
         'AddIntroColumToArticlesTable' => __DIR__ . '/../..' . '/database/migrations/2017_01_29_102035_add_intro_colum_to_articles_table.php',
+        'AdminsTableSeeder' => __DIR__ . '/../..' . '/database/seeds/AdminsTableSeeder.php',
         'CreateAddonarticlesTable' => __DIR__ . '/../..' . '/database/migrations/2017_02_09_051340_create_addonarticles_table.php',
+        'CreateAdminsTable' => __DIR__ . '/../..' . '/database/migrations/2017_02_23_171322_create_admins_table.php',
         'CreateArchivesTable' => __DIR__ . '/../..' . '/database/migrations/2017_02_08_083651_create_archives_table.php',
         'CreateArctypesTable' => __DIR__ . '/../..' . '/database/migrations/2017_02_09_053555_create_arctypes_table.php',
         'CreateAreasTable' => __DIR__ . '/../..' . '/database/migrations/2017_02_09_062157_create_areas_table.php',

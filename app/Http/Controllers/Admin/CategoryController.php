@@ -15,6 +15,10 @@ class CategoryController extends Controller
      *
      * @return
      */
+    public function __construct()
+    {
+        $this->middleware('auth.admin:admin');
+    }
     function Index(){
         $topnavs=Arctype::where('reid',0)->pluck('typename','id');
         foreach ($topnavs as $key=>$topnav)
@@ -188,7 +192,7 @@ class CategoryController extends Controller
 
     }
     /**
-     * 递归当前栏目自栏目
+     * 缩略图上传
      * @param $request请求信息
      *
      * @return 上传后图片地址

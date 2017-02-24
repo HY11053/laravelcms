@@ -8,7 +8,9 @@ $baseDir = dirname($vendorDir);
 return array(
     'AddFlagsToArchivesTable' => $baseDir . '/database/migrations/2017_02_09_060302_add_flags_to_archives_table.php',
     'AddIntroColumToArticlesTable' => $baseDir . '/database/migrations/2017_01_29_102035_add_intro_colum_to_articles_table.php',
+    'AdminsTableSeeder' => $baseDir . '/database/seeds/AdminsTableSeeder.php',
     'CreateAddonarticlesTable' => $baseDir . '/database/migrations/2017_02_09_051340_create_addonarticles_table.php',
+    'CreateAdminsTable' => $baseDir . '/database/migrations/2017_02_23_171322_create_admins_table.php',
     'CreateArchivesTable' => $baseDir . '/database/migrations/2017_02_08_083651_create_archives_table.php',
     'CreateArctypesTable' => $baseDir . '/database/migrations/2017_02_09_053555_create_arctypes_table.php',
     'CreateAreasTable' => $baseDir . '/database/migrations/2017_02_09_062157_create_areas_table.php',

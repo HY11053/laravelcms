@@ -34,7 +34,7 @@
 @section('content')
         <!-- row -->
 <div class="row">
-    {{Form::open(array('route' => 'article_create'))}}
+    {{Form::open(array('route' => 'article_create','files' => true,))}}
     <div class="col-md-12">
         <!-- The time line -->
         <ul class="timeline">
@@ -60,7 +60,7 @@
                         <div class="form-group col-md-12">
                             {{Form::label('title', '文章标题', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                             <div class="col-md-4 col-sm-9 col-xs-12">
-                                {{Form::text('title', '', array('class' => 'form-control','id'=>'title','placeholder'=>'文章标题'))}}
+                                {{Form::text('title', null, array('class' => 'form-control','id'=>'title','placeholder'=>'文章标题'))}}
                             </div>
                         </div>
                         <div class="form-group col-md-12">
@@ -90,44 +90,49 @@
                         <div class="form-group col-md-12">
                             {{Form::label('shorttitle', '简略标题', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                             <div class="col-md-4 col-sm-9 col-xs-12">
-                                {{Form::text('shorttitle', '', array('class' => 'form-control','id'=>'shorttitle','placeholder'=>'短标题'))}}
+                                {{Form::text('shorttitle',null, array('class' => 'form-control','id'=>'shorttitle','placeholder'=>'短标题'))}}
                             </div>
                         </div>
 
                         <div class="form-group col-md-12">
                             {{Form::label('tags', 'tag标签', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                             <div class="col-md-4 col-sm-9 col-xs-12">
-                                {{Form::text('tags', '', array('class' => 'form-control','id'=>'tags','placeholder'=>'文档tag标签'))}}
+                                {{Form::text('tags', null, array('class' => 'form-control','id'=>'tags','placeholder'=>'文档tag标签'))}}
                             </div>
                         </div>
                         <div class="form-group col-md-12">
                             {{Form::label('keywords', '关键字', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                             <div class="col-md-4 col-sm-9 col-xs-12">
-                                {{Form::text('keywords', '', array('class' => 'form-control','id'=>'keywords','placeholder'=>'文档关键词'))}}
+                                {{Form::text('keywords',null, array('class' => 'form-control','id'=>'keywords','placeholder'=>'文档关键词'))}}
                             </div>
                         </div>
                         <div class="form-group col-md-12">
                             {{Form::label('country', '经纬度', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                             <div class="col-md-4 col-sm-9 col-xs-12">
-                                {{Form::text('country', '', array('class' => 'form-control col-md-10','id'=>'country','placeholder'=>'填写地区名称即可'))}}
+                                {{Form::text('country',null, array('class' => 'form-control col-md-10','id'=>'country','placeholder'=>'填写地区名称即可'))}}
                             </div>
                         </div>
-
                         <div class="form-group col-md-12 ">
-                            {{Form::label('iCheck', '文章状态', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                            {{Form::label('typeid', '文章所属栏目', array('class' => 'col-sm-2 control-label'))}}
+                            <div class="col-sm-5">
+                                {{Form::select('typeid', $allnavinfos, null,array('class'=>'form-control select2','style'=>'width: 78%'))}}
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12 ">
+                            {{Form::label('ismake', '文章状态', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                             <div class="radio col-md-4 col-sm-9 col-xs-12">
-                                {{Form::radio('iCheck', '1', true,array('class'=>'flat-red'))}} 已审核
-                                {{Form::radio('iCheck', '0', false,array('class'=>'flat-red'))}}未审核
+                                {{Form::radio('ismake', '1', true,array('class'=>'flat-red'))}} 已审核
+                                {{Form::radio('ismake', '0', false,array('class'=>'flat-red'))}}未审核
                             </div>
 
                         </div>
                         <div class="form-group col-md-12 ">
-                            {{Form::label('datepicker', '预选发布时间', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                            {{Form::label('aftertime', '预选发布时间', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                             <div class="input-group date  col-md-4 col-sm-9 col-xs-12">
                                 <div class="input-group-addon">
                                     <i class="fa fa-calendar"></i>
                                 </div>
-                                {{Form::text('datepicker', '', array('class' => 'form-control pull-right','id'=>'datepicker','placeholder'=>'点击选择时间'))}}
+                                {{Form::text('aftertime', null, array('class' => 'form-control pull-right','id'=>'datepicker','placeholder'=>'点击选择时间'))}}
                             </div>
                         </div>
                     </div>
@@ -163,87 +168,87 @@
                             <div class="form-group col-md-6">
                                 {{Form::label('brandname', '品牌名称', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                 <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('brandname', '', array('class' => 'form-control col-md-10','id'=>'brandname','placeholder'=>'品牌名称'))}}
+                                    {{Form::text('brandname',null, array('class' => 'form-control col-md-10','id'=>'brandname','placeholder'=>'品牌名称'))}}
                                 </div>
                             </div>
 
                             <div class="form-group col-md-6">
                                 {{Form::label('brandtime', '成立时间', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                 <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('brandtime', '', array('class' => 'form-control col-md-10','id'=>'brandtime','placeholder'=>'1970-1-1'))}}
+                                    {{Form::text('brandtime', null, array('class' => 'form-control col-md-10','id'=>'brandtime','placeholder'=>'1970-1-1'))}}
                                 </div>
                             </div>
                             <div class="form-group col-md-6">
                                 {{Form::label('brandorigin', '品牌发源地', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                 <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('brandorigin', '', array('class' => 'form-control col-md-10','id'=>'brandorigin','placeholder'=>'品牌发源地'))}}
+                                    {{Form::text('brandorigin', null, array('class' => 'form-control col-md-10','id'=>'brandorigin','placeholder'=>'品牌发源地'))}}
                                 </div>
                             </div>
                             <div class="form-group col-md-6">
                                 {{Form::label('brandnum', '门店总数', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                 <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('brandnum', '', array('class' => 'form-control col-md-10','id'=>'brandnum','placeholder'=>'门店总数'))}}
+                                    {{Form::text('brandnum', null, array('class' => 'form-control col-md-10','id'=>'brandnum','placeholder'=>'门店总数'))}}
                                 </div>
                             </div>
                             <div class="form-group col-md-6">
                                 {{Form::label('brandpay', '加盟费用', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                 <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('brandpay', '', array('class' => 'form-control col-md-10','id'=>'brandpay','placeholder'=>'加盟费用'))}}
+                                    {{Form::text('brandpay', null, array('class' => 'form-control col-md-10','id'=>'brandpay','placeholder'=>'加盟费用'))}}
                                 </div>
                             </div>
                             <div class="form-group col-md-6">
                                 {{Form::label('brandarea', '加盟区域', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                 <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('brandarea', '', array('class' => 'form-control col-md-10','id'=>'brandarea','placeholder'=>'加盟区域'))}}
+                                    {{Form::text('brandarea', null, array('class' => 'form-control col-md-10','id'=>'brandarea','placeholder'=>'加盟区域'))}}
                                 </div>
                             </div>
                             <div class="form-group col-md-6">
                                 {{Form::label('brandmap', '经营范围', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                 <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('brandmap', '', array('class' => 'form-control col-md-10','id'=>'brandmap','placeholder'=>'经营范围'))}}
+                                    {{Form::text('brandmap', null, array('class' => 'form-control col-md-10','id'=>'brandmap','placeholder'=>'经营范围'))}}
                                 </div>
                             </div>
                             <div class="form-group col-md-6">
                                 {{Form::label('brandperson', '加盟人群', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                 <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('brandmap', '', array('class' => 'form-control col-md-10','id'=>'brandmap','placeholder'=>'加盟人群'))}}
+                                    {{Form::text('brandperson', null, array('class' => 'form-control col-md-10','id'=>'brandmap','placeholder'=>'加盟人群'))}}
                                 </div>
                             </div>
                             <div class="form-group col-md-6">
                                 {{Form::label('brandattch', '加盟意向人数', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                 <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('brandattch', '', array('class' => 'form-control col-md-10','id'=>'brandattch','placeholder'=>'加盟意向人数'))}}
+                                    {{Form::text('brandattch', null, array('class' => 'form-control col-md-10','id'=>'brandattch','placeholder'=>'加盟意向人数'))}}
                                 </div>
                             </div>
                             <div class="form-group col-md-6">
                                 {{Form::label('brandapply', '申请加盟人数', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                 <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('brandapply', '', array('class' => 'form-control col-md-10','id'=>'brandapply','placeholder'=>'申请加盟人数'))}}
+                                    {{Form::text('brandapply', null, array('class' => 'form-control col-md-10','id'=>'brandapply','placeholder'=>'申请加盟人数'))}}
                                 </div>
                             </div>
                             <div class="form-group col-md-6">
                                 {{Form::label('brandchat', '加盟意向人数', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                 <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('brandchat', '', array('class' => 'form-control col-md-10','id'=>'brandchat','placeholder'=>'加盟意向人数'))}}
+                                    {{Form::text('brandchat', null, array('class' => 'form-control col-md-10','id'=>'brandchat','placeholder'=>'加盟意向人数'))}}
                                 </div>
                             </div>
                             <div class="form-group col-md-6">
                                 {{Form::label('brandgroup', '公司名称', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                 <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('brandgroup', '', array('class' => 'form-control col-md-10','id'=>'brandgroup','placeholder'=>'公司名称'))}}
+                                    {{Form::text('brandgroup', null, array('class' => 'form-control col-md-10','id'=>'brandgroup','placeholder'=>'公司名称'))}}
                                 </div>
                             </div>
 
                             <div class="form-group col-md-6">
                                 {{Form::label('brandaddr', '公司地址', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                 <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('brandaddr', '', array('class' => 'form-control col-md-10','id'=>'brandaddr','placeholder'=>'公司地址'))}}
+                                    {{Form::text('brandaddr', null, array('class' => 'form-control col-md-10','id'=>'brandaddr','placeholder'=>'公司地址'))}}
                                 </div>
                             </div>
                             <div class="form-group col-md-6">
                                 {{Form::label('brandduty', '是否区域授权', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                 <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('brandduty', '', array('class' => 'form-control col-md-10','id'=>'brandduty','placeholder'=>'是否区域授权'))}}
+                                    {{Form::text('brandduty', null, array('class' => 'form-control col-md-10','id'=>'brandduty','placeholder'=>'是否区域授权'))}}
                                     {{Form::hidden('mid', '0', array('class' => 'form-control col-md-10','id'=>'mid'))}}
                                 </div>
                             </div>
@@ -300,7 +305,7 @@
 
                     <div class="timeline-body">
                         @include('admin.layouts.summernote')
-                        <div style="display: none"><textarea  name="textareacontent" id="lawsContent"></textarea></div>
+                        <div style="display: none"><textarea  name="body" id="lawsContent"></textarea></div>
                     </div>
                     <div class="timeline-footer">
                         <button type="submit"  class="btn btn-md bg-maroon">提交文档</button>
@@ -318,6 +323,13 @@
     <!-- /.col -->
     {!! Form::close() !!}
 </div>
+@if(count($errors) > 0)
+    <ul class="alert alert-danger">
+        @foreach($errors->all() as $error)
+            <li>{{ $error }}</li>
+        @endforeach
+    </ul>
+    @endif
 <!-- /.row -->
 
 </section>

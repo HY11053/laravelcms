@@ -49,14 +49,14 @@
                         <div class="form-group">
                          {{Form::label('typename', '栏目名称', array('class' => 'col-sm-2 control-label'))}}
                             <div class="col-sm-5">
-                                {{Form::text('typename', '', array('class' => 'form-control','id'=>'typename','placeholder'=>'栏目名称'))}}
+                                {{Form::text('typename', null, array('class' => 'form-control','id'=>'typename','placeholder'=>'栏目名称'))}}
                             </div>
                         </div>
 
                         <div class="form-group">
                             {{Form::label('typedir', '栏目路径', array('class' => 'col-sm-2 control-label'))}}
                             <div class="col-sm-5">
-                                {{Form::text('typedir', '', array('class' => 'form-control','id'=>'typedir','placeholder'=>'栏目路径'))}}
+                                {{Form::text('typedir', null, array('class' => 'form-control','id'=>'typedir','placeholder'=>'栏目路径'))}}
                             </div>
                         </div>
                         @if($id!=0)
