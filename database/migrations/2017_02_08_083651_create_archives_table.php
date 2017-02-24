@@ -22,7 +22,7 @@ class CreateArchivesTable extends Migration
             $table->string('shorttitle');
             $table->string('tags');
             $table->string('country');
-            $table->timestamp('aftertime');
+            $table->timestamp('published_at');
             $table->integer('mid');
             $table->string('keywords');
             $table->string('description');

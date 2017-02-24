@@ -29,7 +29,7 @@ class CreateArticleRequest extends FormRequest
             'tags'=>'required|max:20',
             'country'=>'required',
             'ismake'=>'required|numeric',
-            'aftertime'=>'date',
+            'published_at'=>'date',
             'mid'=>'numeric',
             'body'=>'required',
             'image'=> 'mimes:jpeg,jpg,gif,bmp,png|image'

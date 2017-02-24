@@ -30,7 +30,7 @@ class ArticleController extends Controller
     {
 
         $request['litpic']=UploadImages::UploadImage($request);
-        $request['aftertime']=new Carbon($request['aftertime']);
+        $request['published_at']=Carbon::createFromFormat($request['published_at']);
         $request['flags']=UploadImages::Flags($request['flags']);
         $request['click']=rand(100,900);
         $request['description']=(!empty($request['description']))?$request['description']:htmlspecialchars(mb_substr($request['body'],0,150));

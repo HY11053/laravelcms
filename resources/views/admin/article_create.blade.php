@@ -127,12 +127,12 @@
 
                         </div>
                         <div class="form-group col-md-12 ">
-                            {{Form::label('aftertime', '预选发布时间', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                            {{Form::label('published_at', '预选发布时间', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                             <div class="input-group date  col-md-4 col-sm-9 col-xs-12">
                                 <div class="input-group-addon">
                                     <i class="fa fa-calendar"></i>
                                 </div>
-                                {{Form::text('aftertime', null, array('class' => 'form-control pull-right','id'=>'datepicker','placeholder'=>'点击选择时间'))}}
+                                {{Form::text('published_at', null, array('class' => 'form-control pull-right','id'=>'datepicker','placeholder'=>'点击选择时间'))}}
                             </div>
                         </div>
                     </div>
