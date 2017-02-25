@@ -17,10 +17,24 @@ class CreateAddonarticlesTable extends Migration
             $table->increments('id');
             $table->integer('typeid');
             $table->text('body');
-            $table->string('pics');
-            $table->string('redirect');
-            $table->string('tag');
-            $table->string('coordinate');
+            $table->string('pics')->default('');
+            $table->string('redirect')->default('');
+            $table->string('tag')->default('');
+            $table->string('coordinate')->default('');
+            $table->string('brandname')->default('');
+            $table->string('brandtime')->default('');
+            $table->string('brandorigin')->default('');
+            $table->string('brandnum')->default('');
+            $table->string('brandpay')->default('');
+            $table->string('brandarea')->default('');
+            $table->string('brandmap')->default('');
+            $table->string('brandperson')->default('');
+            $table->string('brandattch')->default('');
+            $table->string('brandapply')->default('');
+            $table->string('brandchat')->default('');
+            $table->string('brandgroup')->default('');
+            $table->string('brandaddr')->default('');
+            $table->string('brandduty')->default('');
             $table->timestamps();
         });
     }

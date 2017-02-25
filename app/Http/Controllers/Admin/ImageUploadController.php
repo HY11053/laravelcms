@@ -49,4 +49,27 @@ class ImageUploadController extends Controller
 
     }
 
+    public function upload_image(Request $request)
+    {
+
+        if(!$request->hasFile('file')){
+            exit('上传文件为空！');
+        }
+        $file = $request->file('file');
+        //判断文件上传过程中是否出错
+        $allowed_extensions = ["png", "jpg", "gif"];
+        if ($file->getClientOriginalExtension() && !in_array($file->getClientOriginalExtension(), $allowed_extensions)) {
+            exit(['error' => 'You may only upload png, jpg or gif.']);
+        }
+        $upload_path='images/thread'.date('/Y/m/d',time());
+        $destinationPath =public_path($upload_path);
+        $extension = $file->getClientOriginalExtension();
+        $fileName = md5(str_random(10)).'.'.$extension;
+        $file->move($destinationPath, $fileName);
+        $img_relpath=date('Y/m/d/',time()). $fileName;
+        return $img_relpath;
+
+
+    }
+
 }

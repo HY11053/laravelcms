@@ -7,7 +7,9 @@
 
                     <div class="summernote" id="summernote">
                         @if(isset($typeinfos->contents))
-                        {{$typeinfos->contents}}
+                        {!! $typeinfos->contents !!}
+                            @elseif(isset($articleinfos->body))
+                            {!! $articleinfos->body !!}
                             @endif
                     </div>
 

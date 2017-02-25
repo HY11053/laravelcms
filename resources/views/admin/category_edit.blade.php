@@ -243,7 +243,7 @@
                         formData.append('file',files[0]);
                         $.ajax({
                             type: 'POST',
-                            url : '/upload/images/thread',//后台文件上传接口
+                            url : '/admin/upload/articleimages',//后台文件上传接口
                             data : formData,
                             enctype: 'multipart/form-data',
                             processData : false,
@@ -325,9 +325,15 @@
             alert(222);
             console.log('File sorted params', params);
         }).on('fileuploaded', function(event, data) {
+            $('#kv-success-box').append(data.response.link);
+            $('#kv-success-modal').modal('show');
             $("#imagespic").val($("#imagespic").val()+data.response.link+',');
         }).on('filepreremoved', function(e, params) {
             console.log('File sorted params', params);
+        }).on('filedeleted', function(event, key) {
+            console.log('Key = ' + key);
+            arrs=key.split(',')
+            $("#imagespic").val($("#imagespic").val().replace(','+arrs[1],''));
         });
     </script>
 

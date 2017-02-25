@@ -35,9 +35,9 @@
                 <ul class="treeview-menu">
                     <li class="active"><a href="/admin/category"><i class="fa fa-circle-o"></i> 网站栏目管理</a></li>
                     <li><a href="/admin/article"><i class="fa fa-circle-o"></i> 所有档案列表</a></li>
-                    <li><a href="index2.html"><i class="fa fa-circle-o"></i> 我发布的文档</a></li>
-                    <li><a href="index2.html"><i class="fa fa-circle-o"></i> 等待审核文档</a></li>
-                    <li><a href="index2.html"><i class="fa fa-circle-o"></i> 内容回收站</a></li>
+                    <li><a href="/admin/article/ownership"><i class="fa fa-circle-o"></i> 我发布的文档</a></li>
+                    <li><a href="/admin/article/pendingaudit"><i class="fa fa-circle-o"></i> 等待审核文档</a></li>
+                    <li><a href="/admin/article/pedingpublished"><i class="fa fa-circle-o"></i> 待发布的文档</a></li>
                 </ul>
             </li>
             <li class="treeview">

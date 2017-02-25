@@ -5,6 +5,7 @@
 @section('head')
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Bootstrap 3.3.6 -->
     <link rel="stylesheet" href="/AdminLTE/bootstrap/css/bootstrap.min.css">
     <!-- Font Awesome -->
@@ -16,6 +17,7 @@
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="/AdminLTE/dist/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="/AdminLTE/dist/css/skins/overwrite.min.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -56,46 +58,37 @@
                                 <th>状态</th>
                                 <th>操作</th>
                             </tr>
+                            @foreach($articles as $article)
                             <tr>
-                                <td>183</td>
-                                <td>李小璐女王范儿十足激情首发 湖南卫视喜乐会</td>
+                                <td>{{$article->id}}</td>
+                                <td>{{$article->title}}</td>
                                 <td>测试栏目</td>
-                                <td>11-7-2014</td>
-                                <td>John Doe</td>
-                                <td>172</td>
+                                <td>{{$article->published_at}}</td>
+                                <td>{{$article->write}}</td>
+                                <td>{{$article->click}}</td>
                                 <td>已审核</td>
-                                <td><span class="label label-success">预览</span><span class="label label-warning">编辑</span><span class="label label-danger">删除</span></td>
+                                <td class="astyle"><span class="label label-success"><a href="/admin/article/previewarticle/{{$article->id}}">预览</a></span><span class="label label-warning"><a href="/admin/article/edit/{{$article->id}}">编辑</a></span><span class="label label-danger"><a data-toggle="modal" data-target=".modal-sm{{$article->id}}" >删除</a></span>
+                                    <div class="modal fade modal-sm{{$article->id}}" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel{{$article->id}}">
+                                        <div class="modal-dialog modal-sm modal-s-m{{$article->id}}" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                    <h5 class="modal-title" id="mySmallModalLabel{{$article->id}}">是否要当前文章</h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    {{$article->title}}
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">返回</button>
+                                                    <button type="button" class="btn btn-primary" id="btn-{{$article->id}}" onclick="AjDelete({{$article->id}},'modal-s-m{{$article->id}}')">删除</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
                             </tr>
-                            <tr>
-                                <td>219</td>
-                                <td>李小璐女王范儿十足激情首发 湖南卫视喜乐会</td>
-                                <td>测试栏目</td>
-                                <td>11-7-2014</td>
-                                <td>John Doe</td>
-                                <td>172</td>
-                                <td>已审核</td>
-                                <td><span class="label label-success">预览</span><span class="label label-warning">编辑</span><span class="label label-danger">删除</span></td>
-                            </tr>
-                            <tr>
-                                <td>657</td>
-                                <td>李小璐女王范儿十足激情首发 湖南卫视喜乐会</td>
-                                <td>测试栏目</td>
-                                <td>11-7-2014</td>
-                                <td>John Doe</td>
-                                <td>172</td>
-                                <td>已审核</td>
-                                <td><span class="label label-success">预览</span><span class="label label-warning">编辑</span><span class="label label-danger">删除</span></td>
-                            </tr>
-                            <tr>
-                                <td>175</td>
-                                <td>李小璐女王范儿十足激情首发 湖南卫视喜乐会</td>
-                                <td>测试栏目</td>
-                                <td>11-7-2014</td>
-                                <td>John Doe</td>
-                                <td>172</td>
-                                <td>已审核</td>
-                                <td><span class="label label-success">预览</span><span class="label label-warning">编辑</span><span class="label label-danger">删除</span></td>
-                            </tr>
+                                @endforeach
+
                         </table>
                     </div>
                     <!-- /.box-body -->
@@ -120,5 +113,34 @@
     <script src="/AdminLTE/dist/js/app.min.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="/AdminLTE/dist/js/demo.js"></script>
+    <script>
+        $(document).ready(function() {
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            })
+        });
+        function AjDelete (id,node) {
+            var id = id;
+            var node=node;
+            $.ajax({
+                //提交数据的类型 POST GET
+                type:"POST",
+                //提交的网址
+                url:"/admin/article/delete/"+id,
+                //提交的数据
+                data:{"id":id,'node':node},
+                //返回数据的格式
+                datatype: "html",    //"xml", "html", "script", "json", "jsonp", "text".
+                success:function (response, stutas, xhr) {
+                    $(".modal-s-m"+id+" .modal-body").html(response);
+                    $("#btn-"+id).attr("disabled","disabled");
+
+                }
+            });
+        }
+    </script>
 @stop
+
 

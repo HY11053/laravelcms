@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddFlagsToArchivesTable extends Migration
+class AddImagepicsColumToAddonarticles extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class AddFlagsToArchivesTable extends Migration
      */
     public function up()
     {
-        Schema::table('archives', function (Blueprint $table) {
+        Schema::table('addonarticles', function (Blueprint $table) {
             //
-            $table->string('flags');
+            $table->text('imagepics',1000);
         });
     }
 
@@ -26,8 +26,9 @@ class AddFlagsToArchivesTable extends Migration
      */
     public function down()
     {
-        Schema::table('archives', function (Blueprint $table) {
-            $table->dropColumn('flags');
+        Schema::table('addonarticles', function (Blueprint $table) {
+            //
+            $table->dropColumn('imagepics');
         });
     }
 }

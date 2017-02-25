@@ -375,7 +375,7 @@
                     formData.append('file',files[0]);
                     $.ajax({
                         type: 'POST',
-                        url : '/upload/images/thread',//后台文件上传接口
+                        url : '/admin/upload/articleimages',//后台文件上传接口
                         data : formData,
                         enctype: 'multipart/form-data',
                         processData : false,

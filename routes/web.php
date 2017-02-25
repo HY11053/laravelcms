@@ -29,7 +29,8 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ()
     Route::get('dash', 'DashboardController@index');
     Route::get('index','IndexController@index');
     Route::post('upload/images','ImageUploadController@ImagesUpload');
-    Route::post('file-delete-batch','Admin\ImageUploadController@DeletePics');
+    Route::post('upload/articleimages','ImageUploadController@upload_image');
+    Route::post('file-delete-batch','ImageUploadController@DeletePics');
     Route::get('category','CategoryController@Index');
     Route::get('category/create/{id?}','CategoryController@Create');
     Route::get('category/edit/{id}','CategoryController@Edit');
@@ -37,8 +38,16 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ()
     Route::put('category/edit/{id}','CategoryController@PostEdit')->name('category_edit');
     Route::post('category/delete/{id}','CategoryController@DeleteCategory');
     Route::get('article','ArticleController@Index');
+    Route::get('article/ownership','ArticleController@OwnerShip');
+    Route::get('article/pendingaudit','ArticleController@PendingAudit');
+    Route::get('article/pedingpublished','ArticleController@PedingPublished');
+    Route::get('article/previewarticle/{id}','ArticleController@PreViewArticle');
+    Route::post('article/delete/{id}','ArticleController@DeleteArticle');
+    Route::post('article/uploads','ArticleController@UploadImages');
     Route::get('article/create','ArticleController@Create');
+    Route::get('article/edit/{id}','ArticleController@Edit');
     Route::post('article/create','ArticleController@PostCreate')->name('article_create');
+    Route::put('article/edit/{id}','ArticleController@PostEdit')->name('article_edit');
 });
 
 Route::resource('category','Admin\CategoryController');
