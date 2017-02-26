@@ -29,6 +29,11 @@ class ArticleController extends Controller
         $allnavinfos=Arctype::where('is_write',1)->pluck('typename','id');
         return view('admin.article_create',compact('allnavinfos'));
     }
+    //品牌文档创建
+    function BrandCreate(){
+        $allnavinfos=Arctype::where('is_write',1)->pluck('typename','id');
+        return view('admin.article_brandcreate',compact('allnavinfos'));
+    }
     //文档创建提交
     function PostCreate(CreateArticleRequest $request)
     {
@@ -66,10 +71,17 @@ class ArticleController extends Controller
         $pics=explode(',',Addonarticle::where('id',$id)->value('imagepics'));
         //$articleinfos=Archive::find($id);
         $articleinfos=DB::table('archives')->join('addonarticles','archives.id','=','addonarticles.id')->where('addonarticles.id','=',$id)->first();
-        return view('admin.article_edit',compact('id','articleinfos','allnavinfos','pics'));
+        if($articleinfos->mid==0)
+        {
+            return view('admin.article_edit',compact('id','articleinfos','allnavinfos','pics'));
+        }else{
+            return view('admin.article_brandedit',compact('id','articleinfos','allnavinfos','pics'));
+        }
+
 //
     }
 
+    //品牌文档编辑
 
     //文档编辑提交
     function PostEdit(CreateArticleRequest $request,$id)

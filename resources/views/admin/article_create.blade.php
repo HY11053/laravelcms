@@ -431,7 +431,7 @@
 <script src="/js/fileinput.min.js"></script>
 <script>
     $("#input-image-1").fileinput({
-        uploadUrl: "/article/uploads",
+        uploadUrl: "/admin/upload/images",
         allowedFileExtensions: ["jpg", "png", "gif"],
         maxImageWidth: 300,
         maxFileCount: 6,

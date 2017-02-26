@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddImagepicsColumToAddonarticles extends Migration
+class AddJmlcColumToAddonarticles extends Migration
 {
     /**
      * Run the migrations.
@@ -15,7 +15,11 @@ class AddImagepicsColumToAddonarticles extends Migration
     {
         Schema::table('addonarticles', function (Blueprint $table) {
             //
-            $table->string('imagepics',1000)->default('1');
+            $table->text('jmxq_content');
+            $table->text('jmys_content');
+            $table->text('jmlc_content');
+            $table->text('jmzc_content');
+            $table->text('jmask_content');
         });
     }
 
@@ -28,7 +32,7 @@ class AddImagepicsColumToAddonarticles extends Migration
     {
         Schema::table('addonarticles', function (Blueprint $table) {
             //
-            $table->dropColumn('imagepics');
+            $table->dropColumn(['jmxq_content','jmys_content','jmlc_content','jmzc_content','jmask_content']);
         });
     }
 }

@@ -40,7 +40,7 @@
                                 <div class="input-group-btn">
                                     <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
                                     <button  class="btn btn-default bg-blue"><i class="fa  fa-pencil-square"></i><a href="{{action('Admin\ArticleController@Create')}}" style="color: #ffffff ; display: inline-block; padding-left: 3px;">添加文档</a></button>
-                                    <button  class="btn btn-default bg-purple"><i class="fa  fa-pencil-square-o"></i><a href="" style="color: #ffffff; display: inline-block; padding-left: 3px;">添加品牌文档</a></button>
+                                    <button  class="btn btn-default bg-purple"><i class="fa  fa-pencil-square-o"></i><a href="{{action('Admin\ArticleController@BrandCreate')}}" style="color: #ffffff; display: inline-block; padding-left: 3px;">添加品牌文档</a></button>
                                 </div>
                             </div>
                         </div>

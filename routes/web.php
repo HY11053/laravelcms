@@ -45,9 +45,16 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ()
     Route::post('article/delete/{id}','ArticleController@DeleteArticle');
     Route::post('article/uploads','ArticleController@UploadImages');
     Route::get('article/create','ArticleController@Create');
+    Route::get('article/brandcreate','ArticleController@BrandCreate');
     Route::get('article/edit/{id}','ArticleController@Edit');
     Route::post('article/create','ArticleController@PostCreate')->name('article_create');
     Route::put('article/edit/{id}','ArticleController@PostEdit')->name('article_edit');
+    Route::get('flink','FlinkController@Index');
+    Route::get('flink/create','FlinkController@CreateFlink');
+    Route::get('flink/edit/{id}','FlinkController@EditFlink');
+    Route::get('flink/delete/{id}','FlinkController@DeleteFlink');
+    Route::put('flink/edit/{id}','FlinkController@PostEditFlink');
+    Route::post('flink/create','FlinkController@PostCreateFlink');
 });
 
 Route::resource('category','Admin\CategoryController');

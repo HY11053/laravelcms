@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddImagepicsColumToAddonarticles extends Migration
+class CreateFlinksTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,13 @@ class AddImagepicsColumToAddonarticles extends Migration
      */
     public function up()
     {
-        Schema::table('addonarticles', function (Blueprint $table) {
-            //
-            $table->string('imagepics',1000)->default('1');
+        Schema::create('flinks', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('weburl');
+            $table->string('webname');
+            $table->string('note');
+            $table->string('address');
+            $table->timestamps();
         });
     }
 
@@ -26,9 +30,6 @@ class AddImagepicsColumToAddonarticles extends Migration
      */
     public function down()
     {
-        Schema::table('addonarticles', function (Blueprint $table) {
-            //
-            $table->dropColumn('imagepics');
-        });
+        Schema::dropIfExists('flinks');
     }
 }

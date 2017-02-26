@@ -64,8 +64,8 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> 友情链接列表</a></li>
-                    <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> 添加友情链接</a></li>
+                    <li><a href="/admin/flink"><i class="fa fa-circle-o"></i> 友情链接列表</a></li>
+                    <li><a href="/admin/flink/create"><i class="fa fa-circle-o"></i> 添加友情链接</a></li>
 
                 </ul>
             </li>
