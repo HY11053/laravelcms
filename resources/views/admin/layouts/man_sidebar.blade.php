@@ -93,10 +93,9 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> 添加用户</a></li>
-                    <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> 用户列表</a></li>
-                    <li><a href="pages/UI/buttons.html"><i class="fa fa-circle-o"></i> 用户编辑</a></li>
-                    <li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i>用户授权管理</a></li>
+                    <li><a href="/admin/admin/regsiter"><i class="fa fa-circle-o"></i> 添加用户</a></li>
+                    <li><a href="/admin/admin/list"><i class="fa fa-circle-o"></i> 用户列表</a></li>
+                    <li><a href="#"><i class="fa fa-circle-o"></i>用户授权管理</a></li>
                 </ul>
             </li>
             <li class="treeview">

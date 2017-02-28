@@ -55,6 +55,14 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ()
     Route::get('flink/delete/{id}','FlinkController@DeleteFlink');
     Route::put('flink/edit/{id}','FlinkController@PostEditFlink');
     Route::post('flink/create','FlinkController@PostCreateFlink');
+    Route::get('admin/list','AdminController@Index');
+    Route::get('admin/regsiter','AdminController@Register');
+    Route::post('admin/regsiter','AdminController@PostRegister');
+    Route::get('admin/edit/{id}','AdminController@Edit');
+    Route::get('admin/delete/{id}','AdminController@delete');
+    Route::put('admin/edit/{id}','AdminController@PostEdit');
+    Route::get('admin/ask','AskController@Index');
+    Route::get('ask/add','AskController@Add');
 });
 
 Route::resource('category','Admin\CategoryController');
