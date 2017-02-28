@@ -16,10 +16,11 @@ class CreateAsksTable extends Migration
         Schema::create('asks', function (Blueprint $table) {
             $table->increments('id');
             $table->string('titie');
-            $table->integer('viewnum');
-            $table->integer('answernum');
+            $table->integer('viewnum')->default(0);
+            $table->integer('answernum')->default(0);
             $table->integer('user_id');
             $table->integer('is_hidden')->default(0);
+            $table->text('body');
             $table->ipAddress('ip');
             $table->timestamps();
         });

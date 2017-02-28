@@ -63,6 +63,7 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ()
     Route::put('admin/edit/{id}','AdminController@PostEdit');
     Route::get('admin/ask','AskController@Index');
     Route::get('ask/add','AskController@Add');
+    Route::post('ask/add','AskController@PostAdd')->name('ask_create');
 });
 
 Route::resource('category','Admin\CategoryController');

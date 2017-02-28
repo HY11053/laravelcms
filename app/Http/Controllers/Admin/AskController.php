@@ -18,6 +18,10 @@ class AskController extends Controller
         return view('admin.askadd');
     }
     //问题创建提交
+    function PostAdd(Request $request){
+        $request['ip']=$request->getClientIp();
+        dd($request->all());
+    }
     //编辑问题
     //编辑创建提交
     //删除问题

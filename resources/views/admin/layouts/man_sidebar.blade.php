@@ -49,8 +49,8 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> 问答列表</a></li>
-                    <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> 添加问题</a></li>
+                    <li><a href="/admin/ask"><i class="fa fa-circle-o"></i> 问答列表</a></li>
+                    <li><a href="/admin/ask/add"><i class="fa fa-circle-o"></i> 添加问题</a></li>
                     <li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> 待审核问答</a></li>
                     <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> 评论列表</a></li>
                     <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> 待审核评论</a></li>
