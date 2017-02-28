@@ -25,7 +25,7 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+<style>td.newcolor span a{color: #ffffff; font-weight: 400; display: inline-block; padding: 2px;} td.newcolor span{margin-left: 5px;}</style>
 @stop
 @section('content')
 
@@ -53,20 +53,14 @@
                             <td>{{$link->webname}}</td>
                             <td>{{$link->address}}</td>
                             <td>{{$link->note}}</td>
-                            <td><span class="badge bg-green"><a href="/admin/flink/edit/{{$link->id}}">编辑</a></span> <span class="badge bg-red"><a href="/admin/flink/delete/{{$link->id}}">删除</a> </span></td>
+                            <td class="newcolor"><span class="badge bg-green"><a href="/admin/flink/edit/{{$link->id}}">编辑</a></span> <span class="badge bg-red"><a href="/admin/flink/delete/{{$link->id}}">删除</a> </span></td>
                         </tr>
                        @endforeach
                     </table>
                 </div>
                 <!-- /.box-body -->
                 <div class="box-footer clearfix">
-                    <ul class="pagination pagination-sm no-margin pull-right">
-                        <li><a href="#">&laquo;</a></li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">&raquo;</a></li>
-                    </ul>
+                    {!! $links->links() !!}
                 </div>
             </div>
             <!-- /.box -->

@@ -25,7 +25,7 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+<style>.red{color: red;}</style>
 @stop
 @section('content')
 
@@ -61,12 +61,12 @@
                             @foreach($articles as $article)
                             <tr>
                                 <td>{{$article->id}}</td>
-                                <td>{{$article->title}}</td>
-                                <td>测试栏目</td>
+                                <td>@if($article->ismake) {{$article->title}} @else <s class="red">{{$article->title}}</s> @endif @if($article->mid) <span class="fa fa-flag red"></span> @endif</td>
+                                <td>{{$article->arctype->typename}}</td>
                                 <td>{{$article->published_at}}</td>
                                 <td>{{$article->write}}</td>
                                 <td>{{$article->click}}</td>
-                                <td>已审核</td>
+                                <td>@if($article->ismake) 已审核 @else <s class="red">未审核 @endif</s></td>
                                 <td class="astyle"><span class="label label-success"><a href="/admin/article/previewarticle/{{$article->id}}">预览</a></span><span class="label label-warning"><a href="/admin/article/edit/{{$article->id}}">编辑</a></span><span class="label label-danger"><a data-toggle="modal" data-target=".modal-sm{{$article->id}}" >删除</a></span>
                                     <div class="modal fade modal-sm{{$article->id}}" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel{{$article->id}}">
                                         <div class="modal-dialog modal-sm modal-s-m{{$article->id}}" role="document">
@@ -90,6 +90,7 @@
                                 @endforeach
 
                         </table>
+                        {!! $articles->links() !!}
                     </div>
                     <!-- /.box-body -->
                 </div>

@@ -33,4 +33,8 @@ class Archive extends Model
             $this->attributes['published_at'] =$date?Carbon::createFromFormat('Y-m-d',date('Y-m-d',strtotime($date))) : Carbon::now();
         }
     }
+    public function arctype()
+    {
+        return $this->belongsTo('App\AdminModel\Arctype','typeid');
+    }
 }

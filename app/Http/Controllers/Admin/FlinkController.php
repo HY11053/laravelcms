@@ -12,7 +12,7 @@ class FlinkController extends Controller
     //友情链接列表
     function Index()
     {
-        $links=flink::all();
+        $links=flink::where('weburl','<>','')->paginate(30);
         return view('admin.flink',compact('links'));
     }
     //创建友情链接

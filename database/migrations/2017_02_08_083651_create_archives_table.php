@@ -30,6 +30,7 @@ class CreateArchivesTable extends Migration
             $table->string('litpic');
             $table->smallInteger('dutyadmin');
             $table->timestamps();
+            $table->foreign('typeid')->references('id')->on('arctypes');
         });
     }
 

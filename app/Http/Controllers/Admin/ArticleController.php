@@ -21,7 +21,7 @@ class ArticleController extends Controller
     }
     function Index()
     {
-        $articles = Archive::where('published_at','<=',Carbon::now())->latest()->get();
+        $articles = Archive::where('published_at','<=',Carbon::now())->latest()->paginate(30);
         return view('admin.article',compact('articles'));
     }
     function Create()
@@ -111,7 +111,7 @@ class ArticleController extends Controller
      */
     function OwnerShip()
     {
-        $articles = Archive::where('published_at','<=',Carbon::now())->where('dutyadmin',auth('admin')->user()->id)->latest()->get();
+        $articles = Archive::where('published_at','<=',Carbon::now())->where('dutyadmin',auth('admin')->user()->id)->latest()->paginate(30);
         return view('admin.article',compact('articles'));
     }
     /*
@@ -119,14 +119,14 @@ class ArticleController extends Controller
      */
     function PendingAudit()
     {
-        $articles = Archive::where('published_at','<=',Carbon::now())->where('ismake','<>',1)->latest()->get();
+        $articles = Archive::where('published_at','<=',Carbon::now())->where('ismake','<>',1)->latest()->paginate(30);
         return view('admin.article',compact('articles'));
     }
     /*
      * 待发布的文档
      */
     function    PedingPublished(){
-        $articles = Archive::where('published_at','>',Carbon::now())->where('dutyadmin',auth('admin')->user()->id)->latest()->get();
+        $articles = Archive::where('published_at','>',Carbon::now())->latest()->paginate(30);
         return view('admin.article',compact('articles'));
     }
     /*

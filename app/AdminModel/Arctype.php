@@ -28,4 +28,8 @@ class Arctype extends Model
     {
         $this->fillable = $fillable;
     }
+    protected function articles()
+    {
+        return $this->hasMany('App\AdminModel\Archive','typeid');
+    }
 }
