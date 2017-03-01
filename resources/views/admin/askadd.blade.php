@@ -83,14 +83,24 @@
                             @include('vendor.ueditor.assets')
                                     <!-- 实例化编辑器 -->
                             <script type="text/javascript">
-                                var ue = UE.getEditor('container');
+                                var ue = UE.getEditor('container',{
+                                    toolbars: [
+                                        ['bold', 'italic', 'underline', 'strikethrough', 'blockquote', 'insertunorderedlist', 'insertorderedlist', 'justifyleft','justifycenter', 'justifyright',  'link', 'insertimage', 'fullscreen']
+                                    ],
+                                    elementPathEnabled: false,
+                                    enableContextMenu: false,
+                                    autoClearEmptyNode:true,
+                                    wordCount:false,
+                                    imagePopup:false,
+                                    autotypeset:{ indent: true,imageBlockLine: 'center' }
+                                });
                                 ue.ready(function() {
                                     ue.execCommand('serverparam', '_token', '{{ csrf_token() }}'); // 设置 CSRF token.
                                 });
                             </script>
 
                             <!-- 编辑器容器 -->
-                            <script id="container" name="content" type="text/plain"></script>
+                            <script id="container" name="body" type="text/plain"></script>
                         </div>
                         <div class="timeline-footer">
                             <button type="submit"  class="btn btn-md bg-maroon">提交问答</button>

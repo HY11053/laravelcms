@@ -61,7 +61,7 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ()
     Route::get('admin/edit/{id}','AdminController@Edit');
     Route::get('admin/delete/{id}','AdminController@delete');
     Route::put('admin/edit/{id}','AdminController@PostEdit');
-    Route::get('admin/ask','AskController@Index');
+    Route::get('ask','AskController@Index');
     Route::get('ask/add','AskController@Add');
     Route::post('ask/add','AskController@PostAdd')->name('ask_create');
 });

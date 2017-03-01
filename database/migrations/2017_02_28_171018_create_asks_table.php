@@ -15,7 +15,7 @@ class CreateAsksTable extends Migration
     {
         Schema::create('asks', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('titie');
+            $table->string('title');
             $table->integer('viewnum')->default(0);
             $table->integer('answernum')->default(0);
             $table->integer('user_id');
