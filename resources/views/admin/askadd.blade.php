@@ -80,8 +80,17 @@
                         <h3 class="timeline-header"><a href="#">问答描述</a>问答内容编辑</h3>
 
                         <div class="timeline-body">
-                            @include('admin.layouts.summernote')
-                            <div style="display: none"><textarea  name="body" id="lawsContent"></textarea></div>
+                            @include('vendor.ueditor.assets')
+                                    <!-- 实例化编辑器 -->
+                            <script type="text/javascript">
+                                var ue = UE.getEditor('container');
+                                ue.ready(function() {
+                                    ue.execCommand('serverparam', '_token', '{{ csrf_token() }}'); // 设置 CSRF token.
+                                });
+                            </script>
+
+                            <!-- 编辑器容器 -->
+                            <script id="container" name="content" type="text/plain"></script>
                         </div>
                         <div class="timeline-footer">
                             <button type="submit"  class="btn btn-md bg-maroon">提交问答</button>

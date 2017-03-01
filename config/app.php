@@ -168,7 +168,7 @@ return [
          * Package Service Providers...
          */
         Collective\Html\HtmlServiceProvider::class,
-
+        Overtrue\LaravelUEditor\UEditorServiceProvider::class,
         //
 
         /*
