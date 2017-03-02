@@ -77,6 +77,7 @@ class CategoryController extends Controller
         }
         //dd($requestdata);
         Arctype::create($requestdata);
+        return redirect(action('Admin\CategoryController@Index'));
 
 
     }

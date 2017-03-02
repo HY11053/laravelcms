@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="/AdminLTE/plugins/datepicker/datepicker3.css">
 
     <!--<link href="/AdminLTE/plugins/summernote/summernote-bs3.css" rel="stylesheet">-->
-    <link href="http://ysgtj.ysg1717.com/assets/css/fileinput.css" rel="stylesheet">
+    <link href="/AdminLTE/dist/css/fileinput.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>

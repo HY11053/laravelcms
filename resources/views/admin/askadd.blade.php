@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="/AdminLTE/dist/css/skins/_all-skins.min.css">
     <link href="/AdminLTE/plugins/summernote/summernote.css" rel="stylesheet">
     <link href="/AdminLTE/plugins/iCheck/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="/AdminLTE//plugins/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="/AdminLTE/plugins/daterangepicker/daterangepicker.css">
     <!-- bootstrap datepicker -->
     <link rel="stylesheet" href="/AdminLTE/plugins/datepicker/datepicker3.css">
 

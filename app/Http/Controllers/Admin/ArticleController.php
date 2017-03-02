@@ -21,7 +21,8 @@ class ArticleController extends Controller
     }
     function Index()
     {
-        $articles = Archive::where('published_at','<=',Carbon::now())->latest()->paginate(30);
+        //$articles = Archive::where('published_at','<=',Carbon::now())->latest()->paginate(30);
+        $articles = Archive::latest()->paginate(30);
         return view('admin.article',compact('articles'));
     }
     function Create()
@@ -56,12 +57,18 @@ class ArticleController extends Controller
         }
        $request['keywords']=$request['keywords']?$request['keywords']:$request['title'];
         $request['click']=rand(100,900);
+        $request['jmxq_content']=rand(100,900);
+        $request['jmys_content']=rand(100,900);
+        $request['jmlc_content']=rand(100,900);
+        $request['jmzc_content']=rand(100,900);
+        $request['jmask_content']=rand(100,900);
         $request['description']=(!empty($request['description']))?$request['description']:htmlspecialchars(mb_substr($request['body'],0,150));
         $request['write']=auth('admin')->user()->name;
         $request['dutyadmin']=auth('admin')->id();
         //dd($request->all());
         Archive::create($request->all());
         Addonarticle::create($request->all());
+        return redirect(action('Admin\ArticleController@Index'));
     }
 
     //文档编辑
@@ -103,8 +110,13 @@ class ArticleController extends Controller
         }
         $request['description']=(!empty($request['description']))?$request['description']:htmlspecialchars(mb_substr($request['body'],0,150));
         //dd($request->all());
+        if (empty($request['imagepics']))
+        {
+            $request['imagepics']=' ';
+        }
         Archive::findOrFail($id)->update($request->all());
         Addonarticle::findOrFail($id)->update($request->all());
+        return redirect(action('Admin\ArticleController@Index'));
     }
     /*
      * 当前用户发布的文档
