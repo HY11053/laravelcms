@@ -9,7 +9,7 @@
     <div class="tab-content">
         <!-- Home tab content -->
         <div class="tab-pane" id="control-sidebar-home-tab">
-            <h3 class="control-sidebar-heading">Recent Activity</h3>
+            <h3 class="control-sidebar-heading">系统消息</h3>
             <ul class="control-sidebar-menu">
                 <li>
                     <a href="javascript:void(0)">
@@ -114,54 +114,54 @@
         </div>
         <!-- /.tab-pane -->
         <!-- Stats tab content -->
-        <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
+        <div class="tab-pane" id="control-sidebar-stats-tab">统计信息选项卡内容</div>
         <!-- /.tab-pane -->
         <!-- Settings tab content -->
         <div class="tab-pane" id="control-sidebar-settings-tab">
             <form method="post">
-                <h3 class="control-sidebar-heading">General Settings</h3>
+                <h3 class="control-sidebar-heading">常规设置</h3>
 
                 <div class="form-group">
                     <label class="control-sidebar-subheading">
-                        Report panel usage
+                        面板使用反馈
                         <input type="checkbox" class="pull-right" checked>
                     </label>
 
                     <p>
-                        Some information about this general settings option
+                        有关此常规设置选项的一些信息
                     </p>
                 </div>
                 <!-- /.form-group -->
 
                 <div class="form-group">
                     <label class="control-sidebar-subheading">
-                        Allow mail redirect
+                        允许邮件重定向
                         <input type="checkbox" class="pull-right" checked>
                     </label>
 
                     <p>
-                        Other sets of options are available
+                      其他可用选项
                     </p>
                 </div>
                 <!-- /.form-group -->
 
                 <div class="form-group">
                     <label class="control-sidebar-subheading">
-                        Expose author name in posts
+                        公开评论用户名
                         <input type="checkbox" class="pull-right" checked>
                     </label>
 
                     <p>
-                        Allow the user to show his name in blog posts
+                        允许用户在博客帖子中显示其姓名
                     </p>
                 </div>
                 <!-- /.form-group -->
 
-                <h3 class="control-sidebar-heading">Chat Settings</h3>
+                <h3 class="control-sidebar-heading">对话设置</h3>
 
                 <div class="form-group">
                     <label class="control-sidebar-subheading">
-                        Show me as online
+                        显示当前在线
                         <input type="checkbox" class="pull-right" checked>
                     </label>
                 </div>
@@ -169,7 +169,7 @@
 
                 <div class="form-group">
                     <label class="control-sidebar-subheading">
-                        Turn off notifications
+                        关闭通知
                         <input type="checkbox" class="pull-right">
                     </label>
                 </div>
@@ -177,7 +177,7 @@
 
                 <div class="form-group">
                     <label class="control-sidebar-subheading">
-                        Delete chat history
+                        删除聊天记录
                         <a href="javascript:void(0)" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
                     </label>
                 </div>

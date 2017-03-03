@@ -7,7 +7,7 @@
                 <img src="/AdminLTE/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
-                <p>当前登录用户：{{auth('admin')->user()->name}}</p>
+                <p>{{auth('admin')->user()->name}}</p>
                 <a href="#"><i class="fa fa-circle text-success"></i> 在线</a>
             </div>
         </div>
@@ -27,7 +27,7 @@
             <li class="header">主管理界面</li>
             <li class="active treeview">
                 <a href="#">
-                    <i class="fa fa-dashboard"></i> <span>核心操作</span>
+                    <i class="fa  fa-file-text"></i> <span>核心操作</span>
                     <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -42,7 +42,7 @@
             </li>
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-files-o"></i>
+                    <i class="fa  fa-commenting"></i>
                     <span>问答及评论管理</span>
                     <span class="pull-right-container">
               <span class="label label-primary pull-right">5</span>
@@ -58,7 +58,7 @@
             </li>
             <li>
                 <a href="pages/widgets.html">
-                    <i class="fa fa-th"></i> <span>友情链接管理</span>
+                    <i class="fa fa-random"></i> <span>友情链接管理</span>
                     <span class="pull-right-container">
               <small class="label pull-right bg-green">new</small>
             </span>
@@ -85,7 +85,7 @@
             </li>
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-laptop"></i>
+                    <i class="fa fa-user-secret"></i>
                     <span>系统用户管理</span>
                     <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
@@ -94,25 +94,26 @@
                 <ul class="treeview-menu">
                     <li><a href="/admin/admin/regsiter"><i class="fa fa-circle-o"></i> 添加用户</a></li>
                     <li><a href="/admin/admin/list"><i class="fa fa-circle-o"></i> 用户列表</a></li>
-                    <li><a href="#"><i class="fa fa-circle-o"></i>用户授权管理</a></li>
+                    <li><a href="/admin/admin/userauth"><i class="fa fa-circle-o"></i>用户授权管理</a></li>
                 </ul>
             </li>
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-edit"></i> <span>采集管理</span>
+                    <i class="fa  fa-wechat"></i> <span>微信公众平台</span>
                     <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> 添加采集规则</a></li>
-                    <li><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> 导入采集规则</a></li>
-                    <li><a href="pages/forms/editors.html"><i class="fa fa-circle-o"></i> 数据导入</a></li>
+                    <li><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> 自定义菜单管理</a></li>
+                    <li><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> 单图文消息</a></li>
+                    <li><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> 多图文消息</a></li>
+                    <li><a href="pages/forms/editors.html"><i class="fa fa-circle-o"></i>用户管理</a></li>
                 </ul>
             </li>
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-table"></i> <span>系统设置</span>
+                    <i class="fa  fa-wrench"></i> <span>系统设置</span>
                     <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -124,7 +125,7 @@
             </li>
             <li>
                 <a href="pages/calendar.html">
-                    <i class="fa fa-calendar"></i> <span>图集内容管理</span>
+                    <i class="fa fa-photo"></i> <span>图集内容管理</span>
                     <span class="pull-right-container">
               <small class="label pull-right bg-red">3</small>
               <small class="label pull-right bg-blue">17</small>
@@ -133,7 +134,7 @@
             </li>
             <li>
                 <a href="pages/mailbox/mailbox.html">
-                    <i class="fa fa-envelope"></i> <span>站点SEO信息</span>
+                    <i class="fa fa-angellist"></i> <span>站点SEO信息</span>
                     <span class="pull-right-container">
               <small class="label pull-right bg-yellow">12</small>
               <small class="label pull-right bg-green">16</small>
@@ -143,21 +144,15 @@
             </li>
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-folder"></i> <span>前台会员中心</span>
+                    <i class="fa fa-user-plus"></i> <span>前台会员中心</span>
                     <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="pages/examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
-                    <li><a href="pages/examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>
-                    <li><a href="pages/examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
-                    <li><a href="pages/examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
-                    <li><a href="pages/examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
-                    <li><a href="pages/examples/404.html"><i class="fa fa-circle-o"></i> 404 Error</a></li>
-                    <li><a href="pages/examples/500.html"><i class="fa fa-circle-o"></i> 500 Error</a></li>
-                    <li><a href="pages/examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a></li>
-                    <li><a href="pages/examples/pace.html"><i class="fa fa-circle-o"></i> Pace Page</a></li>
+                    <li><a href="pages/examples/invoice.html"><i class="fa fa-circle-o"></i> 前台用户列表</a></li>
+                    <li><a href="pages/examples/invoice.html"><i class="fa fa-circle-o"></i> 添加用户</a></li>
+
                 </ul>
             </li>
             <li class="treeview">

@@ -27,6 +27,7 @@ class AdminController extends Controller
     {
         $request['password']=bcrypt($request['password']);
         Admin::create($request->all());
+        return redirect(action('Admin\AdminController@Index'));
     }
     //用户编辑
     function Edit($id){
@@ -38,10 +39,16 @@ class AdminController extends Controller
     {
         $request['password']=bcrypt($request['password']);
         Admin::fild($id)->update($request->all());
+        return redirect(action('Admin\AdminController@Index'));
     }
     function Delete($id)
     {
         Admin::find($id)->delete();
         redirect(action('Admin\AdminController@Index'));
+        return redirect(action('Admin\AdminController@Index'));
     }
+    function Userauth(){
+        abort(403);
+    }
+
 }

@@ -51,55 +51,55 @@
   //Layout options
   demo_settings.append(
       "<h4 class='control-sidebar-heading'>"
-      + "Layout Options"
+      + "布局选项"
       + "</h4>"
         //Fixed layout
       + "<div class='form-group'>"
       + "<label class='control-sidebar-subheading'>"
       + "<input type='checkbox' data-layout='fixed' class='pull-right'/> "
-      + "Fixed layout"
+      + "固定布局"
       + "</label>"
-      + "<p>Activate the fixed layout. You can't use fixed and boxed layouts together</p>"
+      + "<p>激活固定布局。 不能同时使用固定布局和容器布局</p>"
       + "</div>"
         //Boxed layout
       + "<div class='form-group'>"
       + "<label class='control-sidebar-subheading'>"
       + "<input type='checkbox' data-layout='layout-boxed'class='pull-right'/> "
-      + "Boxed Layout"
+      + "容器布局"
       + "</label>"
-      + "<p>Activate the boxed layout</p>"
+      + "<p>激活容器布局</p>"
       + "</div>"
         //Sidebar Toggle
       + "<div class='form-group'>"
       + "<label class='control-sidebar-subheading'>"
       + "<input type='checkbox' data-layout='sidebar-collapse' class='pull-right'/> "
-      + "Toggle Sidebar"
+      + "侧边栏切换"
       + "</label>"
-      + "<p>Toggle the left sidebar's state (open or collapse)</p>"
+      + "<p>打开或折叠侧边栏</p>"
       + "</div>"
         //Sidebar mini expand on hover toggle
       + "<div class='form-group'>"
       + "<label class='control-sidebar-subheading'>"
       + "<input type='checkbox' data-enable='expandOnHover' class='pull-right'/> "
-      + "Sidebar Expand on Hover"
+      + "悬停时展开侧边栏"
       + "</label>"
-      + "<p>Let the sidebar mini expand on hover</p>"
+      + "<p>右侧悬停时可展开侧边菜单栏</p>"
       + "</div>"
         //Control Sidebar Toggle
       + "<div class='form-group'>"
       + "<label class='control-sidebar-subheading'>"
       + "<input type='checkbox' data-controlsidebar='control-sidebar-open' class='pull-right'/> "
-      + "Toggle Right Sidebar Slide"
+      + "右侧侧边工具栏切换"
       + "</label>"
-      + "<p>Toggle between slide over content and push content effects</p>"
+      + "<p>内容和侧边栏淡入淡出切换</p>"
       + "</div>"
         //Control Sidebar Skin Toggle
       + "<div class='form-group'>"
       + "<label class='control-sidebar-subheading'>"
       + "<input type='checkbox' data-sidebarskin='toggle' class='pull-right'/> "
-      + "Toggle Right Sidebar Skin"
+      + "切换右侧皮肤"
       + "</label>"
-      + "<p>Toggle between dark and light skins for the right sidebar</p>"
+      + "<p>右侧边栏的黑色和浅色皮肤之间切换</p>"
       + "</div>"
   );
   var skins_list = $("<ul />", {"class": 'list-unstyled clearfix'});
@@ -204,7 +204,7 @@
           + "<p class='text-center no-margin' style='font-size: 12px;'>Yellow Light</p>");
   skins_list.append(skin_yellow_light);
 
-  demo_settings.append("<h4 class='control-sidebar-heading'>Skins</h4>");
+  demo_settings.append("<h4 class='control-sidebar-heading'>皮肤样式</h4>");
   demo_settings.append(skins_list);
 
   tab_pane.append(demo_settings);

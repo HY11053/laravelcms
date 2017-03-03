@@ -61,12 +61,18 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ()
     Route::get('admin/edit/{id}','AdminController@Edit');
     Route::get('admin/delete/{id}','AdminController@delete');
     Route::put('admin/edit/{id}','AdminController@PostEdit');
+    Route::get('admin/userauth','AdminController@Userauth');
+    Route::get('userlist','FrontUserController@Index');
     Route::get('ask','AskController@Index');
     Route::get('ask/add','AskController@Add');
     Route::post('ask/add','AskController@PostAdd')->name('ask_create');
     Route::get('makesitemap','SiteMapController@Index');
     Route::get('makemsitemap','SiteMapController@MobileSitemap');
     Route::get('phone','PhoneManageController@Index');
+    Route::get('phone/create','PhoneManageController@CreatePhoneManagev');
+    Route::get('phone/edit/{id}','PhoneManageController@PhoneManageEdit');
+    Route::put('phone/edit/{id}','PhoneManageController@PhoneManageEditPost');
+    Route::get('phone/delete/{id}','PhoneManageController@DeletePhone');
 });
 
 Route::resource('category','Admin\CategoryController');

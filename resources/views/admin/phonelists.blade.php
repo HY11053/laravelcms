@@ -59,7 +59,7 @@
                             <td>{{$adminlist->note}}</td>
                            <td>{{$adminlist->ip}}</td>
                             <td>{{$adminlist->created_at}}</td>
-                            <td class="newcolor"><span class="badge bg-green"><a href="/admin/admin/edit/{{$adminlist->id}}">编辑</a></span> <span class="badge bg-red"><a href="/admin/admin/delete/{{$adminlist->id}}">删除</a> </span></td>
+                            <td class="newcolor"><span class="badge bg-green"><a href="/admin/phone/edit/{{$adminlist->id}}">编辑</a></span> <span class="badge bg-red"><a href="/admin/phone/delete/{{$adminlist->id}}">删除</a> </span></td>
                         </tr>
                        @endforeach
                     </table>
