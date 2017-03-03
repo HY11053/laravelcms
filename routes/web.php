@@ -64,6 +64,9 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ()
     Route::get('ask','AskController@Index');
     Route::get('ask/add','AskController@Add');
     Route::post('ask/add','AskController@PostAdd')->name('ask_create');
+    Route::get('makesitemap','SiteMapController@Index');
+    Route::get('makemsitemap','SiteMapController@MobileSitemap');
+    Route::get('phone','PhoneManageController@Index');
 });
 
 Route::resource('category','Admin\CategoryController');

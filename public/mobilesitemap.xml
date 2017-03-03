@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+        <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:mobile="http://www.baidu.com/schemas/sitemap-mobile/1/"> 
+        <url> 
+        <loc>http://m.shangjicms.com</loc> 
+        <mobile:mobile type="mobile"/>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        </url> 
+        <url> 
+        <loc>http://www.shangjicms.com</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        </url> <url>
+                <loc>http://www.shangjicms.com/lingshidianpp</loc>
+                <changefreq>daily</changefreq>                
+                <priority>1.0</priority>
+            </url>
+            <url> 
+            <loc>http://m.shangjicms.com/lingshidianpp</loc> 
+            <mobile:mobile type="htmladapt"/>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> <url>
+                <loc>http://www.shangjicms.com/hangyezixun</loc>
+                <changefreq>daily</changefreq>                
+                <priority>1.0</priority>
+            </url>
+            <url> 
+            <loc>http://m.shangjicms.com/hangyezixun</loc> 
+            <mobile:mobile type="htmladapt"/>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> <url>
+                <loc>http://www.shangjicms.com/chaohuodian</loc>
+                <changefreq>daily</changefreq>                
+                <priority>1.0</priority>
+            </url>
+            <url> 
+            <loc>http://m.shangjicms.com/chaohuodian</loc> 
+            <mobile:mobile type="htmladapt"/>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> <url>
+                <loc>http://www.shangjicms.com/ganguodian</loc>
+                <changefreq>daily</changefreq>                
+                <priority>1.0</priority>
+            </url>
+            <url> 
+            <loc>http://m.shangjicms.com/ganguodian</loc> 
+            <mobile:mobile type="htmladapt"/>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> <url>
+                <loc>http://www.shangjicms.com/jinkoulingshi</loc>
+                <changefreq>daily</changefreq>                
+                <priority>1.0</priority>
+            </url>
+            <url> 
+            <loc>http://m.shangjicms.com/jinkoulingshi</loc> 
+            <mobile:mobile type="htmladapt"/>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> <url>
+                <loc>http://www.shangjicms.com/hangyezixun/1.shtml</loc>
+                <lastmod>2017-03-02</lastmod>
+                <changefreq>daily</changefreq>
+                <priority>1.0</priority>
+            </url>
+            <url> 
+            <loc>http://m.shangjicms.com/hangyezixun/1.shtml</loc> 
+            <mobile:mobile type="htmladapt"/>
+            <lastmod>2017-03-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> <url>
+                <loc>http://www.shangjicms.com/hangyezixun/2.shtml</loc>
+                <lastmod>2017-03-02</lastmod>
+                <changefreq>daily</changefreq>
+                <priority>1.0</priority>
+            </url>
+            <url> 
+            <loc>http://m.shangjicms.com/hangyezixun/2.shtml</loc> 
+            <mobile:mobile type="htmladapt"/>
+            <lastmod>2017-03-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> <url>
+                <loc>http://www.shangjicms.com/hangyezixun/3.shtml</loc>
+                <lastmod>2017-03-02</lastmod>
+                <changefreq>daily</changefreq>
+                <priority>1.0</priority>
+            </url>
+            <url> 
+            <loc>http://m.shangjicms.com/hangyezixun/3.shtml</loc> 
+            <mobile:mobile type="htmladapt"/>
+            <lastmod>2017-03-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> <url>
+                <loc>http://www.shangjicms.com/hangyezixun/4.shtml</loc>
+                <lastmod>2017-03-02</lastmod>
+                <changefreq>daily</changefreq>
+                <priority>1.0</priority>
+            </url>
+            <url> 
+            <loc>http://m.shangjicms.com/hangyezixun/4.shtml</loc> 
+            <mobile:mobile type="htmladapt"/>
+            <lastmod>2017-03-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> <url>
+                <loc>http://www.shangjicms.com/hangyezixun/5.shtml</loc>
+                <lastmod>2017-03-02</lastmod>
+                <changefreq>daily</changefreq>
+                <priority>1.0</priority>
+            </url>
+            <url> 
+            <loc>http://m.shangjicms.com/hangyezixun/5.shtml</loc> 
+            <mobile:mobile type="htmladapt"/>
+            <lastmod>2017-03-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> <url>
+                <loc>http://www.shangjicms.com/hangyezixun/6.shtml</loc>
+                <lastmod>2017-03-02</lastmod>
+                <changefreq>daily</changefreq>
+                <priority>1.0</priority>
+            </url>
+            <url> 
+            <loc>http://m.shangjicms.com/hangyezixun/6.shtml</loc> 
+            <mobile:mobile type="htmladapt"/>
+            <lastmod>2017-03-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> <url>
+                <loc>http://www.shangjicms.com/hangyezixun/11.shtml</loc>
+                <lastmod>2017-03-02</lastmod>
+                <changefreq>daily</changefreq>
+                <priority>1.0</priority>
+            </url>
+            <url> 
+            <loc>http://m.shangjicms.com/hangyezixun/11.shtml</loc> 
+            <mobile:mobile type="htmladapt"/>
+            <lastmod>2017-03-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> <url>
+                <loc>http://www.shangjicms.com/hangyezixun/7.shtml</loc>
+                <lastmod>2017-03-02</lastmod>
+                <changefreq>daily</changefreq>
+                <priority>1.0</priority>
+            </url>
+            <url> 
+            <loc>http://m.shangjicms.com/hangyezixun/7.shtml</loc> 
+            <mobile:mobile type="htmladapt"/>
+            <lastmod>2017-03-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> <url>
+                <loc>http://www.shangjicms.com/hangyezixun/8.shtml</loc>
+                <lastmod>2017-03-02</lastmod>
+                <changefreq>daily</changefreq>
+                <priority>1.0</priority>
+            </url>
+            <url> 
+            <loc>http://m.shangjicms.com/hangyezixun/8.shtml</loc> 
+            <mobile:mobile type="htmladapt"/>
+            <lastmod>2017-03-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> <url>
+                <loc>http://www.shangjicms.com/hangyezixun/9.shtml</loc>
+                <lastmod>2017-03-02</lastmod>
+                <changefreq>daily</changefreq>
+                <priority>1.0</priority>
+            </url>
+            <url> 
+            <loc>http://m.shangjicms.com/hangyezixun/9.shtml</loc> 
+            <mobile:mobile type="htmladapt"/>
+            <lastmod>2017-03-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> <url>
+                <loc>http://www.shangjicms.com/hangyezixun/10.shtml</loc>
+                <lastmod>2017-03-02</lastmod>
+                <changefreq>daily</changefreq>
+                <priority>1.0</priority>
+            </url>
+            <url> 
+            <loc>http://m.shangjicms.com/hangyezixun/10.shtml</loc> 
+            <mobile:mobile type="htmladapt"/>
+            <lastmod>2017-03-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> <url>
+                <loc>http://www.shangjicms.com/hangyezixun/12.shtml</loc>
+                <lastmod>2017-03-02</lastmod>
+                <changefreq>daily</changefreq>
+                <priority>1.0</priority>
+            </url>
+            <url> 
+            <loc>http://m.shangjicms.com/hangyezixun/12.shtml</loc> 
+            <mobile:mobile type="htmladapt"/>
+            <lastmod>2017-03-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> <url>
+                <loc>http://www.shangjicms.com/hangyezixun/13.shtml</loc>
+                <lastmod>2017-03-02</lastmod>
+                <changefreq>daily</changefreq>
+                <priority>1.0</priority>
+            </url>
+            <url> 
+            <loc>http://m.shangjicms.com/hangyezixun/13.shtml</loc> 
+            <mobile:mobile type="htmladapt"/>
+            <lastmod>2017-03-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> <url>
+                <loc>http://www.shangjicms.com/hangyezixun/14.shtml</loc>
+                <lastmod>2017-03-02</lastmod>
+                <changefreq>daily</changefreq>
+                <priority>1.0</priority>
+            </url>
+            <url> 
+            <loc>http://m.shangjicms.com/hangyezixun/14.shtml</loc> 
+            <mobile:mobile type="htmladapt"/>
+            <lastmod>2017-03-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> <url>
+                <loc>http://www.shangjicms.com/hangyezixun/15.shtml</loc>
+                <lastmod>2017-03-02</lastmod>
+                <changefreq>daily</changefreq>
+                <priority>1.0</priority>
+            </url>
+            <url> 
+            <loc>http://m.shangjicms.com/hangyezixun/15.shtml</loc> 
+            <mobile:mobile type="htmladapt"/>
+            <lastmod>2017-03-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> <url>
+                <loc>http://www.shangjicms.com/hangyezixun/16.shtml</loc>
+                <lastmod>2017-03-02</lastmod>
+                <changefreq>daily</changefreq>
+                <priority>1.0</priority>
+            </url>
+            <url> 
+            <loc>http://m.shangjicms.com/hangyezixun/16.shtml</loc> 
+            <mobile:mobile type="htmladapt"/>
+            <lastmod>2017-03-02</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> </urlset>

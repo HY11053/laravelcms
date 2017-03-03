@@ -119,3 +119,16 @@ $factory->define(App\AdminModel\flink::class, function (Faker\Generator $faker) 
 
     ];
 });
+
+//电话
+$factory->define(App\AdminModel\Phonemanage::class, function (Faker\Generator $faker) {
+
+    return [
+        'name' =>$faker->name,
+        'phoneno' => $faker->phoneNumber,
+        'note' =>$faker->text(50),
+        'address' => $faker->address,
+        'ip' => $faker->ipv4,
+        'gender' => '男',
+    ];
+});

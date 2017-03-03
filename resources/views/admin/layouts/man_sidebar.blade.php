@@ -7,8 +7,8 @@
                 <img src="/AdminLTE/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
-                <p>Alexander Pierce</p>
-                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                <p>当前登录用户：{{auth('admin')->user()->name}}</p>
+                <a href="#"><i class="fa fa-circle text-success"></i> 在线</a>
             </div>
         </div>
         <!-- search form -->
@@ -78,10 +78,9 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i>XML地图生成</a></li>
-                    <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i>百度主动提交</a></li>
-                    <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> 电话提交管理</a></li>
-                    <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> 移动端地图生成</a></li>
+                    <li><a href="/admin/makesitemap"><i class="fa fa-circle-o"></i>XML地图生成</a></li>
+                    <li><a href="/admin/phone"><i class="fa fa-circle-o"></i> 电话提交管理</a></li>
+                    <li><a href="/admin/makemsitemap"><i class="fa fa-circle-o"></i> 移动端地图生成</a></li>
                 </ul>
             </li>
             <li class="treeview">
