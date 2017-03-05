@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3319fa8-ff1b-48ab-89cf-976377a9e35d" name="Default" comment="" />
+    <list default="true" id="b3319fa8-ff1b-48ab-89cf-976377a9e35d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/mobilesitemap.xml" afterPath="$PROJECT_DIR$/public/mobilesitemap.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/sitemap.xml" afterPath="$PROJECT_DIR$/public/sitemap.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/article.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/article.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/layouts/man_sidebar.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/man_sidebar.blade.php" />
+    </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,7 +30,7 @@
             <state relative-caret-position="182">
               <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
               <folding>
-                <marker date="1488708068000" expanded="true" signature="1679:1685" ph="{&quot;preferred-install&quot;: &quot;dist&quot;...}" />
+                <marker date="1488723257000" expanded="true" signature="1714:1720" ph="{&quot;preferred-install&quot;: &quot;dist&quot;...}" />
               </folding>
             </state>
           </provider>
@@ -44,9 +49,24 @@
       <file leaf-file-name="man_sidebar.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/man_sidebar.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3731">
-              <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+            <state relative-caret-position="3978">
+              <caret line="153" column="69" lean-forward="false" selection-start-line="153" selection-start-column="69" selection-end-line="153" selection-end-column="69" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="article.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/article.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="92" column="49" lean-forward="false" selection-start-line="92" selection-start-column="49" selection-end-line="92" selection-end-column="49" />
+              <folding>
+                <marker date="1488724240000" expanded="true" signature="7043:7232" ph="..." />
+                <marker date="1488724240000" expanded="true" signature="7055:7220" ph="..." />
+                <marker date="1488724240000" expanded="true" signature="7272:7889" ph="..." />
+                <marker date="1488724240000" expanded="true" signature="7724:7875" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,7 +91,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin_app.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="admin_app.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/admin_app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="455">
@@ -102,7 +122,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2017_02_28_171427_create_answers_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2017_02_28_172310_create_comments_table.php" />
         <option value="$PROJECT_DIR$/app/AdminModel/Ask.php" />
         <option value="$PROJECT_DIR$/database/migrations/2017_02_28_171018_create_asks_table.php" />
@@ -148,11 +167,12 @@
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ArticleController.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/layouts/man_sidebar.blade.php" />
         <option value="$PROJECT_DIR$/app/Helpers/UploadImages.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/layouts/footer.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/category.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/layouts/admin_app.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/layouts/man_sidebar.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/article.blade.php" />
       </list>
     </option>
   </component>
@@ -587,12 +607,12 @@
       <workItem from="1488551268922" duration="1086000" />
       <workItem from="1488552391762" duration="591000" />
       <workItem from="1488553014090" duration="1754000" />
-      <workItem from="1488707241300" duration="5918000" />
+      <workItem from="1488707241300" duration="6506000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="315716000" />
+    <option name="totallyTimeSpent" value="316304000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -769,13 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
           <caret line="30" column="6" lean-forward="false" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/article.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1820">
-          <caret line="70" column="81" lean-forward="false" selection-start-line="70" selection-start-column="69" selection-end-line="70" selection-end-column="81" />
         </state>
       </provider>
     </entry>
@@ -984,7 +997,7 @@
         <state relative-caret-position="182">
           <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
           <folding>
-            <marker date="1488708068000" expanded="true" signature="1679:1685" ph="{&quot;preferred-install&quot;: &quot;dist&quot;...}" />
+            <marker date="1488723257000" expanded="true" signature="1714:1720" ph="{&quot;preferred-install&quot;: &quot;dist&quot;...}" />
           </folding>
         </state>
       </provider>
@@ -1075,14 +1088,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/man_sidebar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3731">
-          <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/category.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -1096,6 +1101,27 @@
         <state relative-caret-position="455">
           <caret line="27" column="103" lean-forward="false" selection-start-line="27" selection-start-column="103" selection-end-line="27" selection-end-column="103" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/man_sidebar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3978">
+          <caret line="153" column="69" lean-forward="false" selection-start-line="153" selection-start-column="69" selection-end-line="153" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/article.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="92" column="49" lean-forward="false" selection-start-line="92" selection-start-column="49" selection-end-line="92" selection-end-column="49" />
+          <folding>
+            <marker date="1488724240000" expanded="true" signature="7043:7232" ph="..." />
+            <marker date="1488724240000" expanded="true" signature="7055:7220" ph="..." />
+            <marker date="1488724240000" expanded="true" signature="7272:7889" ph="..." />
+            <marker date="1488724240000" expanded="true" signature="7724:7875" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

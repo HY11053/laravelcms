@@ -90,7 +90,7 @@
                                 @endforeach
 
                         </table>
-                        {{--!! $articles->links() !!--}}
+                        {!! $articles->links() !!}
 
                     </div>
                     <!-- /.box-body -->

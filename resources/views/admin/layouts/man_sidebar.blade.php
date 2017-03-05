@@ -49,11 +49,11 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="/admin/ask"><i class="fa fa-circle-o"></i> 问答列表</a></li>
-                    <li><a href="/admin/ask/add"><i class="fa fa-circle-o"></i> 添加问题</a></li>
-                    <li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> 待审核问答</a></li>
-                    <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> 评论列表</a></li>
-                    <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> 待审核评论</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/ask')class="active"@endif><a href="/admin/ask"><i class="fa fa-circle-o"></i> 问答列表</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/ask/add')class="active"@endif><a href="/admin/ask/add"><i class="fa fa-circle-o"></i> 添加问题</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/ask/add')class="active"@endif><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> 待审核问答</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/ask/add')class="active"@endif><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> 评论列表</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/ask/add')class="active"@endif><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> 待审核评论</a></li>
                 </ul>
             </li>
             <li>
@@ -64,8 +64,8 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="/admin/flink"><i class="fa fa-circle-o"></i> 友情链接列表</a></li>
-                    <li><a href="/admin/flink/create"><i class="fa fa-circle-o"></i> 添加友情链接</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/flink')class="active"@endif><a href="/admin/flink"><i class="fa fa-circle-o"></i> 友情链接列表</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/flink/create')class="active"@endif><a href="/admin/flink/create"><i class="fa fa-circle-o"></i> 添加友情链接</a></li>
 
                 </ul>
             </li>
@@ -78,9 +78,9 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="/admin/makesitemap"><i class="fa fa-circle-o"></i>XML地图生成</a></li>
-                    <li><a href="/admin/phone"><i class="fa fa-circle-o"></i> 电话提交管理</a></li>
-                    <li><a href="/admin/makemsitemap"><i class="fa fa-circle-o"></i> 移动端地图生成</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/makesitemap')class="active"@endif><a href="/admin/makesitemap"><i class="fa fa-circle-o"></i>XML地图生成</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/phone')class="active"@endif><a href="/admin/phone"><i class="fa fa-circle-o"></i> 电话提交管理</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/makemsitemap')class="active"@endif><a href="/admin/makemsitemap"><i class="fa fa-circle-o"></i> 移动端地图生成</a></li>
                 </ul>
             </li>
             <li class="treeview">
@@ -92,9 +92,9 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="/admin/admin/regsiter"><i class="fa fa-circle-o"></i> 添加用户</a></li>
-                    <li><a href="/admin/admin/list"><i class="fa fa-circle-o"></i> 用户列表</a></li>
-                    <li><a href="/admin/admin/userauth"><i class="fa fa-circle-o"></i>用户授权管理</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/admin/regsiter')class="active"@endif><a href="/admin/admin/regsiter"><i class="fa fa-circle-o"></i> 添加用户</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/admin/list')class="active"@endif><a href="/admin/admin/list"><i class="fa fa-circle-o"></i> 用户列表</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/admin/userauth')class="active"@endif><a href="/admin/admin/userauth"><i class="fa fa-circle-o"></i>用户授权管理</a></li>
                 </ul>
             </li>
             <li class="treeview">
@@ -105,10 +105,10 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> 自定义菜单管理</a></li>
-                    <li><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> 单图文消息</a></li>
-                    <li><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> 多图文消息</a></li>
-                    <li><a href="pages/forms/editors.html"><i class="fa fa-circle-o"></i>用户管理</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/admin/useraut')class="active"@endif><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> 自定义菜单管理</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/admin/useraut')class="active"@endif><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> 单图文消息</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/admin/useraut')class="active"@endif><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> 多图文消息</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/admin/useraut')class="active"@endif><a href="pages/forms/editors.html"><i class="fa fa-circle-o"></i>用户管理</a></li>
                 </ul>
             </li>
             <li class="treeview">
@@ -119,8 +119,8 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="pages/tables/simple.html"><i class="fa fa-circle-o"></i> 站点核心设置</a></li>
-                    <li><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> 其他选项</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/admin/useraut')class="active"@endif><a href="pages/tables/simple.html"><i class="fa fa-circle-o"></i> 站点核心设置</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/admin/useraut')class="active"@endif><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> 其他选项</a></li>
                 </ul>
             </li>
             <li>
@@ -150,8 +150,8 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="/admin/userlist"><i class="fa fa-circle-o"></i> 前台用户列表</a></li>
-                    <li><a href="/admin/useradd"><i class="fa fa-circle-o"></i> 添加用户</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/userlist')class="active"@endif><a href="/admin/userlist"><i class="fa fa-circle-o"></i> 前台用户列表</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/useradd')class="active"@endif><a href="/admin/useradd"><i class="fa fa-circle-o"></i> 添加用户</a></li>
 
                 </ul>
             </li>
