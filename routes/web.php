@@ -63,6 +63,10 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ()
     Route::put('admin/edit/{id}','AdminController@PostEdit');
     Route::get('admin/userauth','AdminController@Userauth');
     Route::get('userlist','FrontUserController@Index');
+    Route::get('useradd','FrontUserController@UserAdd');
+    Route::get('user/edit/{id}','FrontUserController@UserEdit');
+    Route::put('user/edit/{id}','FrontUserController@PostUserEdit');
+    Route::get('user/delete/{id}','FrontUserController@UserDelete');
     Route::get('ask','AskController@Index');
     Route::get('ask/add','AskController@Add');
     Route::post('ask/add','AskController@PostAdd')->name('ask_create');
@@ -73,6 +77,10 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ()
     Route::get('phone/edit/{id}','PhoneManageController@PhoneManageEdit');
     Route::put('phone/edit/{id}','PhoneManageController@PhoneManageEditPost');
     Route::get('phone/delete/{id}','PhoneManageController@DeletePhone');
+    Route::get('/captcha/{config?}',function (\Mews\Captcha\Captcha $captcha,$config='default'){
+        return $captcha->create($config);
+
+    });
 });
 
 Route::resource('category','Admin\CategoryController');

@@ -25,7 +25,7 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu">
             <li class="header">主管理界面</li>
-            <li class="active treeview">
+            <li class="treeview">
                 <a href="#">
                     <i class="fa  fa-file-text"></i> <span>核心操作</span>
                     <span class="pull-right-container">
@@ -33,11 +33,11 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li class="active"><a href="/admin/category"><i class="fa fa-circle-o"></i> 网站栏目管理</a></li>
-                    <li><a href="/admin/article"><i class="fa fa-circle-o"></i> 所有档案列表</a></li>
-                    <li><a href="/admin/article/ownership"><i class="fa fa-circle-o"></i> 我发布的文档</a></li>
-                    <li><a href="/admin/article/pendingaudit"><i class="fa fa-circle-o"></i> 等待审核文档</a></li>
-                    <li><a href="/admin/article/pedingpublished"><i class="fa fa-circle-o"></i> 待发布的文档</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/category')class="active"@endif><a href="/admin/category" ><i class="fa fa-circle-o"></i> 网站栏目管理</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/article')class="active" @endif><a href="/admin/article"><i class="fa fa-circle-o"></i> 所有档案列表</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/article/ownership')class="active" @endif><a href="/admin/article/ownership"><i class="fa fa-circle-o"></i> 我发布的文档</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/article/pendingaudit')class="active" @endif><a href="/admin/article/pendingaudit"><i class="fa fa-circle-o"></i> 等待审核文档</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/article/pedingpublished')class="active" @endif><a href="/admin/article/pedingpublished"><i class="fa fa-circle-o"></i> 待发布的文档</a></li>
                 </ul>
             </li>
             <li class="treeview">
@@ -150,8 +150,8 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="pages/examples/invoice.html"><i class="fa fa-circle-o"></i> 前台用户列表</a></li>
-                    <li><a href="pages/examples/invoice.html"><i class="fa fa-circle-o"></i> 添加用户</a></li>
+                    <li><a href="/admin/userlist"><i class="fa fa-circle-o"></i> 前台用户列表</a></li>
+                    <li><a href="/admin/useradd"><i class="fa fa-circle-o"></i> 添加用户</a></li>
 
                 </ul>
             </li>

@@ -152,6 +152,7 @@
                     $this.toggleClass("fa-star-o");
                 }
             });
+
         });
     </script>
 
