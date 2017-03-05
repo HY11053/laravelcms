@@ -25,7 +25,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/admin/dash';
+    protected $redirectTo = '/admin/index';
     protected $username;
 
     /**

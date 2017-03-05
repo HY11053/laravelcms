@@ -48,7 +48,7 @@
                     <div class="inner">
                         <h3>150</h3>
 
-                        <p>New Orders</p>
+                        <p>站点文章总数</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-bag"></i>
@@ -61,9 +61,9 @@
                 <!-- small box -->
                 <div class="small-box bg-green">
                     <div class="inner">
-                        <h3>53<sup style="font-size: 20px">%</sup></h3>
+                        <h3>53</h3>
 
-                        <p>Bounce Rate</p>
+                        <p>待发布文档</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-stats-bars"></i>
@@ -78,7 +78,7 @@
                     <div class="inner">
                         <h3>44</h3>
 
-                        <p>User Registrations</p>
+                        <p>前台会员注册数</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-person-add"></i>
@@ -93,7 +93,7 @@
                     <div class="inner">
                         <h3>65</h3>
 
-                        <p>Unique Visitors</p>
+                        <p>电话提交总数</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-pie-graph"></i>
@@ -112,9 +112,9 @@
                 <div class="nav-tabs-custom">
                     <!-- Tabs within a box -->
                     <ul class="nav nav-tabs pull-right">
-                        <li class="active"><a href="#revenue-chart" data-toggle="tab">Area</a></li>
-                        <li><a href="#sales-chart" data-toggle="tab">Donut</a></li>
-                        <li class="pull-left header"><i class="fa fa-inbox"></i> Sales</li>
+                        <li class="active"><a href="#revenue-chart" data-toggle="tab">百度</a></li>
+                        <li><a href="#sales-chart" data-toggle="tab">其他</a></li>
+                        <li class="pull-left header"><i class="fa fa-inbox"></i> 收录</li>
                     </ul>
                     <div class="tab-content no-padding">
                         <!-- Morris chart - Sales -->
@@ -129,7 +129,7 @@
                     <div class="box-header">
                         <i class="fa fa-comments-o"></i>
 
-                        <h3 class="box-title">Chat</h3>
+                        <h3 class="box-title">微信留言</h3>
 
                         <div class="box-tools pull-right" data-toggle="tooltip" title="Status">
                             <div class="btn-group" data-toggle="btn-toggle">
