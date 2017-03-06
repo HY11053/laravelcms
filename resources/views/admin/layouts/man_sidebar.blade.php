@@ -132,15 +132,20 @@
             </span>
                 </a>
             </li>
-            <li>
-                <a href="/admin/webinfo">
-                    <i class="fa fa-angellist"></i> <span>站点SEO信息</span>
-                    <span class="pull-right-container">
-              <small class="label pull-right bg-yellow">12</small>
-              <small class="label pull-right bg-green">16</small>
-              <small class="label pull-right bg-red">5</small>
+
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-angellist"></i> <span>SEO工具</span>
+                    <small class="label pull-right bg-yellow">12</small>
+                    <small class="label pull-right bg-green">16</small>
+                    <small class="label pull-right bg-red">5</small>
+              <i class="fa fa-angle-left pull-right"></i>
             </span>
                 </a>
+                <ul class="treeview-menu">
+                    <li @if(Request::getRequestUri()=='/admin/searchkey')class="active"@endif><a href="/admin/searchkey"><i class="fa fa-circle-o"></i> 相关关键词采集</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/webinfo')class="active"@endif><a href="/admin/webinfo"><i class="fa fa-circle-o"></i> 站点信息查询</a></li>
+                </ul>
             </li>
             <li class="treeview">
                 <a href="#">

@@ -123,6 +123,9 @@
                 }
             })
         });
+        function startRequest() {
+            window.location.reload()
+        }
         function AjDelete (id,node) {
             var id = id;
             var node=node;
@@ -138,6 +141,7 @@
                 success:function (response, stutas, xhr) {
                     $(".modal-s-m"+id+" .modal-body").html(response);
                     $("#btn-"+id).attr("disabled","disabled");
+                    setInterval("startRequest()", 600);
 
                 }
             });

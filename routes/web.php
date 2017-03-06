@@ -79,6 +79,7 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ()
     Route::get('phone/delete/{id}','PhoneManageController@DeletePhone');
     Route::get('sysconfig','SysConfigController@Index');
     Route::get('sysinfo','SysConfigController@Info');
+    Route::get('searchkey','SeoInfoController@SearchKey');
     Route::get('webinfo','SeoInfoController@Index');
     Route::get('Atlas',function(){
         abort(403);

@@ -8,8 +8,14 @@ use App\Http\Controllers\Controller;
 class SeoInfoController extends Controller
 {
     //
-    function Index(Request $request)
+    function Index()
     {
+      return '';
+
+    }
+    function SearchKey(Request $request)
+    {
+        isset($request['search'])?$request['search']:$request['search']='零食店加盟';
         $baiduurl='http://www.baidu.com/s?ie=utf-8&wd='.$request['search'];
         $sogouurl='http://www.sogou.com/web?query='.$request['search'].'&ie=utf8';
         $haosourl='https://www.so.com/s?ie=utf-8&fr=none&src=360sou_newhome&q='.$request['search'];
@@ -58,4 +64,5 @@ class SeoInfoController extends Controller
         $str = explode($end, $str[1]);
         return $str[0];
     }
+
 }
