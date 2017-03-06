@@ -338,3 +338,4 @@
 
   }
 })(jQuery, $.AdminLTE);
+$('.main-sidebar .sidebar .sidebar-menu li ul li.active').parent().parent().addClass("active");

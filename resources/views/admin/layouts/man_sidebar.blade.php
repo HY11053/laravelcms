@@ -119,12 +119,12 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li @if(Request::getRequestUri()=='/admin/admin/useraut')class="active"@endif><a href="pages/tables/simple.html"><i class="fa fa-circle-o"></i> 站点核心设置</a></li>
-                    <li @if(Request::getRequestUri()=='/admin/admin/useraut')class="active"@endif><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> 其他选项</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/sysconfig')class="active"@endif><a href="/admin/sysconfig"><i class="fa fa-circle-o"></i> 站点核心设置</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/sysinfo')class="active"@endif><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> 系统运行信息</a></li>
                 </ul>
             </li>
             <li>
-                <a href="pages/calendar.html">
+                <a href="/admin/Atlas">
                     <i class="fa fa-photo"></i> <span>图集内容管理</span>
                     <span class="pull-right-container">
               <small class="label pull-right bg-red">3</small>
@@ -133,7 +133,7 @@
                 </a>
             </li>
             <li>
-                <a href="pages/mailbox/mailbox.html">
+                <a href="/admin/webinfo">
                     <i class="fa fa-angellist"></i> <span>站点SEO信息</span>
                     <span class="pull-right-container">
               <small class="label pull-right bg-yellow">12</small>

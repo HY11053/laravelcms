@@ -77,6 +77,12 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ()
     Route::get('phone/edit/{id}','PhoneManageController@PhoneManageEdit');
     Route::put('phone/edit/{id}','PhoneManageController@PhoneManageEditPost');
     Route::get('phone/delete/{id}','PhoneManageController@DeletePhone');
+    Route::get('sysconfig','SysConfigController@Index');
+    Route::get('sysinfo','SysConfigController@Info');
+    Route::get('webinfo','SeoInfoController@Index');
+    Route::get('Atlas',function(){
+        abort(403);
+    });
     Route::get('/captcha/{config?}',function (\Mews\Captcha\Captcha $captcha,$config='default'){
         return $captcha->create($config);
 
