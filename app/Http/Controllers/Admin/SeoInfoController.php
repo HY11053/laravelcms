@@ -10,7 +10,7 @@ class SeoInfoController extends Controller
     //
     function Index()
     {
-      return '';
+      abort(403);
 
     }
     function SearchKey(Request $request)

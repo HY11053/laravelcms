@@ -58,4 +58,13 @@ class LoginController extends Controller
     {
         return auth()->guard('admin');
     }
+    
+    protected function validateLogin(Request $request)
+    {
+        $this->validate($request, [
+            $this->username() => 'required',
+            'password' => 'required',
+            'captcha'=>'required|captcha'
+        ]);
+    }
 }

@@ -14,9 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('demo',function (){
-    return view('demo');
-});
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
@@ -73,7 +70,7 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ()
     Route::get('makesitemap','SiteMapController@Index');
     Route::get('makemsitemap','SiteMapController@MobileSitemap');
     Route::get('phone','PhoneManageController@Index');
-    Route::get('phone/create','PhoneManageController@CreatePhoneManagev');
+    Route::post('phone/create','PhoneManageController@CreatePhoneManage');
     Route::get('phone/edit/{id}','PhoneManageController@PhoneManageEdit');
     Route::put('phone/edit/{id}','PhoneManageController@PhoneManageEditPost');
     Route::get('phone/delete/{id}','PhoneManageController@DeletePhone');
@@ -86,8 +83,8 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ()
     });
     Route::get('/captcha/{config?}',function (\Mews\Captcha\Captcha $captcha,$config='default'){
         return $captcha->create($config);
-
     });
 });
-
-Route::resource('category','Admin\CategoryController');
+Route::get('phone',function(){
+    return view('phone');
+});

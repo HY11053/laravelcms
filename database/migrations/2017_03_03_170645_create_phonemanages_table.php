@@ -15,12 +15,12 @@ class CreatePhonemanagesTable extends Migration
     {
         Schema::create('phonemanages', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('phoneno');
+            $table->string('phoneno')->unique();
             $table->string('name');
-            $table->string('gender');
-            $table->string('address');
+            $table->string('gender')->default('');
+            $table->string('address')->default('');
             $table->ipAddress('ip');
-            $table->string('note');
+            $table->string('note')->default('');
             $table->timestamps();
         });
     }

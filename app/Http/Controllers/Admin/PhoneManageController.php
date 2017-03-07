@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\AdminModel\Phonemanage;
+use App\Events\PhoneEvent;
 use App\Http\Requests\PhoneManageRequest;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -19,7 +20,8 @@ class PhoneManageController extends Controller
     public function CreatePhoneManage (PhoneManageRequest $request){
         $request['ip']=$request->getClientIp();
         Phonemanage::create($request->all());
-        return redirect(action('Admin\phone\PhoneManageController@Index'));
+        event(new PhoneEvent(Phonemanage::latest() ->first()));
+        return redirect(action('Admin\PhoneManageController@Index'));
     }
     function PhoneManageEdit($id){
         $thisPhoneInfo=Phonemanage::findOrFail($id);
