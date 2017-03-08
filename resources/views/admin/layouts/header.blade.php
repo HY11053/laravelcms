@@ -1,3 +1,5 @@
+@inject('notifications',App\Notification')
+@inject('articlenotifications',App\Notification')
 <header class="main-header">
     <!-- Logo -->
     <a href="/admin/index" class="logo">
@@ -19,74 +21,34 @@
                 <li class="dropdown messages-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="fa fa-envelope-o"></i>
-                        <span class="label label-success">4</span>
+                        <span class="label label-success">{{count($notifications->Notificate())}}</span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li class="header">You have 4 messages</li>
+
+                        <li class="header">你有{{count($notifications->Notificate())}}条邮件已发送</li>
                         <li>
                             <!-- inner menu: contains the actual data -->
                             <ul class="menu">
+                                @foreach($notifications->Notificate() as $notification)
+                                    @if($loop->index>6)
+                                        @break
+                                    @endif
                                 <li><!-- start message -->
+
                                     <a href="#">
                                         <div class="pull-left">
                                             <img src="/AdminLTE/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                                         </div>
                                         <h4>
-                                            Support Team
-                                            <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            邮件信息
+                                            <small><i class="fa fa-clock-o"></i>{{\Carbon\Carbon::parse($notification['created_at'])->diffForHumans()}}</small>
                                         </h4>
-                                        <p>Why not buy a new awesome theme?</p>
+                                        <p>{{$notification['name']}}--{{$notification['created_at']}}已发送</p>
                                     </a>
                                 </li>
+                                @endforeach
                                 <!-- end message -->
-                                <li>
-                                    <a href="#">
-                                        <div class="pull-left">
-                                            <img src="/AdminLTE/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
-                                        </div>
-                                        <h4>
-                                            AdminLTE Design Team
-                                            <small><i class="fa fa-clock-o"></i> 2 hours</small>
-                                        </h4>
-                                        <p>Why not buy a new awesome theme?</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="pull-left">
-                                            <img src="/AdminLTE/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
-                                        </div>
-                                        <h4>
-                                            Developers
-                                            <small><i class="fa fa-clock-o"></i> Today</small>
-                                        </h4>
-                                        <p>Why not buy a new awesome theme?</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="pull-left">
-                                            <img src="/AdminLTE/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
-                                        </div>
-                                        <h4>
-                                            Sales Department
-                                            <small><i class="fa fa-clock-o"></i> Yesterday</small>
-                                        </h4>
-                                        <p>Why not buy a new awesome theme?</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="pull-left">
-                                            <img src="/AdminLTE/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
-                                        </div>
-                                        <h4>
-                                            Reviewers
-                                            <small><i class="fa fa-clock-o"></i> 2 days</small>
-                                        </h4>
-                                        <p>Why not buy a new awesome theme?</p>
-                                    </a>
-                                </li>
+
                             </ul>
                         </li>
                         <li class="footer"><a href="#">See All Messages</a></li>
@@ -96,39 +58,24 @@
                 <li class="dropdown notifications-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="fa fa-bell-o"></i>
-                        <span class="label label-warning">10</span>
+                        <span class="label label-warning">{{count($articlenotifications->ArticleNotificate())}}</span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li class="header">You have 10 notifications</li>
+                        <li class="header">你有 {{count($articlenotifications->ArticleNotificate())}} 新通知</li>
                         <li>
                             <!-- inner menu: contains the actual data -->
                             <ul class="menu">
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
-                                        page and may cause design problems
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-users text-red"></i> 5 new members joined
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-shopping-cart text-green"></i> 25 sales made
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-user text-red"></i> You changed your username
-                                    </a>
-                                </li>
+
+                                @foreach($articlenotifications->ArticleNotificate() as $articlenotification)
+                                    @if($loop->index>6)
+                                        @break
+                                    @endif
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-users text-aqua"></i>{{$articlenotification['write']}} 发布文章{{$articlenotification['title']}}
+                                        </a>
+                                    </li>
+                                @endforeach
                             </ul>
                         </li>
                         <li class="footer"><a href="#">View all</a></li>
@@ -224,28 +171,13 @@
                                 <small>{{date("Y-m-D",time())}}</small>
                             </p>
                         </li>
-                        <!-- Menu Body -->
-                        <li class="user-body">
-                            <div class="row">
-                                <div class="col-xs-4 text-center">
-                                    <a href="#">Followers</a>
-                                </div>
-                                <div class="col-xs-4 text-center">
-                                    <a href="#">Sales</a>
-                                </div>
-                                <div class="col-xs-4 text-center">
-                                    <a href="#">Friends</a>
-                                </div>
-                            </div>
-                            <!-- /.row -->
-                        </li>
                         <!-- Menu Footer-->
                         <li class="user-footer">
                             <div class="pull-left">
-                                <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                <a href="#" class="btn btn-default btn-flat">个人中心</a>
                             </div>
                             <div class="pull-right">
-                                <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                <a href="/admin/logout" class="btn btn-default btn-flat">注销登录</a>
                             </div>
                         </li>
                     </ul>

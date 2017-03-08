@@ -8,6 +8,7 @@ use App\AdminModel\Arctype;
 use App\Http\Requests\CreateArticleRequest;
 use App\Helpers\UploadImages;
 use App\Http\Requests\ImagesUploadRequest;
+use App\Notifications\ArticlePublishedNofication;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -65,9 +66,9 @@ class ArticleController extends Controller
         $request['description']=(!empty($request['description']))?$request['description']:htmlspecialchars(mb_substr($request['body'],0,150));
         $request['write']=auth('admin')->user()->name;
         $request['dutyadmin']=auth('admin')->id();
-        //dd($request->all());
         Archive::create($request->all());
         Addonarticle::create($request->all());
+        auth('admin')->user()->notify(new ArticlePublishedNofication(Archive::latest() ->first()));
         return redirect(action('Admin\ArticleController@Index'));
     }
 
@@ -145,8 +146,8 @@ class ArticleController extends Controller
      * 文档预览
      */
     function PreViewArticle($id){
-        $articleinfos=DB::table('archives')->join('addonarticles','archives.id','=','addonarticles.id')->join('arctypes','archives.typeid','=','arctypes.id')->where('addonarticles.id','=',$id)->first();
-        dd($articleinfos);
+        $articleinfos=DB::table('addonarticles')->join('arctypes','addonarticles.typeid','=','arctypes.id')->join('archives','addonarticles.id','=','archives.id')->where('addonarticles.id','=',$id)->first();
+        return view('admin.article_preview',compact('articleinfos'));
     }
     /*
      * 删除文章
@@ -157,6 +158,12 @@ class ArticleController extends Controller
         Addonarticle::where('id',$id)->delete();
         return '删除成功';
 
+    }
+    //文档搜索
+    function PostArticleSearch(Request $request)
+    {
+        $articles=Archive::where('title','like',$request->input('title'))->latest()->paginate(30);
+        return view('admin.article',compact('articles'));
     }
     /*
      * 图集上传

@@ -2,25 +2,25 @@
 
 namespace App\Notifications;
 
-
-use App\AdminModel\Phonemanage;
+use App\AdminModel\Archive;
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 
-class MailSendNotification extends Notification
+class ArticlePublishedNofication extends Notification
 {
     use Queueable;
-    public $phonemanage;
+
     /**
      * Create a new notification instance.
      *
      * @return void
      */
-    public function __construct(Phonemanage $phonemanage)
+    public $archive;
+    public function __construct(Archive $archive)
     {
-        $this->phonemanage=$phonemanage;
+        $this->archive=$archive;
     }
 
     /**
@@ -34,20 +34,7 @@ class MailSendNotification extends Notification
         return ['database'];
     }
 
-    /**
-     * Get the mail representation of the notification.
-     *
-     * @param  mixed  $notifiable
-     * @return \Illuminate\Notifications\Messages\MailMessage
-     */
-    /*public function toMail($notifiable)
-    {
-        return (new MailMessage)
-                    ->line('The introduction to the notification.')
-                    ->action('Notification Action', 'https://laravel.com')
-                    ->line('Thank you for using our application!');
-    }
-*/
+
     /**
      * Get the array representation of the notification.
      *
@@ -56,9 +43,10 @@ class MailSendNotification extends Notification
      */
     public function toArray($notifiable)
     {
+
         return [
-            
-            $this->phonemanage->toArray()
+            //
+            $this->archive->toArray()
         ];
     }
 }

@@ -1,3 +1,4 @@
+@inject('allnotifications',App\Notification')
 <!-- Control Sidebar -->
 <aside class="control-sidebar control-sidebar-dark">
     <!-- Create the tabs -->
@@ -11,50 +12,40 @@
         <div class="tab-pane" id="control-sidebar-home-tab">
             <h3 class="control-sidebar-heading">系统消息</h3>
             <ul class="control-sidebar-menu">
-                <li>
-                    <a href="javascript:void(0)">
-                        <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+              @foreach($allnotifications->Allnotifications() as $allnotification)
+                    @if($loop->index>3)
+                        @break
+                    @endif
 
-                        <div class="menu-info">
-                            <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
-
-                            <p>Will be 23 on April 24th</p>
-                        </div>
-                    </a>
-                </li>
+                   @if(class_basename(($allnotification['type']))=='ArticlePublishedNofication')
                 <li>
                     <a href="javascript:void(0)">
                         <i class="menu-icon fa fa-user bg-yellow"></i>
 
                         <div class="menu-info">
-                            <h4 class="control-sidebar-subheading">Frodo Updated His Profile</h4>
+                            <h4 class="control-sidebar-subheading">{{$allnotification['data'][0]['write']}} :{{$allnotification['data'][0]['title']}}</h4>
 
-                            <p>New phone +1(800)555-1234</p>
+                            <p>时间：{{$allnotification['data'][0]['created_at']}}</p>
                         </div>
                     </a>
                 </li>
+
+                    @else
                 <li>
                     <a href="javascript:void(0)">
                         <i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
 
                         <div class="menu-info">
-                            <h4 class="control-sidebar-subheading">Nora Joined Mailing List</h4>
+                            <h4 class="control-sidebar-subheading">{{$allnotification['data'][0]['name']}} </h4>
 
-                            <p>nora@example.com</p>
+                            <p>{{$allnotification['data'][0]['created_at']}} </p>
                         </div>
                     </a>
                 </li>
-                <li>
-                    <a href="javascript:void(0)">
-                        <i class="menu-icon fa fa-file-code-o bg-green"></i>
 
-                        <div class="menu-info">
-                            <h4 class="control-sidebar-subheading">Cron Job 254 Executed</h4>
+                    @endif
 
-                            <p>Execution time 5 seconds</p>
-                        </div>
-                    </a>
-                </li>
+                  @endforeach
             </ul>
             <!-- /.control-sidebar-menu -->
 

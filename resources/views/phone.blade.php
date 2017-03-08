@@ -1,11 +1,15 @@
-@extends('admin.layouts.admin_app')
-@section('title')
-    网站文档列表
-    @stop
-    @section('head')
-            <!-- Tell the browser to be responsive to screen width -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AdminLTE 2 |     网站文档列表
+    </title>
+
+    <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="csrf-token" content="G3qiZra3L7vO0WQIw14ktBPEVkeRd7FQ9AMCqsqC">
     <!-- Bootstrap 3.3.6 -->
     <link rel="stylesheet" href="/AdminLTE/bootstrap/css/bootstrap.min.css">
     <!-- Font Awesome -->
@@ -26,96 +30,50 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-@stop
-@section('content')
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
 
-    <div class="row">
-        <div class="col-md-10 box box-primary">
-            <div class="box-header with-border">
-                <h3 class="box-title">测试数据</h3>
-            </div>
-            <!-- /.box-header -->
-            <!-- form start -->
-            {!! Form::open(array('action' => 'Admin\PhoneManageController@CreatePhoneManage','role'=>'form')) !!}
-            <div class="box-body">
-                <div class="form-group">
-                    {{Form::label('name','姓名')}}
-                    {{Form::text('name', null,array('class'=>'form-control','id'=>'url','placeholder'=>'姓名'))}}
-                </div>
-                <div class="form-group">
-                    {{Form::label('phoneno','电话')}}
-                    {{Form::text('phoneno', null,array('class'=>'form-control','id'=>'webname','placeholder'=>'电话'))}}
-                </div>
-                <div class="form-group">
-                    {{Form::label('address','联系方式')}}
-                    {{Form::text('address', null,array('class'=>'form-control','id'=>'address','placeholder'=>'联系方式'))}}
-                </div>
-                <div class="form-group">
-                    {{Form::label('note','操作备注')}}
-                    {{Form::text('note', null,array('class'=>'form-control','id'=>'note','placeholder'=>'操作备注'))}}
-                </div>
-                <!-- /.box-body -->
-
-                <div class="box-footer">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-            </div>
-            {!! Form::close() !!}
-            @if(count($errors) > 0)
-                <ul class="alert alert-danger">
-                    @foreach($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            @endif
+<div class="row">
+    <div class="col-md-10 box box-primary">
+        <div class="box-header with-border">
+            <h3 class="box-title">测试数据</h3>
         </div>
+        <!-- /.box-header -->
+        <!-- form start -->
+        {!! Form::open(array('action' => 'Admin\PhoneManageController@CreatePhoneManage','role'=>'form')) !!}
+        <div class="box-body">
+            <div class="form-group">
+                {{Form::label('name','姓名')}}
+                {{Form::text('name', null,array('class'=>'form-control','id'=>'url','placeholder'=>'姓名'))}}
+            </div>
+            <div class="form-group">
+                {{Form::label('phoneno','电话')}}
+                {{Form::text('phoneno', null,array('class'=>'form-control','id'=>'webname','placeholder'=>'电话'))}}
+            </div>
+            <div class="form-group">
+                {{Form::label('address','联系方式')}}
+                {{Form::text('address', null,array('class'=>'form-control','id'=>'address','placeholder'=>'联系方式'))}}
+            </div>
+            <div class="form-group">
+                {{Form::label('note','操作备注')}}
+                {{Form::text('note', null,array('class'=>'form-control','id'=>'note','placeholder'=>'操作备注'))}}
+            </div>
+            <!-- /.box-body -->
 
+            <div class="box-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+        {!! Form::close() !!}
+        @if(count($errors) > 0)
+            <ul class="alert alert-danger">
+                @foreach($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        @endif
     </div>
-    <!-- /.row -->
-    <!-- /.content -->
-    @stop
 
-    @section('libs')
-            <!-- jQuery 2.2.3 -->
-    <script src="/AdminLTE/plugins/jQuery/jquery-2.2.3.min.js"></script>
-    <!-- Bootstrap 3.3.6 -->
-    <script src="/AdminLTE/bootstrap/js/bootstrap.min.js"></script>
-    <!-- Slimscroll -->
-    <script src="/AdminLTE/plugins/slimScroll/jquery.slimscroll.min.js"></script>
-    <!-- FastClick -->
-    <script src="/AdminLTE/plugins/fastclick/fastclick.js"></script>
-    <!-- AdminLTE App -->
-    <script src="/AdminLTE/dist/js/app.min.js"></script>
-    <!-- AdminLTE for demo purposes -->
-    <script src="/AdminLTE/dist/js/demo.js"></script>
-    <script>
-        $(document).ready(function() {
-            $.ajaxSetup({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                }
-            })
-        });
-        function AjDelete (id,node) {
-            var id = id;
-            var node=node;
-            $.ajax({
-                //提交数据的类型 POST GET
-                type:"POST",
-                //提交的网址
-                url:"/admin/article/delete/"+id,
-                //提交的数据
-                data:{"id":id,'node':node},
-                //返回数据的格式
-                datatype: "html",    //"xml", "html", "script", "json", "jsonp", "text".
-                success:function (response, stutas, xhr) {
-                    $(".modal-s-m"+id+" .modal-body").html(response);
-                    $("#btn-"+id).attr("disabled","disabled");
-
-                }
-            });
-        }
-    </script>
-@stop
-
-
+</div>
+</body>
+</html>

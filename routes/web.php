@@ -45,6 +45,8 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ()
     Route::get('article/brandcreate','ArticleController@BrandCreate');
     Route::get('article/edit/{id}','ArticleController@Edit');
     Route::post('article/create','ArticleController@PostCreate')->name('article_create');
+    Route::post('article/search','ArticleController@PostArticleSearch')->name('article_search');
+    
     Route::put('article/edit/{id}','ArticleController@PostEdit')->name('article_edit');
     Route::get('flink','FlinkController@Index');
     Route::get('flink/create','FlinkController@CreateFlink');
