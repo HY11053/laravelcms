@@ -11,7 +11,16 @@ use Illuminate\Support\Facades\Storage;
 
 class SiteMapController extends Controller
 {
-    //PC端地图生成
+    public function __construct()
+    {
+        $this->middleware('auth.admin:admin');
+    }
+    /**
+     * PC端地图、、生成
+     * @param
+     *
+     * @return
+     */
     function Index()
     {
         $appurl=config('app.url');
@@ -46,6 +55,13 @@ class SiteMapController extends Controller
         }
         return view('admin.sitemapcreate',compact('msg'));
     }
+
+    /**
+     * 移动端地图生成
+     * @param
+     *
+     * @return
+     */
 
     function MobileSitemap()
     {

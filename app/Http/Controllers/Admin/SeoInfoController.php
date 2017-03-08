@@ -7,12 +7,22 @@ use App\Http\Controllers\Controller;
 
 class SeoInfoController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth.admin:admin');
+    }
     //
     function Index()
     {
       abort(403);
 
     }
+    /**
+     * 相关搜索内容提取
+     * @param
+     *
+     * @return
+     */
     function SearchKey(Request $request)
     {
         isset($request['search'])?$request['search']:$request['search']='零食店加盟';
@@ -46,7 +56,14 @@ class SeoInfoController extends Controller
         return view('admin.keyword_search',compact('baiduinfos','sogouinfos','haosoinfos','msminfos','mbdinfos'));
 
     }
-    function Curls($url){
+    /**
+     * 执行Curl
+     * @param
+     *
+     * @return
+     */
+    function Curls($url)
+    {
         $curl=curl_init();
         curl_setopt($curl,CURLOPT_URL,$url);
         curl_setopt($curl,CURLOPT_RETURNTRANSFER,1);
@@ -56,8 +73,16 @@ class SeoInfoController extends Controller
         curl_close($curl);
     return $rs;
     }
-    function getTagData($str, $start, $end){
-        if ( $start == '' || $end == '' ){
+    /**
+     * 数据截取
+     * @param
+     *
+     * @return
+     */
+    function getTagData($str, $start, $end)
+    {
+        if ( $start == '' || $end == '' )
+        {
             return;
         }
         $str = explode($start, $str);

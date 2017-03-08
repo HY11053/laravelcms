@@ -7,6 +7,10 @@ use App\Http\Controllers\Controller;
 
 class SysConfigController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth.admin:admin');
+    }
     //
     function Index()
     {

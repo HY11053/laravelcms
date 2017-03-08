@@ -28,6 +28,12 @@ class Arctype extends Model
     {
         $this->fillable = $fillable;
     }
+    /**
+     * Eloquent ORM 关联定义
+     * @param
+     *
+     * @return arraydatas
+     */
     protected function articles()
     {
         return $this->hasMany('App\AdminModel\Archive','typeid');

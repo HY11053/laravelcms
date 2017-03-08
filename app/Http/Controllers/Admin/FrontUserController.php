@@ -14,31 +14,63 @@ class FrontUserController extends Controller
     {
         $this->middleware('auth.admin:admin');
     }
-
-    function Index(){
+    /**
+     * 前台用户列表
+     * @param
+     *
+     * @return
+     */
+    function Index()
+    {
         $userlists=User::all();
         return view('admin.userlist',compact('userlists'));
     }
+    /**
+     * 前台用户添加
+     * @param
+     *
+     * @return
+     */
     function UserAdd(){
         echo '后台暂时不注册用户!，请从前台注册';
     }
-    //前台用户更改编辑
+
+    /**
+     * 前台用户编辑
+     * @param
+     *
+     * @return
+     */
+
     function UserEdit($id)
     {
         $User=User::find($id);
         return view('admin.useredit',compact('User'));
 
     }
-    //前台会员用户编辑提交处理
+
+    /**
+     * 前台会员用户编辑处理
+     * @param
+     *
+     * @return
+     */
     function PostUserEdit(UserRegsiterRequest $request,$id)
     {
         User::find($id)->update($request->all());
         return redirect(action('Admin\FrontUserController@Index'));
     }
+
+    /**
+     * 前台会员删除
+     * @param
+     *
+     * @return
+     */
+
     function UserDelete($id)
     {
         User::find($id)->delete();
         return redirect(action('Admin\FrontUserController@Index'));
-
     }
 }

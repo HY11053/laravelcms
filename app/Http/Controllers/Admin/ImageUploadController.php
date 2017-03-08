@@ -9,6 +9,12 @@ use App\Http\Controllers\Controller;
 
 class ImageUploadController extends Controller
 {
+    /**
+     * 图片上传处理
+     * @param
+     *
+     * @return
+     */
     function ImagesUpload(ImagesUploadRequest $request)
     {
         if(!empty($request['input-image'])){
@@ -35,7 +41,12 @@ class ImageUploadController extends Controller
         }
         var_dump($request->all());
     }
-
+    /**
+     * 图片删除处理
+     * @param
+     *
+     * @return
+     */
     function DeletePics(Request $request){
         $requestinfo=$request->input('key');
         $arrinfos=explode(',',$requestinfo);
@@ -48,7 +59,12 @@ class ImageUploadController extends Controller
         return $arrinfos[0] ;
 
     }
-
+    /**
+     * 图片上传
+     * @param
+     *
+     * @return
+     */
     public function upload_image(Request $request)
     {
 
@@ -68,7 +84,6 @@ class ImageUploadController extends Controller
         $file->move($destinationPath, $fileName);
         $img_relpath=date('Y/m/d/',time()). $fileName;
         return $img_relpath;
-
 
     }
 

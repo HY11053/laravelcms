@@ -20,26 +20,53 @@ class ArticleController extends Controller
     {
         $this->middleware('auth.admin:admin');
     }
+    /**
+     * 文档列表
+     * @param
+     *
+     * @return
+     */
     function Index()
     {
         //$articles = Archive::where('published_at','<=',Carbon::now())->latest()->paginate(30);
         $articles = Archive::latest()->paginate(30);
         return view('admin.article',compact('articles'));
     }
+    /**
+     * 普通文档创建
+     * @param
+     *
+     * @return
+     */
+
     function Create()
     {
         $allnavinfos=Arctype::where('is_write',1)->pluck('typename','id');
         return view('admin.article_create',compact('allnavinfos'));
     }
-    //品牌文档创建
-    function BrandCreate(){
+
+    /**
+     * 品牌文档创建
+     * @param
+     *
+     * @return
+     */
+    function BrandCreate()
+    {
         $allnavinfos=Arctype::where('is_write',1)->pluck('typename','id');
         return view('admin.article_brandcreate',compact('allnavinfos'));
     }
-    //文档创建提交
+
+    /**
+     * 文档创建提交数据处理
+     * @param
+     *
+     * @return
+     */
     function PostCreate(CreateArticleRequest $request)
     {
-        if(isset($request['flags'])){
+        if(isset($request['flags']))
+        {
             $request['flags']=UploadImages::Flags($request['flags']);
         }else{
             $request['flags']='';
@@ -72,7 +99,12 @@ class ArticleController extends Controller
         return redirect(action('Admin\ArticleController@Index'));
     }
 
-    //文档编辑
+    /**
+     * 文档编辑
+     * @param
+     *
+     * @return
+     */
     function Edit($id)
     {
         $allnavinfos=Arctype::where('is_write',1)->pluck('typename','id');
@@ -86,20 +118,23 @@ class ArticleController extends Controller
             return view('admin.article_brandedit',compact('id','articleinfos','allnavinfos','pics'));
         }
 
-//
     }
 
-    //品牌文档编辑
-
-    //文档编辑提交
+    /**
+     * 文档编辑提交处理
+     * @param
+     *
+     * @return
+     */
     function PostEdit(CreateArticleRequest $request,$id)
     {
 
-        if(isset($request['flags'])){
+        if(isset($request['flags']))
+        {
             $request['flags']=UploadImages::Flags($request['flags']);
         }else{
             $request['flags']='';
-    }
+        }
         if($request['image'])
         {
             $request['litpic']=UploadImages::UploadImage($request);
@@ -119,38 +154,57 @@ class ArticleController extends Controller
         Addonarticle::findOrFail($id)->update($request->all());
         return redirect(action('Admin\ArticleController@Index'));
     }
-    /*
+    /**
      * 当前用户发布的文档
+     * @param
+     *
+     * @return
      */
     function OwnerShip()
     {
         $articles = Archive::where('published_at','<=',Carbon::now())->where('dutyadmin',auth('admin')->user()->id)->latest()->paginate(30);
         return view('admin.article',compact('articles'));
     }
-    /*
+
+    /**
      * 等待审核的文档
+     * @param
+     *
+     * @return
      */
     function PendingAudit()
     {
         $articles = Archive::where('published_at','<=',Carbon::now())->where('ismake','<>',1)->latest()->paginate(30);
         return view('admin.article',compact('articles'));
     }
-    /*
-     * 待发布的文档
+
+    /**
+     * 等待发布的文档
+     * @param
+     *
+     * @return
      */
-    function    PedingPublished(){
+    function PedingPublished(){
         $articles = Archive::where('published_at','>',Carbon::now())->latest()->paginate(30);
         return view('admin.article',compact('articles'));
     }
-    /*
+
+    /**
      * 文档预览
+     * @param
+     *
+     * @return
      */
     function PreViewArticle($id){
         $articleinfos=DB::table('addonarticles')->join('arctypes','addonarticles.typeid','=','arctypes.id')->join('archives','addonarticles.id','=','archives.id')->where('addonarticles.id','=',$id)->first();
         return view('admin.article_preview',compact('articleinfos'));
     }
-    /*
-     * 删除文章
+
+    /**
+     * 文档删除
+     * @param
+     *
+     * @return
      */
     function DeleteArticle($id)
     {
@@ -159,14 +213,22 @@ class ArticleController extends Controller
         return '删除成功';
 
     }
-    //文档搜索
+    /**
+     * 文档搜索
+     * @param
+     *
+     * @return
+     */
     function PostArticleSearch(Request $request)
     {
         $articles=Archive::where('title','like',$request->input('title'))->latest()->paginate(30);
         return view('admin.article',compact('articles'));
     }
-    /*
-     * 图集上传
+    /**
+     * 图集上传处理
+     * @param
+     *
+     * @return
      */
     function UploadImages(ImagesUploadRequest $request){
         UploadImages::UploadImage($request);

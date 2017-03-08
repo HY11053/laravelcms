@@ -8,18 +8,36 @@ use App\Http\Controllers\Controller;
 
 class AskController extends Controller
 {
-    //问答列表
+    /**
+     * 问答列表
+     * @param
+     *
+     * @return
+     */
     function Index()
     {
         $asklists=Ask::all();
         return view('admin.ask',compact('asklists'));
     }
-    //添加问题
+    /**
+     * 文档添加问题
+     * @param
+     *
+     * @return
+     */
+
     function Add()
     {
         return view('admin.askadd');
     }
-    //问题创建提交
+
+    /**
+     * 问题提交创建处理
+     * @param
+     *
+     * @return
+     */
+
     function PostAdd(Request $request){
         $request['ip']=$request->getClientIp();
         $request['user_id']=1;

@@ -13,28 +13,61 @@ class AdminController extends Controller
     {
         $this->middleware('auth.admin:admin');
     }
-    //后台用户列表
-    function Index(){
+
+    /**
+     * 后台用户列表
+     * @param
+     *
+     * @return 后台用户数据
+     */
+
+    function Index()
+    {
         $adminlists=Admin::all();
         return view('admin.adminlist',compact('adminlists'));
     }
-    //后台用户注册
-    function Register(){
+
+    /**
+     * 后台用户注册
+     * @param
+     *
+     * @return
+     */
+
+    function Register()
+    {
         return view('admin.adminregister',compact('adminlists'));
     }
-    //用户注册提交
+    /**
+     * 后台用户注册处理
+     * @param
+     *
+     * @return
+     */
     function PostRegister(UserRegsiterRequest $request)
     {
         $request['password']=bcrypt($request['password']);
         Admin::create($request->all());
         return redirect(action('Admin\AdminController@Index'));
     }
-    //用户编辑
-    function Edit($id){
+    /**
+     * 后台用户编辑
+     * @param
+     *
+     * @return
+     */
+
+    function Edit($id)
+    {
         $adminUser=Admin::find($id);
         return view('admin.adminedit',compact('adminUser'));
     }
-    //用户编辑提交
+    /**
+     * 后台用户编辑提交处理
+     * @param
+     *
+     * @return
+     */
     function PostEdit(UserRegsiterRequest $request,$id)
     {
         $request['password']=bcrypt($request['password']);
@@ -47,7 +80,14 @@ class AdminController extends Controller
         redirect(action('Admin\AdminController@Index'));
         return redirect(action('Admin\AdminController@Index'));
     }
-    function Userauth(){
+    /**
+     * 后台用户授权
+     * @param
+     *
+     * @return
+     */
+    function Userauth()
+    {
         abort(403);
     }
 

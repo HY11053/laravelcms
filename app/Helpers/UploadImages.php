@@ -11,14 +11,23 @@ use Illuminate\Http\Request;
 
 class UploadImages
 {
-    public static function UploadImage($request){
-        if(!$request->hasFile('image')){
+    /**
+     * 图像上传处理
+     * @param $request数据
+     *
+     * @return arraydatas
+     */
+    public static function UploadImage($request)
+    {
+        if(!$request->hasFile('image'))
+        {
             return $img_relpath='';
         }
         $file = $request->file('image');
         //判断文件上传过程中是否出错
         $allowed_extensions = ["png", "jpg", "gif"];
-        if ($file->getClientOriginalExtension() && !in_array($file->getClientOriginalExtension(), $allowed_extensions)) {
+        if ($file->getClientOriginalExtension() && !in_array($file->getClientOriginalExtension(), $allowed_extensions))
+        {
             exit(['error' => 'You may only upload png, jpg or gif.']);
         }
         $upload_path='images/thread'.date('/Y/m/d',time());
@@ -29,9 +38,17 @@ class UploadImages
         $img_relpath='/images/thread/'.date('Y/m/d/',time()). $fileName;
         return $img_relpath;
     }
-    static function Flags(array $arr){
+    /**
+     * 自定义文档属性
+     * @param array
+     *
+     * @return arraydatas
+     */
+    static function Flags(array $arr)
+    {
         $flags='';
-        foreach ($arr as $value){
+        foreach ($arr as $value)
+        {
             $flags.=$value.',';
         }
         return substr($flags,0,-1);
