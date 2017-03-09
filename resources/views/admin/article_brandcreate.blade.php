@@ -1,35 +1,11 @@
 @extends('admin.layouts.admin_app')
-@section('title')添加文档@stop
+@section('title')添加品牌文档@stop
 @section('head')
-    <!-- Tell the browser to be responsive to screen width -->
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <!-- Bootstrap 3.3.6 -->
-    <link rel="stylesheet" href="/AdminLTE/bootstrap/css/bootstrap.min.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="/AdminLTE/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-    <!-- Ionicons -->
-    <link rel="stylesheet" href="/AdminLTE/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- Theme style -->
-    <link rel="stylesheet" href="/AdminLTE/dist/css/AdminLTE.min.css">
-    <!-- AdminLTE Skins. Choose a skin from the css/skins
-         folder instead of downloading all of them to reduce the load. -->
-    <link rel="stylesheet" href="/AdminLTE/dist/css/skins/_all-skins.min.css">
     <link href="/AdminLTE/plugins/summernote/summernote.css" rel="stylesheet">
     <link href="/AdminLTE/plugins/iCheck/all.css" rel="stylesheet">
     <link rel="stylesheet" href="/AdminLTE//plugins/daterangepicker/daterangepicker.css">
-    <!-- bootstrap datepicker -->
     <link rel="stylesheet" href="/AdminLTE/plugins/datepicker/datepicker3.css">
-
-    <!--<link href="/AdminLTE/plugins/summernote/summernote-bs3.css" rel="stylesheet">-->
-<link href="/AdminLTE/dist/css/fileinput.min.css" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <link href="/AdminLTE/dist/css/fileinput.min.css" rel="stylesheet">
 @stop
 @section('content')
     <!-- row -->

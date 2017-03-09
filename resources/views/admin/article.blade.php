@@ -1,34 +1,9 @@
 @extends('admin.layouts.admin_app')
-@section('title')
-    网站文档列表
-@stop
+@section('title')网站文档列表@stop
 @section('head')
-    <!-- Tell the browser to be responsive to screen width -->
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <!-- Bootstrap 3.3.6 -->
-    <link rel="stylesheet" href="/AdminLTE/bootstrap/css/bootstrap.min.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="/AdminLTE/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-    <!-- Ionicons -->
-    <link rel="stylesheet" href="/AdminLTE/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- Theme style -->
-    <link rel="stylesheet" href="/AdminLTE/dist/css/AdminLTE.min.css">
-    <!-- AdminLTE Skins. Choose a skin from the css/skins
-         folder instead of downloading all of them to reduce the load. -->
-    <link rel="stylesheet" href="/AdminLTE/dist/css/skins/_all-skins.min.css">
-    <link rel="stylesheet" href="/AdminLTE/dist/css/skins/overwrite.min.css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 <style>.red{color: red;}</style>
 @stop
 @section('content')
-
         <div class="row">
             <div class="col-xs-12">
                 <div class="box">
@@ -36,11 +11,11 @@
                         <h3 class="box-title">文档列表管理</h3>
                         <div class="box-tools">
                             <div class="input-group input-group-sm" style="width: 335px;">
-                                <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
+                                <input type="text" name="table_search" class="form-control pull-right" placeholder="Search" style="margin-top: 2px;">
                                 <div class="input-group-btn">
                                     <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-                                    <button  class="btn btn-default bg-blue"><i class="fa  fa-pencil-square"></i><a href="{{action('Admin\ArticleController@Create')}}" style="color: #ffffff ; display: inline-block; padding-left: 3px;">添加文档</a></button>
-                                    <button  class="btn btn-default bg-purple"><i class="fa  fa-pencil-square-o"></i><a href="{{action('Admin\ArticleController@BrandCreate')}}" style="color: #ffffff; display: inline-block; padding-left: 3px;">添加品牌文档</a></button>
+                                    <a href="{{action('Admin\ArticleController@Create')}}" style="color: #ffffff ; display: inline-block; padding-left: 3px;"><button  class="btn btn-default bg-blue"><i class="fa  fa-pencil-square"></i>添加文档</button></a>
+                                    <a href="{{action('Admin\ArticleController@BrandCreate')}}" style="color: #ffffff; display: inline-block; padding-left: 3px;"><button  class="btn btn-default bg-purple"><i class="fa  fa-pencil-square-o"></i>添加品牌文档</button></a>
                                 </div>
                             </div>
                         </div>
@@ -66,7 +41,7 @@
                                 <td>{{$article->published_at}}</td>
                                 <td>{{$article->write}}</td>
                                 <td>{{$article->click}}</td>
-                                <td>@if($article->ismake) 已审核 @else <s class="red">未审核 @endif</s></td>
+                                <td>@if($article->ismake) 已审核 @else <s class="red">未审核</s> @endif</td>
                                 <td class="astyle"><span class="label label-success"><a href="/admin/article/previewarticle/{{$article->id}}">预览</a></span><span class="label label-warning"><a href="/admin/article/edit/{{$article->id}}">编辑</a></span><span class="label label-danger"><a data-toggle="modal" data-target=".modal-sm{{$article->id}}" >删除</a></span>
                                     <div class="modal fade modal-sm{{$article->id}}" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel{{$article->id}}">
                                         <div class="modal-dialog modal-sm modal-s-m{{$article->id}}" role="document">

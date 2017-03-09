@@ -121,7 +121,7 @@
                 </a>
                 <ul class="treeview-menu">
                     <li @if(Request::getRequestUri()=='/admin/sysconfig')class="active"@endif><a href="/admin/sysconfig"><i class="fa fa-circle-o"></i> 站点核心设置</a></li>
-                    <li @if(Request::getRequestUri()=='/admin/sysinfo')class="active"@endif><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> 系统运行信息</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/sysinfo')class="active"@endif><a href="/admin/sysinfo"><i class="fa fa-circle-o"></i> 系统运行信息</a></li>
                 </ul>
             </li>
             <li>
@@ -141,7 +141,6 @@
                     <small class="label pull-right bg-green">16</small>
                     <small class="label pull-right bg-red">5</small>
               <i class="fa fa-angle-left pull-right"></i>
-            </span>
                 </a>
                 <ul class="treeview-menu">
                     <li @if(Request::getRequestUri()=='/admin/searchkey')class="active"@endif><a href="/admin/searchkey"><i class="fa fa-circle-o"></i> 相关关键词采集</a></li>
@@ -194,7 +193,7 @@
                     <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
                 </ul>
             </li>
-            <li><a href="documentation/index.html"><i class="fa fa-book"></i> <span>后台使用文档</span></a></li>
+            <li><a href="https://github.com/HY11053/laravelcms"><i class="fa fa-book"></i> <span>后台使用文档</span></a></li>
             <li class="header">员工考核管理</li>
             <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>周工作总结</span></a></li>
             <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>待办事项</span></a></li>

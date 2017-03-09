@@ -1,41 +1,18 @@
 @extends('admin.layouts.admin_app')
 @section('title')网站栏目管理@stop
 @section('head')
-    <!-- Tell the browser to be responsive to screen width -->
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <!-- Bootstrap 3.3.6 -->
-    <link rel="stylesheet" href="/AdminLTE/bootstrap/css/bootstrap.min.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="/AdminLTE/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-    <!-- Ionicons -->
-    <link rel="stylesheet" href="/AdminLTE/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- fullCalendar 2.2.5-->
     <link rel="stylesheet" href="/AdminLTE/plugins/fullcalendar/fullcalendar.min.css">
     <link rel="stylesheet" href="/AdminLTE/plugins/fullcalendar/fullcalendar.print.css" media="print">
-    <!-- Theme style -->
-    <link rel="stylesheet" href="/AdminLTE/dist/css/AdminLTE.min.css">
-    <!-- AdminLTE Skins. Choose a skin from the css/skins
-         folder instead of downloading all of them to reduce the load. -->
-    <link rel="stylesheet" href="/AdminLTE/dist/css/skins/_all-skins.min.css">
-    <!-- iCheck -->
     <link rel="stylesheet" href="/AdminLTE/plugins/iCheck/flat/blue.css">
 <style>
     .spide_span{display: inline-block; float: right; margin-right: 20px;}
     .spide_span span{padding: 5px; margin-left: 5px; font-weight: 400; cursor: pointer;}
 </style>
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-
-    <![endif]-->
     @stop
 @section('content')
     <div class="row">
         <div class="col-md-12">
-            <div class="btn btn-primary btn-block margin-bottom nleft"><span style="color: #ffffff">网站栏目管理</span> <a href="{{route('category_create')}}" style="color: #ffffff; display: inline-block; float: right;">添加栏目</a></div>
+            <div class="btn btn-primary btn-block margin-bottom nleft"><span style="color: #ffffff; display: inline-block; float: left;">网站栏目管理</span> <a href="{{route('category_create')}}" style="color: #ffffff; display: inline-block; float: right;">添加栏目</a><span style="display: inline-block; height: 0px; clear: both;"></span></div>
             @foreach($topnavs as $key=>$topnav)
             <div class="box box-solid collapsed-box">
                 <div class="box-header with-border">
