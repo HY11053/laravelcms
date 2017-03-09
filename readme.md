@@ -13,11 +13,12 @@
 $git clone https://github.com/HY11053/laravelcms.git
 
 ## 数据生成
+composer update 安装vendor目录和所需的组件包
 安装后执行php artisan mirgate 导入数据表
 如需测试数据执行php artisan db:seed
 ##其他配置项
-邮件配置项在.env文件和config/mail.php下，基于事件的驱动发送用户提交过来的数据到指定邮箱,站点配置直接通过.env文件或config/app.php进行配置
+邮件配置项在.env文件和config/mail.php下，基于事件的驱动发送用户提交过来的数据到指定邮箱,站点配置直接通过.env文件或config/app.php进行配置。
 ##other
-站点目前仅包含后台，前台版本根据界面进行相应的数据提取生成即可、编辑器采用summernote编辑器，问答界面的编辑器采用Ueditor。
+站点目前仅包含后台，前台版本根据界面进行相应的数据提取生成即可、编辑器采用summernote编辑器，问答界面的编辑器采用Ueditor。暂无线上服务器，未做微信公众平台测试，后面根据需求待开发。问答和评论将根据前台功能进行对应后台模块功能实现
 
 

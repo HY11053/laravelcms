@@ -106,10 +106,10 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li @if(Request::getRequestUri()=='/admin/admin/useraut')class="active"@endif><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> 自定义菜单管理</a></li>
-                    <li @if(Request::getRequestUri()=='/admin/admin/useraut')class="active"@endif><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> 单图文消息</a></li>
-                    <li @if(Request::getRequestUri()=='/admin/admin/useraut')class="active"@endif><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> 多图文消息</a></li>
-                    <li @if(Request::getRequestUri()=='/admin/admin/useraut')class="active"@endif><a href="pages/forms/editors.html"><i class="fa fa-circle-o"></i>用户管理</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/admin/useraut')class="active"@endif><a href="#"><i class="fa fa-circle-o"></i> 自定义菜单管理</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/admin/useraut')class="active"@endif><a href="#"><i class="fa fa-circle-o"></i> 单图文消息</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/admin/useraut')class="active"@endif><a href="#"><i class="fa fa-circle-o"></i> 多图文消息</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/admin/useraut')class="active"@endif><a href="#"><i class="fa fa-circle-o"></i>用户管理</a></li>
                 </ul>
             </li>
             <li class="treeview">
