@@ -15,7 +15,7 @@ class AddImagepicsColumToAddonarticles extends Migration
     {
         Schema::table('addonarticles', function (Blueprint $table) {
             //
-            $table->string('imagepics',1000)->default('1');
+            $table->mediumText('imagepics')->nullable();
         });
     }
 

@@ -266,6 +266,7 @@
                                     </div>
                                 </div>
                             </div>
+                            {{Form::hidden('imagepics', null,array('id'=>'imagepics'))}}
                         </div>
                     </div>
                 </li>
@@ -406,7 +407,7 @@
         }).on('fileuploaded', function(event, data) {
             $('#kv-success-box').append(data.response.link);
             $('#kv-success-modal').modal('show');
-            $("#imagespic").val($("#imagespic").val()+data.response.link+',');
+            $("#imagepics").val($("#imagepics").val()+data.response.link+',');
         });
     </script>
 @stop

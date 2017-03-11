@@ -306,7 +306,7 @@
                                     </div>
                                 </div>
                             </div>
-                            {{Form::hidden('imagepics', null,array('id'=>'imagespic'))}}
+                            {{Form::hidden('imagepics', null,array('id'=>'imagepics'))}}
                         </div>
                     </div>
                 </li>
@@ -482,14 +482,14 @@
         }).on('fileuploaded', function(event, data) {
             $('#kv-success-box').append(data.response.link);
             $('#kv-success-modal').modal('show');
-            $("#imagespic").val($("#imagespic").val()+data.response.link+',');
+            $("#imagepics").val($("#imagepics").val()+data.response.link+',');
         }).on('filepreremoved', function(e, params) {
             console.log('File sorted params', params);
             alert(111);
         }).on('filedeleted', function(event, key) {
             console.log('Key = ' + key);
             arrs=key.split(',')
-            $("#imagespic").val($("#imagespic").val().replace(','+arrs[1],''));
+            $("#imagepics").val($("#imagepics").val().replace(','+arrs[1],''));
         });
     </script>
 @stop
