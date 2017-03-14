@@ -489,7 +489,7 @@
         }).on('filedeleted', function(event, key) {
             console.log('Key = ' + key);
             arrs=key.split(',')
-            $("#imagepics").val($("#imagepics").val().replace(','+arrs[1],''));
+            $("#imagepics").val($("#imagepics").val().replace(arrs[1]+',',''));
         });
     </script>
 @stop

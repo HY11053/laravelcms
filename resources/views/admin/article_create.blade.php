@@ -427,7 +427,14 @@
         $('#kv-success-box').append(data.response.link);
         $('#kv-success-modal').modal('show');
         $("#imagepics").val($("#imagespics").val()+data.response.link+',');
-    });
+    }).on('filepreremoved', function(e, params) {
+        console.log('File sorted params', params);
+        alert(111);
+    }).on('filedeleted', function(event, key) {
+        console.log('Key = ' + key);
+        arrs=key.split(',')
+        $("#imagepics").val($("#imagepics").val().replace(arrs[1]+',',''));
+    });;
 </script>
 @stop
 
