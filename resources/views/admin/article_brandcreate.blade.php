@@ -397,7 +397,7 @@
     <script src="/js/fileinput.min.js"></script>
     <script>
         $("#input-image-1").fileinput({
-            uploadUrl: "/article/uploads",
+            uploadUrl: "/admin/upload/images",
             allowedFileExtensions: ["jpg", "png", "gif"],
             maxImageWidth: 300,
             maxFileCount: 6,
@@ -408,6 +408,14 @@
             $('#kv-success-box').append(data.response.link);
             $('#kv-success-modal').modal('show');
             $("#imagepics").val($("#imagepics").val()+data.response.link+',');
+            console.log($("#imagepics").val())
+        }).on('filepreremoved', function(e, params) {
+            console.log('File sorted params', params);
+            alert(111);
+        }).on('filedeleted', function(event, key) {
+            console.log('Key = ' + key);
+            arrs=key.split(',')
+            $("#imagepics").val($("#imagepics").val().replace(arrs[1]+',',''));
         });
     </script>
 @stop

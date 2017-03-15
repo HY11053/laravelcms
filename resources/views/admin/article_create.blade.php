@@ -426,7 +426,8 @@
     }).on('fileuploaded', function(event, data) {
         $('#kv-success-box').append(data.response.link);
         $('#kv-success-modal').modal('show');
-        $("#imagepics").val($("#imagespics").val()+data.response.link+',');
+        $("#imagepics").val($("#imagepics").val()+data.response.link+',');
+        console.log($("#imagepics").val())
     }).on('filepreremoved', function(e, params) {
         console.log('File sorted params', params);
         alert(111);
@@ -434,7 +435,7 @@
         console.log('Key = ' + key);
         arrs=key.split(',')
         $("#imagepics").val($("#imagepics").val().replace(arrs[1]+',',''));
-    });;
+    });
 </script>
 @stop
 

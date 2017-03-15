@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
@@ -90,3 +88,5 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ()
 Route::get('phone',function(){
     return view('phone');
 });
+//前台界面
+Route::get('/','Frontend\IndexController@Index');

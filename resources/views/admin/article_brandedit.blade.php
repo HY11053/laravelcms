@@ -5,6 +5,7 @@
     <link href="/AdminLTE/plugins/iCheck/all.css" rel="stylesheet">
     <link rel="stylesheet" href="/AdminLTE//plugins/daterangepicker/daterangepicker.css">
     <link rel="stylesheet" href="/AdminLTE/plugins/datepicker/datepicker3.css">
+    <!--<link href="/AdminLTE/plugins/summernote/summernote-bs3.css" rel="stylesheet">-->
     <link href="/AdminLTE/dist/css/fileinput.min.css" rel="stylesheet">
 @stop
 @section('content')
@@ -348,7 +349,6 @@
     <script src="/AdminLTE/plugins/iCheck/icheck.min.js"></script>
     <script src="/AdminLTE/plugins/datepicker/bootstrap-datepicker.js"></script>
 
-
     <script>
         $(document).ready(function() {
             $.ajaxSetup({
@@ -432,7 +432,7 @@
             initialPreview: [
                 // IMAGE DATA
                 @foreach($pics as $pic)
-                        "{{$pic}}",
+                    "{{$pic}}",
                 // IMAGE DATA
                 @endforeach
 
@@ -464,8 +464,8 @@
         }).on('filedeleted', function(event, key) {
             console.log('Key = ' + key);
             arrs=key.split(',')
-            $("#imagepics").val($("#imagepics").val().replace(','+arrs[1],''));
+            $("#imagepics").val($("#imagepics").val().replace(arrs[1]+',',''));
         });
-    </script>
+        </script>
 @stop
 
