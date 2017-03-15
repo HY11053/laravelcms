@@ -11,4 +11,8 @@ class IndexController extends Controller
     {
         return view('frontend.index');
     }
+    function demo()
+    {
+    return view('frontend.demo');
+    }
 }

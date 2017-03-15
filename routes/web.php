@@ -90,3 +90,4 @@ Route::get('phone',function(){
 });
 //前台界面
 Route::get('/','Frontend\IndexController@Index');
+Route::get('demobrand','Frontend\IndexController@demo');
