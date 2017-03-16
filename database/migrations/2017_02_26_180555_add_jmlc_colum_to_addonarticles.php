@@ -15,11 +15,11 @@ class AddJmlcColumToAddonarticles extends Migration
     {
         Schema::table('addonarticles', function (Blueprint $table) {
             //
-            $table->text('jmxq_content');
-            $table->text('jmys_content');
-            $table->text('jmlc_content');
-            $table->text('jmzc_content');
-            $table->text('jmask_content');
+            $table->mediumText('jmxq_content')->nullable();
+            $table->mediumText('jmys_content')->nullable();
+            $table->mediumText('jmlc_content')->nullable();
+            $table->mediumText('jmzc_content')->nullable();
+            $table->mediumText('jmask_content')->nullable();
         });
     }
 

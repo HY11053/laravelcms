@@ -85,11 +85,6 @@ class ArticleController extends Controller
         }
        $request['keywords']=$request['keywords']?$request['keywords']:$request['title'];
         $request['click']=rand(100,900);
-        $request['jmxq_content']=rand(100,900);
-        $request['jmys_content']=rand(100,900);
-        $request['jmlc_content']=rand(100,900);
-        $request['jmzc_content']=rand(100,900);
-        $request['jmask_content']=rand(100,900);
         $request['description']=(!empty($request['description']))?$request['description']:htmlspecialchars(mb_substr($request['body'],0,150));
         $request['write']=auth('admin')->user()->name;
         $request['dutyadmin']=auth('admin')->id();

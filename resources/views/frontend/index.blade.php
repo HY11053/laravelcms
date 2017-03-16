@@ -2,6 +2,31 @@
 @section('title') 首页 @stop
 @section('keywords') 关键字 @stop
 @section('description') 描述 @stop
+@section('subnav')
+    <div class="sub_nav">
+        <dl>
+            <dt class="icon1"><a href="#" target="_blank">零食加盟品牌大全</a></dt>
+            @foreach($lingshibrands as $lingshibrand)
+            <dd><a href="/{{$lingshibrand->arctype->real_path}}/{{$lingshibrand->id}}.shtml" target="_blank" title="{{$lingshibrand->shorttitle}}">{{$lingshibrand->shorttitle}}</a></dd>
+            @endforeach
+        </dl>
+        <dl class="dl_wid1">
+            <dt class="icon2"><a href="#" target="_blank" >干果店加盟品牌</a></dt>
+            @foreach($chaohuobrands as $chaohuobrand)
+                <dd><a href="/{{ $chaohuobrand->arctype->real_path}}/{{ $chaohuobrand->id}}.shtml" target="_blank" title="{{ $chaohuobrand->shorttitle}}">{{ $chaohuobrand->shorttitle}}</a></dd>
+            @endforeach
+
+        </dl>
+        <dl class="dl_wid1">
+            <dt class="icon3"><a href="#" target="_blank">进口零食品牌加盟</a></dt>
+            @foreach($jinkoubrands as $jinkoubrand)
+            <dd><a href="/{{ $jinkoubrand->arctype->real_path}}/{{$jinkoubrand->id}}.shtm" target="_blank" title="{{$jinkoubrand->shorttitle}}">{{$jinkoubrand->shorttitle}}</a></dd>
+            @endforeach
+        </dl>
+
+    </div>
+
+@stop
 @section('main_content')
     <!--主体开始-->
     <div class="main">

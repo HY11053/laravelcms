@@ -75,58 +75,7 @@
             </ul>
         </div>
     </div>
-    <div class="sub_nav">
-        <dl>
-            <dt class="icon1"><a href="#" target="_blank">零食加盟品牌大全</a></dt>
-            <dd><a href="/lsbrand/3school/" target="_blank" title="三只松鼠">三只松鼠</a></dd>
-            <dd><a href="/lsbrand/ysg/" target="_blank" title="一扫光">一扫光</a></dd>
-            <dd><a href="/lsbrand/lppz/" target="_blank" title="良品铺子">良品铺子</a></dd>
-            <dd><a href="/lsbrand/lpdrfood/" target="_blank" title="老婆大人">老婆大人</a></dd>
-            <dd><a href="/lsbrand/yanjinpuzi/" target="_blank" title="盐津铺子">盐津铺子</a></dd>
-            <dd><a href="/lsbrand/baiweilin/" target="_blank" title="百味林">百味林</a></dd>
-            <dd><a href="/lsbrand/baicaowei/" target="_blank" title="百草味">百草味</a></dd>
-            <dd><a href="/lsbrand/lingshiduo/" target="_blank" title="零食多">零食多</a></dd>
-            <dd><a href="/lsbrand/youbaijia/" target="_blank" title="悠百佳">悠百佳</a></dd>
-            <dd><a href="/lsbrand/yiweier/" target="_blank" title="伊味儿">伊味儿</a></dd>
-        </dl>
-        <dl class="dl_wid1">
-            <dt class="icon2"><a href="#" target="_blank" >干果店加盟品牌</a></dt>
-            <dd><a href="/chaohuodian/5.shtml" target="_blank" title="傻子瓜子">傻子瓜子</a></dd>
-            <dd><a href="/chaohuodian/6.shtml" target="_blank" title="好想你枣">好想你枣</a></dd>
-            <dd><a href="/chaohuodian/7.shtml" target="_blank" title="喜郎儿">喜郎儿</a></dd>
-            <dd><a href="/chaohuodian/8.shtml" target="_blank" title="戴永红">戴永红</a></dd>
-            <dd><a href="/chaohuodian/9.shtml" target="_blank" title="金大妈">金大妈</a></dd>
-            <dd><a href="/chaohuodian/10.shtml" target="_blank" title="崩豆张">崩豆张</a></dd>
-            <dd><a href="/chaohuodian/11.shtml" target="_blank" title="一品香">一品香</a></dd>
-            <dd><a href="/chaohuodian/12.shtml" target="_blank" title="大山合">大山合</a></dd>
-            <dd><a href="/chaohuodian/13.shtml" target="_blank" title="粒上皇">粒上皇</a></dd>
-            <dd><a href="/chaohuodian/14.shtml" target="_blank" title="核工记">核工记</a></dd>
-        </dl>
-        <dl class="dl_wid1">
-            <dt class="icon3"><a href="#" target="_blank">进口零食品牌加盟</a></dt>
-
-            <dd><a href="/jinkoulingshi/15.shtml" target="_blank" title="万国码头">万国码头</a></dd>
-
-            <dd><a href="/jinkoulingshi/16.shtml" target="_blank" title="舌间味">舌间味</a></dd>
-
-            <dd><a href="/jinkoulingshi/17.shtml" target="_blank" title="非常味道">非常味道</a></dd>
-
-            <dd><a href="/jinkoulingshi/18.shtml" target="_blank" title="自由自在">自由自在</a></dd>
-
-            <dd><a href="/jinkoulingshi/19.shtml" target="_blank" title="百比佳">百比佳</a></dd>
-
-            <dd><a href="/jinkoulingshi/20.shtml" target="_blank" title="甜蜜小筑">甜蜜小筑</a></dd>
-
-            <dd><a href="/jinkoulingshi/21.shtml" target="_blank" title="优之良品">优之良品</a></dd>
-
-            <dd><a href="/jinkoulingshi/22.shtml" target="_blank" title="妮当家">妮当家</a></dd>
-
-            <dd><a href="/jinkoulingshi/23.shtml" target="_blank" title="优客龙">优客龙</a></dd>
-
-            <dd><a href="/jinkoulingshi/24.shtml" target="_blank" title="莫丽食品">莫丽食品</a></dd>
-        </dl>
-
-    </div>
+   @yield('subnav')
     <!--导航 结束-->
 </div>
 <!--header 结束-->
