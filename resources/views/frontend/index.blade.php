@@ -186,18 +186,24 @@
         <div class="index_box2">
             <div class="hd">
                 <span class="tit">创业好店</span>
-                <span class="txt"><a href="/lsbrand/3school/25.shtml" target="_blank">三只松鼠加盟</a> |  </span>
+                @foreach($cybrands as $cybrand)
+                <span class="txt"><a href="/{{$cybrand->arctype->real_path}}/{{$cybrand->id}}.shtml" target="_blank">{{$cybrand->shorttitle}}</a> |  </span>
+                @endforeach
             </div>
             <div class="bd">
                 <ul>
-                    <li><a href="/lsbrand/lppz/26.shtml" target="_blank"><img src="/images/thread/2016/10/17/2c8f54e48e645a5765e5881956cdb2f9.jpg" title="良品铺子加盟" alt="良品铺子加盟"><span>良品铺子加盟</span></a></li>
+                    @foreach($cysbrands as $cysbrand)
+                    <li><a href="/{{$cysbrand->arctype->real_path}}/{{$cysbrand->id}}.shtml" target="_blank"><img src="{{$cysbrand->litpic}}" title="{{$cysbrand->shorttitle}}" alt="{{$cysbrand->shorttitle}}"><span>{{$cysbrand->shorttitle}}</span></a></li>
+                    @endforeach
                 </ul>
             </div>
             <div class="index_item_pic">
                 <ul>
+                    @foreach($cybsbrands as $cybsbrand)
                     <li>
-                        <a href="/lsbrand/lpdrfood/27.shtml" target="_blank" data="/images/thread/2016/10/17/a177898a3976604ba4917550d2e53ec0.jpg"><img src="/images/thread/2016/10/17/a177898a3976604ba4917550d2e53ec0.jpg" width="140" height="81" alt="老婆大人加盟" title="老婆大人加盟"/></a>
+                        <a href="/{{$cybsbrand->arctype->real_path}}/{{$cybsbrand->id}}.shtml" target="_blank" data="{{$cybsbrand->litpic}}"><img src="{{$cybsbrand->litpic}}" width="140" height="81" alt="{{$cybsbrand->title}}" title="{{$cybsbrand->shorttitle}}"/></a>
                     </li>
+                    @endforeach
                 </ul>
             </div>
         </div>
@@ -220,41 +226,27 @@
                 </div>
                 <div class="bd">
                     <div class="bd_l">
-                        <dl>
-                            <dd><a href="/lsbrand/lingshiduo/30.shtml" title="零食多加盟" target="_blank">零食多</a></dd>
-                            <dd><a href="/lsbrand/baicaowei/29.shtml" title="百草味加盟" target="_blank">百草味</a></dd>
-                            <dd><a href="/lsbrand/yanjinpuzi/28.shtml" title="盐津铺子加盟" target="_blank">盐津铺子</a></dd>
-                        </dl>
-                        <dl>
-                            <dd><a href="/lsbrand/baicaowei/29.shtml" title="百草味加盟" target="_blank">百草味</a></dd>
-                            <dd><a href="/lsbrand/yanjinpuzi/28.shtml" title="盐津铺子加盟" target="_blank">盐津铺子</a></dd>
-                        </dl>
-                        <dl>
-                            <dd><a href="/lsbrand/yanjinpuzi/28.shtml" title="盐津铺子加盟" target="_blank">盐津铺子</a></dd>
-                        </dl>
+                        @foreach($latestlingshibrands as $index=>$latestlingshibrand)
+
+                        @if($index==0 || $index %9 ==0) <dl> @endif
+
+                            <dd><a href="/{{$latestlingshibrand->arctype->real_path}}/{{$latestlingshibrand->id}}.shtml" title="{{$latestlingshibrand->shorttitle}}" target="_blank">{{str_limit($latestlingshibrand->shorttitle, $limit = 8, $end = '')}}</a></dd>
+
+                        @if(($index+1) %9 ==0 || $index==count($latestlingshibrands)) </dl> @endif
+                            @endforeach
+
                     </div>
                     <div class="bd_r">
                         <div class="index_txt_list_wrap">
                             <div class="index_txt_list">
+                                @foreach($latestrlingshibrands as $indes=>$latestrlingshibrand)
 
-                                <dl>
+                                    @if($indes==0 || $indes%2 ==0) <dl> @endif
+                                    <dd><a href="/{{$latestrlingshibrand->arctype->real_path}}/{{$latestrlingshibrand->id}}.shtml" title="{{$latestrlingshibrand->shorttitle}}" target="_blank">{{str_limit($latestrlingshibrand->shorttitle, $limit = 16, $end = '')}}</a></dd>
 
-                                    <dd><a href="/lsbrand/lingshiduo/30.shtml" title="零食多加盟" target="_blank">零食多加盟</a></dd>
+                                    @if($indes%2 !=0 || $indes+1==count($latestrlingshibrands)) </dl>  @endif
 
-
-
-
-                                    <dd><a href="/lsbrand/baicaowei/29.shtml" title="百草味加盟" target="_blank">百草味加盟</a></dd>
-
-                                </dl>
-
-
-                                <dl>
-
-                                    <dd><a href="/lsbrand/yanjinpuzi/28.shtml" title="盐津铺子加盟" target="_blank">盐津铺子加盟</a></dd>
-
-                                </dl>
-
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -280,65 +272,23 @@
                 </div>
                 <div class="bd">
                     <div class="bd_l">
-                        <dl>
-                            <dd><a href="/chaohuodian/4.shtml" title="傻子瓜子" target="_blank">傻子瓜子</a></dd>
-                            <dd><a href="/chaohuodian/7.shtml" title="喜郎儿" target="_blank">喜郎儿</a></dd>
-                            <dd><a href="/chaohuodian/8.shtml" title="戴永红" target="_blank">戴永红</a></dd>
-                            <dd><a href="/chaohuodian/9.shtml" title="金大妈" target="_blank">金大妈</a></dd>
-                            <dd><a href="/chaohuodian/10.shtml" title="崩豆张" target="_blank">崩豆张</a></dd>
-                            <dd><a href="/chaohuodian/11.shtml" title="一品香" target="_blank">一品香</a></dd>
-                            <dd><a href="/chaohuodian/12.shtml" title="大山合" target="_blank">大山合</a></dd>
-                            <dd><a href="/chaohuodian/13.shtml" title="粒上皇" target="_blank">粒上皇</a></dd>
-                        </dl>
-                        <dl>
-                            <dd><a href="/chaohuodian/8.shtml" title="戴永红" target="_blank">戴永红</a></dd>
-                            <dd><a href="/chaohuodian/9.shtml" title="金大妈" target="_blank">金大妈</a></dd>
-                            <dd><a href="/chaohuodian/10.shtml" title="崩豆张" target="_blank">崩豆张</a></dd>
-                            <dd><a href="/chaohuodian/11.shtml" title="一品香" target="_blank">一品香</a></dd>
-                            <dd><a href="/chaohuodian/12.shtml" title="大山合" target="_blank">大山合</a></dd>
-                            <dd><a href="/chaohuodian/13.shtml" title="粒上皇" target="_blank">粒上皇</a></dd>
-                            <dd><a href="/chaohuodian/14.shtml" title="核工记" target="_blank">核工记</a></dd>
-                        </dl>
-                        <dl>
-                            <dd><a href="/chaohuodian/9.shtml" title="金大妈" target="_blank">金大妈</a></dd>
-                            <dd><a href="/chaohuodian/10.shtml" title="崩豆张" target="_blank">崩豆张</a></dd>
-                            <dd><a href="/chaohuodian/11.shtml" title="一品香" target="_blank">一品香</a></dd>
-                            <dd><a href="/chaohuodian/12.shtml" title="大山合" target="_blank">大山合</a></dd>
-                            <dd><a href="/chaohuodian/13.shtml" title="粒上皇" target="_blank">粒上皇</a></dd>
-                            <dd><a href="/chaohuodian/14.shtml" title="核工记" target="_blank">核工记</a></dd>
-                        </dl>
+
+                        @foreach($latestchaohuobrands as $index=>$latestchaohuobrand)
+
+                            @if($index==0 || $index %9 ==0) <dl> @endif
+
+                                <dd><a href="/{{$latestchaohuobrand->arctype->real_path}}/{{$latestchaohuobrand->id}}.shtml" title="{{$latestchaohuobrand->shorttitle}}" target="_blank">{{str_limit($latestchaohuobrand->shorttitle, $limit = 8, $end = '')}}</a></dd>
+
+                                @if(($index+1) %9 ==0 || $index==count($latestchaohuobrands)) </dl> @endif
+                        @endforeach
+
                     </div>
                     <div class="bd_r">
                         <div class="index_brand_list">
                             <ul>
-
-
-                                <li><a href="/chaohuodian/4.shtml" target="_blank"><img src="" title="傻子瓜子" alt="傻子瓜子"><span>傻子瓜子</span></a></li>
-
-
-                                <li><a href="/chaohuodian/7.shtml" target="_blank"><img src="" title="喜郎儿" alt="喜郎儿"><span>喜郎儿</span></a></li>
-
-
-                                <li><a href="/chaohuodian/8.shtml" target="_blank"><img src="" title="戴永红" alt="戴永红"><span>戴永红</span></a></li>
-
-
-                                <li><a href="/chaohuodian/9.shtml" target="_blank"><img src="" title="金大妈" alt="金大妈"><span>金大妈</span></a></li>
-
-
-                                <li><a href="/chaohuodian/10.shtml" target="_blank"><img src="" title="崩豆张" alt="崩豆张"><span>崩豆张</span></a></li>
-
-
-                                <li><a href="/chaohuodian/11.shtml" target="_blank"><img src="" title="一品香" alt="一品香"><span>一品香</span></a></li>
-
-
-                                <li><a href="/chaohuodian/12.shtml" target="_blank"><img src="" title="大山合" alt="大山合"><span>大山合</span></a></li>
-
-
-                                <li><a href="/chaohuodian/13.shtml" target="_blank"><img src="" title="粒上皇" alt="粒上皇"><span>粒上皇</span></a></li>
-
-
-                                <li><a href="/chaohuodian/14.shtml" target="_blank"><img src="" title="核工记" alt="核工记"><span>核工记</span></a></li>
-
+                                @foreach($latestrchaohuobrands as $latestrchaohuobrand)
+                                <li><a href="/{{$latestrchaohuobrand->arctype->real_path}}/{{$latestrchaohuobrand->id}}.shtml" target="_blank"><img src="{{$latestrchaohuobrand->litpic}}" title="{{$latestrchaohuobrand->shorttitle}}" alt="{{$latestrchaohuobrand->shorttitle}}"><span>{{$latestrchaohuobrand->shorttitle}}</span></a></li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
