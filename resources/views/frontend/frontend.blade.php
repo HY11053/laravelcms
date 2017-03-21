@@ -7,6 +7,7 @@
     <meta name="keywords" content="@yield('keywords')"/>
     <meta name="description" content="@yield('description')"/>
     <link href="/reception/css/style.css" rel="stylesheet" type="text/css" />
+    @yield('headlibs')
     <script type="text/javascript" src="/reception/js/jquery.min.js"></script>
     <script type="text/javascript" src="/reception/js/jquery.SuperSlide.2.1.1.js"></script>
     <script type="text/javascript" src="/reception/js/index.js"></script>
