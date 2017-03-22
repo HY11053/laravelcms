@@ -26,6 +26,7 @@ class IndexController extends Controller
         $latestchaohuobrands=Archive::where('mid','1')->whereIn('typeid',[3])->take(27)->latest()->get();
         $latestrchaohuobrands=Archive::where('mid','1')->whereIn('typeid',[3])->take(30)->latest()->get();
         //进口零食
+
         return view('frontend.index',compact('lingshibrands','chaohuobrands','ganguobrands',
             'jinkoubrands','cybrands','cysbrands','cybsbrands','latestlingshibrands','latestrlingshibrands','latestchaohuobrands','latestrchaohuobrands'));
     }

@@ -96,17 +96,17 @@
                 <div class="indrouce-r fl">
                     <div class="list list-one">
                         <a target="_blank" href="{{$pagelist->arctype->real_path}}/{{$pagelist->id}}.shtml" title="{{$pagelist->shorttitle}}"><h3 class="list-Name fl">{{$pagelist->shorttitle}}</h3></a>
-                        <span class="money fr h4">投资额度：&nbsp;<em class="red">5~10万</em>&nbsp;&nbsp;&nbsp;所在地区：&nbsp;<em class="red">上海</em>&nbsp;&nbsp;</span>
+                        <span class="money fr h4">投资额度：&nbsp;<em class="red">{{$pagelist->article->brandpay}}</em>&nbsp;&nbsp;&nbsp;所在地区：&nbsp;<em class="red">{{$pagelist->article->brandorigin}}</em>&nbsp;&nbsp;</span>
                     </div>
                     <div class="list list-two">
                         <div class="biao_h clearfix fl"> <i class="jianIco fl"></i> <i class="shenIco fl"></i> <i class="huiIco fl"></i> <i class="baoIco fl"></i> </div>
                         <div class="jibie fl"><span>投资星级：<em class="xing">★★★★★</em></span></div>
-                        <span class="money fr h4">综合指数：&nbsp;<em class="red">10000</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最近咨询：&nbsp;<em class="red">785</em>&nbsp;&nbsp;</span>
+                        <span class="money fr h4">综合指数：&nbsp;<em class="red">{{$pagelist->article->brandattch}}</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最近咨询：&nbsp;<em class="red">{{$pagelist->article->brandchat}}</em>&nbsp;&nbsp;</span>
                     </div>
                     <div class="list-three">
                         <a href="#" target="_blank" class="squaer tell fl">免费通话</a>
                         <a href="#" target="_blank" class="squaer liuyan fl">马上留言</a>
-                        <a href="/lsbrand/ysg/1.shtml" target="_blank" class="squaer xiangqing fl">项目详情</a>
+                        <a href="{{$pagelist->arctype->real_path}}/{{$pagelist->id}}.shtml" target="_blank" class="squaer xiangqing fl">项目详情</a>
                         <span class="byb_btn"><label><input type="checkbox" id="Db_64806" cid="64806" class="checkbox" data-pro='{"pid":{{$pagelist->id}},"name":"{{$pagelist->shorttitle}}","pic":"{{$pagelist->litpic}}","url":"http://zf.qudao.com/xm/64806.html"}'>
 						项目比一比</label></span>
                     </div>

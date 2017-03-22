@@ -54,4 +54,8 @@ class Archive extends Model
     {
         return $this->belongsTo('App\AdminModel\Arctype','typeid');
     }
+    public function article()
+    {
+        return $this->hasOne('App\AdminModel\Addonarticle','id');
+    }
 }
