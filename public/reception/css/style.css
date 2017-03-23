@@ -300,7 +300,7 @@ body, html { min-height:101%; }
 .index_box5 .cont5_left .left_one .one_top .d_wz h3{ padding-left:45px; background:url(../images/icon10.png) no-repeat left center; font-size:14px; margin-bottom:5px;}
 .index_box5 .cont5_left .left_one .one_top .d_wz p{ color:#999;}
 .index_box5 .cont5_left .left_one .one_cen{ padding:20px 0 0 15px; height:46px;}
-.index_box5 .cont5_left .left_one .one_cen ul li{ float:left; width:138px; line-height:23px;}
+.index_box5 .cont5_left .left_one .one_cen ul li{ float:left; width:138px; line-height:23px;overflow: hidden;  height: 20px;}
 .index_box5 .cont5_left .left_one .one_bot{ padding:20px 0 0 15px; clear:both}
 .index_box5 .cont5_left .left_one .one_bot dl{ overflow:auto; clear:both}
 .index_box5 .cont5_left .left_one .one_bot dl dt{ color:#555555; font-size:16px; margin-bottom:5px;}

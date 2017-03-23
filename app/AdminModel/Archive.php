@@ -44,6 +44,10 @@ class Archive extends Model
             $this->attributes['published_at'] =$date?Carbon::createFromFormat('Y-m-d',date('Y-m-d',strtotime($date))) : Carbon::now();
         }
     }
+    public function scopePublished($query)
+    {
+        $query->where('published_at','<=',Carbon::now());
+    }
     /**
      * Eloquent ORM 关联定义
      * @param

@@ -279,16 +279,16 @@
                     <ul>
                         @foreach($topbrands as $index=>$topbrand)
                             @if($index==0)
-                        <li class="top"> <a href="/{{$topbrand->arctype->real_path}}/{{$topbrand->id}}/.shtml" target="_blank" title="{{$topbrand->shorttitle}}"><i class="num">{{$index+1}} </i> <img src="{{$topbrand->litpic}}" alt="{{$topbrand->shorttitle}}" ></a>
+                        <li class="top"> <a href="/{{$topbrand->arctype->real_path}}/{{$topbrand->id}}.shtml" target="_blank" title="{{$topbrand->shorttitle}}"><i class="num">{{$index+1}} </i> <img src="{{$topbrand->litpic}}" alt="{{$topbrand->shorttitle}}" ></a>
                             <div class="cont">
-                                <p><a href="/{{$topbrand->arctype->real_path}}/{{$topbrand->id}}/.shtml" target="_blank">{{$topbrand->shorttitle}}</a></p>
+                                <p><a href="/{{$topbrand->arctype->real_path}}/{{$topbrand->id}}.shtml" target="_blank">{{$topbrand->shorttitle}}</a></p>
                                 <p><span>投资金额：</span><i>{{$topbrand->article->brandpay}}</i></p>
-                                <p class="btn"><a href="/{{$topbrand->arctype->real_path}}/{{$topbrand->id}}/.shtml">查看详情</a></p>
+                                <p class="btn"><a href="/{{$topbrand->arctype->real_path}}/{{$topbrand->id}}.shtml">查看详情</a></p>
                             </div>
                         </li>
                             @else
 
-                        <li class="top"> <i class="num">{{$index+1}}</i> <span class="name"><a href="/{{$topbrand->arctype->real_path}}/{{$topbrand->id}}/.shtml" target="_blank" title="{{$topbrand->shorttitle}}">{{$topbrand->shorttitle}}</a></span> <span class="price">{{$topbrand->article->brandpay}}</span> </li>
+                        <li class="top"> <i class="num">{{$index+1}}</i> <span class="name"><a href="/{{$topbrand->arctype->real_path}}/{{$topbrand->id}}.shtml" target="_blank" title="{{$topbrand->shorttitle}}">{{$topbrand->shorttitle}}</a></span> <span class="price">{{$topbrand->article->brandpay}}</span> </li>
                         @endif
 
                         @endforeach

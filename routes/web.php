@@ -90,6 +90,8 @@ Route::get('phone',function(){
 });
 //前台界面
 Route::get('/','Frontend\IndexController@Index');
-Route::get('lingshidianpp','Frontend\BrandsController@BrandLists');
-Route::get('lingshidianpp/{id}.shtml','Frontend\BrandArticleController@BrandArticle');
+Route::get('comparision/{p1?}-{p2?}-{p3?}.shtml','Frontend\Comparision@Compare');
+Route::get('{path?}','Frontend\BrandsController@BrandLists');
+Route::get('{path?}/{id}.shtml','Frontend\BrandArticleController@BrandArticle');
+
 

@@ -11,6 +11,7 @@ return array(
     'AddImagepicsColumToAddonarticles' => $baseDir . '/database/migrations/2017_02_25_211704_add_imagepics_colum_to_addonarticles.php',
     'AddIntroColumToArticlesTable' => $baseDir . '/database/migrations/2017_01_29_102035_add_intro_colum_to_articles_table.php',
     'AddJmlcColumToAddonarticles' => $baseDir . '/database/migrations/2017_02_26_180555_add_jmlc_colum_to_addonarticles.php',
+    'AddMidColumToArctypes' => $baseDir . '/database/migrations/2017_03_23_111555_add_mid_colum_to_arctypes.php',
     'AddonarticlesTableSeeder' => $baseDir . '/database/seeds/AddonarticlesTableSeeder.php',
     'AdminsTableSeeder' => $baseDir . '/database/seeds/AdminsTableSeeder.php',
     'ArchivesTableSeeder' => $baseDir . '/database/seeds/ArchivesTableSeeder.php',

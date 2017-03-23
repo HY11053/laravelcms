@@ -313,47 +313,22 @@
                 </div>
                 <div class="bd">
                     <div class="bd_l">
-                        <dl>
-                            <dd><a href="/jinkoulingshi/15.shtml" title="万国码头" target="_blank">万国码头</a></dd>
-                            <dd><a href="/jinkoulingshi/16.shtml" title="舌间味" target="_blank">舌间味</a></dd>
-                            <dd><a href="/jinkoulingshi/17.shtml" title="非常味道" target="_blank">非常味道</a></dd>
-                            <dd><a href="/jinkoulingshi/18.shtml" title="自由自在" target="_blank">自由自在</a></dd>
-                            <dd><a href="/jinkoulingshi/19.shtml" title="百比佳" target="_blank">百比佳</a></dd>
-                            <dd><a href="/jinkoulingshi/20.shtml" title="甜蜜小筑" target="_blank">甜蜜小筑</a></dd>
-                        </dl>
-                        <dl>
-                            <dd><a href="/jinkoulingshi/17.shtml" title="非常味道" target="_blank">非常味道</a></dd>
-                            <dd><a href="/jinkoulingshi/18.shtml" title="自由自在" target="_blank">自由自在</a></dd>
-                            <dd><a href="/jinkoulingshi/19.shtml" title="百比佳" target="_blank">百比佳</a></dd>
-                            <dd><a href="/jinkoulingshi/20.shtml" title="甜蜜小筑" target="_blank">甜蜜小筑</a></dd>
-                        </dl>
-                        <dl>
-                            <dd><a href="/jinkoulingshi/18.shtml" title="自由自在" target="_blank">自由自在</a></dd>
-                            <dd><a href="/jinkoulingshi/19.shtml" title="百比佳" target="_blank">百比佳</a></dd>
-                            <dd><a href="/jinkoulingshi/20.shtml" title="甜蜜小筑" target="_blank">甜蜜小筑</a></dd>
-                        </dl>
+                        @foreach($latestjinkoubrands as $index=>$latestjinkoubrand)
+
+                            @if($index==0 || $index %9 ==0) <dl> @endif
+
+                                <dd><a href="/{{$latestjinkoubrand->arctype->real_path}}/{{$latestjinkoubrand->id}}.shtml" title="{{$latestchaohuobrand->shorttitle}}" target="_blank">{{str_limit($latestjinkoubrand->shorttitle, $limit = 8, $end = '')}}</a></dd>
+
+                                @if(($index+1) %9 ==0 || $index==count($latestjinkoubrands)) </dl> @endif
+                        @endforeach
                     </div>
                     <div class="bd_r">
                         <div class="index_brand_list">
                             <ul>
 
-                                <li><a href="/jinkoulingshi/15.shtml" target="_blank"><img src="" title="万国码头" alt="万国码头"><span>万国码头</span></a></li>
-
-
-                                <li><a href="/jinkoulingshi/16.shtml" target="_blank"><img src="" title="舌间味" alt="舌间味"><span>舌间味</span></a></li>
-
-
-                                <li><a href="/jinkoulingshi/17.shtml" target="_blank"><img src="" title="非常味道" alt="非常味道"><span>非常味道</span></a></li>
-
-
-                                <li><a href="/jinkoulingshi/18.shtml" target="_blank"><img src="" title="自由自在" alt="自由自在"><span>自由自在</span></a></li>
-
-
-                                <li><a href="/jinkoulingshi/19.shtml" target="_blank"><img src="" title="百比佳" alt="百比佳"><span>百比佳</span></a></li>
-
-
-                                <li><a href="/jinkoulingshi/20.shtml" target="_blank"><img src="" title="甜蜜小筑" alt="甜蜜小筑"><span>甜蜜小筑</span></a></li>
-
+                                @foreach($latestrjinkoubrands as $latestrjinkoubrand)
+                                    <li><a href="/{{$latestrjinkoubrand->arctype->real_path}}/{{$latestrjinkoubrand->id}}.shtml" target="_blank"><img src="{{$latestrjinkoubrand->litpic}}" title="{{$latestrjinkoubrand->shorttitle}}" alt="{{$latestrjinkoubrand->shorttitle}}"><span>{{$latestrjinkoubrand->shorttitle}}</span></a></li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
@@ -378,32 +353,19 @@
                 <h2>大家都在看</h2>
                 <div class="con_fir">
                     <div class="fir_left">
-                        <div class="li_div"><a href="/lsbrand/lingshiduo/30.shtml" title="零食多" target="_blank"><img src=""></a><span><a href="/lsbrand/lingshiduo/30.shtml" target="_blank">零食多</a><br><font color="#9c9c9c">人</font><em><a href="#" target="_blank">咨询</a></em></span></div>
-                        <div class="li_div"><a href="/lsbrand/baicaowei/29.shtml" title="百草味" target="_blank"><img src=""></a><span><a href="/lsbrand/baicaowei/29.shtml" target="_blank">百草味</a><br><font color="#9c9c9c">10000人</font><em><a href="#" target="_blank">咨询</a></em></span></div>
-                        <div class="li_div"><a href="/lsbrand/yanjinpuzi/28.shtml" title="盐津铺子" target="_blank"><img src=""></a><span><a href="/lsbrand/yanjinpuzi/28.shtml" target="_blank">盐津铺子</a><br><font color="#9c9c9c">人</font><em><a href="#" target="_blank">咨询</a></em></span></div>
+                        @foreach($seesrbrands as $seesrbrand)
+
+                        <div class="li_div"><a href="/{{$seesrbrand->arctype->real_path}}/{{$seesrbrand->id}}.shtml" title="{{$seesrbrand->shorttitle}}" target="_blank"><img src="{{$seesrbrand->litpic}}"></a><span><a href="/{{$seesrbrand->arctype->real_path}}/{{$seesrbrand->id}}.shtml" target="_blank">{{$seesrbrand->shorttitle}}</a><br><font color="#9c9c9c">{{$seesrbrand->article->brandattch}}人</font><em><a href="#" target="_blank">咨询</a></em></span></div>
+                        @endforeach
                     </div>
                     <div class="fir_right">
                         <ul>
+                            @foreach($seesrbrands as $seesrbrand)
                             <li>
-                                <div class="jg">￥5~7万</div>
-                                <div class="wz"><a href="/jinkoulingshi/15.shtml" title="万国码头" target="_blank">万国码头</a><br><span class="fl">行业：<font color="#666">零食炒货</font></span><span class="fr">人咨询</span></div>
+                                <div class="jg">￥{{$seesrbrand->article->brandpay}}</div>
+                                <div class="wz"><a href="/{{$seesrbrand->arctype->real_path}}/{{$seesrbrand->id}}.shtml" title="{{$seesrbrand->shorttitle}}" target="_blank">{{$seesrbrand->shorttitle}}</a><br><span class="fl">行业：<font color="#666">{{str_replace('加盟','',$seesrbrand->arctype->typename)}}</font></span><span class="fr">{{$seesrbrand->article->brandattch}}人咨询</span></div>
                             </li>
-                            <li>
-                                <div class="jg">￥万</div>
-                                <div class="wz"><a href="/jinkoulingshi/16.shtml" title="舌间味" target="_blank">舌间味</a><br><span class="fl">行业：<font color="#666"></font></span><span class="fr">人咨询</span></div>
-                            </li>
-                            <li>
-                                <div class="jg">￥万</div>
-                                <div class="wz"><a href="/jinkoulingshi/17.shtml" title="非常味道" target="_blank">非常味道</a><br><span class="fl">行业：<font color="#666"></font></span><span class="fr">人咨询</span></div>
-                            </li>
-                            <li>
-                                <div class="jg">￥万</div>
-                                <div class="wz"><a href="/jinkoulingshi/18.shtml" title="自由自在" target="_blank">自由自在</a><br><span class="fl">行业：<font color="#666"></font></span><span class="fr">人咨询</span></div>
-                            </li>
-                            <li>
-                                <div class="jg">￥万</div>
-                                <div class="wz"><a href="/jinkoulingshi/19.shtml" title="百比佳" target="_blank">百比佳</a><br><span class="fl">行业：<font color="#666"></font></span><span class="fr">人咨询</span></div>
-                            </li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
@@ -439,22 +401,21 @@
                 <h2>创业大讲堂</h2>
                 <div class="left_one">
                     <div class="one_top">
-                        <div class="li_d"> <a href="/news/39.shtml" title="休闲零食加盟店该如何经营" target="_blank"><img src="" alt="休闲零食加盟店该如何经营"></a>
+                        @foreach($recommendnews as $recommendnew)
+                        <div class="li_d"> <a href="/{{$recommendnew->arctype->real_path}}/{{$recommendnew->id}}.shtml" title="{{$recommendnew->title}}" target="_blank"><img src="{{$recommendnew->litpic}}" alt="{{$recommendnew->title}}"></a>
                             <div class="d_wz">
-                                <h3><a href="#" target="_blank" title="休闲零食加盟店该如何经营">休闲零食加盟店该如何经营</a></h3>
-                                <p>三只松鼠加盟费</p>
+                                <h3><a href="/{{$recommendnew->arctype->real_path}}/{{$recommendnew->id}}.shtml" target="_blank" title="{{$recommendnew->title}}">{{$recommendnew->title}}</a></h3>
+                                <p>{{str_limit($recommendnew->description, $limit = 48, $end = '')}}</p>
                             </div>
                         </div>
+                            @endforeach
                     </div>
                     <div class="one_cen">
                         <ul>
-                            <li><a href="/news/2.shtml" title="ces" target="_blank">ces </a></li>
-                            <li><a href="/news/31.shtml" title="投资加盟零食店需要满足哪些条件" target="_blank">投资加盟零食店需要满 </a></li>
-                            <li><a href="/news/32.shtml" title="投资加盟零食店注意事项有哪些" target="_blank">投资加盟零食店注意事 </a></li>
-                            <li><a href="/news/33.shtml" title="一扫光怎么样？加盟赚钱吗" target="_blank">一扫光怎么样？加盟赚 </a></li>
-                            <li><a href="/news/34.shtml" title="投资开零食店需要考虑哪些问题" target="_blank">投资开零食店需要考虑 </a></li>
-                            <li><a href="/news/35.shtml" title="开零食店需要考虑哪些问题" target="_blank">开零食店需要考虑哪些 </a></li>
-                        </ul>
+                            @foreach($latesnews as $latesnew)
+                            <li><a href="{{$latesnew->arctype->real_path}}/{{$latesnew->id}}.shtml" title="{{$latesnew->title}}" target="_blank">{{$latesnew->title}} </a></li>
+                            @endforeach
+                              </ul>
                     </div>
                     <div class="one_bot">
                         <dl>

@@ -70,7 +70,9 @@
     <!--推荐品牌 开始-->
     <div class="rec_brand_list">
         <ul>
-            <li><a href="/lsbrand/lpdrfood/27.shtml" target="_blank" title="老婆大人加盟" class="pic"><img src="/images/thread/2016/10/17/a177898a3976604ba4917550d2e53ec0.jpg" alt="老婆大人加盟"><em>老婆大人加盟</em></a></li>
+            @foreach($topbrands as $topbrand)
+            <li><a href="/{{ $topbrand->arctype->real_path}}/{{$topbrand->id}}.shtml" target="_blank" title="{{$topbrand->shorttitle}}" class="pic"><img src="{{$topbrand->litpic}}" alt="{{$topbrand->shorttitle}}"><em>{{$topbrand->shorttitle}}</em></a></li>
+            @endforeach
         </ul>
     </div>
     <!--推荐品牌 结束-->
@@ -90,12 +92,12 @@
             @foreach($pagelists as $pagelist)
             <div class="brand_list_item">
                 <div class="pro-Img fl">
-                    <a target="_blank" href="{{$pagelist->arctype->real_path}}/{{$pagelist->id}}.shtml" class="pp-pic-name" title="{{$pagelist->shorttitle}}"><img src="{{$pagelist->litpic}}" alt="{{$pagelist->shorttitle}}"></a>
+                    <a target="_blank" href="/{{$pagelist->arctype->real_path}}/{{$pagelist->id}}.shtml" class="pp-pic-name" title="{{$pagelist->shorttitle}}"><img src="{{$pagelist->litpic}}" alt="{{$pagelist->shorttitle}}"></a>
                     <p class="pro_p">{!! strip_tags($pagelist->description) !!}</p>
                 </div>
                 <div class="indrouce-r fl">
                     <div class="list list-one">
-                        <a target="_blank" href="{{$pagelist->arctype->real_path}}/{{$pagelist->id}}.shtml" title="{{$pagelist->shorttitle}}"><h3 class="list-Name fl">{{$pagelist->shorttitle}}</h3></a>
+                        <a target="_blank" href="/{{$pagelist->arctype->real_path}}/{{$pagelist->id}}.shtml" title="{{$pagelist->shorttitle}}"><h3 class="list-Name fl">{{$pagelist->shorttitle}}</h3></a>
                         <span class="money fr h4">投资额度：&nbsp;<em class="red">{{$pagelist->article->brandpay}}</em>&nbsp;&nbsp;&nbsp;所在地区：&nbsp;<em class="red">{{$pagelist->article->brandorigin}}</em>&nbsp;&nbsp;</span>
                     </div>
                     <div class="list list-two">
@@ -106,8 +108,8 @@
                     <div class="list-three">
                         <a href="#" target="_blank" class="squaer tell fl">免费通话</a>
                         <a href="#" target="_blank" class="squaer liuyan fl">马上留言</a>
-                        <a href="{{$pagelist->arctype->real_path}}/{{$pagelist->id}}.shtml" target="_blank" class="squaer xiangqing fl">项目详情</a>
-                        <span class="byb_btn"><label><input type="checkbox" id="Db_64806" cid="64806" class="checkbox" data-pro='{"pid":{{$pagelist->id}},"name":"{{$pagelist->shorttitle}}","pic":"{{$pagelist->litpic}}","url":"http://zf.qudao.com/xm/64806.html"}'>
+                        <a href="/{{$pagelist->arctype->real_path}}/{{$pagelist->id}}.shtml" target="_blank" class="squaer xiangqing fl">项目详情</a>
+                        <span class="byb_btn"><label><input type="checkbox" id="Db_64806" cid="64806" class="checkbox" data-pro='{"pid":{{$pagelist->id}},"name":"{{$pagelist->shorttitle}}","pic":"{{$pagelist->litpic}}","url":"{{env('APP_URL')}}/{{$pagelist->arctype->real_path}}/{{$pagelist->id}}.shtml"}'>
 						项目比一比</label></span>
                     </div>
                 </div>
@@ -119,9 +121,7 @@
 
         <!--分页 开始-->
         <div class="page">
-            <ul class="pagination">
-                {!! $pagelists->links() !!}
-            </ul>
+            {!! $pagelists->links() !!}
         </div>
         <!--分页 结束-->
     </div>
@@ -187,8 +187,9 @@
             </div>
             <div class="common_list">
                 <ul>
-                    <li><a href="/lsbrand/baicaowei/42.shtml" target="_blank" title="111">111</a></li>
-                    <li><a href="/lsbrand/ysg/3.shtml" target="_blank" title="一扫光零食怎么样">一扫光零食怎么样</a></li>
+                    @foreach($newsbrands as $newsbrand)
+                    <li><a href="/{{$newsbrand->arctype->real_path}}/{{$newsbrand->id}}.shtml" target="_blank" title="{{$newsbrand->title}}">{{$newsbrand->title}}</a></li>
+                    @endforeach
                 </ul>
             </div>
         </div>

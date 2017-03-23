@@ -10,17 +10,36 @@ use App\Http\Controllers\Controller;
 class BrandArticleController extends Controller
 {
     //
-    function BrandArticle(Request $request,$id)
+    function BrandArticle(Request $request,$path,$id)
     {
         preg_match('/[a-zA-Z]+/',$request->path(),$matchs);
         if (Archive::findOrFail($id)->arctype->real_path!=$matchs[0])
         {
             abort(404);
         }else{
-            $thisarticleinfos=Archive::findOrFail($id);
-            $topbrands=Archive::where('mid',1)->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
-            $latestbrands=Archive::where('mid',1)->where('published_at','<=',Carbon::now())->latest()->take(20)->get();
-            return view('frontend.brand_article',compact('thisarticleinfos','topbrands','latestbrands'));
+            if(Archive::findOrFail($id)->mid ==1)
+            {
+                $thisarticleinfos=Archive::findOrFail($id);
+                $topbrands=Archive::where('mid',1)->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
+                $latestbrands=Archive::where('mid',1)->where('published_at','<=',Carbon::now())->latest()->take(20)->get();
+                return view('frontend.brand_article',compact('thisarticleinfos','topbrands','latestbrands'));
+            }else{
+                $thisarticleinfos=Archive::findOrFail($id);
+                $topbrands=Archive::where('mid',1)->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
+                $latestbrands=Archive::where('mid',1)->where('published_at','<=',Carbon::now())->latest()->take(20)->get();
+                $prev_article = Archive::latest('published_at')->published()->find($this->getPrevArticleId($thisarticleinfos->id));
+                $next_article = Archive::latest('published_at')->published()->find($this->getNextArticleId($thisarticleinfos->id));
+                return view('frontend.article_article',compact('thisarticleinfos','prev_article','next_article'));
+            }
+
         }
+    }
+    protected function getPrevArticleId($id)
+    {
+        return Archive::where('id', '<', $id)->max('id');
+    }
+    protected function getNextArticleId($id)
+    {
+        return Archive::where('id', '>', $id)->min('id');
     }
 }
