@@ -439,6 +439,7 @@ class ComposerStaticInitbcc14b164eff51c585117c27039ac457
     );
 
     public static $classMap = array (
+        'AddAcreageColumToAddonarticles' => __DIR__ . '/../..' . '/database/migrations/2017_03_24_130612_add_acreage_colum_to_addonarticles.php',
         'AddFlagsToArchivesTable' => __DIR__ . '/../..' . '/database/migrations/2017_02_09_060302_add_flags_to_archives_table.php',
         'AddFoneignkeyToArchives' => __DIR__ . '/../..' . '/database/migrations/2017_03_04_160105_add_foneignkey_to_archives.php',
         'AddImagepicsColumToAddonarticles' => __DIR__ . '/../..' . '/database/migrations/2017_02_25_211704_add_imagepics_colum_to_addonarticles.php',

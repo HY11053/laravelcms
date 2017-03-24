@@ -256,6 +256,18 @@
                                     </div>
                                 </div>
                                 <div class="form-group col-md-6">
+                                    {{Form::label('genre', '公司性质', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                    <div class="col-md-8 col-sm-9 col-xs-12">
+                                        {{Form::text('genre', null, array('class' => 'form-control col-md-10','id'=>'genre','placeholder'=>'公司性质'))}}
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    {{Form::label('acreage', '所需面积', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                    <div class="col-md-8 col-sm-9 col-xs-12">
+                                        {{Form::text('acreage', null, array('class' => 'form-control col-md-10','id'=>'acreage','placeholder'=>'所需面积'))}}
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
                                     {{Form::label('brandduty', '是否区域授权', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                     <div class="col-md-8 col-sm-9 col-xs-12">
                                         {{Form::text('brandduty', null, array('class' => 'form-control col-md-10','id'=>'brandduty','placeholder'=>'是否区域授权'))}}

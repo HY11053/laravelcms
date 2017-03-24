@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AddAcreageColumToAddonarticles' => $baseDir . '/database/migrations/2017_03_24_130612_add_acreage_colum_to_addonarticles.php',
     'AddFlagsToArchivesTable' => $baseDir . '/database/migrations/2017_02_09_060302_add_flags_to_archives_table.php',
     'AddFoneignkeyToArchives' => $baseDir . '/database/migrations/2017_03_04_160105_add_foneignkey_to_archives.php',
     'AddImagepicsColumToAddonarticles' => $baseDir . '/database/migrations/2017_02_25_211704_add_imagepics_colum_to_addonarticles.php',

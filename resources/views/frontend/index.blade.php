@@ -51,24 +51,24 @@
                         </script>
                         <!--搜索开始-->
                         <form onsubmit="return false">
-                            <input type="hidden" name="_token" value="mQjbG8Vp3zYosUQrZtSQtAYD8fVFW2I4JRWBoVIJ">
+                            {{ csrf_field() }}
                             <div class="select_mod">
                                 <div class="clearfix">
                                     <p>
 								<span class="cont">
 								  <select name="select1" id="select1" class="select_bk">
-									<option selected="selected">行业分类</option>
-									<option value="零食店加盟">零食店加盟</option>
-									<option>炒货加盟</option>
-									<option>干果加盟</option>
-									<option>进口零食加盟</option>
+									<option selected="selected" value="0">行业分类</option>
+									<option value="1">零食店加盟</option>
+									<option value="3">炒货加盟</option>
+									<option value="4">干果加盟</option>
+									<option value="5">进口零食加盟</option>
 								  </select>
 								</span>
                                     </p>
                                     <p>
 								<span class="cont">
 								  <select name="select2" id="select2" class="select_bk">
-									<option selected="selected">投资金额</option>
+									<option selected="selected" value="0">投资金额</option>
 									<option>1~5万</option>
 									<option>5~10万</option>
 									<option>10~20万</option>
@@ -78,11 +78,23 @@
 								</span>
                                     </p>
                                     <p>
+								<span class="cont">
+								  <select name="select3" id="select3" class="select_bk">
+									<option selected="selected" value="0">店铺面积</option>
+									<option>1~10平米</option>
+									<option>10~30平米</option>
+									<option>30~50平米</option>
+									<option>50~80平米</option>
+									<option>100平米以上</option>
+								  </select>
+								</span>
+                                    </p>
+                                    <p>
                                         <span class="cont"><input name="keywordValue" id="ppmc" class="input_bk" value="请输入文本" onfocus="if (value =='请输入文本'){value =''}" onblur="if (value ==''){value='请输入文本'}"></span>
                                     </p>
                                 </div>
                                 <p><input type="submit" width="126" height="35" id="sub_btn" class="btn" value="项目搜索"></p>
-                                <p class="more"><a href="#">快速进入&gt;&gt;</a></p>
+
                             </div>
                         </form>
                         <div class="tit">投资金额：</div>

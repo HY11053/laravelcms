@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="csrf-token" content="mQjbG8Vp3zYosUQrZtSQtAYD8fVFW2I4JRWBoVIJ">
+    <meta name="csrf-token" content=" {{ csrf_token() }}">
     <title>@yield('title')_零食加盟网</title>
     <meta name="keywords" content="@yield('keywords')"/>
     <meta name="description" content="@yield('description')"/>

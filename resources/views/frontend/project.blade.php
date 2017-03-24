@@ -19,7 +19,7 @@
             <dt>项目分类</dt>
             <dd><a class="hover" target="_self" href="#">全部</a></dd>
             @foreach($brandtypes as $brandtype)
-            <dd><a target="_self" href="/{{$brandtype->real_path}}">{{$brandtype->typename}}</a></dd>
+                <dd><a target="_self" href="/{{$brandtype->real_path}}">{{$brandtype->typename}}</a></dd>
             @endforeach
 
         </dl>
@@ -88,27 +88,28 @@
 
         <!--列表 开始-->
         <div class="brand_list" id="productBox">
-            @foreach($pagelists as $pagelist)
+
+            @foreach($pagelists as $pagelist)                
             <div class="brand_list_item">
                 <div class="pro-Img fl">
-                    <a target="_blank" href="/{{$pagelist->arctype->real_path}}/{{$pagelist->id}}.shtml" class="pp-pic-name" title="{{$pagelist->shorttitle}}"><img src="{{$pagelist->litpic}}" alt="{{$pagelist->shorttitle}}"></a>
-                    <p class="pro_p">{!! strip_tags($pagelist->description) !!}</p>
+                    <a target="_blank" href="/{{$pagelist->archive->arctype->real_path}}/{{$pagelist->id}}.shtml" class="pp-pic-name" title="{{$pagelist->archive->shorttitle}}"><img src="{{$pagelist->litpic}}" alt="{{$pagelist->archive->shorttitle}}"></a>
+                    <p class="pro_p">{!! strip_tags($pagelist->archive->description) !!}</p>
                 </div>
                 <div class="indrouce-r fl">
                     <div class="list list-one">
-                        <a target="_blank" href="/{{$pagelist->arctype->real_path}}/{{$pagelist->id}}.shtml" title="{{$pagelist->shorttitle}}"><h3 class="list-Name fl">{{$pagelist->shorttitle}}</h3></a>
-                        <span class="money fr h4">投资额度：&nbsp;<em class="red">{{$pagelist->article->brandpay}}</em>&nbsp;&nbsp;&nbsp;所在地区：&nbsp;<em class="red">{{$pagelist->article->brandorigin}}</em>&nbsp;&nbsp;</span>
+                        <a target="_blank" href="/{{$pagelist->archive->arctype->real_path}}/{{$pagelist->id}}.shtml" title="{{$pagelist->archive->shorttitle}}"><h3 class="list-Name fl">{{$pagelist->archive->shorttitle}}</h3></a>
+                        <span class="money fr h4">投资额度：&nbsp;<em class="red">{{$pagelist->brandpay}}</em>&nbsp;&nbsp;&nbsp;所在地区：&nbsp;<em class="red">{{$pagelist->brandorigin}}</em>&nbsp;&nbsp;</span>
                     </div>
                     <div class="list list-two">
                         <div class="biao_h clearfix fl"> <i class="jianIco fl"></i> <i class="shenIco fl"></i> <i class="huiIco fl"></i> <i class="baoIco fl"></i> </div>
                         <div class="jibie fl"><span>投资星级：<em class="xing">★★★★★</em></span></div>
-                        <span class="money fr h4">综合指数：&nbsp;<em class="red">{{$pagelist->article->brandattch}}</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最近咨询：&nbsp;<em class="red">{{$pagelist->article->brandchat}}</em>&nbsp;&nbsp;</span>
+                        <span class="money fr h4">综合指数：&nbsp;<em class="red">{{$pagelist->brandattch}}</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最近咨询：&nbsp;<em class="red">{{$pagelist->brandchat}}</em>&nbsp;&nbsp;</span>
                     </div>
                     <div class="list-three">
                         <a href="#" target="_blank" class="squaer tell fl">免费通话</a>
                         <a href="#" target="_blank" class="squaer liuyan fl">马上留言</a>
-                        <a href="/{{$pagelist->arctype->real_path}}/{{$pagelist->id}}.shtml" target="_blank" class="squaer xiangqing fl">项目详情</a>
-                        <span class="byb_btn"><label><input type="checkbox" id="Db_64806" cid="64806" class="checkbox" data-pro='{"pid":{{$pagelist->id}},"name":"{{$pagelist->shorttitle}}","pic":"{{$pagelist->litpic}}","url":"{{env('APP_URL')}}/{{$pagelist->arctype->real_path}}/{{$pagelist->id}}.shtml"}'>
+                        <a href="/{{$pagelist->archive->arctype->real_path}}/{{$pagelist->id}}.shtml" target="_blank" class="squaer xiangqing fl">项目详情</a>
+                        <span class="byb_btn"><label><input type="checkbox" id="Db_64806" cid="64806" class="checkbox" data-pro='{"pid":{{$pagelist->id}},"name":"{{$pagelist->archive->shorttitle}}","pic":"{{$pagelist->litpic}}","url":"{{env('APP_URL')}}/{{$pagelist->archive->arctype->real_path}}/{{$pagelist->id}}.shtml"}'>
 						项目比一比</label></span>
                     </div>
                 </div>

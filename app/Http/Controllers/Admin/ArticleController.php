@@ -216,7 +216,7 @@ class ArticleController extends Controller
      */
     function PostArticleSearch(Request $request)
     {
-        $articles=Archive::where('title','like',$request->input('title'))->latest()->paginate(30);
+        $articles=Archive::where('title','like','%'.$request->input('title').'%')->latest()->paginate(30);
         return view('admin.article',compact('articles'));
     }
     /**

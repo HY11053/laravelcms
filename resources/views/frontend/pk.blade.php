@@ -1,5 +1,5 @@
 @extends('frontend.frontend')
-@section('title') 列表页 @stop
+@section('title') @if(isset($cbrand1)) {{$cbrand1->shorttitle}}和 @endif @if(isset($cbrand2)) {{$cbrand2->shorttitle}}和 @endif @if(isset($cbrand3)) {{$cbrand3->shorttitle}}和 @endif 哪家好@stop
 @section('keywords') 关键字 @stop
 @section('description') 描述 @stop
 @section('main_content')
@@ -79,9 +79,9 @@
                     </tr>
                     <tr>
                         <td class="Ltable1">加盟条件：</td>
-                        <td class="Ltable2">@if(isset($cbrand1))  @endif</td>
-                        <td class="Ltable3">@if(isset($cbrand1))  @endif</td>
-                        <td class="Ltable4">@if(isset($cbrand1)) @endif </td>
+                        <td class="Ltable2">@if(isset($cbrand1))   {!! $cbrand1->article->jmzc_content !!} @endif</td>
+                        <td class="Ltable3">@if(isset($cbrand2))   {!! $cbrand2->article->jmzc_content !!} @endif</td>
+                        <td class="Ltable4">@if(isset($cbrand3))   {!! $cbrand3->article->jmzc_content !!} @endif </td>
                     </tr>
                     <tr>
                         <td class="Ltable1">项目评分：</td>
@@ -100,15 +100,15 @@
                     </tr>
                     <tr>
                         <td class="Ltable1">浏览用户：</td>
-                        <td class="Ltable2"></td>
-                        <td class="Ltable3"></td>
-                        <td class="Ltable4"></td>
+                        <td class="Ltable2">@if(isset($cbrand1)) {{$cbrand1->click}} @endif</td>
+                        <td class="Ltable3"> @if(isset($cbrand2)) {{$cbrand2->click}} @endif</td>
+                        <td class="Ltable4"> @if(isset($cbrand3)) {{$cbrand3->click}}  @endif </td>
                     </tr>
                     <tr>
                         <td class="Ltable1">最近咨询：</td>
-                        <td class="Ltable2"> @if(isset($cbrand1)) 996 @endif</td>
-                        <td class="Ltable3"> @if(isset($cbrand1)) 245 @endif</td>
-                        <td class="Ltable4"> @if(isset($cbrand1)) 318 @endif</td>
+                        <td class="Ltable2"> @if(isset($cbrand1)) {{$cbrand1->article->brandattch }} @endif</td>
+                        <td class="Ltable3"> @if(isset($cbrand2)) {{$cbrand2->article->brandattch }} @endif</td>
+                        <td class="Ltable4"> @if(isset($cbrand3)) {{$cbrand3->article->brandattch }} @endif</td>
                     </tr>
 
                     </tbody></table>

@@ -27,10 +27,10 @@
                 <div class="search_tab">
                     <ul>
                         <li class="cur">找商机</li>
-                        <li><a href="/search/all_1_5_0.shtml" target="_blank">5万以下</a></li>
-                        <li><a href="/search/all_5_10_0.shtml" target="_blank">5-10万</a></li>
-                        <li><a href="/search/all_10_20_0.shtml" target="_blank">10-20万</a></li>
-                        <li><a href="/search/all_20_50_0.shtml" target="_blank">20-50万</a></li>
+                        <li><a href="/project/0-1~5-0-0.shtml" target="_blank">5万以下</a></li>
+                        <li><a href="/project/0-5~10-0-0.shtml" target="_blank">5-10万</a></li>
+                        <li><a href="/project/0-10~20-0-0.shtml" target="_blank">10-20万</a></li>
+                        <li><a href="/project/0-20~50-0-0.shtml" target="_blank">20-50万</a></li>
                     </ul>
                 </div>
                 <div class="search_box">

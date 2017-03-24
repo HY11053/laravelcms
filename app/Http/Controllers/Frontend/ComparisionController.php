@@ -6,9 +6,9 @@ use App\AdminModel\Archive;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class Comparision extends Controller
+class ComparisionController extends Controller
 {
-    //
+
     function Compare($p1=0,$p2=0,$p3=0)
     {
         $cbrand1=Archive::find($p1);
