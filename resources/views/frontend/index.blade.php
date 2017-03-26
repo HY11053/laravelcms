@@ -1,7 +1,7 @@
 @extends('frontend.frontend')
-@section('title') 首页 @stop
-@section('keywords') 关键字 @stop
-@section('description') 描述 @stop
+@section('title') {{ config('app.webname', '零食加盟网') }} @stop
+@section('keywords') {{ config('app.keywords', '零食加盟网') }} @stop
+@section('description') {{ config('app.description', '零食加盟网') }} @stop
 @section('subnav')
     <div class="sub_nav">
         <dl>

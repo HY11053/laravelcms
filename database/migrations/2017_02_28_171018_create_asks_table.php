@@ -15,12 +15,12 @@ class CreateAsksTable extends Migration
     {
         Schema::create('asks', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id');
             $table->string('title');
+            $table->text('body');
             $table->integer('viewnum')->default(0);
             $table->integer('answernum')->default(0);
-            $table->integer('user_id');
             $table->integer('is_hidden')->default(0);
-            $table->text('body');
             $table->ipAddress('ip');
             $table->timestamps();
         });

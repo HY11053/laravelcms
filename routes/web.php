@@ -91,11 +91,14 @@ Route::get('phone',function(){
 //前台界面
 Route::get('/','Frontend\IndexController@Index');
 Route::get('demo','Frontend\ComparisionController@demo');
+Route::get('ask','Frontend\AskController@Index');
 Route::get('comparision/{p1?}-{p2?}-{p3?}.shtml','Frontend\ComparisionController@Compare');
+Route::post('comments','Frontend\CommentController@PostComment');
 Route::post('project','Frontend\ProjectController@SearchAjax');
 Route::get('project/{p1?}-{p2?}-{p3?}-{p4?}.shtml','Frontend\ProjectController@Search');
 Route::get('{path?}','Frontend\BrandsController@BrandLists');
 Route::get('{path?}/{id}.shtml','Frontend\BrandArticleController@BrandArticle');
+
 
 
 

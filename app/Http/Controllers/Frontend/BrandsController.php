@@ -20,7 +20,8 @@ class BrandsController extends Controller
             $topbrands=Archive::where('mid',1)->where('ismake','1')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(9)->get();
             $newsbrands=Archive::where('ismake','1')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
             $brandtypes=Arctype::where('mid',1)->get();
-            return view('frontend.brands',compact('pagelists','topbrands','newsbrands','brandtypes'));
+            $thistypeinfo=Arctype::where('real_path',$path)->first();
+            return view('frontend.brands',compact('pagelists','topbrands','newsbrands','brandtypes','thistypeinfo'));
         }else{
 
             if(Arctype::where('real_path',$path)->value('id')==null)
@@ -29,8 +30,8 @@ class BrandsController extends Controller
             }
             $pagelists=Archive::where('typeid',Arctype::where('real_path',$request->path())->value('id'))->where('mid','<>',1)->where('ismake','1')->where('published_at','<=',Carbon::now())->latest()->paginate(10);
             $topnews=Archive::where('mid','<>',1)->where('ismake','1')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(5)->get();
-
-            return view('frontend.lists',compact('pagelists','topnews','newsbrands'));
+            $thistypeinfo=Arctype::where('real_path',$path)->first();
+            return view('frontend.lists',compact('pagelists','topnews','newsbrands','thistypeinfo'));
         }
 
     }

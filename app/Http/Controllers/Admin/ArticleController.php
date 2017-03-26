@@ -80,6 +80,14 @@ class ArticleController extends Controller
             }else{
                 $request['flags'].=',p';
             }
+        }elseif (preg_match('/<[img|IMG].*?src=[\' | \"](.*?(?:[\.jpg|\.jpeg|\.png|\.gif|\.bmp]))[\'|\"].*?[\/]?>/',$request['body'],$match)){
+            $request['litpic']=$match[1];
+            if(empty($request['flags']))
+            {
+                $request['flags'].='p';
+            }else{
+                $request['flags'].=',p';
+            }
         }else{
             $request['litpic']='';
         }

@@ -1,7 +1,7 @@
 @extends('frontend.frontend')
-@section('title') 列表页 @stop
-@section('keywords') 关键字 @stop
-@section('description') 描述 @stop
+@section('title') {{$thisarticleinfos->title}} @stop
+@section('keywords') {{$thisarticleinfos->keywords}} @stop
+@section('description')  {{$thisarticleinfos->description}} @stop
 @section('headlibs')
     <link rel="stylesheet" type="text/css" href="/reception/css/news.css"/>
 @stop
@@ -200,7 +200,11 @@
                             @endforeach
                         </ul>
                     </div>
+
                     <div class="cy_img"><img src="/reception/images/cye_03.jpg" alt="加盟步骤"/> </div>
+                    <!--评论-->
+                @include('frontend.comment')
+                <!--评论end-->
 
                     <!--用户留言 开始-->
                     <div class="gbook" id="msg">
@@ -237,6 +241,7 @@
                         </div>
                     </div>
                     <!--用户留言 结束-->
+
 
                 </div>
             </div>

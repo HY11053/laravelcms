@@ -1,7 +1,7 @@
 @extends('frontend.frontend')
-@section('title') 列表页 @stop
-@section('keywords') 关键字 @stop
-@section('description') 描述 @stop
+@section('title') {{$thistypeinfo->title}}@stop
+@section('keywords') {{$thistypeinfo->keywords}} @stop
+@section('description')  {{$thistypeinfo->description}}  @stop
 
 <!--主体开始-->
 @section('main_content')

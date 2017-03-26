@@ -29,7 +29,7 @@ class BrandArticleController extends Controller
                 $latestbrands=Archive::where('mid',1)->where('published_at','<=',Carbon::now())->latest()->take(20)->get();
                 $prev_article = Archive::latest('published_at')->published()->find($this->getPrevArticleId($thisarticleinfos->id));
                 $next_article = Archive::latest('published_at')->published()->find($this->getNextArticleId($thisarticleinfos->id));
-                return view('frontend.article_article',compact('thisarticleinfos','prev_article','next_article'));
+                return view('frontend.article_article',compact('thisarticleinfos','prev_article','next_article','topbrands'));
             }
 
         }

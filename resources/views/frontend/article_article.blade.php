@@ -1,7 +1,7 @@
 @extends('frontend.frontend')
-@section('title') 列表页 @stop
-@section('keywords') 关键字 @stop
-@section('description') 描述 @stop
+@section('title') {{$thisarticleinfos->title}} @stop
+@section('keywords') {{$thisarticleinfos->keywords}} @stop
+@section('description')  {{$thisarticleinfos->description}} @stop
 @section('headlibs')
     <link rel="stylesheet" type="text/css" href="/reception/css/news.css"/>
 @stop
@@ -40,7 +40,7 @@
             <script>
                 window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
             </script>
-
+            @include('frontend.comment')
             <!--上一篇-->
             <div class="shangxiapian">
                 <p>上一篇：@if(isset($prev_article)) <a href="/{{$prev_article->arctype->real_path}}/{{$prev_article->id}}.shtml" title="{{$prev_article->title}}">{{$prev_article->title}}</a> @else 没有了 @endif </p>
@@ -74,17 +74,22 @@
                 <h3> <i></i> 零售店加盟排行榜 </h3>
                 <div class="rank_bd">
                     <ul>
-                        <li class="top"> <a href="/lingshiduo/30.shtml" target="_blank" title="零食多加盟"><i class="num">1 </i> <img src="" alt="零食多加盟" ></a>
-                            <div class="cont">
-                                <p><a href="/lingshiduo/30.shtml" target="_blank">零食多</a></p>
-                                <p><span>投资金额：</span><i>20~50万</i></p>
-                                <p class="btn"><a href="/lingshiduo/30.shtml">查看详情</a></p>
-                            </div>
-                        </li>
+                        @foreach($topbrands as $index=>$topbrand)
+                            @if($index==0)
+                                <li class="top"> <a href="/{{$topbrand->arctype->real_path}}/{{$topbrand->id}}.shtml" target="_blank" title="{{$topbrand->shorttitle}}"><i class="num">{{$index+1}} </i> <img src="{{$topbrand->litpic}}" alt="{{$topbrand->shorttitle}}" ></a>
+                                    <div class="cont">
+                                        <p><a href="/{{$topbrand->arctype->real_path}}/{{$topbrand->id}}.shtml" target="_blank">{{$topbrand->shorttitle}}</a></p>
+                                        <p><span>投资金额：</span><i>{{$topbrand->article->brandpay}}</i></p>
+                                        <p class="btn"><a href="/{{$topbrand->arctype->real_path}}/{{$topbrand->id}}.shtml">查看详情</a></p>
+                                    </div>
+                                </li>
+                            @else
 
-                        <li class="top"> <i class="num">2</i> <span class="name"><a href="/baicaowei/29.shtml" target="_blank" title="百草味加盟">百草味</a></span> <span class="price">3-5万</span> </li>
+                                <li class="top"> <i class="num">{{$index+1}}</i> <span class="name"><a href="/{{$topbrand->arctype->real_path}}/{{$topbrand->id}}.shtml" target="_blank" title="{{$topbrand->shorttitle}}">{{$topbrand->shorttitle}}</a></span> <span class="price">{{$topbrand->article->brandpay}}</span> </li>
+                            @endif
 
-                        <li class="top"> <i class="num">3</i> <span class="name"><a href="/yanjinpuzi/28.shtml" target="_blank" title="盐津铺子加盟">盐津铺子</a></span> <span class="price">3-5万</span> </li>
+                        @endforeach
+
                     </ul>
                 </div>
             </div>
