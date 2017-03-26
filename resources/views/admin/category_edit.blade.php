@@ -1,6 +1,6 @@
 @extends('admin.layouts.admin_app')
 @section('title')  网站栏目管理_更改栏目 @stop
-    @section('head')
+@section('head')
     <link href="/AdminLTE/plugins/iCheck/all.css" rel="stylesheet">
     <link href="/AdminLTE/plugins/summernote/summernote.css" rel="stylesheet">
     <link href="/AdminLTE/plugins/iCheck/all.css" rel="stylesheet">
@@ -21,7 +21,7 @@
                         <div style="margin-bottom: 15px;"></div>
 
                         <div class="form-group">
-                         {{Form::label('typename', '栏目名称', array('class' => 'col-sm-2 control-label'))}}
+                            {{Form::label('typename', '栏目名称', array('class' => 'col-sm-2 control-label'))}}
                             <div class="col-sm-5">
                                 {{Form::text('typename', null, array('class' => 'form-control','id'=>'typename','placeholder'=>'栏目名称'))}}
                             </div>
@@ -117,10 +117,10 @@
                                             <img src="{{ $typeinfos->litpic }}" class="img-rounded img-responsive"/>
                                         </div>
                                         <div class="col-md-8 col-sm-12 col-xs-12">
-                                        {{Form::file('image', array('class' => 'file col-md-10','id'=>'input-2','multiple data-show-upload'=>"false",'data-show-caption'=>"true"))}}
+                                            {{Form::file('image', array('class' => 'file col-md-10','id'=>'input-2','multiple data-show-upload'=>"false",'data-show-caption'=>"true"))}}
                                         </div>
                                         <div style="clear: both"></div>
-                                        </div>
+                                    </div>
                                 </div>
                             </li>
                             <li>
@@ -142,7 +142,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        {{Form::hidden('typeimages', null,array('id'=>'imagespic'))}}
+                                        {{Form::hidden('typeimages', null,array('id'=>'typeimages'))}}
                                     </div>
                                 </div>
                             </li>
@@ -170,8 +170,8 @@
                         {{Form:: button('提交',array('class'=>'btn btn-danger','type'=>'submit'))}}
                     </div>
                 </div>
-                {!! Form::close() !!}
-                        <!-- /.tab-content -->
+            {!! Form::close() !!}
+            <!-- /.tab-content -->
 
             </div>
             <!-- /.nav-tabs-custom -->
@@ -186,10 +186,10 @@
         <!-- /.col -->
     </div>
     <!-- /.row -->
-    @stop
+@stop
 
-    @section('libs')
-            <!-- jQuery 2.2.3 -->
+@section('libs')
+    <!-- jQuery 2.2.3 -->
     <script src="/AdminLTE/plugins/jQuery/jquery-2.2.3.min.js"></script>
     <!-- Bootstrap 3.3.6 -->
     <script src="/AdminLTE/bootstrap/js/bootstrap.min.js"></script>
@@ -272,18 +272,18 @@
         });
     </script>
 
+    <script src="/js/fileinput.min.js"></script>
     <script>
-
         $("#input-image-1").fileinput({
             uploadUrl: "/admin/upload/images",
-            uploadAsync: false,
-            minFileCount: 2,
+            uploadAsync: true,
+            minFileCount: 1,
             maxFileCount: 6,
             overwriteInitial: false,
             initialPreview: [
                 // IMAGE DATA
                 @foreach($pics as $pic)
-                        "{{$pic}}",
+                    "{{$pic}}",
                 // IMAGE DATA
                 @endforeach
 
@@ -308,15 +308,15 @@
         }).on('fileuploaded', function(event, data) {
             $('#kv-success-box').append(data.response.link);
             $('#kv-success-modal').modal('show');
-            $("#imagespic").val($("#imagespic").val()+data.response.link+',');
+            $("#typeimages").val($("#typeimages").val()+data.response.link+',');
         }).on('filepreremoved', function(e, params) {
             console.log('File sorted params', params);
+            alert(111);
         }).on('filedeleted', function(event, key) {
             console.log('Key = ' + key);
             arrs=key.split(',')
-            $("#imagespic").val($("#imagespic").val().replace(','+arrs[1],''));
+            $("#typeimages").val($("#typeimages").val().replace(arrs[1]+',',''));
         });
     </script>
-
 @stop
 

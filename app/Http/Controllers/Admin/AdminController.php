@@ -71,7 +71,7 @@ class AdminController extends Controller
     function PostEdit(UserRegsiterRequest $request,$id)
     {
         $request['password']=bcrypt($request['password']);
-        Admin::fild($id)->update($request->all());
+        Admin::find($id)->update($request->all());
         return redirect(action('Admin\AdminController@Index'));
     }
     function Delete($id)

@@ -128,6 +128,7 @@
                                 <div class="timeline-item">
                                     <span class="time"><i class="fa fa-clock-o"></i> 2 days ago</span>
                                     <h3 class="timeline-header"><a href="#">图集处理</a> 批量上传图集</h3>
+
                                     <div class="timeline-body">
                                         {{Form::file('image', array('name'=>'input-image','class' => 'file-loading','id'=>'input-image-1','accept'=>'image/*'))}}
                                         <div id="kv-success-modal" class="modal fade">
@@ -142,7 +143,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        {{Form::hidden('typeimages', '',array('id'=>'imagespic'))}}
+                                        {{Form::hidden('typeimages', null,array('id'=>'typeimages'))}}
                                     </div>
                                 </div>
                             </li>
@@ -268,11 +269,12 @@
         });
     </script>
 
+    <script src="/js/fileinput.min.js"></script>
     <script>
         $("#input-image-1").fileinput({
             uploadUrl: "/admin/upload/images",
             allowedFileExtensions: ["jpg", "png", "gif"],
-            maxImageWidth: 300,
+            maxImageWidth: 3000,
             maxFileCount: 6,
             resizeImage: true
         }).on('filepreupload', function() {
@@ -280,7 +282,15 @@
         }).on('fileuploaded', function(event, data) {
             $('#kv-success-box').append(data.response.link);
             $('#kv-success-modal').modal('show');
-            $("#imagespic").val($("#imagespic").val()+data.response.link+',');
+            $("#typeimages").val($("#typeimages").val()+data.response.link+',');
+            console.log($("#typeimages").val())
+        }).on('filepreremoved', function(e, params) {
+            console.log('File sorted params', params);
+            alert(111);
+        }).on('filedeleted', function(event, key) {
+            console.log('Key = ' + key);
+            arrs=key.split(',')
+            $("#typeimages").val($("#typeimages").val().replace(arrs[1]+',',''));
         });
     </script>
 @stop

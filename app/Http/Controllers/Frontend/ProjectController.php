@@ -19,7 +19,7 @@ class ProjectController extends Controller
        $p2=empty($p2)?'':$p2;
        $p3=empty($p3)?'':$p3;
         $p4=empty($p4)?'':Area::where('id',$p4)->value('city');
-        $pagelists=Addonarticle::whereIn('typeid',$p1)->where('brandpay','like','%'.$p2.'%')->where('acreage','like','%'.$p3.'%')->where('brandaddr','like','%'.$p4.'%')->where('created_at','<=',Carbon::now())->latest()->paginate(30);
+        $pagelists=Addonarticle::whereIn('typeid',$p1)->where('brandpay','like','%'.$p2.'%')->where('acreage','like','%'.$p3.'%')->where('brandaddr','like','%'.$p4.'%')->where('created_at','<=',Carbon::now())->latest()->paginate(10);
        $topbrands=Archive::where('mid',1)->where('ismake','1')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(9)->get();
        $newsbrands=Archive::where('ismake','1')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
        $brandtypes=Arctype::where('mid',1)->get();

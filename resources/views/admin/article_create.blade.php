@@ -418,7 +418,7 @@
     $("#input-image-1").fileinput({
         uploadUrl: "/admin/upload/images",
         allowedFileExtensions: ["jpg", "png", "gif"],
-        maxImageWidth: 300,
+        maxImageWidth: 3000,
         maxFileCount: 6,
         resizeImage: true
     }).on('filepreupload', function() {

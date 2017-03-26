@@ -9,11 +9,11 @@
             <p class="login-box-msg">后台用户注册</p>
             {!! Form::model($adminUser,array('action' =>array('Admin\AdminController@Edit', $adminUser->id),'method' => 'put')) !!}
             <div class="form-group has-feedback">
-                {{Form::text('name', null,array('class'=>'form-control','id'=>'name','disabled'=>'disabled','placeholder'=>'用户名'))}}
+                {{Form::text('name', null,array('class'=>'form-control','id'=>'name','readonly'=>'readonly','placeholder'=>'用户名'))}}
                 <span class="glyphicon glyphicon-user form-control-feedback"></span>
             </div>
             <div class="form-group has-feedback">
-                {{Form::text('email', null,array('class'=>'form-control','id'=>'email','disabled'=>'disabled','placeholder'=>'登陆邮箱'))}}
+                {{Form::text('email', null,array('class'=>'form-control','id'=>'email','readonly'=>'readonly','placeholder'=>'登陆邮箱'))}}
                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
             </div>
             <div class="form-group has-feedback">

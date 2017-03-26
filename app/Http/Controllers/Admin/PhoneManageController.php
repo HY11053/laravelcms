@@ -63,7 +63,8 @@ class PhoneManageController extends Controller
     function PhoneManageEditPost(PhoneManageRequest $request,$id)
     {
         $thisPhoneInfo=Phonemanage::findOrFail($id)->update($request->all());
-        return view('admin.phoneinfoedit',compact('thisPhoneInfo'));
+        $phoneNos=Phonemanage::latest()->paginate(30);
+        return view('admin.phonelists',compact('phoneNos'));
     }
     /**
      * 删除电话

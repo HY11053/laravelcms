@@ -34,7 +34,7 @@
                     </ul>
                 </div>
                 <div class="search_box">
-                    <form action="/search/" method="get">
+                    <form action="/search/" method="post">
                         <input type="text" onblur="if (this.value == '') {this.value = this.attributes['def'].value;this.className='search_input';}" onfocus="if (this.value == this.attributes['def'].value) {this.value='';this.className='search_input1';}" def="想找什么项目？" class="search_input" value="想找什么项目？" name="search">
                         <input type="submit" class="search_btn" value="搜索">
                     </form>

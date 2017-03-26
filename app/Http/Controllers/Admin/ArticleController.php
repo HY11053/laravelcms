@@ -85,7 +85,7 @@ class ArticleController extends Controller
         }
        $request['keywords']=$request['keywords']?$request['keywords']:$request['title'];
         $request['click']=rand(100,900);
-        $request['description']=(!empty($request['description']))?$request['description']:htmlspecialchars(mb_substr($request['body'],0,150));
+        $request['description']=(!empty($request['description']))?$request['description']:str_limit(mb_ereg_replace('^(　| )+','', preg_replace('/\r|\n/', '', trim(strip_tags(htmlspecialchars_decode($request['body']))))), $limit = 300, $end = '');
         $request['write']=auth('admin')->user()->name;
         $request['dutyadmin']=auth('admin')->id();
         Archive::create($request->all());
@@ -139,7 +139,7 @@ class ArticleController extends Controller
                 $request['flags'].=',p';
             }
         }
-        $request['description']=(!empty($request['description']))?$request['description']:htmlspecialchars(mb_substr($request['body'],0,150));
+        $request['description']=(!empty($request['description']))?$request['description']:str_limit(mb_ereg_replace('^(　| )+','', preg_replace('/\r|\n/', '', trim(strip_tags(htmlspecialchars_decode($request['body']))))), $limit = 300, $end = '');
         //dd($request->all());
         if (empty($request['imagepics']))
         {

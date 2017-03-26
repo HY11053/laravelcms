@@ -25,11 +25,11 @@ class UserRegsiterRequest extends FormRequest
     {
         return [
             //
-            'name'=>'required|min:3',
+            'name'=>'required|min:2',
             'email'=>'email|required',
-            'password'=>'required|min:7',
-            'password'=>'required|min:7|confirmed',
-            'password_confirmation'=>'required|min:7'
+            'password'=>'required|min:6',
+            'password'=>'required|min:6|confirmed',
+            'password_confirmation'=>'required|min:6'
         ];
     }
 }

@@ -2,24 +2,360 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3319fa8-ff1b-48ab-89cf-976377a9e35d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/frontend/project.blade.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/Comparision.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/19/15a90f8e2064b6f7ecfb93c5a4cad632.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/19/15a90f8e2064b6f7ecfb93c5a4cad632.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/19/2758fe958785c63559255ce06b34af15.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/19/2758fe958785c63559255ce06b34af15.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/19/594ea0506a860f600e0820cbef356c8e.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/19/594ea0506a860f600e0820cbef356c8e.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/19/c658c11b75d41a2efb9ceffb8a772663.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/19/c658c11b75d41a2efb9ceffb8a772663.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/19/e04065766f08a2c05e83b581bb704e93.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/19/e04065766f08a2c05e83b581bb704e93.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/0557cb3b0792e0509bbd77017ebb4e2d.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/0557cb3b0792e0509bbd77017ebb4e2d.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/1d6ec25ccf426a61d6e678d50e69faeb.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/1d6ec25ccf426a61d6e678d50e69faeb.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/2319ba8ba150e61fb2b08d9fef273b3c.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/2319ba8ba150e61fb2b08d9fef273b3c.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/27486ac7d53032bb81a37820eee4c206.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/27486ac7d53032bb81a37820eee4c206.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/3f9e1791a5288004d86edb379331a028.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/3f9e1791a5288004d86edb379331a028.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/4108914eb4e38a1310bb88fc4488067f.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/4108914eb4e38a1310bb88fc4488067f.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/427f0d3965691d38f4fb70e4c058d37c.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/427f0d3965691d38f4fb70e4c058d37c.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/470c19facea3aac9d0b5c6c726f4cba6.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/470c19facea3aac9d0b5c6c726f4cba6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/5977fcc345b06eadc5e045ad1c57aa22.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/5977fcc345b06eadc5e045ad1c57aa22.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/630b5bffec1ed780be71dff796d4a854.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/630b5bffec1ed780be71dff796d4a854.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/6707cc2bb9fffbd53fb7408b20cff1b3.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/6707cc2bb9fffbd53fb7408b20cff1b3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/68ee4d11c763f5f573525d77de8fc0fa.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/68ee4d11c763f5f573525d77de8fc0fa.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/6963a2b956a3df2e35a6a7bca131b560.png" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/6963a2b956a3df2e35a6a7bca131b560.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/6c9e59231e48aec3804ccdda58d85a84.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/6c9e59231e48aec3804ccdda58d85a84.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/6dbb50a4589ebb36345a9ff0891f7a7a.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/6dbb50a4589ebb36345a9ff0891f7a7a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/78e801c9df878044f936c09de611521b.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/78e801c9df878044f936c09de611521b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/7fc5044180f60489f5a132dfdb397221.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/7fc5044180f60489f5a132dfdb397221.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/85fc25058956f283717ec42d07c67678.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/85fc25058956f283717ec42d07c67678.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/898c313305cf0300a6fdb3a6ec82db25.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/898c313305cf0300a6fdb3a6ec82db25.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/8addbc78ee6e70d99e1a5781582d6739.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/8addbc78ee6e70d99e1a5781582d6739.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/8f8b87e561f700fa8a0015d8f382ebc7.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/8f8b87e561f700fa8a0015d8f382ebc7.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/90bd5d8920f30cf2e0cab5ebcae3a2f2.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/90bd5d8920f30cf2e0cab5ebcae3a2f2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/94d894e74c9206527c812180cb4fa658.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/94d894e74c9206527c812180cb4fa658.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/987031ca80baf7f7611075bc5b2da1eb.png" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/987031ca80baf7f7611075bc5b2da1eb.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/9bff8cb73fca61858dcecbb34cb7d68f.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/9bff8cb73fca61858dcecbb34cb7d68f.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/afbecb580fcb91febd799c4b0425a59b.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/afbecb580fcb91febd799c4b0425a59b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/b186f5545bb03f0a7b785751ab906e6c.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/b186f5545bb03f0a7b785751ab906e6c.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/b343f3af51389746045c9228093ef1f3.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/b343f3af51389746045c9228093ef1f3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/b384bfad6d57d25c086256510508f301.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/b384bfad6d57d25c086256510508f301.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/c0136997c6fcfdfcfe1c1d0fbd3e2f97.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/c0136997c6fcfdfcfe1c1d0fbd3e2f97.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/d2df27db889c2c6e8e7111b6addf269e.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/d2df27db889c2c6e8e7111b6addf269e.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/ebac45b5e442679aa3a02f2ef60ed73d.png" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/ebac45b5e442679aa3a02f2ef60ed73d.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/f9f07c51afc4645cc7c3d8473358a8c2.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/f9f07c51afc4645cc7c3d8473358a8c2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/20/fdbe46a6774b554b37a9106e1a1d73a2.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/20/fdbe46a6774b554b37a9106e1a1d73a2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/034f02a0872b93f4c2f4298d07718eb9.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/034f02a0872b93f4c2f4298d07718eb9.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/0a1a6dd718888c51eb23716a1fe989e8.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/0a1a6dd718888c51eb23716a1fe989e8.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/0a757da108ae6c8ddf9efde9deb20b84.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/0a757da108ae6c8ddf9efde9deb20b84.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/0ba4c85b0ba197642d97e6eb0359256a.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/0ba4c85b0ba197642d97e6eb0359256a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/1b613f2b48b278b0138ef7eb08ab57e3.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/1b613f2b48b278b0138ef7eb08ab57e3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/1bf5d4cd77eed06448833a10dc159cbc.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/1bf5d4cd77eed06448833a10dc159cbc.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/24892da436c28e109b57d12baecff2ed.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/24892da436c28e109b57d12baecff2ed.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/2ed1ae1753bf45498673800e90d28e0c.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/2ed1ae1753bf45498673800e90d28e0c.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/3b4dc6040808df7d75666ec40747abdb.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/3b4dc6040808df7d75666ec40747abdb.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/44687dc6b33cbc601ad8039f4dfdef25.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/44687dc6b33cbc601ad8039f4dfdef25.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/47d59aaf0851f63d61c8da9449ee0f8f.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/47d59aaf0851f63d61c8da9449ee0f8f.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/4861858481ae341e711ec90e2ffd1b63.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/4861858481ae341e711ec90e2ffd1b63.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/4d1cd5fa3e82eb979a14997f3f3164be.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/4d1cd5fa3e82eb979a14997f3f3164be.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/65fa1de6a3811d8726cc118d766c7c95.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/65fa1de6a3811d8726cc118d766c7c95.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/7d18f71483832a12457039d43043869b.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/7d18f71483832a12457039d43043869b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/7fd694cdd4c77ed1c1e4bd207c925f2c.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/7fd694cdd4c77ed1c1e4bd207c925f2c.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/8da2ffb1200388fdaff7ed72db2bb589.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/8da2ffb1200388fdaff7ed72db2bb589.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/a44962c538cd97a60c9fbcce46ff0965.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/a44962c538cd97a60c9fbcce46ff0965.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/abea0903af516f7bd721885b8733a4e6.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/abea0903af516f7bd721885b8733a4e6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/b18685d4bda1fe5c9d53ce85999cd4fb.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/b18685d4bda1fe5c9d53ce85999cd4fb.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/b297e7eec9cff08940519f387f44d448.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/b297e7eec9cff08940519f387f44d448.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/b64281f0e9bd7c4b29279f54d2cc6630.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/b64281f0e9bd7c4b29279f54d2cc6630.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/b781291a7d35da8b6dd76f3343ac7686.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/b781291a7d35da8b6dd76f3343ac7686.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/bd3957f243266abdb50acf3e6dce048f.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/bd3957f243266abdb50acf3e6dce048f.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/d2bcd06433562ef62f3aa8e554a09257.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/d2bcd06433562ef62f3aa8e554a09257.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/d848bb2e6b481cd6c23d065be173631d.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/d848bb2e6b481cd6c23d065be173631d.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/e052caa0dee046e2f51dae07e85abe6b.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/e052caa0dee046e2f51dae07e85abe6b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/e59b235729f09f2d925d52eeff6ceac4.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/e59b235729f09f2d925d52eeff6ceac4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/e5f4967ab421a6afb626db885c7fb4e1.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/e5f4967ab421a6afb626db885c7fb4e1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/e6165922ad4490fe398d28c9ed436604.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/e6165922ad4490fe398d28c9ed436604.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/e9f846fda7836d87ad9044ae633154f3.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/e9f846fda7836d87ad9044ae633154f3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/f9d4ff822370498c84d0805cf4d7153e.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/f9d4ff822370498c84d0805cf4d7153e.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/fb1c10ef1056cf15a9feebc276560136.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/fb1c10ef1056cf15a9feebc276560136.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/21/fe9dd74a42efcf47996e09677c963c1f.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/21/fe9dd74a42efcf47996e09677c963c1f.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/22/03fa66a447b46b14fa3d69a9cbb3c91e.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/22/03fa66a447b46b14fa3d69a9cbb3c91e.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/22/05c41d0dac5c46329584e856fc349a4a.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/22/05c41d0dac5c46329584e856fc349a4a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/22/19c04abed0d87f893d406798861a657e.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/22/19c04abed0d87f893d406798861a657e.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/22/394d160329c96f4fd1d0f4488240e514.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/22/394d160329c96f4fd1d0f4488240e514.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/22/8c612691290a00a3d4b02f861c3b94a7.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/22/8c612691290a00a3d4b02f861c3b94a7.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/22/f3ac6b022398bd481af4d3d20dd699b3.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/22/f3ac6b022398bd481af4d3d20dd699b3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/24/172b5e3f725bca42a609a010a854044b.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/24/172b5e3f725bca42a609a010a854044b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/24/2fddf377139975a0495de650c66b54f9.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/24/2fddf377139975a0495de650c66b54f9.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/24/3584d29afefba43610e986324b6be5d9.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/24/3584d29afefba43610e986324b6be5d9.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/24/6b86665a9e79c3ddd63f7f6c6e686286.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/24/6b86665a9e79c3ddd63f7f6c6e686286.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/24/70ee00a9ff126834bd3bf936f5bafdc6.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/24/70ee00a9ff126834bd3bf936f5bafdc6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/24/8f91d762de01c00f82a4ad4d7f92226d.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/24/8f91d762de01c00f82a4ad4d7f92226d.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/24/d27dada283143ac633dd184107c9e916.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/24/d27dada283143ac633dd184107c9e916.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/24/d48699535fd888195282386370debc58.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/24/d48699535fd888195282386370debc58.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/26/3fa2bd47774fa387041b398f6c151138.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/26/3fa2bd47774fa387041b398f6c151138.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/26/49cc8ccb2e7e2466f0a68470be90790e.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/26/49cc8ccb2e7e2466f0a68470be90790e.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/26/66dd54d12aa1a89b52f45c2d9caafa22.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/26/66dd54d12aa1a89b52f45c2d9caafa22.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/09/26/b56ccc18e9d764df1f6cbb95a1d5a351.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/09/26/b56ccc18e9d764df1f6cbb95a1d5a351.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/10/12/02362a1a948cc88693dd9531fa72ca1a.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/10/12/02362a1a948cc88693dd9531fa72ca1a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/10/12/63c0f369d230fd9ce7c0456446a8cb1e.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/10/12/63c0f369d230fd9ce7c0456446a8cb1e.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/10/12/6a42af9fdf17c8c67300373588f7eb60.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/10/12/6a42af9fdf17c8c67300373588f7eb60.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/10/12/f5272524891303ab181029e84d8ea87b.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/10/12/f5272524891303ab181029e84d8ea87b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/10/12/fd327fa76d155c1663dee4e6ad10f949.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/10/12/fd327fa76d155c1663dee4e6ad10f949.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/10/14/a200b44607e5329cc1a05bb13f9c8c46.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/10/14/a200b44607e5329cc1a05bb13f9c8c46.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/10/14/f1fdf8b89292e102d26ec6757c6d9f95.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/10/14/f1fdf8b89292e102d26ec6757c6d9f95.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/10/14/f2a45e5246fa36c555a67d290273e6b2.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/10/14/f2a45e5246fa36c555a67d290273e6b2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/10/16/317ce904e264608f3a0ecc744a5a4699.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/10/16/317ce904e264608f3a0ecc744a5a4699.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/10/16/c54911ffe3815b053a3fa3055bae3489.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/10/16/c54911ffe3815b053a3fa3055bae3489.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/10/17/2c8f54e48e645a5765e5881956cdb2f9.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/10/17/2c8f54e48e645a5765e5881956cdb2f9.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/10/17/a177898a3976604ba4917550d2e53ec0.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/10/17/a177898a3976604ba4917550d2e53ec0.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/22/14bd26d281b0d5f49bfbbed60c4a23fd.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/22/14bd26d281b0d5f49bfbbed60c4a23fd.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/22/20a07c8a8f8a8ac98fc636f2276ad85f.png" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/22/20a07c8a8f8a8ac98fc636f2276ad85f.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/22/5281c65a2b31b7364b50bfbf6bcba289.png" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/22/5281c65a2b31b7364b50bfbf6bcba289.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/22/a2d1cdbe8910476470803b2e1903b94b.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/22/a2d1cdbe8910476470803b2e1903b94b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/22/ad13a57c7b963233b7617f2ac0a62da0.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/22/ad13a57c7b963233b7617f2ac0a62da0.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/22/b19cf16f04b5786852bb5b81b11c8eeb.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/22/b19cf16f04b5786852bb5b81b11c8eeb.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/22/cc546b2af22247d33de60485c28d4a5c.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/22/cc546b2af22247d33de60485c28d4a5c.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/22/e1b7251d1aa1f6be0b8b8d3cb37f0ca1.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/22/e1b7251d1aa1f6be0b8b8d3cb37f0ca1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/22/e64f91a9208c4bf22bd0662d01ecf81a.png" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/22/e64f91a9208c4bf22bd0662d01ecf81a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/22/efa389c08517a9392f857d011b657c84.png" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/22/efa389c08517a9392f857d011b657c84.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/22/f89b9f1ab8c2cbbaa868908b074661ff.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/22/f89b9f1ab8c2cbbaa868908b074661ff.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/15d46d3ea16f04be9407fe5a40f5e171.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/15d46d3ea16f04be9407fe5a40f5e171.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/1fce4a35ddfd31ffffc89bd13d02bb33.png" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/1fce4a35ddfd31ffffc89bd13d02bb33.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/24d7405c7e1b1b483a73a7def67721cd.png" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/24d7405c7e1b1b483a73a7def67721cd.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/298ebcfa2ad53426f9051fc01d2bd2c9.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/298ebcfa2ad53426f9051fc01d2bd2c9.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/3075017e42df849e775f597202009471.png" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/3075017e42df849e775f597202009471.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/32cc5aaac05a332091ca4d937bf8029f.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/32cc5aaac05a332091ca4d937bf8029f.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/3f89cdd4f5bd29f8176a7f2ea0e9397e.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/3f89cdd4f5bd29f8176a7f2ea0e9397e.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/49ccdc78d069ca51eaf45ca00a0f5b3f.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/49ccdc78d069ca51eaf45ca00a0f5b3f.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/502b5cd79fe0b710c65aa2034479983f.png" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/502b5cd79fe0b710c65aa2034479983f.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/52cfe35a69592fe516573ae901fda9ef.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/52cfe35a69592fe516573ae901fda9ef.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/594c5a14c9aeb69e12d07eca220c89e2.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/594c5a14c9aeb69e12d07eca220c89e2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/64ebed44d9ec76cddefae39a599eb546.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/64ebed44d9ec76cddefae39a599eb546.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/6a5b65e8065d032ca57bb3919619a857.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/6a5b65e8065d032ca57bb3919619a857.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/6fd22ae5370f7aa9c68530f4a61c66c4.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/6fd22ae5370f7aa9c68530f4a61c66c4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/8ffd5e592a59e71734049aa3dea1f0ce.png" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/8ffd5e592a59e71734049aa3dea1f0ce.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/94d3cdf6501204884cbb3be65a852811.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/94d3cdf6501204884cbb3be65a852811.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/976e28de5a130724c2963c0518704327.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/976e28de5a130724c2963c0518704327.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/9f585bbd264575707a2edf5f1134fe3e.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/9f585bbd264575707a2edf5f1134fe3e.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/a221f29dc789f11562e3ff16841bde4b.png" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/a221f29dc789f11562e3ff16841bde4b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/aaae5a5d92d0697b98dadc4286c8dbd2.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/aaae5a5d92d0697b98dadc4286c8dbd2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/abb1b93b5d51929d4003d9ecc1bf56f7.png" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/abb1b93b5d51929d4003d9ecc1bf56f7.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/ae74f4b2497fe03a571961cc3539507b.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/ae74f4b2497fe03a571961cc3539507b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/b32dfd9abb667054d2aacf95da4ba9bd.png" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/b32dfd9abb667054d2aacf95da4ba9bd.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/b6cc6dcbb575533ae8d9b672593eb6de.png" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/b6cc6dcbb575533ae8d9b672593eb6de.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/be99d1b69b484ec0e8f973be7ba885d1.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/be99d1b69b484ec0e8f973be7ba885d1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/c4a140fdfcd08565263f23c5c2e7ce51.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/c4a140fdfcd08565263f23c5c2e7ce51.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/c6483741660d5d519910191d48cb9ef5.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/c6483741660d5d519910191d48cb9ef5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/c792b1158ee7b04db5aab6b307909d7e.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/c792b1158ee7b04db5aab6b307909d7e.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/c892df0c112a54604a328a3efb763bd2.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/c892df0c112a54604a328a3efb763bd2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/c895164fd1c5f51bcbdc57dc36bc8e56.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/c895164fd1c5f51bcbdc57dc36bc8e56.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/ef5c3acabdc95e444a44a37c7f51f3a5.png" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/ef5c3acabdc95e444a44a37c7f51f3a5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/f35b4679d5c2676195d6f2b1af18d669.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/f35b4679d5c2676195d6f2b1af18d669.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/11/24/f661ad95a857eff16a6d3858c8894b5f.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/11/24/f661ad95a857eff16a6d3858c8894b5f.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/12/22/b1f0f9a0bb0c318bf3da7518ace3286c.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/12/22/b1f0f9a0bb0c318bf3da7518ace3286c.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/thread/2016/12/22/b364d35c61a151bfd7e5a61ac25c8095.jpg" afterPath="$PROJECT_DIR$/public/images/thread/2016/12/22/b364d35c61a151bfd7e5a61ac25c8095.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/404.jpg" afterPath="$PROJECT_DIR$/public/reception/images/404.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/about_bg.jpg" afterPath="$PROJECT_DIR$/public/reception/images/about_bg.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/about_tit.jpg" afterPath="$PROJECT_DIR$/public/reception/images/about_tit.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/add.png" afterPath="$PROJECT_DIR$/public/reception/images/add.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/ask.png" afterPath="$PROJECT_DIR$/public/reception/images/ask.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/biao_h.png" afterPath="$PROJECT_DIR$/public/reception/images/biao_h.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/biaoqian.gif" afterPath="$PROJECT_DIR$/public/reception/images/biaoqian.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/cert.jpg" afterPath="$PROJECT_DIR$/public/reception/images/cert.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/close.png" afterPath="$PROJECT_DIR$/public/reception/images/close.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/css-sprite.png" afterPath="$PROJECT_DIR$/public/reception/images/css-sprite.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/cye_03.jpg" afterPath="$PROJECT_DIR$/public/reception/images/cye_03.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/cye_03.png" afterPath="$PROJECT_DIR$/public/reception/images/cye_03.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/dian.gif" afterPath="$PROJECT_DIR$/public/reception/images/dian.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/dot.gif" afterPath="$PROJECT_DIR$/public/reception/images/dot.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/dot1.jpg" afterPath="$PROJECT_DIR$/public/reception/images/dot1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/dot2.gif" afterPath="$PROJECT_DIR$/public/reception/images/dot2.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/fenxiang.png" afterPath="$PROJECT_DIR$/public/reception/images/fenxiang.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/fir_right.png" afterPath="$PROJECT_DIR$/public/reception/images/fir_right.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/fx.png" afterPath="$PROJECT_DIR$/public/reception/images/fx.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/icon1.png" afterPath="$PROJECT_DIR$/public/reception/images/icon1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/icon10.png" afterPath="$PROJECT_DIR$/public/reception/images/icon10.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/icon11.png" afterPath="$PROJECT_DIR$/public/reception/images/icon11.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/icon12.png" afterPath="$PROJECT_DIR$/public/reception/images/icon12.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/icon2.png" afterPath="$PROJECT_DIR$/public/reception/images/icon2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/icon3.png" afterPath="$PROJECT_DIR$/public/reception/images/icon3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/icon4.png" afterPath="$PROJECT_DIR$/public/reception/images/icon4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/icon5.png" afterPath="$PROJECT_DIR$/public/reception/images/icon5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/icon6.png" afterPath="$PROJECT_DIR$/public/reception/images/icon6.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/icon7.png" afterPath="$PROJECT_DIR$/public/reception/images/icon7.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/icon8.png" afterPath="$PROJECT_DIR$/public/reception/images/icon8.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/icon9.png" afterPath="$PROJECT_DIR$/public/reception/images/icon9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/icon_1.png" afterPath="$PROJECT_DIR$/public/reception/images/icon_1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/icon_2.png" afterPath="$PROJECT_DIR$/public/reception/images/icon_2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/icon_3.png" afterPath="$PROJECT_DIR$/public/reception/images/icon_3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/icon_4.png" afterPath="$PROJECT_DIR$/public/reception/images/icon_4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/icon_5.png" afterPath="$PROJECT_DIR$/public/reception/images/icon_5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/icon_6.png" afterPath="$PROJECT_DIR$/public/reception/images/icon_6.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/index_pic1.jpg" afterPath="$PROJECT_DIR$/public/reception/images/index_pic1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/index_pic2.jpg" afterPath="$PROJECT_DIR$/public/reception/images/index_pic2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/index_pic3.jpg" afterPath="$PROJECT_DIR$/public/reception/images/index_pic3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/list-xu.png" afterPath="$PROJECT_DIR$/public/reception/images/list-xu.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/logo.jpg" afterPath="$PROJECT_DIR$/public/reception/images/logo.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/logo_wx.jpg" afterPath="$PROJECT_DIR$/public/reception/images/logo_wx.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/pk.png" afterPath="$PROJECT_DIR$/public/reception/images/pk.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/quick_btn.png" afterPath="$PROJECT_DIR$/public/reception/images/quick_btn.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/select_bk_bg.jpg" afterPath="$PROJECT_DIR$/public/reception/images/select_bk_bg.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/slide_left_btn.jpg" afterPath="$PROJECT_DIR$/public/reception/images/slide_left_btn.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/slide_right_btn.jpg" afterPath="$PROJECT_DIR$/public/reception/images/slide_right_btn.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/spiritcss.png" afterPath="$PROJECT_DIR$/public/reception/images/spiritcss.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/sprites.png" afterPath="$PROJECT_DIR$/public/reception/images/sprites.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/star.png" afterPath="$PROJECT_DIR$/public/reception/images/star.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/step_icon.png" afterPath="$PROJECT_DIR$/public/reception/images/step_icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/sub_nav_bg.jpg" afterPath="$PROJECT_DIR$/public/reception/images/sub_nav_bg.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/01-1.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/01-1.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/01.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/01.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/01.jpg" afterPath="$PROJECT_DIR$/public/reception/images/temp/01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/02-1.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/02-1.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/02.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/02.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/02.jpg" afterPath="$PROJECT_DIR$/public/reception/images/temp/02.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/03-1.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/03-1.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/03.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/03.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/03.jpg" afterPath="$PROJECT_DIR$/public/reception/images/temp/03.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/04-1.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/04-1.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/04.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/04.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/04.jpg" afterPath="$PROJECT_DIR$/public/reception/images/temp/04.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/05-1.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/05-1.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/05.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/05.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/05.jpg" afterPath="$PROJECT_DIR$/public/reception/images/temp/05.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/06-1.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/06-1.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/06.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/06.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/06.jpg" afterPath="$PROJECT_DIR$/public/reception/images/temp/06.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/07-1.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/07-1.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/07.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/07.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/07.jpg" afterPath="$PROJECT_DIR$/public/reception/images/temp/07.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/08-1.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/08-1.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/08.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/08.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/09.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/09.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/10.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/10.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/11.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/11.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/12.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/12.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/13.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/13.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/14.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/14.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/15.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/15.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/16.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/16.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/17.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/17.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/18.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/18.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/19.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/19.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/20.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/20.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/21.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/21.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/22.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/22.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/23.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/23.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/24.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/24.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/25.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/25.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/26.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/26.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/27.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/27.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/28.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/28.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/29.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/29.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/30.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/30.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/31.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/31.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/32.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/32.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/33.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/33.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/34.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/34.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/35.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/35.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/36.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/36.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/37.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/37.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/38.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/38.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/39.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/39.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/40.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/40.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/41.jpg" afterPath="$PROJECT_DIR$/public/reception/images/temp/41.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/42.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/42.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/43.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/43.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/44.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/44.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/45.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/45.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/46.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/46.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/47.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/47.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/48.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/48.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/49.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/49.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/50.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/50.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/51.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/51.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/52.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/52.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/53.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/53.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/54.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/54.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/55.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/55.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/56.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/56.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/57.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/57.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/58.jpg" afterPath="$PROJECT_DIR$/public/reception/images/temp/58.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/59.jpg" afterPath="$PROJECT_DIR$/public/reception/images/temp/59.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/60.jpg" afterPath="$PROJECT_DIR$/public/reception/images/temp/60.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/61.jpg" afterPath="$PROJECT_DIR$/public/reception/images/temp/61.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/62.jpg" afterPath="$PROJECT_DIR$/public/reception/images/temp/62.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/63.jpg" afterPath="$PROJECT_DIR$/public/reception/images/temp/63.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/64.jpg" afterPath="$PROJECT_DIR$/public/reception/images/temp/64.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/65.jpg" afterPath="$PROJECT_DIR$/public/reception/images/temp/65.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/66.jpg" afterPath="$PROJECT_DIR$/public/reception/images/temp/66.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/67.jpg" afterPath="$PROJECT_DIR$/public/reception/images/temp/67.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/68.jpg" afterPath="$PROJECT_DIR$/public/reception/images/temp/68.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/69.jpg" afterPath="$PROJECT_DIR$/public/reception/images/temp/69.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/70.png" afterPath="$PROJECT_DIR$/public/reception/images/temp/70.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/banner1.jpg" afterPath="$PROJECT_DIR$/public/reception/images/temp/banner1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/banner2.jpg" afterPath="$PROJECT_DIR$/public/reception/images/temp/banner2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/banner3.jpg" afterPath="$PROJECT_DIR$/public/reception/images/temp/banner3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/banner4.jpg" afterPath="$PROJECT_DIR$/public/reception/images/temp/banner4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/bn1.jpg" afterPath="$PROJECT_DIR$/public/reception/images/temp/bn1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/bn2.jpg" afterPath="$PROJECT_DIR$/public/reception/images/temp/bn2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/bn3.jpg" afterPath="$PROJECT_DIR$/public/reception/images/temp/bn3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/bn4.jpg" afterPath="$PROJECT_DIR$/public/reception/images/temp/bn4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/bn5.jpg" afterPath="$PROJECT_DIR$/public/reception/images/temp/bn5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/bn6.jpg" afterPath="$PROJECT_DIR$/public/reception/images/temp/bn6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/brand_01.png" afterPath="$PROJECT_DIR$/public/reception/images/temp/brand_01.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/jim_money-logo.png" afterPath="$PROJECT_DIR$/public/reception/images/temp/jim_money-logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/new_list_03.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/new_list_03.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/new_list_07.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/new_list_07.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/new_list_09.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/new_list_09.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/new_list_11.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/new_list_11.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/new_list_14.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/new_list_14.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/new_list_16.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/new_list_16.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/new_list_19.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/new_list_19.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/new_list_20.gif" afterPath="$PROJECT_DIR$/public/reception/images/temp/new_list_20.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/new_list_23.png" afterPath="$PROJECT_DIR$/public/reception/images/temp/new_list_23.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/pingpailogo.png" afterPath="$PROJECT_DIR$/public/reception/images/temp/pingpailogo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/zhans_10.png" afterPath="$PROJECT_DIR$/public/reception/images/temp/zhans_10.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/zhas_01.png" afterPath="$PROJECT_DIR$/public/reception/images/temp/zhas_01.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/zhas_02.png" afterPath="$PROJECT_DIR$/public/reception/images/temp/zhas_02.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/zhas_03.png" afterPath="$PROJECT_DIR$/public/reception/images/temp/zhas_03.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/zhas_04.png" afterPath="$PROJECT_DIR$/public/reception/images/temp/zhas_04.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/zhas_05.png" afterPath="$PROJECT_DIR$/public/reception/images/temp/zhas_05.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/zhas_18.png" afterPath="$PROJECT_DIR$/public/reception/images/temp/zhas_18.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/zhas_20.png" afterPath="$PROJECT_DIR$/public/reception/images/temp/zhas_20.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/zhas_21.png" afterPath="$PROJECT_DIR$/public/reception/images/temp/zhas_21.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/zhas_22.png" afterPath="$PROJECT_DIR$/public/reception/images/temp/zhas_22.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/zhas_24.png" afterPath="$PROJECT_DIR$/public/reception/images/temp/zhas_24.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/temp/zhas_26.png" afterPath="$PROJECT_DIR$/public/reception/images/temp/zhas_26.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/tm_back.png" afterPath="$PROJECT_DIR$/public/reception/images/tm_back.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/wx_link.jpg" afterPath="$PROJECT_DIR$/public/reception/images/wx_link.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/wx_qrcode.png" afterPath="$PROJECT_DIR$/public/reception/images/wx_qrcode.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/images/xing_03.png" afterPath="$PROJECT_DIR$/public/reception/images/xing_03.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.env" afterPath="$PROJECT_DIR$/.env" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AdminModel/Addonarticle.php" afterPath="$PROJECT_DIR$/app/AdminModel/Addonarticle.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AdminModel/Arctype.php" afterPath="$PROJECT_DIR$/app/AdminModel/Arctype.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ArticleController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ArticleController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/BrandsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/BrandsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/PhoneManageController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/PhoneManageController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/ComparisionController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/ComparisionController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/ProjectController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/ProjectController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Requests/UserRegsiterRequest.php" afterPath="$PROJECT_DIR$/app/Http/Requests/UserRegsiterRequest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/css/ask.css" afterPath="$PROJECT_DIR$/public/reception/css/ask.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/css/jquery.selectlist.css" afterPath="$PROJECT_DIR$/public/reception/css/jquery.selectlist.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/css/news.css" afterPath="$PROJECT_DIR$/public/reception/css/news.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/css/style.css" afterPath="$PROJECT_DIR$/public/reception/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/js/index.js" afterPath="$PROJECT_DIR$/public/reception/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/js/jquery.SuperSlide.2.1.1.js" afterPath="$PROJECT_DIR$/public/reception/js/jquery.SuperSlide.2.1.1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/js/jquery.cookie.js" afterPath="$PROJECT_DIR$/public/reception/js/jquery.cookie.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/js/jquery.dialog.js" afterPath="$PROJECT_DIR$/public/reception/js/jquery.dialog.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/js/jquery.min.js" afterPath="$PROJECT_DIR$/public/reception/js/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/js/jquery.selectlist.js" afterPath="$PROJECT_DIR$/public/reception/js/jquery.selectlist.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/js/search_ajax.js" afterPath="$PROJECT_DIR$/public/reception/js/search_ajax.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/article_brandcreate.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/article_brandcreate.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/article_brandedit.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/article_brandedit.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/frontend/brands.blade.php" afterPath="$PROJECT_DIR$/resources/views/frontend/brands.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/frontend/frontend.blade.php" afterPath="$PROJECT_DIR$/resources/views/frontend/frontend.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/adminedit.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/adminedit.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/article_create.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/article_create.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/category_create.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/category_create.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/category_edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/category_edit.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/phoneinfoedit.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/phoneinfoedit.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/useredit.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/useredit.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/frontend/header.blade.php" afterPath="$PROJECT_DIR$/resources/views/frontend/header.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/frontend/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/frontend/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/frontend/pk.blade.php" afterPath="$PROJECT_DIR$/resources/views/frontend/pk.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,103 +374,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProjectController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Frontend/ProjectController.php">
+      <file leaf-file-name="CreateArticleRequest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Requests/CreateArticleRequest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="29" column="167" lean-forward="false" selection-start-line="29" selection-start-column="167" selection-end-line="29" selection-end-column="167" />
-              <folding>
-                <element signature="e#49#81#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="frontend.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/frontend/frontend.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" column="56" lean-forward="false" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
+            <state relative-caret-position="-78">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/frontend/header.blade.php">
+      <file leaf-file-name="FlinkValidationRequest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Requests/FlinkValidationRequest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="32" column="53" lean-forward="false" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
+      <file leaf-file-name="UserRegsiterRequest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Requests/UserRegsiterRequest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="7" />
+            <state relative-caret-position="806">
+              <caret line="31" column="52" lean-forward="false" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="brands.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/frontend/brands.blade.php">
+      <file leaf-file-name="AdminController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="73" column="18" lean-forward="false" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="useredit.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/useredit.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="16" column="108" lean-forward="false" selection-start-line="16" selection-start-column="108" selection-end-line="16" selection-end-column="108" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="phoneinfoedit.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/phoneinfoedit.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PhoneManageController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/PhoneManageController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="546">
-              <caret line="21" column="41" lean-forward="false" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+              <caret line="66" column="56" lean-forward="false" selection-start-line="66" selection-start-column="56" selection-end-line="66" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2210">
-              <caret line="94" column="37" lean-forward="false" selection-start-line="94" selection-start-column="37" selection-end-line="94" selection-end-column="37" />
+            <state relative-caret-position="104">
+              <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="project.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/frontend/project.blade.php">
+      <file leaf-file-name="adminedit.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/adminedit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="21" column="45" lean-forward="false" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+            <state relative-caret-position="338">
+              <caret line="15" column="100" lean-forward="false" selection-start-line="15" selection-start-column="100" selection-end-line="15" selection-end-column="100" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BrandsController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Frontend/BrandsController.php">
+      <file leaf-file-name="PhoneManageRequest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Requests/PhoneManageRequest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="21" column="55" lean-forward="false" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/frontend/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2080">
-              <caret line="80" column="51" lean-forward="false" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search_ajax.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/reception/js/search_ajax.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
-              <caret line="24" column="50" lean-forward="false" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -153,16 +487,17 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>published_at</find>
-      <find>imagepics</find>
       <find>/frontend/</find>
       <find>seesbrabd</find>
       <find>lim</find>
       <find>$pagelist-&gt;shorttitle</find>
+      <find>imagepics</find>
     </findStrings>
     <replaceStrings>
       <replace>/reception/</replace>
       <replace>$seesrbrand</replace>
       <replace>$pagelist-&gt;archive-&gt;shorttitle</replace>
+      <replace>typeimages</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -171,12 +506,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/admin/category.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/layouts/admin_app.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/errors/404.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/errors/403.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/layouts/header.blade.php" />
-        <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/database/migrations/2017_02_25_211704_add_imagepics_colum_to_addonarticles.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/article_edit.blade.php" />
@@ -185,16 +514,10 @@
         <option value="$PROJECT_DIR$/resources/views/frontend/demo.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/SeoInfoController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2017_02_26_180555_add_jmlc_colum_to_addonarticles.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/PhoneManageController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/layouts/man_sidebar.blade.php" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/LoginController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" />
         <option value="$PROJECT_DIR$/resources/views/vendor/pagination/default.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2017_03_23_111555_add_mid_colum_to_arctypes.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/category_create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/category_edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/lists.blade.php" />
         <option value="$PROJECT_DIR$/app/AdminModel/Archive.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Frontend/BrandArticleController.php" />
@@ -205,23 +528,35 @@
         <option value="$PROJECT_DIR$/public/reception/css/style.css" />
         <option value="$PROJECT_DIR$/resources/views/frontend/pk.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Frontend/Comparision.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Frontend/ComparisionController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2017_03_24_130612_add_acreage_colum_to_addonarticles.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/article_create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/article_brandcreate.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/article_brandedit.blade.php" />
         <option value="$PROJECT_DIR$/app/AdminModel/Addonarticle.php" />
         <option value="$PROJECT_DIR$/app/AdminModel/Arctype.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/frontend.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ArticleController.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Frontend/BrandsController.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/project.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/brands.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/index.blade.php" />
         <option value="$PROJECT_DIR$/public/reception/js/search_ajax.js" />
+        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Frontend/ProjectController.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/header.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Frontend/ComparisionController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ArticleController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/article_create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/category_create.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" />
+        <option value="$PROJECT_DIR$/resources/dd.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/category_edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/adminedit.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/UserRegsiterRequest.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/useredit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/phoneinfoedit.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/PhoneManageController.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -243,10 +578,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -263,27 +596,26 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -297,59 +629,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pagination" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -367,11 +651,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -389,11 +673,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -403,43 +687,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -449,11 +701,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -467,11 +719,33 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Requests" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravelcmsgit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -489,11 +763,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -515,11 +789,37 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravelcmsgit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -533,6 +833,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -542,7 +843,7 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="$PROJECT_DIR$/../../bin/node" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="head&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/header.blade.php&#10;fron&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/frontend.blade.php&#10;env&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/.env&#10;in&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/index.blade.php&#10;brand&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/BrandsController.php&#10;index&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/IndexController.php&#10;we&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/routes/web.php&#10;se&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/js/search_ajax.js&#10;s&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/js/search_ajax.js&#10;f&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/frontend.blade.php&#10;article.bla&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/article_create.blade.php&#10;article&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Admin/ArticleController.php&#10;web&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/routes/web.php&#10;search&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/js/search_ajax.js&#10;front&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/frontend.blade.php&#10;footer&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/layouts/footer.blade.php&#10;index.b&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/index.blade.php&#10;Arcty&#9;null&#9;null&#10;archiv&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/AdminModel/Archive.php&#10;addonar&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/AdminModel/Addonarticle.php&#10;article_bra&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/article_brandedit.blade.php&#10;article_b&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/article_brandcreate.blade.php&#10;article_c&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/article_create.blade.php&#10;addona&#9;null&#9;null&#10;man&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/layouts/man_sidebar.blade.php&#10;style.css&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/css/style.css&#10;archive&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/AdminModel/Archive.php&#10;article.b&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/article.blade.php&#10;arcty&#9;null&#9;null&#10;categ&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Admin/CategoryController.php&#10;login&#9;null&#9;null&#10;categor&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Admin/CategoryController.php&#10;Branda&#9;FILE&#9;file://F:/wamp64/www/laravelcms/app/Http/Controllers/Frontend/BrandArticleController.php&#10;Article&#9;FILE&#9;file://F:/wamp64/www/laravelcms/app/Http/Controllers/Admin/ArticleController.php&#10;article.&#9;FILE&#9;file://F:/wamp64/www/laravelcms/resources/views/admin/article.blade.php&#10;Artic&#9;null&#9;null&#10;articlec&#9;null&#9;null&#10;pre&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/article_preview.blade.php&#10;web.p&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/routes/web.php&#10;article_e&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/article_edit.blade.php&#10;a&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Admin/ArticleController.php&#10;edit&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/article_edit.blade.php&#10;header&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/layouts/header.blade.php&#10;admin.b&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/layouts/admin_app.blade.php&#10;ar&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/article.blade.php&#10;com&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/composer.json&#10;ArticleController&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Admin/ArticleController.php&#10;92f06a6bfa2c8ed7a357de4b01ee287c995a3bfd.php&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/storage/framework/views/92f06a6bfa2c8ed7a357de4b01ee287c995a3bfd.php&#10;demo.js&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/AdminLTE/dist/js/demo.js&#10;arti&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Admin/ArticleController.php" />
+    <property name="SearchEverywhereHistoryKey" value="cate&#9;FILE&#9;file:///usr/local/websites/laravelcmsgit/app/Http/Controllers/Admin/CategoryController.php&#10;article_e&#9;FILE&#9;file:///usr/local/websites/laravelcmsgit/resources/views/admin/article_edit.blade.php&#10;article&#9;FILE&#9;file:///usr/local/websites/laravelcmsgit/resources/views/admin/article_create.blade.php&#10;Com&#9;FILE&#9;file:///usr/local/websites/laravelcmsgit/app/Http/Controllers/Frontend/ComparisionController.php&#10;head&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/header.blade.php&#10;fron&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/frontend.blade.php&#10;env&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/.env&#10;in&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/index.blade.php&#10;brand&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/BrandsController.php&#10;index&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/IndexController.php&#10;we&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/routes/web.php&#10;se&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/js/search_ajax.js&#10;s&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/js/search_ajax.js&#10;f&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/frontend.blade.php&#10;article.bla&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/article_create.blade.php&#10;web&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/routes/web.php&#10;search&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/js/search_ajax.js&#10;front&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/frontend.blade.php&#10;footer&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/layouts/footer.blade.php&#10;index.b&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/index.blade.php&#10;Arcty&#9;null&#9;null&#10;archiv&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/AdminModel/Archive.php&#10;addonar&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/AdminModel/Addonarticle.php&#10;article_bra&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/article_brandedit.blade.php&#10;article_b&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/article_brandcreate.blade.php&#10;article_c&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/article_create.blade.php&#10;addona&#9;null&#9;null&#10;man&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/layouts/man_sidebar.blade.php&#10;style.css&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/css/style.css&#10;archive&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/AdminModel/Archive.php&#10;article.b&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/article.blade.php&#10;arcty&#9;null&#9;null&#10;categ&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Admin/CategoryController.php&#10;login&#9;null&#9;null&#10;categor&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Admin/CategoryController.php&#10;Branda&#9;FILE&#9;file://F:/wamp64/www/laravelcms/app/Http/Controllers/Frontend/BrandArticleController.php&#10;Article&#9;FILE&#9;file://F:/wamp64/www/laravelcms/app/Http/Controllers/Admin/ArticleController.php&#10;article.&#9;FILE&#9;file://F:/wamp64/www/laravelcms/resources/views/admin/article.blade.php&#10;Artic&#9;null&#9;null&#10;articlec&#9;null&#9;null&#10;pre&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/article_preview.blade.php&#10;web.p&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/routes/web.php&#10;a&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Admin/ArticleController.php&#10;edit&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/article_edit.blade.php&#10;header&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/layouts/header.blade.php&#10;admin.b&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/layouts/admin_app.blade.php&#10;ar&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/article.blade.php&#10;com&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/composer.json&#10;ArticleController&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Admin/ArticleController.php&#10;92f06a6bfa2c8ed7a357de4b01ee287c995a3bfd.php&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/storage/framework/views/92f06a6bfa2c8ed7a357de4b01ee287c995a3bfd.php" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
@@ -690,25 +991,26 @@
       <workItem from="1490232226402" duration="39366000" />
       <workItem from="1490349478286" duration="112000" />
       <workItem from="1490349742653" duration="183000" />
+      <workItem from="1490365439824" duration="9276000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="464943000" />
+    <option name="totallyTimeSpent" value="474219000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3517398" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25457877" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3590164" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35816327" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -771,90 +1073,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/article_edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="8" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Notification.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/frontend/demo.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12766">
-          <caret line="491" column="47" lean-forward="false" selection-start-line="491" selection-start-column="47" selection-end-line="491" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/article_preview.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="23" column="10" lean-forward="false" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/SeoInfoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="27" column="78" lean-forward="false" selection-start-line="27" selection-start-column="73" selection-end-line="27" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2017_01_29_102035_add_intro_colum_to_articles_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/PhoneManageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/LoginController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="37" column="62" lean-forward="true" selection-start-line="37" selection-start-column="62" selection-end-line="37" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/vendor/pagination/default.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="30" column="72" lean-forward="false" selection-start-line="30" selection-start-column="72" selection-end-line="30" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2017_03_23_111555_add_mid_colum_to_arctypes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
@@ -866,20 +1084,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="29" column="12" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-442">
-          <caret line="22" column="66" lean-forward="true" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/category_create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="71" column="24" lean-forward="true" selection-start-line="71" selection-start-column="24" selection-end-line="77" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -909,13 +1113,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1196">
           <caret line="46" column="206" lean-forward="false" selection-start-line="46" selection-start-column="206" selection-end-line="46" selection-end-column="206" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/category_edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1846">
-          <caret line="71" column="30" lean-forward="false" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -955,16 +1152,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Frontend/Comparision.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Frontend/ComparisionController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="11" column="38" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="38" />
-          <folding>
-            <element signature="e#49#76#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2017_02_25_211704_add_imagepics_colum_to_addonarticles.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-121">
@@ -1039,21 +1226,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/article_create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="342" column="8" lean-forward="true" selection-start-line="342" selection-start-column="8" selection-end-line="342" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ArticleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4004">
-          <caret line="164" column="14" lean-forward="false" selection-start-line="164" selection-start-column="14" selection-end-line="164" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Frontend/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
@@ -1070,19 +1242,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2210">
-          <caret line="94" column="37" lean-forward="false" selection-start-line="94" selection-start-column="37" selection-end-line="94" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/frontend/brands.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="21" column="41" lean-forward="false" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1090,15 +1253,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2080">
           <caret line="80" column="51" lean-forward="false" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1106,7 +1260,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="624">
           <caret line="24" column="50" lean-forward="false" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1114,14 +1267,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="21" column="45" lean-forward="false" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Frontend/ProjectController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="29" column="167" lean-forward="false" selection-start-line="29" selection-start-column="167" selection-end-line="29" selection-end-column="167" />
+        <state relative-caret-position="523">
+          <caret line="21" column="231" lean-forward="false" selection-start-line="21" selection-start-column="231" selection-end-line="21" selection-end-column="231" />
           <folding>
             <element signature="e#49#81#0#PHP" expanded="true" />
           </folding>
@@ -1130,7 +1290,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/frontend/frontend.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
+        <state relative-caret-position="-26">
           <caret line="4" column="56" lean-forward="false" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
           <folding />
         </state>
@@ -1138,8 +1298,170 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/frontend/header.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="32" column="53" lean-forward="false" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
+        <state relative-caret-position="234">
+          <caret line="36" column="41" lean-forward="false" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="92" column="57" lean-forward="false" selection-start-line="92" selection-start-column="57" selection-end-line="92" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Frontend/ComparisionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#49#81#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ArticleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3432">
+          <caret line="142" column="8" lean-forward="false" selection-start-line="142" selection-start-column="8" selection-end-line="142" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/article_create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="277" column="26" lean-forward="true" selection-start-line="262" selection-start-column="20" selection-end-line="277" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/category_create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+          <folding>
+            <element signature="e#9417#9438#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/article_edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="448" column="4" lean-forward="false" selection-start-line="448" selection-start-column="4" selection-end-line="493" selection-end-column="13" />
+          <folding>
+            <element signature="e#19721#20828#0#HTML" expanded="false" />
+            <element signature="e#25870#27766#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="126" column="10" lean-forward="false" selection-start-line="126" selection-start-column="10" selection-end-line="126" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/dd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7696">
+          <caret line="296" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="322" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/category_edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="322" column="0" lean-forward="true" selection-start-line="322" selection-start-column="0" selection-end-line="322" selection-end-column="0" />
+          <folding>
+            <element signature="e#7279#7298#0#HTML" expanded="true" />
+            <element signature="e#8482#8489#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/CreateArticleRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-78">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/FlinkValidationRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/PhoneManageRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/adminedit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="15" column="100" lean-forward="false" selection-start-line="15" selection-start-column="100" selection-end-line="15" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/UserRegsiterRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="806">
+          <caret line="31" column="52" lean-forward="false" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="73" column="18" lean-forward="false" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/useredit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" column="108" lean-forward="false" selection-start-line="16" selection-start-column="108" selection-end-line="16" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/phoneinfoedit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/PhoneManageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="66" column="56" lean-forward="false" selection-start-line="66" selection-start-column="56" selection-end-line="66" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
           <folding />
         </state>
       </provider>

@@ -108,11 +108,10 @@ class CategoryController extends Controller
             exit('父级不可以移动到子级');
         }
         $requestdata=$request->all();
+
         if(array_key_exists('image',$requestdata))
         {
             $requestdata['litpic']=$this->UploadImage($request);
-        }else{
-            $requestdata['litpic']='';
         }
         if($requestdata['dirposition']==1)
         {
@@ -125,6 +124,7 @@ class CategoryController extends Controller
            };
             $requestdata['real_path'].=$requestdata['typedir'];
         }
+        //dd($requestdata);
         Arctype::findOrFail($id)->update($requestdata);
         return redirect(action('Admin\CategoryController@Index'));
     }
