@@ -19,7 +19,7 @@ class CommentReversionController extends Controller
         $request['user_id']=auth('web')->user()->id;
         $request['ip']=$request->getClientIp();
         CommentReversion::create($request->all());
-        //dd(CommentReversion::first()->toJson());
-        return CommentReversion::first()->toJson();
+        //dd(CommentReversion::latest()->take(1)->first()->toJson());
+        return CommentReversion::latest()->first()->toJson();
     }
 }

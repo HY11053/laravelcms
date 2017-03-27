@@ -16,5 +16,9 @@ class Comment extends Model
     {
         return $this->belongsTo('App\AdminModel\Archive','archive_id');
     }
+    protected function reversion()
+    {
+        return $this->hasMany('App\AdminModel\CommentReversion','comment_id');
+    }
 
 }

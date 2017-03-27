@@ -43,26 +43,26 @@
                         <div class="reply-form-container"></div>
                     </div>
                 </div>
-            @foreach($comment->reversion as )
-                <div class="comments" style="margin-top:-2.5em;">
-                    <div class="comment ">
-                        <a class="avatar">  <img src="/AdminLTE/dist/img/avatar3.png"></a>
-                        <div class="content">
-                            <a class="author">liang569874</a>
-                            <div class="metadata">
-                                <span class="date">刚刚</span> </div>
-                            <div class="text Post-body" id="Comment__Post_content">
-                                <p>是的，输出的时候的错误，我这边自己的问题</p>
-                            </div>
-                            <div class="actions">
-                                <a class="reply" data-parent_id="11360" data-conversation-id="89" data-username="JellyBool" data-userid="7" data-comment-type="lesson" data-url="/commentreversion/{{$comment->archive->id}}"> 回复</a> <a class="hide">隐藏</a> <a class="save">分享</a>
+                @foreach($comment->reversion as $reversion)
+                    <div class="comments" style="margin-top:-2.5em;">
+                        <div class="comment ">
+                            <a class="avatar">  <img src="/AdminLTE/dist/img/avatar3.png"></a>
+                            <div class="content">
+                                <a class="author">liang569874</a>
+                                <div class="metadata">
+                                    <span class="date">{{$reversion->updated_at}}</span> </div>
+                                <div class="text Post-body" id="Comment__Post_content">
+                                    <p>{{$reversion->content}}</p>
+                                </div>
+                                <div class="actions">
+                                    <a class="reply" data-parent_id="{{$comment->id}}" data-conversation-id="89" data-username="JellyBool" data-userid="7" data-comment-type="lesson" data-url="/commentreversion/{{$comment->archive->id}}"> 回复</a> <a class="hide">隐藏</a> <a class="save">分享</a>
                             </div>
                             <div class="reply-form-container">
                             </div>
                         </div>
                     </div>
                 </div>
-                @endforeach
+            @endforeach
             @endforeach
         </ul>
     </div>

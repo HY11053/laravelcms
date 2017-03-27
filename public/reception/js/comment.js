@@ -27,7 +27,7 @@ $(".comment .reply").on("click", function() {
                     },
                     success: function(a) {
                         if ("failed" === a.status) return $(".comment-errors").show(), !1;
-                        var o = '<div class="comments" style="margin-top:-2.5em;"><div class="comment "><a class="avatar"><img src="' + '' + '"></a><div class="content"><a class="author">' + '' + '</a><div class="metadata"><span class="date">刚刚</span> </div><div class="text Post-body" id="Comment__Post_content"> ' + a.content + ' </div> <div class="actions"><a class="reply"> 回复</a> <a class="hide">隐藏</a> <a class="save">分享</a>';
+                        var o = '<div class="comments" style="margin-top:-2.5em;"><div class="comment "><a class="avatar"><img src="' + '/AdminLTE/dist/img/avatar.png' + '"></a><div class="content"><a class="author">' + '' + '</a><div class="metadata"><span class="date">刚刚</span> </div><div class="text Post-body" id="Comment__Post_content"> ' + a.content + ' </div> <div class="actions"><a class="reply"> 回复</a> <a class="hide">隐藏</a> <a class="save">分享</a>';
                         n.parent().append(o), t.removeAttr("disabled"), t.text("发表回复"), e.find("form").remove(), r.removeClass("active")
                     }
                 }))
