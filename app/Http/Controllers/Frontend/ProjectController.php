@@ -6,6 +6,7 @@ use App\AdminModel\Addonarticle;
 use App\AdminModel\Archive;
 use App\AdminModel\Arctype;
 use App\AdminModel\Area;
+use App\AdminModel\Comment;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -23,7 +24,8 @@ class ProjectController extends Controller
        $topbrands=Archive::where('mid',1)->where('ismake','1')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(9)->get();
        $newsbrands=Archive::where('ismake','1')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
        $brandtypes=Arctype::where('mid',1)->get();
-       return view('frontend.project',compact('pagelists','topbrands','newsbrands','brandtypes'));
+       $comments=Comment::where('is_hidden',0)->latest()->take(5)->get();
+       return view('frontend.project',compact('pagelists','topbrands','newsbrands','brandtypes','comments'));
    }
    public function SearchAjax(Request $request)
    {

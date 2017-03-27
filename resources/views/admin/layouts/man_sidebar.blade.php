@@ -53,8 +53,8 @@
                     <li @if(Request::getRequestUri()=='/admin/ask')class="active"@endif><a href="/admin/ask"><i class="fa fa-circle-o"></i> 问答列表</a></li>
                     <li @if(Request::getRequestUri()=='/admin/ask/add')class="active"@endif><a href="/admin/ask/add"><i class="fa fa-circle-o"></i> 添加问题</a></li>
                     <li @if(Request::getRequestUri()=='/admin/ask/add')class="active"@endif><a href="#"><i class="fa fa-circle-o"></i> 待审核问答</a></li>
-                    <li @if(Request::getRequestUri()=='/admin/ask/add')class="active"@endif><a href="#"><i class="fa fa-circle-o"></i> 评论列表</a></li>
-                    <li @if(Request::getRequestUri()=='/admin/ask/add')class="active"@endif><a href="#"><i class="fa fa-circle-o"></i> 待审核评论</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/comments')class="active"@endif><a href="/admin/comments"><i class="fa fa-circle-o"></i> 评论列表</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/comments/pendingaudit')class="active"@endif><a href="/admin/comments/pendingaudit"><i class="fa fa-circle-o"></i> 待审核评论</a></li>
                 </ul>
             </li>
             <li>

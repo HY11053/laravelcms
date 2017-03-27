@@ -17,7 +17,7 @@ class CreateCommentsTable extends Migration
             $table->increments('id');
             $table->integer('archive_id');
             $table->integer('user_id');
-            $table->integer('goodpost');
+            $table->integer('goodpost')->default(0);;
             $table->integer('is_hidden')->default(0);
             $table->text('content');
             $table->ipAddress('ip');

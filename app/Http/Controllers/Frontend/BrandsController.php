@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Frontend;
 
 use App\AdminModel\Archive;
 use App\AdminModel\Arctype;
+use App\AdminModel\Comment;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -21,7 +22,8 @@ class BrandsController extends Controller
             $newsbrands=Archive::where('ismake','1')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
             $brandtypes=Arctype::where('mid',1)->get();
             $thistypeinfo=Arctype::where('real_path',$path)->first();
-            return view('frontend.brands',compact('pagelists','topbrands','newsbrands','brandtypes','thistypeinfo'));
+            $comments=Comment::where('is_hidden',0)->latest()->take(5)->get();
+            return view('frontend.brands',compact('pagelists','topbrands','newsbrands','brandtypes','thistypeinfo','comments'));
         }else{
 
             if(Arctype::where('real_path',$path)->value('id')==null)

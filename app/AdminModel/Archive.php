@@ -62,4 +62,8 @@ class Archive extends Model
     {
         return $this->hasOne('App\AdminModel\Addonarticle','id');
     }
+    protected function comments()
+    {
+        return $this->hasMany('App\AdminModel\Comments','id');
+    }
 }

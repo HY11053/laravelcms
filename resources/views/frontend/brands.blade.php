@@ -152,26 +152,12 @@
             </div>
             <div class="bd">
                 <ul>
+                    @foreach($comments as $comment)
                     <li>
-                        <p><em>纪雅琳</em><b>咨询</b><a target="_blank" href="#"><em>康比特</em></a></p>
-                        <p class="txt-col">资讯商机...</p>
+                        <p><em>{{$comment->user->name}}</em><b>咨询</b><a target="_blank" href="/{{$comment->archive->arctype->real_path}}/{{$comment->archive->id}}.shtml"><em>{{$comment->archive->title}}</em></a></p>
+                        <p class="txt-col">{{str_limit($comment->content,30,'...')}}</p>
                     </li>
-                    <li>
-                        <p><em>纪雅琳</em><b>咨询</b><a target="_blank" href="#"><em>康比特</em></a></p>
-                        <p class="txt-col">资讯商机...</p>
-                    </li>
-                    <li>
-                        <p><em>马龙</em><b>咨询</b><a target="_blank" href="#"><em>嘉菲自酿啤酒</em></a></p>
-                        <p class="txt-col">我想加盟此项目，请尽快电话联系我...</p>
-                    </li>
-                    <li>
-                        <p><em>马龙</em><b>咨询</b><a target="_blank" href="#"><em>嘉菲自酿啤酒</em></a></p>
-                        <p class="txt-col">我想加盟此项目，请尽快电话联系我...</p>
-                    </li>
-                    <li>
-                        <p><em>马龙</em><b>咨询</b><a target="_blank" href="#"><em>嘉菲自酿啤酒</em></a></p>
-                        <p class="txt-col">我想加盟此项目，请尽快电话联系我...</p>
-                    </li>
+                   @endforeach
                 </ul>
             </div>
         </div>

@@ -30,6 +30,6 @@
 </div>
 <script type="text/javascript" src="/reception/js/search_ajax.js"></script>
 <!--footer结束-->
-
+<script src="/reception/js/comment.js"></script>
 </body>
 </html>

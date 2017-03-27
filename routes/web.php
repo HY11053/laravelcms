@@ -65,6 +65,8 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ()
     Route::put('user/edit/{id}','FrontUserController@PostUserEdit');
     Route::get('user/delete/{id}','FrontUserController@UserDelete');
     Route::get('ask','AskController@Index');
+    Route::get('comments','CommentsController@Index');
+    Route::get('comments/pendingaudit','CommentsController@Pending');
     Route::get('ask/add','AskController@Add');
     Route::post('ask/add','AskController@PostAdd')->name('ask_create');
     Route::get('makesitemap','SiteMapController@Index');
@@ -94,6 +96,7 @@ Route::get('demo','Frontend\ComparisionController@demo');
 Route::get('ask','Frontend\AskController@Index');
 Route::get('comparision/{p1?}-{p2?}-{p3?}.shtml','Frontend\ComparisionController@Compare');
 Route::post('comments','Frontend\CommentController@PostComment');
+Route::post('commentreversion/{id}','Frontend\CommentReversionController@CommentReversion');
 Route::post('project','Frontend\ProjectController@SearchAjax');
 Route::get('project/{p1?}-{p2?}-{p3?}-{p4?}.shtml','Frontend\ProjectController@Search');
 Route::get('{path?}','Frontend\BrandsController@BrandLists');

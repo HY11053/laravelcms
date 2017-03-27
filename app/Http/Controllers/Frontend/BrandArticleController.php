@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\AdminModel\Archive;
+use App\AdminModel\Comment;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -22,14 +23,16 @@ class BrandArticleController extends Controller
                 $thisarticleinfos=Archive::findOrFail($id);
                 $topbrands=Archive::where('mid',1)->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
                 $latestbrands=Archive::where('mid',1)->where('published_at','<=',Carbon::now())->latest()->take(20)->get();
-                return view('frontend.brand_article',compact('thisarticleinfos','topbrands','latestbrands'));
+                $comments=Comment::where('archive_id',$thisarticleinfos->id)->where('is_hidden',0)->get();
+                return view('frontend.brand_article',compact('thisarticleinfos','topbrands','latestbrands','comments'));
             }else{
                 $thisarticleinfos=Archive::findOrFail($id);
                 $topbrands=Archive::where('mid',1)->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
                 $latestbrands=Archive::where('mid',1)->where('published_at','<=',Carbon::now())->latest()->take(20)->get();
                 $prev_article = Archive::latest('published_at')->published()->find($this->getPrevArticleId($thisarticleinfos->id));
                 $next_article = Archive::latest('published_at')->published()->find($this->getNextArticleId($thisarticleinfos->id));
-                return view('frontend.article_article',compact('thisarticleinfos','prev_article','next_article','topbrands'));
+                $comments=Comment::where('archive_id',$thisarticleinfos->id)->where('is_hidden',0)->get();
+                return view('frontend.article_article',compact('thisarticleinfos','prev_article','next_article','topbrands','comments'));
             }
 
         }

@@ -390,3 +390,267 @@ button, input, select, textarea {
     background-color: #337ab7;
     border-color: #2e6da4;
 }
+
+.content {
+    margin-left: 4.5em;
+}
+.comment a.author {
+    cursor: pointer;
+}
+.comment .author {
+    font-size: 1em;
+    color: #00adb5;
+    font-weight: 700;
+}
+ .comment .metadata {
+    display: inline-block;
+    margin-left: .5em;
+    color: rgba(0,0,0,.4);
+    font-size: .875em;
+}
+ .comment .metadata>* {
+    display: inline-block;
+    margin: 0 .5em 0 0;
+     box-sizing: border-box;
+}
+.comment .metadata>:last-child {
+    margin-right: 0;
+}
+ .comment .text {
+    margin: .25em 0 .5em;
+    font-size: 1em;
+    word-wrap: break-word;
+    color: rgba(0,0,0,.87);
+    line-height: 1.3;
+}
+.comments .text p {
+    margin: 0 0 10px;
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+ .comment .actions {
+    font-size: .9em;
+    font-weight: 600;
+}
+ .participation, .reply {
+    position: relative;
+    margin: 0;
+    padding-bottom: .5em;
+}
+.comment .actions a {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 .75em 0 0;
+    color: rgba(0,0,0,.4);
+}
+ .comment .actions a:last-child {
+    margin-right: 0;
+}
+.comment .actions a {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 .75em 0 0;
+    color: rgba(0,0,0,.4);
+}
+ .comment .avatar {
+    display: block;
+    width: 3em;
+    height: auto;
+    float: left;
+    margin: .2em 0 0;
+}
+.comment .avatar.avatar-large {
+    width: 3.5em;
+}
+ .comment .avatar img, .ui.comments .comment img.avatar {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+ .comment .reply.form {
+    width: 100%;
+    margin-top: 1em;
+}
+.field {
+    clear: both;
+    margin: 0 0 1em;
+}
+.form textarea {
+    width: 90%;
+    vertical-align: top;
+    font-family: inherit;
+}
+.form textarea {
+    margin: 0;
+    -webkit-appearance: none;
+    tap-highlight-color: hsla(0,0%,100%,0);
+    padding: .78571429em 1em;
+    background: #fff;
+    border: 1px solid rgba(34,36,38,.15);
+    outline: none;
+    color: rgba(0,0,0,.87);
+    border-radius: .28571429rem;
+    box-shadow: 0 0 0 0 transparent inset;
+    -webkit-transition: color .1s ease,border-color .1s ease;
+    transition: color .1s ease,border-color .1s ease;
+    font-size: 1em;
+    line-height: 1.2857;
+    resize: vertical;
+}
+.reply-form-container .reply.form textarea {
+    font-size: 1.4em;
+
+}
+.Reply--cancel--button {
+    font-size: 1rem;
+    padding: 7px 30px;
+    font-weight: 700;
+    line-height: 20px;
+}
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn-default {
+    background: #fff;
+}
+.Button--primary {
+    color: #fff;
+    background: #00adb5;
+    font-weight: 700;
+    padding: 12px 40px;
+}
+.errors.comment-errors {
+    display: none;
+    font-size: 12px;
+    margin-left: 20px;
+}
+.error, .errors, .errors li {
+    color: red;
+}
+.form input[type=checkbox], .ui.form textarea {
+    vertical-align: top;
+}
+.form .reply__button {
+    margin-left: 2em;
+}
+.Reply--cancel--button {
+    font-size: 1rem;
+    padding: 7px 30px;
+    font-weight: normal;
+    line-height: 20px;
+}
+.Button--primary {
+    padding: 8px 30px;
+}
+.Button {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #ccd8e1;
+    border-radius: 3px;
+}
+.comments {
+    margin: -1.5em 0 -1em 1.25em;
+    padding: 3em 0 2em 2.25em;
+}
+ .comments {
+    margin: -1.5em 0 -1em -2.25em;
+    padding: 3em 0 .75em 2.25em;
+}
+.comments {
+    clear: both;
+}
+.comments .comment {
+    position: relative;
+    background: none;
+    margin: .5em 0 0;
+    padding: .5em 0 0;
+    border: none;
+    border-top: none;
+    line-height: 1.2;
+    box-sizing: border-box;
+    display: block;
+}
+.comments .comment:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+.comments .comment .avatar {
+    display: block;
+    width: 3em;
+    height: auto;
+    float: left;
+    margin: .2em 0 0;
+    cursor: pointer;
+    color: #00adb5;
+    text-decoration: none;
+    background-color: transparent;
+}
+.ui.comments .comment .avatar img,  .comment img.avatar {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    border-radius: .50%;
+}
+.comments .comment>.content {
+    display: block;
+    box-sizing: border-box;
+}
+comments .comment>.avatar~.content {
+    margin-left: 3.5em;
+}
+.comments .comment .author {
+    font-size: 1em;
+    color: #00adb5;
+    font-weight: 700;
+}
+.comment a.author {
+    cursor: pointer;
+}
+.comments .comment .metadata {
+    display: inline-block;
+    margin-left: .5em;
+    color: rgba(0,0,0,.4);
+    font-size: .875em;
+}
+comments .comment .metadata>* {
+    display: inline-block;
+    margin: 0 .5em 0 0;
+    box-sizing: border-box;
+}
+.comments .comment .metadata>:last-child {
+    margin-right: 0;
+}
+.comments .comment .text {
+    margin: .25em 0 .5em;
+    font-size: 1em;
+    word-wrap: break-word;
+    color: rgba(0,0,0,.87);
+    line-height: 1.3;
+    overflow: auto;
+}
+
+.comments .text p {
+    margin: 0 0 10px;
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.comments .comment .actions {
+    font-size: .9em;
+    font-weight: 600;
+}
+.ui.comments .comment .actions a {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 .75em 0 0;
+    color: rgba(0,0,0,.4);
+    position: relative;
+    padding-bottom: .5em;
+}
