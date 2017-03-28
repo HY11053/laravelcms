@@ -15,6 +15,7 @@ class CommentReversionController extends Controller
     }
     public function CommentReversion(Request $request,$id)
     {
+        dd($request->all());
         $request['archive_id']=$id;
         $request['comment_id']=$request['parent_id'];
         $request['user_id']=auth('web')->user()->id;

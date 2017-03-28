@@ -71,7 +71,7 @@
                             </script>
 
                             <!-- 编辑器容器 -->
-                            <script id="container" name="body" type="text/plain"></script>
+                            <script id="container" name="body" type="text/plain">   {!! $thisaskinfo->body!!}</script>
                         </div>
                         <div class="timeline-footer">
                             <button type="submit"  class="btn btn-md bg-maroon">提交问答</button>
@@ -114,13 +114,8 @@
     <script src="/AdminLTE/dist/js/app.min.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="/AdminLTE/dist/js/demo.js"></script>
-    <script src="/AdminLTE/plugins/summernote/summernote.min.js"></script>
-    <script src="/AdminLTE/plugins/summernote/lang/summernote-zh-CN.js"></script>
     <!-- iCheck -->
     <script src="/AdminLTE/plugins/iCheck/icheck.min.js"></script>
-    <script src="/AdminLTE/plugins/datepicker/bootstrap-datepicker.js"></script>
-
-
     <script>
 
 
@@ -131,84 +126,10 @@
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 }
             });
-            $('#summernote').summernote({
-                height: 500,
-                lang : 'zh-CN',
-                callbacks: {
-                    onImageUpload: function(files) {
-                        //上传图片到服务器，使用了formData对象，至于兼容性...据说对低版本IE不太友好
-                        var formData = new FormData();
-                        formData.append('file',files[0]);
-                        $.ajax({
-                            type: 'POST',
-                            url : '/admin/upload/articleimages',//后台文件上传接口
-                            data : formData,
-                            enctype: 'multipart/form-data',
-                            processData : false,
-                            contentType : false,
-                            success: function(filename) {
-                                var file_path ='/images/thread/'+ filename;
-                                console.log(file_path);
-                                $('#summernote').summernote("insertImage", file_path);
-                            }
-                        });
-                    },
-                    onChange: function(contents, $editable) {
-                        // console.log('onChange:', contents, $editable);
-                        $("#lawsContent").val(contents)
-                        console.log($("#lawsContent").val())
-                    },
-                }
-            });
-
-
 
         })
 
     </script>
 
-    <script>
-        $(function () {
-            $('#datepicker').datepicker({
-                autoclose: true
-            });
-
-            //iCheck for checkbox and radio inputs
-            $('.basic_info input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
-                checkboxClass: 'icheckbox_minimal-blue',
-                radioClass: 'iradio_minimal-blue'
-            });
-            //Red color scheme for iCheck
-            $('.basic_info input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
-                checkboxClass: 'icheckbox_minimal-red',
-                radioClass: 'iradio_minimal-red'
-            });
-            //Flat red color scheme for iCheck
-            $('.basic_info input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
-                checkboxClass: 'icheckbox_flat-green',
-                radioClass: 'iradio_flat-green'
-            });
-
-
-        });
-    </script>
-
-    <!-- /Custom Notification -->
-    <script src="/js/fileinput.min.js"></script>
-    <script>
-        $("#input-image-1").fileinput({
-            uploadUrl: "/admin/upload/images",
-            allowedFileExtensions: ["jpg", "png", "gif"],
-            maxImageWidth: 300,
-            maxFileCount: 6,
-            resizeImage: true
-        }).on('filepreupload', function() {
-            $('#kv-success-box').html('');
-        }).on('fileuploaded', function(event, data) {
-            $('#kv-success-box').append(data.response.link);
-            $('#kv-success-modal').modal('show');
-            $("#imagespic").val($("#imagespic").val()+data.response.link+',');
-        });
-    </script>
 @stop
 
