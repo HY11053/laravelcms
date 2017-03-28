@@ -1,5 +1,5 @@
 @extends('admin.layouts.admin_app')
-@section('title')  问答列表@stop
+@section('title')  评论列表@stop
 @section('head')
     <link rel="stylesheet" href="/AdminLTE/plugins/switchery/switchery.css" />
     <style>td.newcolor span a{color: #ffffff; font-weight: 400; display: inline-block; padding: 2px;} td.newcolor span{margin-left: 5px;}</style>
@@ -10,34 +10,34 @@
         <div class="col-md-12">
             <div class="box">
                 <div class="box-header with-border">
-                    <h3 class="box-title">问答列表</h3>
+                    <h3 class="box-title">评论回复列表</h3>
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body">
                     <table class="table table-bordered table-striped">
                         <tr>
                             <th style="width: 10px">#ID</th>
-                            <th>问答标题</th>
-                            <th>问答描述</th>
-                            <th>创建时间</th>
-                            <th>更改时间</th>
+                            <th>文档ID</th>
+                            <th>回复内容</th>
+                            <th>回复时间</th>
+                            <th>IP地址</th>
                             <th>审核状态</th>
-                            <th>浏览数</th>
-                            <th>回答数</th>
+                            <th>好评数</th>
+                            <th>评论用户</th>
                             <th>操作</th>
 
                         </tr>
-                        @foreach($asklists as $asklist)
+                        @foreach($commensreversions as $commensreversion)
                             <tr>
-                                <td>{{$asklist->id}}.</td>
-                                <td>{{$asklist->title}}</td>
-                                <td>{{strip_tags($asklist->body)}}</td>
-                                <td>{{$asklist->created_at}}</td>
-                                <td>{{$asklist->updated_at}}</td>
-                                <td>{{$asklist->viewnum}}</td>
-                                <td>{{$asklist->answernum}}</td>
-                                <td><input type="checkbox" class="js-switch-small" checked /> 审核 </td>
-                                <td class="newcolor"><span class="badge bg-green"><a href="/admin/ask/edit/{{$asklist->id}}">编辑</a></span> <span class="badge bg-red"><a href="/admin/ask/delete/{{$asklist->id}}">删除</a> </span></td>
+                                <td>{{$commensreversion->id}}.</td>
+                                <td>{{$commensreversion->comment_id}}</td>
+                                <td>{{str_limit(strip_tags($commensreversion->content),30,'...')}}</td>
+                                <td>{{$commensreversion->created_at}}</td>
+                                <td>{{$commensreversion->ip}}</td>
+                                <td>@if($commensreversion->is_hidden) 已审核 @else 未审核 @endif</td>
+                                <td>{{$commensreversion->goodpost}}</td>
+                                <td>{{$commensreversion->user->name}}</td>
+                                <td class="newcolor"><span class="badge bg-green"><a href="/admin/reversion/edit/{{$commensreversion->id}}">编辑</a></span> <span class="badge bg-red"><a href="/admin/reversion/delete/{{$commensreversion->id}}">删除</a> </span></td>
 
                             </tr>
                         @endforeach
@@ -45,7 +45,7 @@
                 </div>
                 <!-- /.box-body -->
                 <div class="box-footer clearfix">
-                    {{--!! $asklists->links() !!--}}
+                    {{--!! $commensreversions->links() !!--}}
                 </div>
             </div>
             <!-- /.box -->

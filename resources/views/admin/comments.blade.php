@@ -23,7 +23,7 @@
                             <th>IP地址</th>
                             <th>审核状态</th>
                             <th>好评数</th>
-                            <th>回复数</th>
+                            <th>评论用户</th>
                             <th>操作</th>
 
                         </tr>
@@ -34,10 +34,10 @@
                                 <td>{{str_limit(strip_tags($comment->content),30,'...')}}</td>
                                 <td>{{$comment->created_at}}</td>
                                 <td>{{$comment->ip}}</td>
-                                <td>{{$comment->viewnum}}</td>
-                                <td>{{$comment->answernum}}</td>
-                                <td><input type="checkbox" class="js-switch-small" checked /> 审核 </td>
-                                <td class="newcolor"><span class="badge bg-green"><a href="/admin/admin/edit/{{$comment->id}}">编辑</a></span> <span class="badge bg-red"><a href="/admin/admin/delete/{{$comment->id}}">删除</a> </span></td>
+                                <td>@if($comment->is_hidden) 已审核 @else 未审核 @endif</td>
+                                <td>{{$comment->goodpost}}</td>
+                                <td>{{$comment->user->name}}</td>
+                                <td class="newcolor"><span class="badge bg-green"><a href="/admin/comment/edit/{{$comment->id}}">编辑</a></span> <span class="badge bg-red"><a href="/admin/comment/delete/{{$comment->id}}">删除</a> </span></td>
 
                             </tr>
                         @endforeach

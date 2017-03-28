@@ -11,5 +11,9 @@ class CommentReversion extends Model
     {
         return $this->belongsTo('App\AdminModel\Archive','comment_id');
     }
+    public function user()
+    {
+        return $this->belongsTo('App\User','user_id');
+    }
 
 }

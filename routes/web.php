@@ -18,8 +18,8 @@ Route::get('/home', 'HomeController@index');
 
 Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ()
 {
-    Route::get('login', 'LoginController@showLoginForm')->name('admin.login');
-    Route::post('login', 'LoginController@login');
+    Route::get('login-----//------', 'LoginController@showLoginForm')->name('admin.login');
+    Route::post('login-----//------', 'LoginController@login');
     Route::get('logout', 'LoginController@logout');
     Route::get('dash', 'DashboardController@index');
     Route::get('index','IndexController@index');
@@ -44,7 +44,7 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ()
     Route::get('article/edit/{id}','ArticleController@Edit');
     Route::post('article/create','ArticleController@PostCreate')->name('article_create');
     Route::post('article/search','ArticleController@PostArticleSearch')->name('article_search');
-    
+
     Route::put('article/edit/{id}','ArticleController@PostEdit')->name('article_edit');
     Route::get('flink','FlinkController@Index');
     Route::get('flink/create','FlinkController@CreateFlink');
@@ -64,11 +64,20 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ()
     Route::get('user/edit/{id}','FrontUserController@UserEdit');
     Route::put('user/edit/{id}','FrontUserController@PostUserEdit');
     Route::get('user/delete/{id}','FrontUserController@UserDelete');
-    Route::get('ask','AskController@Index');
-    Route::get('comments','CommentsController@Index');
-    Route::get('comments/pendingaudit','CommentsController@Pending');
+    Route::get('ask','AskController@Index')->name('asklists');
     Route::get('ask/add','AskController@Add');
     Route::post('ask/add','AskController@PostAdd')->name('ask_create');
+    Route::get('ask/edit/{id}','AskController@AskEdit');
+    Route::post('ask/edit/{id}','AskController@PostEdit')->name('ask_edit');
+    Route::get('comments','CommentsController@Index')->name('commentlists');
+    Route::get('comments/pendingaudit','CommentsController@Pending');
+    Route::get('comment/edit/{id}','CommentsController@CommentEdit');
+    Route::put('comment/edit/{id}','CommentController@PostCommentEdit');
+    Route::get('comment/delete/{id}','CommentsController@DeleteComment');
+    Route::get('commentsreversion','CommentReversionController@Index')->name('reversionlists');
+    Route::get('commentsreversion/pendingaudit','CommentReversionController@Pending');
+    Route::get('reversion/edit/{id}','CommentReversionController@ReversionEdit');
+    Route::put('reversion/edit/{id}','CommentReversionController@PostReversionEdit');
     Route::get('makesitemap','SiteMapController@Index');
     Route::get('makemsitemap','SiteMapController@MobileSitemap');
     Route::get('phone','PhoneManageController@Index');
@@ -86,7 +95,9 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ()
     Route::get('/captcha/{config?}',function (\Mews\Captcha\Captcha $captcha,$config='default'){
         return $captcha->create($config);
     });
+
 });
+
 Route::get('phone',function(){
     return view('phone');
 });
@@ -101,7 +112,6 @@ Route::post('project','Frontend\ProjectController@SearchAjax');
 Route::get('project/{p1?}-{p2?}-{p3?}-{p4?}.shtml','Frontend\ProjectController@Search');
 Route::get('{path?}','Frontend\BrandsController@BrandLists');
 Route::get('{path?}/{id}.shtml','Frontend\BrandArticleController@BrandArticle');
-
 
 
 

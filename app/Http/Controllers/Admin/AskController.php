@@ -43,8 +43,14 @@ class AskController extends Controller
         $request['user_id']=1;
         //dd($request->all());
        Ask::create($request->all());
+       return redirect()->route('asklists');
     }
     //编辑问题
+    public function AskEdit($id)
+    {
+        $thisaskinfo=Ask::findOrFail($id);
+        return view('admin.askedit',compact('thisaskinfo'));
+    }
     //编辑创建提交
     //删除问题
 }
