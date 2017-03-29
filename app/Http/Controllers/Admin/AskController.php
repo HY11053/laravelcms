@@ -16,7 +16,7 @@ class AskController extends Controller
      */
     function Index()
     {
-        $asklists=Ask::all();
+        $asklists=Ask::latest()->paginate(30);
         return view('admin.ask',compact('asklists'));
     }
     /**

@@ -34,9 +34,9 @@
                                 <td>{{str_limit(strip_tags($asklist->body),20,'...')}}</td>
                                 <td>{{$asklist->created_at}}</td>
                                 <td>{{$asklist->updated_at}}</td>
+                                <td>@if($asklist->is_hidden!=0) 已审核 @else 未审核 @endif</td>
                                 <td>{{$asklist->viewnum}}</td>
                                 <td>{{$asklist->answernum}}</td>
-                                <td><input type="checkbox" class="js-switch-small" checked /> 审核 </td>
                                 <td class="newcolor"><span class="badge bg-green"><a href="/admin/ask/edit/{{$asklist->id}}">编辑</a></span> <span class="badge bg-red"><a href="/admin/ask/delete/{{$asklist->id}}">删除</a> </span></td>
 
                             </tr>
@@ -45,7 +45,7 @@
                 </div>
                 <!-- /.box-body -->
                 <div class="box-footer clearfix">
-                    {{--!! $asklists->links() !!--}}
+                    {!! $asklists->links() !!}
                 </div>
             </div>
             <!-- /.box -->

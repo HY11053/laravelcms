@@ -17,6 +17,7 @@ class QuestionController extends Controller
     {
         $request['user_id']=auth('web')->user()->id;
         $request['ip']=$request->getClientIp();
+        $request['body']=preg_replace("/<(\/?a.*?)>/si","",$request['body']);
         Ask::create($request->all());
         return '问题提交成功';
 

@@ -67,7 +67,7 @@
                             <script type="text/javascript">
                                 var ue = UE.getEditor('container',{
                                     toolbars: [
-                                        ['bold', 'italic', 'underline', 'strikethrough', 'blockquote', 'insertunorderedlist', 'insertorderedlist', 'justifyleft','justifycenter', 'justifyright',  'link', 'insertimage', 'fullscreen']
+                                        ['bold', 'italic', 'underline', 'strikethrough', 'blockquote', 'insertunorderedlist', 'insertorderedlist', 'justifyleft','justifycenter', 'justifyright',  'link', 'insertimage','unlink','inserttable','charts','forecolor','backcolor','source', 'drafts','autotypeset','fullscreen']
                                     ],
                                     elementPathEnabled: false,
                                     enableContextMenu: false,
