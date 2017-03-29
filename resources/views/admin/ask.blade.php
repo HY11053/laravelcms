@@ -31,7 +31,7 @@
                             <tr>
                                 <td>{{$asklist->id}}.</td>
                                 <td>{{$asklist->title}}</td>
-                                <td>{{strip_tags($asklist->body)}}</td>
+                                <td>{{str_limit(strip_tags($asklist->body),20,'...')}}</td>
                                 <td>{{$asklist->created_at}}</td>
                                 <td>{{$asklist->updated_at}}</td>
                                 <td>{{$asklist->viewnum}}</td>

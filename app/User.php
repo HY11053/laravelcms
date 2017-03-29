@@ -30,4 +30,8 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\AdminModel\Comment','user_id');
     }
+    protected function asks()
+    {
+        return $this->hasMany('App\AdminModel\Ask','user_id');
+    }
 }

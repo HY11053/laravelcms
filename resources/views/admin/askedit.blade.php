@@ -1,6 +1,7 @@
 @extends('admin.layouts.admin_app')
 @section('title')添加文档@stop
 @section('head')
+    <link href="/AdminLTE/plugins/iCheck/all.css" rel="stylesheet">
 @stop
 @section('content')
     <!-- row -->
@@ -34,9 +35,19 @@
                                     {{Form::text('title', null, array('class' => 'form-control','id'=>'title','placeholder'=>'问答标题'))}}
                                 </div>
                             </div>
+                            <div class="form-group col-md-12">
+                                {{Form::label('tags', '问答标签', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                <div class="col-md-4 col-sm-9 col-xs-12">
+                                    {{Form::text('tags', null, array('class' => 'form-control','id'=>'title','placeholder'=>'问答标签'))}}
+                                </div>
+                            </div>
 
                         </div>
                         <div class="timeline-footer">
+                            <div class="col-sm-12 basic_info">
+                                {{Form::radio('is_hidden', '1', true,array('class'=>"flat-red"))}} 已审核
+                                {{Form::radio('is_hidden', '0',false,array('class'=>"flat-red"))}} 未审核
+                            </div>
                             <button class="btn btn-primary btn-xs">Read more</button>
                         </div>
                     </div>
@@ -110,6 +121,7 @@
     <script src="/AdminLTE/plugins/slimScroll/jquery.slimscroll.min.js"></script>
     <!-- FastClick -->
     <script src="/AdminLTE/plugins/fastclick/fastclick.js"></script>
+    <script src="/AdminLTE/plugins/iCheck/icheck.min.js"></script>
     <!-- AdminLTE App -->
     <script src="/AdminLTE/dist/js/app.min.js"></script>
     <!-- AdminLTE for demo purposes -->
@@ -129,6 +141,28 @@
 
         })
 
+    </script>
+    <script>
+        $(function () {
+
+            //iCheck for checkbox and radio inputs
+            $('.basic_info input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+                checkboxClass: 'icheckbox_minimal-blue',
+                radioClass: 'iradio_minimal-blue'
+            });
+            //Red color scheme for iCheck
+            $('.basic_info input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
+                checkboxClass: 'icheckbox_minimal-red',
+                radioClass: 'iradio_minimal-red'
+            });
+            //Flat red color scheme for iCheck
+            $('.basic_info input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
+                checkboxClass: 'icheckbox_flat-green',
+                radioClass: 'iradio_flat-green'
+            });
+
+
+        });
     </script>
 
 @stop

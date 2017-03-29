@@ -1,8 +1,10 @@
 @charset "utf-8";
 .center_list { padding-bottom: 20px;  overflow: hidden; zoom: 1; }
 .news_center { width: 800px; float: left; background: #fff; padding: 15px 30px 20px 30px; }
+#news_center { width: 800px; float: left; background: #fff; }
 .news_box { width: 860px; float: left; background: #fff; }
 .centter_box{ width: 870px }
+#nopadding{padding: 0px; width: 70%;}
 
 /*加盟列表*/
 .center_list dl { border-bottom: 1px dotted #D6D6D6; overflow: hidden; zoom: 1; padding: 19px 0; }

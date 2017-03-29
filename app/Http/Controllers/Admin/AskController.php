@@ -52,5 +52,10 @@ class AskController extends Controller
         return view('admin.askedit',compact('thisaskinfo'));
     }
     //编辑创建提交
+    public function PostEdit(Request $request,$id)
+    {
+        Ask::find($id)->update($request->all());
+        return redirect()->route('asklists');
+    }
     //删除问题
 }

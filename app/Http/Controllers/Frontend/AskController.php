@@ -13,8 +13,24 @@ class AskController extends Controller
     public function Index(Request $request)
     {
         $thistypeinfo=Arctype::where('real_path','ask')->first();
-        $pagelists=Ask::where('is_hidden','0')->latest()->paginate(10);
+        $asklists=Ask::latest()->paginate(30);
         //dd($pagelists);
-        return view('frontend.ask',compact('thistypeinfo','pagelists'));
+        return view('frontend.ask',compact('thistypeinfo','asklists'));
+    }
+    public function HotAsks()
+    {
+        $thistypeinfo=Arctype::where('real_path','ask')->first();
+        $asklists=Ask::latest()->paginate(10);
+        //dd($pagelists);
+        $asklists=Ask::where('answernum','>','0')->latest()->paginate(30);
+        return view('frontend.ask',compact('thistypeinfo','asklists'));
+    }
+    public function PendingAsks()
+    {
+        $thistypeinfo=Arctype::where('real_path','ask')->first();
+        $asklists=Ask::where('answernum','0')->latest()->paginate(30);
+        //dd($pagelists);
+        return view('frontend.ask',compact('thistypeinfo','asklists'));
+
     }
 }
