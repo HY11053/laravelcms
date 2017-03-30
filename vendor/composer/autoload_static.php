@@ -445,6 +445,7 @@ class ComposerStaticInitbcc14b164eff51c585117c27039ac457
         'AddFoneignkeyToArchives' => __DIR__ . '/../..' . '/database/migrations/2017_03_04_160105_add_foneignkey_to_archives.php',
         'AddImagepicsColumToAddonarticles' => __DIR__ . '/../..' . '/database/migrations/2017_02_25_211704_add_imagepics_colum_to_addonarticles.php',
         'AddIntroColumToArticlesTable' => __DIR__ . '/../..' . '/database/migrations/2017_01_29_102035_add_intro_colum_to_articles_table.php',
+        'AddIpToUsersTable' => __DIR__ . '/../..' . '/database/migrations/2017_03_30_223044_add_ip_to_users_table.php',
         'AddJmlcColumToAddonarticles' => __DIR__ . '/../..' . '/database/migrations/2017_02_26_180555_add_jmlc_colum_to_addonarticles.php',
         'AddMidColumToArctypes' => __DIR__ . '/../..' . '/database/migrations/2017_03_23_111555_add_mid_colum_to_arctypes.php',
         'AddonarticlesTableSeeder' => __DIR__ . '/../..' . '/database/seeds/AddonarticlesTableSeeder.php',

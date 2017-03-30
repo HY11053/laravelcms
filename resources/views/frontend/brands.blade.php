@@ -154,7 +154,7 @@
                 <ul>
                     @foreach($comments as $comment)
                     <li>
-                        <p><em>{{$comment->user->name}}</em><b>咨询</b><a target="_blank" href="/{{$comment->archive->arctype->real_path}}/{{$comment->archive->id}}.shtml"><em>{{$comment->archive->title}}</em></a></p>
+                        <p><em>{{$comment->user->name}}</em><b>咨询</b><a target="_blank" href="/{{$comment->archive->arctype->real_path}}/{{$comment->archive->id}}.shtml"><em>{{$comment->archive->shorttitle}}</em></a></p>
                         <p class="txt-col">{{str_limit($comment->content,30,'...')}}</p>
                     </li>
                    @endforeach
