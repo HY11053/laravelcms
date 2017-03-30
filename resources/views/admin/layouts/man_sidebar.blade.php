@@ -46,13 +46,15 @@
                     <i class="fa  fa-commenting"></i>
                     <span>问答及评论管理</span>
                     <span class="pull-right-container">
-              <span class="label label-primary pull-right">5</span>
+              <span class="label label-primary pull-right">9</span>
             </span>
                 </a>
                 <ul class="treeview-menu">
                     <li @if(Request::getRequestUri()=='/admin/ask')class="active"@endif><a href="/admin/ask"><i class="fa fa-circle-o"></i> 问答列表</a></li>
                     <li @if(Request::getRequestUri()=='/admin/ask/add')class="active"@endif><a href="/admin/ask/add"><i class="fa fa-circle-o"></i> 添加问题</a></li>
-                    <li @if(Request::getRequestUri()=='/admin/ask/add')class="active"@endif><a href="#"><i class="fa fa-circle-o"></i> 待审核问答</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/ask/pending')class="active"@endif><a href="/admin/ask/pending"><i class="fa fa-circle-o"></i> 待审核问答</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/answers')class="active"@endif><a href="/admin/answers"><i class="fa fa-circle-o"></i> 回答列表</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/answers/pending')class="active"@endif><a href="/admin/answers/pending"><i class="fa fa-circle-o"></i> 待审核回答</a></li>
                     <li @if(Request::getRequestUri()=='/admin/comments')class="active"@endif><a href="/admin/comments"><i class="fa fa-circle-o"></i> 评论列表</a></li>
                     <li @if(Request::getRequestUri()=='/admin/comments/pendingaudit')class="active"@endif><a href="/admin/comments/pendingaudit"><i class="fa fa-circle-o"></i> 待审核评论</a></li>
                     <li @if(Request::getRequestUri()=='/admin/commentsreversion')class="active"@endif><a href="/admin/commentsreversion"><i class="fa fa-circle-o"></i> 评论回复列表</a></li>

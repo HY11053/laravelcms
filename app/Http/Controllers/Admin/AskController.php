@@ -19,6 +19,11 @@ class AskController extends Controller
         $asklists=Ask::latest()->paginate(30);
         return view('admin.ask',compact('asklists'));
     }
+    public function PendingAsks()
+    {
+        $asklists=Ask::where('is_hidden',0)->latest()->paginate(30);
+        return view('admin.ask',compact('asklists'));
+    }
     /**
      * 文档添加问题
      * @param
@@ -58,4 +63,5 @@ class AskController extends Controller
         return redirect()->route('asklists');
     }
     //删除问题
+
 }

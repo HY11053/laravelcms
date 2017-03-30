@@ -12,4 +12,8 @@ class Ask extends Model
     {
         return $this->belongsTo('App\User','user_id');
     }
+    protected function answer()
+    {
+        return $this->hasMany('App\AdminModel\Answer','ask_id');
+    }
 }

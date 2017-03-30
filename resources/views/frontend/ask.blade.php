@@ -46,25 +46,18 @@
                                             <div class="summary">
                                                 <ul class="author list-inline">
                                                     <li>
-                                                        <a href="/u/yunyu2019">{{$asklist->user->name}}</a>
+                                                        <span>{{$asklist->user->name}}</span>
                                                         <span class="split"></span>
-                                                        <a href="/q/1010000008866561/a-1020000008871022">{{\Carbon\Carbon::parse($asklist->created_at)->diffForHumans()}}</a>
+                                                        <span>{{\Carbon\Carbon::parse($asklist->created_at)->diffForHumans()}}</span>
                                                     </li>
                                                 </ul>
-                                                <h2 class="title"><a href="/q/1010000008866561">{{$asklist->title}}</a></h2>
+                                                <h2 class="title"><a href="/ask/{{$asklist->id}}.shtml">{{$asklist->title}}</a></h2>
                                                 <ul class="taglist--inline ib">
+                                                    @foreach(explode(',',str_replace('，',',',$asklist->tags))  as $tag)
                                                     <li class="tagPopup">
-                                                        <a class="tag tag-sm" href="">{{$asklist->tags}}</a>
+                                                        <span class="tag tag-sm" href="">{{$tag}}</span>
                                                     </li>
-                                                    <li class="tagPopup">
-                                                        <a class="tag tag-sm" href="" >{{$asklist->tags}}</a>
-                                                    </li>
-                                                    <li class="tagPopup">
-                                                        <a class="tag tag-sm" >{{$asklist->tags}}</a>
-                                                    </li>
-                                                    <li class="tagPopup">
-                                                        <a  class="tag tag-sm" href="">{{$asklist->tags}}</a>
-                                                    </li>
+                                                    @endforeach
                                                 </ul>
                                             </div>
                                         </section>

@@ -69,6 +69,9 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ()
     Route::post('ask/add','AskController@PostAdd')->name('ask_create');
     Route::get('ask/edit/{id}','AskController@AskEdit');
     Route::put('ask/edit/{id}','AskController@PostEdit')->name('ask_edit');
+    Route::get('ask/pending','AskController@PendingAsks');
+    Route::get('answers','AnswerController@AnswerLists');
+    Route::get('answers/pending','AnswerController@AnswerPending');
     Route::get('comments','CommentsController@Index')->name('commentlists');
     Route::get('comments/pendingaudit','CommentsController@Pending');
     Route::get('comment/edit/{id}','CommentsController@CommentEdit');
@@ -108,6 +111,8 @@ Route::get('ask','Frontend\AskController@Index');
 Route::get('ask/hot','Frontend\AskController@HotAsks');
 Route::get('ask/pending','Frontend\AskController@PendingAsks');
 Route::post('questions/add','Frontend\QuestionController@Add')->name('answeradd');
+Route::get('ask/{id}.shtml','Frontend\AskController@AskArticle');
+Route::put('answer/{id}','Frontend\AnswerController@AnswerCreate')->name('answercrtete');
 Route::get('comparision/{p1?}-{p2?}-{p3?}.shtml','Frontend\ComparisionController@Compare');
 Route::post('comments','Frontend\CommentController@PostComment');
 Route::post('commentreversion/{id}','Frontend\CommentReversionController@CommentReversion');

@@ -18,7 +18,7 @@ class CreateAnswersTable extends Migration
             $table->integer('ask_id');
             $table->integer('user_id');
             $table->text('content');
-            $table->integer('goodpost');
+            $table->integer('goodpost')->default(0);
             $table->integer('is_hidden')->default(0);
             $table->ipAddress('ip');
             $table->timestamps();

@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers\Frontend;
 
+use App\AdminModel\Answer;
 use App\AdminModel\Arctype;
 use App\AdminModel\Ask;
+use App\Http\Requests\AnswerRequest;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -32,5 +34,11 @@ class AskController extends Controller
         //dd($pagelists);
         return view('frontend.ask',compact('thistypeinfo','asklists'));
 
+    }
+    public  function AskArticle($id)
+    {
+        $thisaskinfo=Ask::findOrFail($id);
+        $thisaskanswers=Answer::where('ask_id',$id)->get();
+        return view('frontend.ask_article',compact('thisaskinfo','thisaskanswers'));
     }
 }
