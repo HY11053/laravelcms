@@ -1,5 +1,5 @@
 @extends('admin.layouts.admin_app')
-@section('title')we@stop
+@section('title')问答编辑@stop
 @section('head')
     <link href="/AdminLTE/plugins/iCheck/all.css" rel="stylesheet">
 @stop

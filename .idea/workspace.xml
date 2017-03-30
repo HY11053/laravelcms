@@ -2,24 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3319fa8-ff1b-48ab-89cf-976377a9e35d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/frontend/ask_article.blade.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/views/frontend/questionadd.blade.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/AdminLTE/ajax/libs/ionicons/fonts/ionicons.ttf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.env" afterPath="$PROJECT_DIR$/.env" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AdminModel/Answer.php" afterPath="$PROJECT_DIR$/app/AdminModel/Answer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AdminModel/Ask.php" afterPath="$PROJECT_DIR$/app/AdminModel/Ask.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AnswerController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AnswerController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AskController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AskController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/AskController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/AskController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/QuestionController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/QuestionController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2017_02_28_171427_create_answers_table.php" afterPath="$PROJECT_DIR$/database/migrations/2017_02_28_171427_create_answers_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reception/css/style.css" afterPath="$PROJECT_DIR$/public/reception/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/askadd.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/askadd.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/mobilesitemap.xml" afterPath="$PROJECT_DIR$/public/mobilesitemap.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/askedit.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/askedit.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/layouts/man_sidebar.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/man_sidebar.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/frontend/ask.blade.php" afterPath="$PROJECT_DIR$/resources/views/frontend/ask.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
@@ -39,31 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="search_ajax.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/reception/js/search_ajax.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="20" column="55" lean-forward="false" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name=".env" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/reception/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="714" column="43" lean-forward="false" selection-start-line="714" selection-start-column="43" selection-end-line="714" selection-end-column="43" />
+            <state relative-caret-position="130">
+              <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -72,21 +41,19 @@
       <file leaf-file-name="brand_article.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/frontend/brand_article.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
+            <state relative-caret-position="2314">
               <caret line="89" column="85" lean-forward="false" selection-start-line="89" selection-start-column="85" selection-end-line="89" selection-end-column="85" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ask.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/frontend/ask.blade.php">
+      <file leaf-file-name="askedit.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/askedit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="53" column="102" lean-forward="false" selection-start-line="53" selection-start-column="102" selection-end-line="53" selection-end-column="102" />
-              <folding>
-                <marker date="1490854859415" expanded="true" signature="12663:12674" ph="{...}" />
-              </folding>
+            <state relative-caret-position="26">
+              <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -95,10 +62,18 @@
         <entry file="file://$PROJECT_DIR$/resources/views/frontend/ask_article.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-              <folding>
-                <element signature="e#2557#2563#0#HTML" expanded="true" />
-              </folding>
+              <caret line="46" column="13" lean-forward="false" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AskController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AskController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -106,8 +81,8 @@
       <file leaf-file-name="RegisterController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="47" column="44" lean-forward="true" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
+            <state relative-caret-position="216">
+              <caret line="51" column="8" lean-forward="false" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
               <folding>
                 <element signature="e#45#58#0#PHP" expanded="true" />
               </folding>
@@ -118,9 +93,21 @@
       <file leaf-file-name="LoginController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="42" column="32" lean-forward="false" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+            <state relative-caret-position="268">
+              <caret line="42" column="23" lean-forward="false" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="36" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArticleController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ArticleController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
+              <folding>
+                <element signature="e#46#78#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -128,8 +115,8 @@
       <file leaf-file-name="AuthenticatesUsers.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+            <state relative-caret-position="219">
+              <caret line="59" column="23" lean-forward="false" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -138,8 +125,8 @@
       <file leaf-file-name="RegistersUsers.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="31" column="15" lean-forward="false" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+            <state relative-caret-position="364">
+              <caret line="28" column="4" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="39" selection-end-column="5" />
               <folding>
                 <element signature="e#46#74#0#PHP" expanded="true" />
               </folding>
@@ -227,9 +214,7 @@
         <option value="$PROJECT_DIR$/app/Http/Requests/AnswerRequest.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/ask.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/askadd.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/AskController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Frontend/QuestionController.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/askedit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/questionadd.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2017_02_28_171427_create_answers_table.php" />
         <option value="$PROJECT_DIR$/app/AdminModel/Ask.php" />
@@ -241,9 +226,11 @@
         <option value="$PROJECT_DIR$/resources/views/admin/layouts/man_sidebar.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/ask.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/public/reception/css/style.css" />
         <option value="$PROJECT_DIR$/resources/views/frontend/ask_article.blade.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/AskController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/askedit.blade.php" />
         <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
       </list>
@@ -267,10 +254,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -288,25 +273,26 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -320,33 +306,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -364,11 +328,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -378,43 +342,141 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
+              <option name="myItemId" value="AdminLTE" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdminLTE" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ajax" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ionicons" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravelcmsgit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravelcmsgit" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdminLTE" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ajax" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ionicons" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2.0.1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravelcmsgit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravelcmsgit" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdminLTE" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ajax" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravelcmsgit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -424,11 +486,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -442,11 +504,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -464,37 +526,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shangji_v2" />
+              <option name="myItemId" value="laravelcmsgit" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -514,9 +550,34 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravelcmsgit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravelcmsgit" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -526,20 +587,20 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="$PROJECT_DIR$/../../bin/node" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../cs_ysgjiameng" />
-    <property name="SearchEverywhereHistoryKey" value="Illuminate\Foundation\Auth\AuthenticatesUsers&#9;null&#9;null&#10;as&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/ask_article.blade.php&#10;branda&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/brand_article.blade.php&#10;ask_ar&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/ask_article.blade.php&#10;ask&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/ask.blade.php&#10;style&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/css/style.css&#10;.env&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/.env&#10;search&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/js/search_ajax.js&#10;index&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/index.blade.php&#10;web&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/routes/web.php&#10;ask.b&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/ask.blade.php&#10;man&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/layouts/man_sidebar.blade.php&#10;answer&#9;null&#9;null&#10;ask.php&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/AdminModel/Ask.php&#10;comme&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Admin/CommentReversionController.php&#10;answerc&#9;null&#9;null&#10;com&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/AdminModel/Comment.php&#10;sty&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/css/style.css&#10;askco&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/AskController.php&#10;we&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/routes/web.php&#10;web.&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/routes/web.php&#10;article_a&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/article_article.blade.php&#10;aske&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/askedit.blade.php&#10;style.css&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/css/style.css&#10;qu&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/QuestionController.php&#10;askcon&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/AskController.php&#10;askadd&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/askadd.blade.php&#10;askcontr&#9;FILE&#9;file:///usr/local/websites/laravelcmsgit/app/Http/Controllers/Admin/AskController.php&#10;article&#9;FILE&#9;file:///usr/local/websites/laravelcmsgit/app/Http/Controllers/Admin/ArticleController.php&#10;answ&#9;null&#9;null&#10;answe&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Requests/AnswerRequest.php&#10;archive&#9;null&#9;null&#10;commen&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/AdminModel/Comment.php&#10;user.p&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/User.php&#10;AskController&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Admin/AskController.php&#10;comm&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/CommentController.php&#10;Ask.p&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/AdminModel/Ask.php&#10;QuestionController&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/QuestionController.php&#10;article_c&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/article_create.blade.php&#10;front&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/frontend.blade.php&#10;add&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/askadd.blade.php&#10;commentc&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/CommentController.php&#10;comment&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Admin/CommentReversionController.php&#10;wen&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/AdminLTE/plugins/jvectormap/jquery-jvectormap-world-mill-en.js&#10;glob&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/css/global.css&#10;news.css&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/css/news.css&#10;env&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/.env&#10;.en&#9;FILE&#9;file:///usr/local/websites/laravelcmsgit/.env&#10;article_e&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/article_edit.blade.php&#10;commentr&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/AdminModel/CommentReversion.php" />
+    <property name="SearchEverywhereHistoryKey" value="validateLogin&#9;null&#9;null&#10;Illuminate\Foundation\Auth\AuthenticatesUsers&#9;null&#9;null&#10;as&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/ask_article.blade.php&#10;branda&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/brand_article.blade.php&#10;ask_ar&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/ask_article.blade.php&#10;ask&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/ask.blade.php&#10;style&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/css/style.css&#10;.env&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/.env&#10;search&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/js/search_ajax.js&#10;index&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/index.blade.php&#10;web&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/routes/web.php&#10;ask.b&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/ask.blade.php&#10;man&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/layouts/man_sidebar.blade.php&#10;answer&#9;null&#9;null&#10;ask.php&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/AdminModel/Ask.php&#10;comme&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Admin/CommentReversionController.php&#10;answerc&#9;null&#9;null&#10;com&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/AdminModel/Comment.php&#10;sty&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/css/style.css&#10;askco&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/AskController.php&#10;we&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/routes/web.php&#10;web.&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/routes/web.php&#10;article_a&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/article_article.blade.php&#10;aske&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/askedit.blade.php&#10;style.css&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/css/style.css&#10;qu&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/QuestionController.php&#10;askcon&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/AskController.php&#10;askadd&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/askadd.blade.php&#10;askcontr&#9;FILE&#9;file:///usr/local/websites/laravelcmsgit/app/Http/Controllers/Admin/AskController.php&#10;article&#9;FILE&#9;file:///usr/local/websites/laravelcmsgit/app/Http/Controllers/Admin/ArticleController.php&#10;answ&#9;null&#9;null&#10;answe&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Requests/AnswerRequest.php&#10;archive&#9;null&#9;null&#10;commen&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/AdminModel/Comment.php&#10;user.p&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/User.php&#10;AskController&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Admin/AskController.php&#10;comm&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/CommentController.php&#10;Ask.p&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/AdminModel/Ask.php&#10;QuestionController&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/QuestionController.php&#10;article_c&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/article_create.blade.php&#10;front&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/frontend.blade.php&#10;add&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/askadd.blade.php&#10;commentc&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/CommentController.php&#10;comment&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Admin/CommentReversionController.php&#10;wen&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/AdminLTE/plugins/jvectormap/jquery-jvectormap-world-mill-en.js&#10;glob&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/css/global.css&#10;news.css&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/css/news.css&#10;env&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/.env&#10;.en&#9;FILE&#9;file:///usr/local/websites/laravelcmsgit/.env&#10;article_e&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/article_edit.blade.php" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\wamp64\www\shangji_v2\resources\views\admin" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/AdminLTE/ajax/libs/ionicons/fonts" />
       <recent name="F:\wamp64\www\shangji_v2\resources\views\admin" />
       <recent name="F:\wamp64\www\shangji_v2\resources\views\frontend" />
       <recent name="F:\wamp64\www\laravelcms" />
       <recent name="F:\wamp64\www\shangji_v2" />
-      <recent name="F:\wamp64\www\shangji_v2\public\dddd" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\wamp64\www\shangji_v2\resources\views\admin" />
     </key>
   </component>
   <component name="RunManager">
@@ -684,25 +745,26 @@
       <workItem from="1490750403983" duration="25044000" />
       <workItem from="1490799718210" duration="2660000" />
       <workItem from="1490837143175" duration="21439000" />
+      <workItem from="1490876763691" duration="2517000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="593306000" />
+    <option name="totallyTimeSpent" value="595823000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33812407" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34188035" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27377048" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2734694" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -805,12 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="0" column="14377" lean-forward="false" selection-start-line="0" selection-start-column="14377" selection-end-line="0" selection-end-column="14377" />
-          <folding>
-            <element signature="e#108973#109932#1" expanded="false" />
-            <element signature="e#114808#115547#1" expanded="false" />
-            <element signature="e#140774#140901#1" expanded="false" />
-            <element signature="e#165523#166080#2" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -869,7 +925,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="34" column="12" lean-forward="true" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="110" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -877,7 +932,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
           <caret line="33" column="11" lean-forward="true" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -901,7 +955,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
           <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -917,15 +970,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="728">
           <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ArticleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="31" column="50" lean-forward="false" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -933,15 +977,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
           <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AskController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -976,7 +1011,7 @@
         <state relative-caret-position="310">
           <caret line="41" column="80" lean-forward="false" selection-start-line="41" selection-start-column="80" selection-end-line="41" selection-end-column="80" />
           <folding>
-            <element signature="e#49#75#0#PHP" expanded="true" />
+            <element signature="e#49#75#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -989,19 +1024,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/askedit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="87" column="27" lean-forward="false" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="93" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/frontend/article_article.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2668">
           <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1009,7 +1035,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1018,7 +1043,7 @@
         <state relative-caret-position="258">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <element signature="e#49#75#0#PHP" expanded="true" />
+            <element signature="e#49#75#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1043,7 +1068,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="25" column="40" lean-forward="false" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1061,7 +1085,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="48" column="60" lean-forward="false" selection-start-line="48" selection-start-column="60" selection-end-line="48" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1077,7 +1100,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1085,31 +1107,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2730">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/frontend/ask.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="1378">
           <caret line="53" column="102" lean-forward="false" selection-start-line="53" selection-start-column="102" selection-end-line="53" selection-end-column="102" />
-          <folding>
-            <marker date="1490854859415" expanded="true" signature="12663:12674" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/reception/js/search_ajax.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
+        <state relative-caret-position="520">
           <caret line="20" column="55" lean-forward="false" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
           <folding />
         </state>
@@ -1117,7 +1128,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/reception/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
+        <state relative-caret-position="18564">
           <caret line="714" column="43" lean-forward="false" selection-start-line="714" selection-start-column="43" selection-end-line="714" selection-end-column="43" />
           <folding />
         </state>
@@ -1125,8 +1136,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/frontend/brand_article.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
+        <state relative-caret-position="2314">
           <caret line="89" column="85" lean-forward="false" selection-start-line="89" selection-start-column="85" selection-end-line="89" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AskController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/askedit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1134,43 +1169,51 @@
     <entry file="file://$PROJECT_DIR$/resources/views/frontend/ask_article.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-          <folding>
-            <element signature="e#2557#2563#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="42" column="32" lean-forward="false" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+          <caret line="46" column="13" lean-forward="false" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="31" column="15" lean-forward="false" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+        <state relative-caret-position="364">
+          <caret line="28" column="4" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="39" selection-end-column="5" />
           <folding>
             <element signature="e#46#74#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="59" column="23" lean-forward="false" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ArticleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="e#46#78#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="42" column="23" lean-forward="false" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="47" column="44" lean-forward="true" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
+        <state relative-caret-position="216">
+          <caret line="51" column="8" lean-forward="false" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
           <folding>
             <element signature="e#45#58#0#PHP" expanded="true" />
           </folding>

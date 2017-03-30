@@ -8,6 +8,10 @@ use App\Http\Controllers\Controller;
 
 class AskController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth.admin:admin');
+    }
     /**
      * 问答列表
      * @param
