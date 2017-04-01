@@ -1,5 +1,5 @@
 @extends('frontend.frontend')
-@section('title') 列表页 @stop
+@section('title') {{$title}} @stop
 @section('keywords') 关键字 @stop
 @section('description') 描述 @stop
 

@@ -15,17 +15,41 @@ class ProjectController extends Controller
 {
    public function Search(Request $request,$p1=[],$p2='',$p3='',$p4='')
    {
+       preg_match('/project\/([0-9]+)-([0-9~]+)-([0-9]+)-([0-9]+)\.shtml/',$request->path(),$matches);
 
-       $p1=$p1==0?Arctype::where('mid','1')->pluck('id'):array($p1);
-       $p2=empty($p2)?'':$p2;
-       $p3=empty($p3)?'':$p3;
+       switch ($matches[1]){
+           case 0:
+               $brand='零食店品牌';
+               break;
+           case 1:
+               $brand='零食店品牌';
+               break;
+           case 2:
+               $brand='炒货店品牌';
+               break;
+           case 3:
+               $brand='干果店品牌';
+               break;
+           case 3:
+               $brand='进口零食品牌';
+               break;
+
+       }
+       $tz=$matches[2]?$matches[2].'万':'';
+       $squares=$matches[3]?$matches[3].'平米':'';
+       $city=$matches[4]?Area::where('id',$matches[3])->value('city'):'';
+       $title= $city.$tz.$squares.$brand;
+       //dd($matches);
+        $p1=$p1==0?Arctype::where('mid','1')->pluck('id'):array($p1);
+        $p2=empty($p2)?'':$p2;
+        $p3=empty($p3)?'':$p3;
         $p4=empty($p4)?'':Area::where('id',$p4)->value('city');
         $pagelists=Addonarticle::whereIn('typeid',$p1)->where('brandpay','like','%'.$p2.'%')->where('acreage','like','%'.$p3.'%')->where('brandaddr','like','%'.$p4.'%')->where('created_at','<=',Carbon::now())->latest()->paginate(10);
-       $topbrands=Archive::where('mid',1)->where('ismake','1')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(9)->get();
-       $newsbrands=Archive::where('ismake','1')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
-       $brandtypes=Arctype::where('mid',1)->get();
-       $comments=Comment::where('is_hidden',0)->latest()->take(5)->get();
-       return view('frontend.project',compact('pagelists','topbrands','newsbrands','brandtypes','comments'));
+        $topbrands=Archive::where('mid',1)->where('ismake','1')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(9)->get();
+        $newsbrands=Archive::where('ismake','1')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
+        $brandtypes=Arctype::where('mid',1)->get();
+        $comments=Comment::where('is_hidden',0)->latest()->take(5)->get();
+       return view('frontend.project',compact('pagelists','topbrands','newsbrands','brandtypes','comments','title'));
    }
    public function SearchAjax(Request $request)
    {

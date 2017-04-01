@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3319fa8-ff1b-48ab-89cf-976377a9e35d" name="Default" comment="" />
+    <list default="true" id="b3319fa8-ff1b-48ab-89cf-976377a9e35d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.env" afterPath="$PROJECT_DIR$/.env" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/ProjectController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/ProjectController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/frontend/project.blade.php" afterPath="$PROJECT_DIR$/resources/views/frontend/project.blade.php" />
+    </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,7 +26,7 @@
       <file leaf-file-name="RegisterController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
+            <state relative-caret-position="1794">
               <caret line="69" column="6" lean-forward="false" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
               <folding>
                 <element signature="e#45#58#0#PHP" expanded="true" />
@@ -44,18 +48,38 @@
       <file leaf-file-name="brands.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/frontend/brands.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
+            <state relative-caret-position="4056">
               <caret line="156" column="200" lean-forward="false" selection-start-line="156" selection-start-column="200" selection-end-line="156" selection-end-column="200" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="project.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="project.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/frontend/project.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="157" column="204" lean-forward="false" selection-start-line="157" selection-start-column="204" selection-end-line="157" selection-end-column="204" />
+            <state relative-caret-position="26">
+              <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="48" column="75" lean-forward="true" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProjectController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Frontend/ProjectController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="39" column="73" lean-forward="false" selection-start-line="39" selection-start-column="73" selection-end-line="39" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -64,7 +88,7 @@
       <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
+            <state relative-caret-position="416">
               <caret line="17" column="55" lean-forward="false" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
               <folding />
             </state>
@@ -74,7 +98,7 @@
       <file leaf-file-name="register.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
+            <state relative-caret-position="1222">
               <caret line="47" column="78" lean-forward="false" selection-start-line="47" selection-start-column="78" selection-end-line="47" selection-end-column="78" />
               <folding />
             </state>
@@ -84,7 +108,7 @@
       <file leaf-file-name="LoginController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
+            <state relative-caret-position="1014">
               <caret line="42" column="23" lean-forward="false" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="36" />
               <folding />
             </state>
@@ -94,32 +118,10 @@
       <file leaf-file-name="ArticleController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ArticleController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
+            <state relative-caret-position="208">
               <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
               <folding>
                 <element signature="e#46#78#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthenticatesUsers.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="59" column="23" lean-forward="false" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegistersUsers.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="28" column="4" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="39" selection-end-column="5" />
-              <folding>
-                <element signature="e#46#74#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -173,7 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/reception/js/comment.js" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/AdminAuthMiddleware.php" />
         <option value="$PROJECT_DIR$/app/Extensions/AuthenticatesLogout.php" />
@@ -224,6 +225,7 @@
         <option value="$PROJECT_DIR$/resources/views/frontend/frontend.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/brands.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/project.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Frontend/ProjectController.php" />
       </list>
     </option>
   </component>
@@ -245,8 +247,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -263,7 +267,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -601,6 +604,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -610,7 +614,7 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="$PROJECT_DIR$/../../bin/node" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../cs_ysgjiameng" />
-    <property name="SearchEverywhereHistoryKey" value="proj&#9;FILE&#9;file:///usr/local/websites/laravelcmsgit/resources/views/frontend/project.blade.php&#10;brand&#9;FILE&#9;file:///usr/local/websites/laravelcmsgit/resources/views/frontend/brands.blade.php&#10;frontend&#9;FILE&#9;file:///usr/local/websites/laravelcmsgit/resources/views/frontend/frontend.blade.php&#10;user.php&#9;FILE&#9;file:///usr/local/websites/laravelcmsgit/app/User.php&#10;validateLogin&#9;null&#9;null&#10;Illuminate\Foundation\Auth\AuthenticatesUsers&#9;null&#9;null&#10;as&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/ask_article.blade.php&#10;branda&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/brand_article.blade.php&#10;ask_ar&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/ask_article.blade.php&#10;ask&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/ask.blade.php&#10;style&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/css/style.css&#10;.env&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/.env&#10;search&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/js/search_ajax.js&#10;index&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/index.blade.php&#10;web&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/routes/web.php&#10;ask.b&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/ask.blade.php&#10;man&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/layouts/man_sidebar.blade.php&#10;answer&#9;null&#9;null&#10;ask.php&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/AdminModel/Ask.php&#10;comme&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Admin/CommentReversionController.php&#10;answerc&#9;null&#9;null&#10;com&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/AdminModel/Comment.php&#10;sty&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/css/style.css&#10;askco&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/AskController.php&#10;we&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/routes/web.php&#10;web.&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/routes/web.php&#10;article_a&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/article_article.blade.php&#10;aske&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/askedit.blade.php&#10;style.css&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/css/style.css&#10;qu&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/QuestionController.php&#10;askcon&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/AskController.php&#10;askadd&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/askadd.blade.php&#10;askcontr&#9;FILE&#9;file:///usr/local/websites/laravelcmsgit/app/Http/Controllers/Admin/AskController.php&#10;article&#9;FILE&#9;file:///usr/local/websites/laravelcmsgit/app/Http/Controllers/Admin/ArticleController.php&#10;answ&#9;null&#9;null&#10;answe&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Requests/AnswerRequest.php&#10;archive&#9;null&#9;null&#10;commen&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/AdminModel/Comment.php&#10;user.p&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/User.php&#10;AskController&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Admin/AskController.php&#10;comm&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/CommentController.php&#10;Ask.p&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/AdminModel/Ask.php&#10;QuestionController&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/QuestionController.php&#10;article_c&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/article_create.blade.php&#10;front&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/frontend.blade.php&#10;add&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/askadd.blade.php&#10;commentc&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/CommentController.php&#10;comment&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Admin/CommentReversionController.php&#10;wen&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/AdminLTE/plugins/jvectormap/jquery-jvectormap-world-mill-en.js&#10;glob&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/css/global.css" />
+    <property name="SearchEverywhereHistoryKey" value="project&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/project.blade.php&#10;logib&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/auth/login.blade.php&#10;proj&#9;FILE&#9;file:///usr/local/websites/laravelcmsgit/resources/views/frontend/project.blade.php&#10;brand&#9;FILE&#9;file:///usr/local/websites/laravelcmsgit/resources/views/frontend/brands.blade.php&#10;frontend&#9;FILE&#9;file:///usr/local/websites/laravelcmsgit/resources/views/frontend/frontend.blade.php&#10;user.php&#9;FILE&#9;file:///usr/local/websites/laravelcmsgit/app/User.php&#10;validateLogin&#9;null&#9;null&#10;Illuminate\Foundation\Auth\AuthenticatesUsers&#9;null&#9;null&#10;as&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/ask_article.blade.php&#10;branda&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/brand_article.blade.php&#10;ask_ar&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/ask_article.blade.php&#10;ask&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/ask.blade.php&#10;style&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/css/style.css&#10;.env&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/.env&#10;search&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/js/search_ajax.js&#10;index&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/index.blade.php&#10;web&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/routes/web.php&#10;ask.b&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/ask.blade.php&#10;man&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/layouts/man_sidebar.blade.php&#10;answer&#9;null&#9;null&#10;ask.php&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/AdminModel/Ask.php&#10;comme&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Admin/CommentReversionController.php&#10;answerc&#9;null&#9;null&#10;com&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/AdminModel/Comment.php&#10;sty&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/css/style.css&#10;askco&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/AskController.php&#10;we&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/routes/web.php&#10;web.&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/routes/web.php&#10;article_a&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/article_article.blade.php&#10;aske&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/askedit.blade.php&#10;style.css&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/css/style.css&#10;qu&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/QuestionController.php&#10;askcon&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/AskController.php&#10;askadd&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/askadd.blade.php&#10;askcontr&#9;FILE&#9;file:///usr/local/websites/laravelcmsgit/app/Http/Controllers/Admin/AskController.php&#10;article&#9;FILE&#9;file:///usr/local/websites/laravelcmsgit/app/Http/Controllers/Admin/ArticleController.php&#10;answ&#9;null&#9;null&#10;answe&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Requests/AnswerRequest.php&#10;archive&#9;null&#9;null&#10;commen&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/AdminModel/Comment.php&#10;user.p&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/User.php&#10;AskController&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Admin/AskController.php&#10;comm&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/CommentController.php&#10;Ask.p&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/AdminModel/Ask.php&#10;QuestionController&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/QuestionController.php&#10;article_c&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/article_create.blade.php&#10;front&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/frontend.blade.php&#10;add&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/askadd.blade.php&#10;commentc&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/CommentController.php&#10;comment&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Admin/CommentReversionController.php" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
@@ -769,25 +773,26 @@
       <workItem from="1490799718210" duration="2660000" />
       <workItem from="1490837143175" duration="21439000" />
       <workItem from="1490876763691" duration="4042000" />
+      <workItem from="1491034509905" duration="2791000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="597348000" />
+    <option name="totallyTimeSpent" value="600139000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34188035" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3472012" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2734694" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27377048" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -850,26 +855,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/reception/css/news.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="36" lean-forward="false" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/reception/css/global.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="0" column="14377" lean-forward="false" selection-start-line="0" selection-start-column="14377" selection-end-line="0" selection-end-column="14377" />
-          <folding>
-            <element signature="e#108973#109932#1" expanded="false" />
-            <element signature="e#114808#115547#1" expanded="false" />
-            <element signature="e#140774#140901#1" expanded="false" />
-            <element signature="e#165523#166080#2" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2017_02_28_172310_create_comments_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-312">
@@ -903,7 +888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="27" column="42" lean-forward="false" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -918,7 +902,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
           <caret line="33" column="11" lean-forward="true" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -934,7 +917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
           <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -942,7 +924,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1586">
           <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -950,7 +931,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="728">
           <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -975,7 +955,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
           <caret line="36" column="62" lean-forward="false" selection-start-line="36" selection-start-column="62" selection-end-line="36" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -983,7 +962,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="15" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -991,9 +969,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
           <caret line="41" column="80" lean-forward="false" selection-start-line="41" selection-start-column="80" selection-end-line="41" selection-end-column="80" />
-          <folding>
-            <element signature="e#49#75#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1001,7 +976,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1023,9 +997,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="e#49#75#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1033,7 +1004,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
           <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1041,7 +1011,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="16" column="67" lean-forward="false" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1056,9 +1025,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
           <caret line="21" column="51" lean-forward="false" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
-          <folding>
-            <element signature="e#46#72#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1073,7 +1039,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="113" column="44" lean-forward="false" selection-start-line="113" selection-start-column="44" selection-end-line="113" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1103,7 +1068,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
           <caret line="20" column="55" lean-forward="false" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1111,7 +1075,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18564">
           <caret line="714" column="43" lean-forward="false" selection-start-line="714" selection-start-column="43" selection-end-line="714" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1119,7 +1082,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2314">
           <caret line="89" column="85" lean-forward="false" selection-start-line="89" selection-start-column="85" selection-end-line="89" selection-end-column="85" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1143,7 +1105,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
           <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1151,23 +1112,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="46" column="13" lean-forward="false" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
+        <state relative-caret-position="676">
           <caret line="28" column="4" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="39" selection-end-column="5" />
           <folding>
-            <element signature="e#46#74#0#PHP" expanded="true" />
+            <element signature="e#46#74#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
+        <state relative-caret-position="1482">
           <caret line="59" column="23" lean-forward="false" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
           <folding />
         </state>
@@ -1175,7 +1135,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ArticleController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
+        <state relative-caret-position="208">
           <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
           <folding>
             <element signature="e#46#78#0#PHP" expanded="true" />
@@ -1185,7 +1145,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
+        <state relative-caret-position="1014">
           <caret line="42" column="23" lean-forward="false" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="36" />
           <folding />
         </state>
@@ -1209,7 +1169,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
+        <state relative-caret-position="1222">
           <caret line="47" column="78" lean-forward="false" selection-start-line="47" selection-start-column="78" selection-end-line="47" selection-end-column="78" />
           <folding />
         </state>
@@ -1217,7 +1177,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
+        <state relative-caret-position="416">
           <caret line="17" column="55" lean-forward="false" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
           <folding />
         </state>
@@ -1225,7 +1185,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
+        <state relative-caret-position="1794">
           <caret line="69" column="6" lean-forward="false" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
           <folding>
             <element signature="e#45#58#0#PHP" expanded="true" />
@@ -1243,16 +1203,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/frontend/brands.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
+        <state relative-caret-position="4056">
           <caret line="156" column="200" lean-forward="false" selection-start-line="156" selection-start-column="200" selection-end-line="156" selection-end-column="200" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="48" column="75" lean-forward="true" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/frontend/project.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="157" column="204" lean-forward="false" selection-start-line="157" selection-start-column="204" selection-end-line="157" selection-end-column="204" />
+        <state relative-caret-position="26">
+          <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Frontend/ProjectController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="39" column="73" lean-forward="false" selection-start-line="39" selection-start-column="73" selection-end-line="39" selection-end-column="73" />
           <folding />
         </state>
       </provider>
