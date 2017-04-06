@@ -67,7 +67,6 @@
                 {{Form::open(array('route' => array('answercrtete',$thisaskinfo->id),'method' => 'put'))}}
                 <div class="internoter">
                 <p>我有更好答案</p>
-                    <hr/>
                 @include('vendor.ueditor.assets')
                 <!-- 实例化编辑器 -->
                     <script type="text/javascript">
@@ -92,6 +91,11 @@
                     <script id="container" name="content" type="text/plain"></script>
                     <button type="submit"  class="btn btn-md bg-maroon">提交问答</button>
                     <div class="clear"></div>
+                    @if ($errors->has('content'))
+                        <span class="help-block">
+                                        <strong>{{ $errors->first('content') }}</strong>
+                                    </span>
+                    @endif
                 </div>
 
                 {!! Form::close() !!}

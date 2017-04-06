@@ -99,20 +99,20 @@
                         </form>
                         <div class="tit">投资金额：</div>
                         <div class="price">
-                            <a title="1-5万元项目" href="/search/all_1_5_0.shtml">1-5万元</a>
-                            <a title="5－10万元项目" href="/search/all_5_10_0.shtml">5-10万元</a>
-                            <a title="10－20万元项目" href="/search/all_10_20_0.shtml">10-20万元</a>
-                            <a title="20－50万元项目" href="/search/all_20_50_0.shtml">20-50万元</a>
-                            <a title="50-100万元项目" href="/search/all_50_100_0.shtml">50-100万元</a>
-                            <a title="100万元以上项目" href="/search/all_100_200_0.shtml">100万以上</a>
+                            <a title="1-5万元项目" href="/project/0-1~5-0-0.shtml">1-5万元</a>
+                            <a title="5－10万元项目" href="/project/0-5~10-0-0.shtml">5-10万元</a>
+                            <a title="10－20万元项目" href="/project/0-10~20-0-0.shtml">10-20万元</a>
+                            <a title="20－50万元项目" href="/project/0-20~50-0-0.shtml">20-50万元</a>
+                            <a title="50-100万元项目" href="/project/0-50~100-0-0.shtml">50-100万元</a>
+                            <a title="100万元以上项目" href="/project/0-100-0-0.shtml">100万以上</a>
                         </div>
                         <div class="tit">面积：</div>
                         <div class="area">
-                            <a title="10平以下" href="/search/all_0_1_10.shtml">10平以下</a>
-                            <a title="10-30平米" href="/search/all_0_10_30.shtml">10-30平米</a>
-                            <a title="30-80平米" href="/search/all_0_30_50.shtml">30-50平米</a>
-                            <a title="80-150平米" href="/search/all_0_50_80.shtml">50-80平米</a>
-                            <a title="150平以上" href="/search/all_0_100_200.shtml">100平以上</a>
+                            <a title="10平以下" href="/project/0-0-1~10-0.shtml">10平以下</a>
+                            <a title="10-30平米" href="/project/0-0-10~30-0.shtml">10-30平米</a>
+                            <a title="30-80平米" href="/project/0-0-30~50-0.shtml">30-50平米</a>
+                            <a title="80-150平米" href="/project/0-0-50~80-0.shtml">50-80平米</a>
+                            <a title="150平以上" href="/project/0-0-100-0.shtml">100平以上</a>
                         </div>
                     </div>
                 </div>

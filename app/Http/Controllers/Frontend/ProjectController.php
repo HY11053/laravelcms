@@ -15,8 +15,7 @@ class ProjectController extends Controller
 {
    public function Search(Request $request,$p1=[],$p2='',$p3='',$p4='')
    {
-       preg_match('/project\/([0-9]+)-([0-9~]+)-([0-9]+)-([0-9]+)\.shtml/',$request->path(),$matches);
-
+       preg_match('/project\/([0-9]+)-([0-9~]+)-([0-9~]+)-([0-9]+)\.shtml/',$request->path(),$matches);
        switch ($matches[1]){
            case 0:
                $brand='零食店品牌';

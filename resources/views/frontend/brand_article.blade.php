@@ -59,7 +59,7 @@
                 </ul>
             </div>
             <div class="tel">联系电话：<span>4008-813-178</span></div>
-            <div class="btn_area"> <a id="chatNowButton" href="#msg" class="zixun_btn">立即咨询</a> <a href="#msg" class="suoyao_btn">索要资料</a> </div>
+            <div class="btn_area"> <a id="chatNowButton" href="#msg" class="zixun_btn">立即咨询</a> <a href="#msg" class="suoyao_btn">成本预算</a> </div>
         </div>
         <div class="layout2_right fl">
             <div class="comp_box">
@@ -107,11 +107,11 @@
                 <div class="fixed_nav">
                     <div class="cont_tab">
                         <ul>
-                            <li class="js_join_1 cur"><a href="javascript:void(0)">加盟详情</a></li>
+                            <li class="js_join_1 cur"><a href="javascript:void(0)">品牌介绍</a></li>
                             <li class="js_join_2"><a href="javascript:void(0)">加盟优势</a></li>
                             <li class="js_join_3"><a href="javascript:void(0)">加盟流程</a></li>
                             <li class="js_join_4"><a href="javascript:void(0)">加盟政策</a></li>
-                            <li class="js_join_5"><a href="javascript:void(0)">加盟问答</a></li>
+                            <li class="js_join_5"><a href="javascript:void(0)">开店必看</a></li>
                         </ul>
                     </div>
                 </div>

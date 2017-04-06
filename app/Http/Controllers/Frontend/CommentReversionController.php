@@ -29,7 +29,6 @@ class CommentReversionController extends Controller
             abort(404,'禁止恶意回复');
         }
         CommentReversion::create($request->all());
-
         return CommentReversion::latest()->first()->toJson();
     }
 }

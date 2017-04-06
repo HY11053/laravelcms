@@ -22,10 +22,10 @@
                             <div class="row mb20">
                                 <div class="col-xs-12 col-md-9 main" id="nopadding">
                                     <ul class="nav nav-tabs nav-tabs-zen mb10 mt30" style="background: none;">
-                                        <li @if(Request::getRequestUri()=='/ask')class="active"@endif ><a href="/ask">最新问答</a>
+                                        <li @if(Request::getrequesturi()=='/ask')class="active"@endif ><a href="/ask">最新问答</a>
                                         </li>
-                                        <li @if(Request::getRequestUri()=='/ask/hot')class="active"@endif ><a  href="/ask/hot">热门问答</a></li>
-                                        <li @if(Request::getRequestUri()=='/ask/pending')class="active"@endif ><a href="/ask/pending">等待回答</a></li>
+                                        <li @if(Request::getrequesturi()=='/ask/hot')class="active"@endif ><a  href="/ask/hot">热门问答</a></li>
+                                        <li @if(Request::getrequesturi()=='/ask/pending')class="active"@endif ><a href="/ask/pending">等待回答</a></li>
                                         <li><a data-toggle="modal" data-target=".bs-example-modal-lg" href="#">我要提问</a></li>
                                          </ul>
                                     <div class="stream-list question-stream">
@@ -125,7 +125,7 @@
         </div>
     </div>
     <!--主体结束-->
-    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal fade bs-example-modal-lg" role="dialog" aria-labelledby="myLargeModalLabel">
         <div class="modal-dialog modal-md" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -192,6 +192,83 @@
         </div>
 
     </div>
+	
+<!--登录弹窗 开始-->
+<div class="login_popup_mask"></div>
+<div class="login_popup">
+	<div class="hd"><a id="login_popup_close" class="close" href="javascript:void(0)" title="关闭">×</a><span class="tit">登录</span></div>
+	<div class="bd">
+		<div class="reg_box">
+			<div class="login-title">注册新账号</div>
+			<form class="form-horizontal1" role="form" method="POST" action="http://www.shangjicms.com/register">
+				<input type="hidden" name="_token" value="PNNkSCoHUyDxxcXinRxsuV0lL0NkaZEBWkDB7gk2">
+				<div class="form-group">
+					<label for="name" class="control-label">用户名</label>
+					<input id="name" type="text" class="form-control" name="name" value="" required autofocus placeholder="真实姓名或常用昵称">
+				</div>
+				<div class="form-group">
+					<label for="email" class="control-label">邮箱</label>
+					<input id="email" type="email" class="form-control" name="email" value="" required placeholder="邮箱">
+				</div>
+				<div class="form-group">
+					<label for="email" class="control-label">手机号码</label>
+					<input id="mobilephone" type="text" class="form-control" name="mobilephone" value="" required placeholder="仅支持大陆手机号">
+				</div>
+				<div class="form-group">
+					<label for="password" class="control-label">密码</label>
+					<input id="password" type="password" class="form-control" name="password" required placeholder="不少于 6 位">
+				</div>
+				<div class="form-group">
+					<label for="password-confirm" class="control-label">确认密码</label>
+					<input id="password-confirm" type="password" class="form-control" name="password_confirmation" required placeholder="再输入一遍密码">
+				</div>
+				<div class="form-group">
+					<span class="other_link">同意并接受<a href="#" target="_blank">《服务条款》</a></span>
+					<button type="submit" class="btn btn-primary">注册</button>
+				</div>
+			</form>
+		</div>
+		
+		<div class="login_box">
+			<div class="login-title">用户登录</div>
+			<form class="form-horizontal1" role="form" method="POST" action="{{ url('/login') }}">
+                {{ csrf_field() }}
+				<div class="form-group">
+					<label for="email" class="control-label">邮箱</label>
+					<input id="email" type="email" class="form-control" name="email" value="" required placeholder="注册邮箱">
+				</div>
+				<div class="form-group">
+					<label for="password" class="control-label">密码</label>
+					<input id="password" type="password" class="form-control" name="password" required placeholder="密码">
+				</div>
+                <div class="form-group {{ $errors->has('captcha') ? ' has-error' : '' }}">
+                    <label for="captcha" class="col-md-4 control-label">验证码</label>
+
+                    <div class="col-md-6">
+                        <input id="pcaptcha" type="text" class="form-control" name="captcha" required>
+
+                        <a id="refresh-capthca"><img src="{{captcha_src()}}"
+                                                     alt="验证码"
+                                                     title="点击刷新图片"
+                                                     width="160"
+                                                     height="46" id="captcha" border="0" data-captcha-config="default" /> </a>
+                    </div>
+                    @if ($errors->has('captcha'))
+                        <span class="help-block">
+                                        <strong>{{ $errors->first('captcha') }}</strong>
+                                    </span>
+                    @endif
+                </div>
+				<div class="form-group">
+					<span class="other_link"><label><input name="remember" type="checkbox" value="1" checked="">记住登录状态</label></span>
+					<button type="submit" class="btn btn-primary">登录</button>
+				</div>
+				<div class="form-group"><a href="http://www.shangjicms.com/password/reset" target="_blank" class="forgot_link">忘记密码</a></div>
+			</form>
+		</div>
+	</div>
+</div>
+<!--登录弹窗 结束-->
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script>
     $(document).ready(function() {
@@ -206,7 +283,7 @@
                 var body=  ue.getContent();
                 var tags=$('#tags[name="tags"]').val();
                 var title=$('#answertitle[name="title"]').val();
-                if(!auth.length == 0){
+                if(auth.length > 0){
                     $.ajax({
                         //提交数据的类型 POST GET
                         type:"POST",
@@ -222,7 +299,7 @@
                         }
                     });
                 } else{
-                    window.location.href='/login';
+				  $(".login_popup_mask,.login_popup").show();	
                 }
             })
 

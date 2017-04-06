@@ -15,6 +15,9 @@ class AnswerController extends Controller
 
     function AnswerCreate(Request $request,$id)
     {
+        $this->validate($request, [
+            'content' => 'required|min:100',
+        ]);
         $request['ask_id']=$id;
         $request['ip']=$request->getClientIp();
         $request['user_id']=auth('web')->user()->id;

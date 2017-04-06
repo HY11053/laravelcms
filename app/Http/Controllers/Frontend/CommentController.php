@@ -17,6 +17,9 @@ class CommentController extends Controller
 
     public function PostComment(Request $request)
     {
+        $this->validate($request, [
+            'content' => 'required|min:100',
+        ]);
         $request['ip']=$request->getClientIp();
         $request['user_id']=auth('web')->user()->id;
         //同一账号每天每篇文章只能评论一次

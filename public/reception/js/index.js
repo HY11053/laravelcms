@@ -142,6 +142,11 @@ $(document).scroll(function(){
 	 $("#content").val($(this).text());  
   });
   
+ //关闭登录弹窗
+  $("#login_popup_close").click(function(){
+	  $(".login_popup_mask,.login_popup").hide();
+  });
+  
  
 	
 });

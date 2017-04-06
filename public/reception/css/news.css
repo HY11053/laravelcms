@@ -86,7 +86,7 @@ a:hover { color: #E73727; }
 .ny_message h1 { text-align: center; font-size: 28px; font-weight: bold; line-height: 30px; color: #333333; }
 .ny_message-js { color: #999; text-align: center; padding-top: 20px; }
 .ny_message-js span { padding: 0 9px; color: #999; }
-.new_abstract { background-color: #f8f8f8; border: 1px solid #e2e2e2; }
+.new_abstract { background-color: #f8f8f8; border: 1px solid #e2e2e2; padding:5px 10px; color:#666; }
 .new_abstract p { text-align: left; padding: 13px 20px; font-size: 14px; color: #575757; line-height: 28px; }
 .new_abstract span { font-size: 14px; color: #e63726; }
 .body_tit { height: auto; overflow: hidden; color: #666666; padding: 20px 0 28px 0; font-size: 14px; line-height: 28px; }
@@ -202,8 +202,8 @@ a:hover { color: #E73727; }
 .info .detail .crumbs a { font-size: 12px; color: #2c64b6; }
 .info .detail .crumbs a:hover{ color:#D71318;}
 .info .tit_pice { overflow: hidden; zoom: 1; border-bottom: 1px dotted #D6D6D6; padding: 10px 0; color: #666; }
-.info .tit_pice li { float: left; width: 230px; height: 28px; line-height: 28px; color: #999999; }
-.info .tit_pice .price { color: #666666; font-size: 12px; vertical-align: bottom; display: inline-block; padding-left: 10px; }
+.info .tit_pice li { float: left; width: 230px; /*height: 28px;*/ line-height: 28px; color: #999999; }
+.info .tit_pice .price { color: #666666; font-size: 12px; vertical-align: bottom; /*display: inline-block; */padding-left: 10px; }
 .info .jiem { overflow: hidden; zoom: 1; border-bottom: 1px dotted #D6D6D6; padding: 13px 0; color: #666; }
 .info .jiem li { float: left; width: 111px; height: 19px; line-height: 19px; border-right: 1px solid #e5e5e5; color: #999999; }
 .info .jiem .price { color: #d71318; font-size: 12px; vertical-align: bottom; display: inline-block;padding-left: 10px; }
