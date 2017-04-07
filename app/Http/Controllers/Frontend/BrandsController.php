@@ -12,7 +12,7 @@ use App\Http\Controllers\Controller;
 class BrandsController extends Controller
 {
     //
-    public function BrandLists(Request $request,$path)
+    public function BrandLists(Request $request,$path,$page=0)
     {
         //判断当前栏目类型并返回给定视图及数据
         if(Arctype::where('real_path',$path)->value('mid')==1)

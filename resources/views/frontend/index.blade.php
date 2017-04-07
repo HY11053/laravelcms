@@ -432,12 +432,9 @@
                     <div class="one_bot">
                         <dl>
                             <dt>人群解读</dt>
-                            <dd><a href="/news/2.shtml" target="_blank" title="ces"><font color="#D71318">[ces]</font>ces</a></dd>
-                            <dd><a href="/news/31.shtml" target="_blank" title="投资加盟零食店需要满足哪些条件"><font color="#D71318">[投资加盟]</font>投资加盟零食店需要满足哪些条件</a></dd>
-                            <dd><a href="/news/32.shtml" target="_blank" title="投资加盟零食店注意事项有哪些"><font color="#D71318">[投资加盟]</font>投资加盟零食店注意事项有哪些</a></dd>
-                            <dd><a href="/news/33.shtml" target="_blank" title="一扫光怎么样？加盟赚钱吗"><font color="#D71318">[一扫光怎]</font>一扫光怎么样？加盟赚钱吗</a></dd>
-                            <dd><a href="/news/34.shtml" target="_blank" title="投资开零食店需要考虑哪些问题"><font color="#D71318">[投资开零]</font>投资开零食店需要考虑哪些问题</a></dd>
-                            <dd><a href="/news/35.shtml" target="_blank" title="开零食店需要考虑哪些问题"><font color="#D71318">[开零食店]</font>开零食店需要考虑哪些问题</a></dd>
+                            @foreach($crowdnews as $crowdnew)
+                            <dd><a href="/{{$crowdnew->arctype->real_path}}/{{$crowdnew->id}}.shtml" target="_blank" title="{{$crowdnew->title}}"><font color="#D71318">{{str_limit($crowdnew->tags,8,'')}}</font>{{$crowdnew->title}}</a></dd>
+                           @endforeach
                         </dl>
                     </div>
                 </div>
@@ -465,15 +462,12 @@
                 <h2>零食展会信息</h2>
                 <div class="right_con">
                     <dl>
-                        <dt><a href="#" title="10个关键词总结2016上半年食品饮料行业" target="_blank"><img src="http://images.qudao.com/temp/2016-08-19/57b69a1b3be94.jpg" alt="10个关键词总结2016上半年食品饮料行业"></a></dt>
-                        <dd><a href="#" title="化妆品行业现状分析及发展趋势预测" target="_blank"><span>[最新]</span>化妆品行业现状分析及发展趋势预</a></dd>
-                        <dd><a href="#" title="我国银饰行业发展前景分析" target="_blank"><span>[最新]</span>我国银饰行业发展前景分析</a></dd>
-                        <dd><a href="#" title="我国快递行业发展现状分析" target="_blank"><span>[最新]</span>我国快递行业发展现状分析</a></dd>
-                        <dd><a href="#" title="2016年1-8月国内汽车销售情况分析" target="_blank"><span>[最新]</span>2016年1-8月国内汽车销售</a></dd>
-                        <dd><a href="#" title="2016年礼品行业趋势分析" target="_blank"><span>[最新]</span>2016年礼品行业趋势分析</a></dd>
-                        <dd><a href="#" title="零售行业市场销售形势分析" target="_blank"><span>[最新]</span>零售行业市场销售形势分析</a></dd>
-                        <dd><a href="#" title="分析：白酒泛品牌化成行业发展新出路" target="_blank"><span>[最新]</span>分析：白酒泛品牌化成行业发展新</a></dd>
-                        <dd><a href="#" title="家纺行业出口数据分析浅谈" target="_blank"><span>[最新]</span>家纺行业出口数据分析浅谈</a></dd>
+                        @foreach($zhbrands as $nums=>$zhbrand)
+                            @if($nums ==0)
+                                <dt><a href="{{ $zhbrand->arctype->real_path}}/{{$zhbrand->id}}.shtml" title="{{$zhbrand->title}}" target="_blank"><img src="{{$zhbrand->litpic}}" alt="{{$zhbrand->title}}" style="height: 85px; overflow: hidden"></a></dt>
+                            @endif
+                                <dd><a href="{{ $zhbrand->arctype->real_path}}/{{$zhbrand->id}}.shtml" title="{{$zhbrand->title}}" target="_blank"><span>[最新]</span>{{$zhbrand->title}}</a></dd>
+                    @endforeach
                     </dl>
                 </div>
             </div>
@@ -493,11 +487,9 @@
         <!--友情链接 开始-->
         <div class="friend_links">
             <span>友情链接：</span>
-            <a href="http://www.ysgfood.com/" target="_blank">靖江市西贝特食品有限公司</a>
-            <a href="http://www.ysgfood.com/" target="_blank">靖江市西贝特食品有限公司</a>
-            <a href="http://www.ysgfood.com/" target="_blank">靖江市西贝特食品有限公司</a>
-            <a href="http://www.ysg.net" target="_blank">靖江市西贝特食品有限公司</a>
-            <a href="http://www.ysgfood.com/" target="_blank">一扫光</a>
+            @foreach($flinks as $flink)
+            <a href="{{$flink->weburl}}" target="_blank">{{$flink->webname}}</a>
+            @endforeach
         </div>
         <!--友情链接 结束-->
 

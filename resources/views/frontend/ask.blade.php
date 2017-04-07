@@ -8,8 +8,7 @@
     <link rel="stylesheet" type="text/css" href="/reception/css/ask.css"/>
 @stop
 @section('main_content')
-    <div class="bn1190"><a href="#" target="_blank"><img src="/reception/images/temp/bn5.jpg" alt=""/></a></div>
-    <div class="path">当前位置：<a href="#">首页</a> &gt; <a href="#">11111111111零售行业资讯</a></div>
+ @include('frontend.position')
     <!--主体开始-->
     <div class="main clearfix">
         <div class="center_list clearfix">

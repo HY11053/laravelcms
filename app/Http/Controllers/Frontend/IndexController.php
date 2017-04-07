@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\AdminModel\Archive;
+use App\AdminModel\flink;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -34,9 +35,15 @@ class IndexController extends Controller
         //创业大讲堂
         $recommendnews=Archive::where('flags','like','%'.'c'.'%')->where('mid','<>','1')->latest()->take(2)->orderBy('published_at','desc')->get();
         $latesnews=Archive::where('mid','<>','1')->latest()->take(6)->orderBy('published_at','desc')->get();
+        //人群解读
+        $crowdnews=Archive::where('mid','<>','1')->latest()->skip(6)->take(6)->orderBy('published_at','desc')->get();
+        //展会信息
+        $zhbrands=Archive::latest()->whereIn('typeid',[8])->orderBy('published_at','desc')->take(8)->get();
+        //友情链接
+        $flinks=flink::latest()->orderBy('created_at','desc')->take(30)->get();
         return view('frontend.index',compact('lingshibrands','chaohuobrands','ganguobrands',
             'jinkoubrands','cybrands','cysbrands','cybsbrands','latestlingshibrands','latestrlingshibrands','latestchaohuobrands',
-            'latestrchaohuobrands','latestjinkoubrands','latestrjinkoubrands','seesbrands','seesrbrands','recommendnews','latesnews'));
+            'latestrchaohuobrands','latestjinkoubrands','latestrjinkoubrands','seesbrands','seesrbrands','recommendnews','latesnews','crowdnews','zhbrands','flinks'));
     }
     function demo()
     {
