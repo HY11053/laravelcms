@@ -107,9 +107,13 @@ $(document).scroll(function(){
 			$('.fixed_nav li').removeClass("cur").eq(2).addClass('cur');
 		}else if(s >=$('#js_join_4').offset().top-45 && s<$('#js_join_5').offset().top-45){
 			$('.fixed_nav li').removeClass("cur").eq(3).addClass('cur');
-		}else if(s >=$('#js_join_5').offset().top-45){
+		}else if(s >=$('#js_join_5').offset().top-45 && s<$('#js_join_6').offset().top-45){
 			$('.fixed_nav li').removeClass("cur").eq(4).addClass('cur');
-		}
+		}else if(s >=$('#js_join_6').offset().top-45 && s<$('#js_join_7').offset().top-45){
+            $('.fixed_nav li').removeClass("cur").eq(5).addClass('cur');
+        }else if(s >=$('#js_join_7').offset().top-45){
+            $('.fixed_nav li').removeClass("cur").eq(6).addClass('cur');
+        }
 	 });
 	}
 	
@@ -131,10 +135,17 @@ $(document).scroll(function(){
 		$('html,body').animate({scrollTop:sTop+"px"},500);
 	});
 	$('.js_join_5').click(function(){
-		$(this).addClass("cur");
 		var sTop=$('#js_join_5').offset().top-45;
 		$('html,body').animate({scrollTop:sTop+"px"},500);
 	});
+    $('.js_join_6').click(function(){
+        var sTop=$('#js_join_6').offset().top-45;
+        $('html,body').animate({scrollTop:sTop+"px"},500);
+    });
+    $('.js_join_7').click(function(){
+        var sTop=$('#js_join_7').offset().top-45;
+        $('html,body').animate({scrollTop:sTop+"px"},500);
+    });
 
 
  //快捷留言

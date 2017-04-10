@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\AdminModel\Archive;
+use App\AdminModel\Ask;
 use App\AdminModel\flink;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -32,6 +33,8 @@ class IndexController extends Controller
         //大家都在看
         $seesbrands=Archive::where('flags','like','%'.'p'.'%')->where('mid','1')->whereIn('typeid',[1.3,4,5])->take(3)->orderBy('click','desc')->get();
         $seesrbrands=Archive::where('flags','like','%'.'p'.'%')->where('mid','1')->whereIn('typeid',[1.3,4,5])->skip(3)->take(5)->orderBy('click','desc')->get();
+        //生意 大讲堂
+        $askrows=Ask::where('is_hidden','1')->take(3)->get();
         //创业大讲堂
         $recommendnews=Archive::where('flags','like','%'.'c'.'%')->where('mid','<>','1')->latest()->take(2)->orderBy('published_at','desc')->get();
         $latesnews=Archive::where('mid','<>','1')->latest()->take(6)->orderBy('published_at','desc')->get();
@@ -43,7 +46,7 @@ class IndexController extends Controller
         $flinks=flink::latest()->orderBy('created_at','desc')->take(30)->get();
         return view('frontend.index',compact('lingshibrands','chaohuobrands','ganguobrands',
             'jinkoubrands','cybrands','cysbrands','cybsbrands','latestlingshibrands','latestrlingshibrands','latestchaohuobrands',
-            'latestrchaohuobrands','latestjinkoubrands','latestrjinkoubrands','seesbrands','seesrbrands','recommendnews','latesnews','crowdnews','zhbrands','flinks'));
+            'latestrchaohuobrands','latestjinkoubrands','latestrjinkoubrands','seesbrands','seesrbrands','recommendnews','latesnews','crowdnews','zhbrands','flinks','askrows'));
     }
     function demo()
     {

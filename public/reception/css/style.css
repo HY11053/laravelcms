@@ -743,5 +743,44 @@ table {border-collapse: collapse;border-spacing: 0; }
 .login_popup .bd .other_link label{ cursor:pointer; font-weight:100;}
 .login_popup .bd .other_link label input{ vertical-align:middle; margin:0 4px 0 0;}
 .login_popup .bd .forgot_link{float:right; margin-top:10px;}
+/*图表*/
+.col-md-6 {
+    width: 400px;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    }
 
-
+.box {
+    position: relative;
+    border-radius: 3px;
+    background: #ffffff;
+    margin-bottom: 20px;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+.box-header.with-border {
+    border-bottom: 1px solid #f4f4f4;
+}
+.box-header {
+    color: #444;
+    display: block;
+    padding: 10px;
+    position: relative;
+}
+.box-body {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 10px;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.td_color{padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 130px; background: rgb(249, 249, 249);}
+.td_style{padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 266px;}

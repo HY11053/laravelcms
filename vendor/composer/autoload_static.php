@@ -448,6 +448,7 @@ class ComposerStaticInitbcc14b164eff51c585117c27039ac457
         'AddIpToUsersTable' => __DIR__ . '/../..' . '/database/migrations/2017_03_30_223044_add_ip_to_users_table.php',
         'AddJmlcColumToAddonarticles' => __DIR__ . '/../..' . '/database/migrations/2017_02_26_180555_add_jmlc_colum_to_addonarticles.php',
         'AddMidColumToArctypes' => __DIR__ . '/../..' . '/database/migrations/2017_03_23_111555_add_mid_colum_to_arctypes.php',
+        'AddOthercolumToAddonarticlesTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_10_170506_add_othercolum_to_addonarticles_table.php',
         'AddonarticlesTableSeeder' => __DIR__ . '/../..' . '/database/seeds/AddonarticlesTableSeeder.php',
         'AdminsTableSeeder' => __DIR__ . '/../..' . '/database/seeds/AdminsTableSeeder.php',
         'ArchivesTableSeeder' => __DIR__ . '/../..' . '/database/seeds/ArchivesTableSeeder.php',

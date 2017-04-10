@@ -164,4 +164,9 @@
 
         </div>
     </div>
+    <script src="http://www.shangjicms.com/vendor/ueditor/third-party/highcharts/highcharts.js"></script>
+    <script src="http://www.shangjicms.com/vendor/ueditor/dialogs/charts/chart.config.js"></script>
+    <script src="http://www.shangjicms.com/vendor/ueditor/dialogs/internal.js"></script>
+    <script src="/vendor/ueditor/dialogs/charts/charts.js"></script>
+
 @stop

@@ -55,7 +55,8 @@
             <div class="jiem">
                 <ul>
                     <li>意向加盟 <span class="price">{{$thisarticleinfos->article['brandattch']}}</span></li>
-                    <li style="border:none; margin-left:35px">申请加盟：<span class="price">{{$thisarticleinfos->article['brandapply']}}</span></li>
+                    <li style=" margin-left:35px">申请加盟：<span class="price">{{$thisarticleinfos->article['brandapply']}}</span></li>
+                    <li style=" margin-left:35px">品牌好评率 <span class="price">{{rand(90,99)}}%</span></li>
                 </ul>
             </div>
             <div class="tel">联系电话：<span>4008-813-178</span></div>
@@ -71,6 +72,7 @@
                             <li><span>企业性质</span><em>国有企业</em></li>
                             <li><span>注册资金</span><em>100 万元</em></li>
                             <li><span>所在地</span><em>{{$thisarticleinfos->article['brandorigin']}}</em></li>
+                            <li><span>商业特许经营许可证号：</span><em>{{$thisarticleinfos->article['brandorigin']}}</em></li>
                         </ul>
                     </div>
                 </div>
@@ -112,6 +114,8 @@
                             <li class="js_join_3"><a href="javascript:void(0)">加盟流程</a></li>
                             <li class="js_join_4"><a href="javascript:void(0)">加盟政策</a></li>
                             <li class="js_join_5"><a href="javascript:void(0)">开店必看</a></li>
+                            <li class="js_join_6"><a href="javascript:void(0)">投资分析</a></li>
+                            <li class="js_join_7"><a href="javascript:void(0)">用户点评</a></li>
                         </ul>
                     </div>
                 </div>
@@ -123,52 +127,52 @@
                     <table cellspacing="0" style="border-top: 1px solid rgb(230, 230, 230);">
                         <tbody>
                         <tr>
-                            <td class="td_color" style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 130px; background: rgb(249, 249, 249);">品牌名称</td>
-                            <td style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 266px;">东方车联汽车服务</td>
-                            <td class="td_color" style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 130px; background: rgb(249, 249, 249);">投资金额</td>
-                            <td style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 266px;">一万元以下</td>
+                            <td class="td_color" >品牌名称</td>
+                            <td class="td_style">{{$thisarticleinfos['shorttitle']}}</td>
+                            <td class="td_color">投资金额</td>
+                            <td class="td_style">{{$thisarticleinfos->article['brandpay']}}</td>
                         </tr>
                         <tr>
-                            <td class="td_color" style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 130px; background: rgb(249, 249, 249);">成立日期</td>
-                            <td style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 266px;">2005-01-06</td>
-                            <td class="td_color" style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 130px; background: rgb(249, 249, 249);">门店总数</td>
-                            <td style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 266px;">1500</td>
+                            <td class="td_color" >成立日期</td>
+                            <td class="td_style">{{$thisarticleinfos->article['brandtime']}}</td>
+                            <td class="td_color">门店总数</td>
+                            <td class="td_style">{{$thisarticleinfos->article['brandnum']}}</td>
                         </tr>
                         <tr>
-                            <td class="td_color" style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 130px; background: rgb(249, 249, 249);">经营范围</td>
-                            <td style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 266px;">汽车后市场产品</td>
-                            <td class="td_color" style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 130px; background: rgb(249, 249, 249);">适合人群</td>
-                            <td style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 266px;">自由创业</td>
+                            <td class="td_color">经营范围</td>
+                            <td class="td_style">{{$thisarticleinfos->article['brandmap']}}</td>
+                            <td class="td_color">适合人群</td>
+                            <td class="td_style">{{$thisarticleinfos->article['brandperson']}}</td>
                         </tr>
                         <tr>
-                            <td class="td_color" style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 130px; background: rgb(249, 249, 249);">加盟区域</td>
-                            <td style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 266px;">全国</td>
-                            <td class="td_color" style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 130px; background: rgb(249, 249, 249);">是否有区域授权</td>
-                            <td style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 266px;">是</td>
+                            <td class="td_color">加盟区域</td>
+                            <td class="td_style">{{$thisarticleinfos->article['brandarea']}}</td>
+                            <td class="td_color">是否有区域授权</td>
+                            <td class="td_style">{{$thisarticleinfos->article['brandduty']}}</td>
                         </tr>
                         <tr>
-                            <td class="td_color" style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 130px; background: rgb(249, 249, 249);">品牌发源地</td>
-                            <td style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 266px;">上海</td>
-                            <td class="td_color" style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 130px; background: rgb(249, 249, 249);">合同期限</td>
-                            <td style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 266px;"></td>
+                            <td class="td_color">品牌发源地</td>
+                            <td class="td_style">{{$thisarticleinfos->article['brandorigin']}}</td>
+                            <td class="td_color">合同期限</td>
+                            <td class="td_style"></td>
                         </tr>
                         <tr>
-                            <td class="td_color" style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 130px; background: rgb(249, 249, 249);">培训期限</td>
-                            <td style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 266px;">二周</td>
-                            <td class="td_color" style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 130px; background: rgb(249, 249, 249);">特许使用费</td>
-                            <td style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 266px;"></td>
+                            <td class="td_color">培训期限</td>
+                            <td class="td_style">二周</td>
+                            <td class="td_color">特许使用费</td>
+                            <td class="td_style"></td>
                         </tr>
                         <tr>
-                            <td class="td_color" style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 130px; background: rgb(249, 249, 249);">营业条件要求</td>
-                            <td style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 266px;">有经营场所</td>
-                            <td class="td_color" style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 130px; background: rgb(249, 249, 249);">保证金</td>
-                            <td style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 266px;">1-5万元人民币</td>
+                            <td class="td_color">公司名称</td>
+                            <td class="td_style">{{$thisarticleinfos->article['brandgroup']}}</td>
+                            <td class="td_color">公司性质</td>
+                            <td class="td_style">{{$thisarticleinfos->article['genre']}}</td>
                         </tr>
                         <tr>
-                            <td class="td_color" style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 130px; background: rgb(249, 249, 249);">加盟金</td>
-                            <td style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 266px;">0万元人民币</td>
-                            <td class="td_color" style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 130px; background: rgb(249, 249, 249);"> </td>
-                            <td style="padding-top: 5px; padding-bottom: 5px; color: rgb(85, 85, 85); border-bottom: 1px solid rgb(230, 230, 230); text-indent: 15px; height: 20px; overflow: hidden; width: 266px;"> </td>
+                            <td class="td_color">所需面积</td>
+                            <td class="td_style">{{$thisarticleinfos->article['acreage']}}</td>
+                            <td class="td_color"> </td>
+                            <td class="td_style"> </td>
                         </tr>
                         </tbody>
                     </table>
@@ -200,6 +204,98 @@
                             @endforeach
                         </ul>
                     </div>
+                    <div class="join_tit"  id="js_join_6" > <span class="tit">【{{$thisarticleinfos['shorttitle']}}】<em>投资分析</em></span> </div>
+                    <table cellspacing="0" style="border-top: 1px solid rgb(230, 230, 230);">
+                        <tbody>
+                        <tr>
+                            <td class="td_color" >品牌名称</td>
+                            <td class="td_style">{{$thisarticleinfos['shorttitle']}}</td>
+                            <td class="td_color">装修费用</td>
+                            <td class="td_style">{{$thisarticleinfos->article['decorationpay']}}</td>
+                        </tr>
+                        <tr>
+                            <td class="td_color" >前两季度房租</td>
+                            <td class="td_style">{{$thisarticleinfos->article['quartersrent']}}</td>
+                            <td class="td_color">货铺/设备费用</td>
+                            <td class="td_style">{{$thisarticleinfos->article['equipmentcost']}}</td>
+                        </tr>
+                        <tr>
+                            <td class="td_color">流动资金</td>
+                            <td class="td_style">{{$thisarticleinfos->article['workingcapital']}}</td>
+                            <td class="td_color">人工开支</td>
+                            <td class="td_style">{{$thisarticleinfos->article['laborquarter']}}</td>
+                        </tr>
+                        <tr>
+                            <td class="td_color">工商税务杂项</td>
+                            <td class="td_style">{{$thisarticleinfos->article['miscellaneous']}}</td>
+                            <td class="td_color">水电煤(元/月)</td>
+                            <td class="td_style">{{$thisarticleinfos->article['watercoal']}}</td>
+
+                        </tr>
+                        <tr>
+                            <td class="td_color">日成交量</td>
+                            <td class="td_style">{{$thisarticleinfos->article['dailyvolume']}}</td>
+                            <td class="td_color">平均单价</td>
+                            <td class="td_style">{{$thisarticleinfos->article['unitprice']}}</td>
+
+                        </tr>
+                        <tr>
+                            <td class="td_color">日均成本</td>
+                            <td class="td_style">{{($thisarticleinfos->article['decorationpay']/365)+($thisarticleinfos->article['quartersrent']/180)+($thisarticleinfos->article['equipmentcost']/365)+($thisarticleinfos->article['laborquarter']/365)+($thisarticleinfos->article['miscellaneous']/365)+($thisarticleinfos->article['watercoal']/30)}}</td>
+                            <td class="td_color">日均收入</td>
+                            <td class="td_style">{{($thisarticleinfos->article['dailyvolume']*$thisarticleinfos->article['dailyvolume'])-(($thisarticleinfos->article['decorationpay']/365)+($thisarticleinfos->article['quartersrent']/180)+($thisarticleinfos->article['equipmentcost']/365)+($thisarticleinfos->article['laborquarter']/365)+($thisarticleinfos->article['miscellaneous']/365)+($thisarticleinfos->article['watercoal']/30))}}</td>
+                        </tr>
+                        <tr>
+                            <td class="td_color">月收入</td>
+                            <td class="td_style">{{$thisarticleinfos->article['brandgroup']}}</td>
+                            <td class="td_color">公司性质</td>
+                            <td class="td_style">{{$thisarticleinfos->article['genre']}}</td>
+                        </tr>
+                        <tr>
+                            <td class="td_color">年收入</td>
+                            <td class="td_style">{{$thisarticleinfos->article['acreage']}}</td>
+                            <td class="td_color"> 投资总额</td>
+                            <td class="td_style"> </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="join_intro clear">
+                        <div class="col-md-6">
+                            <!-- DONUT CHART -->
+                            <div class="box box-danger">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">{{$thisarticleinfos['shorttitle']}} 投资比例</h3>
+                                </div>
+                                <div class="box-body">
+                                    <canvas id="pieChart" style="height:250px"></canvas>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!-- /.box -->
+                        </div>
+                        <!-- /.col (LEFT) -->
+                        <div class="col-md-6">
+                            <!-- BAR CHART -->
+                            <div class="box box-success">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">{{$thisarticleinfos['shorttitle']}}投资对比柱状图</h3>
+                                </div>
+                                <div class="box-body">
+                                    <div class="chart">
+                                        <canvas id="barChart" style="height:230px"></canvas>
+                                    </div>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!-- /.box -->
+
+                        </div>
+                        <!-- /.col (RIGHT) -->
+                    </div>
+                    <!-- /.row -->
+                        <!-- /.content -->
+                    <div class="clear"></div>
 
                     <div class="cy_img"><img src="/reception/images/cye_03.jpg" alt="加盟步骤"/> </div>
                     <!--评论-->
@@ -358,5 +454,203 @@
 
     </div>
 </div>
+<script src="/AdminLTE/plugins/chartjs/Chart.min.js"></script>
+<script>
+    $(function () {
+        /* ChartJS
+         * -------
+         * Here we will create a few charts using ChartJS
+         */
+
+        //--------------
+        //- AREA CHART -
+        //--------------
+
+        // Get context with jQuery - using jQuery's .get() method.
+
+        var areaChartData = {
+            labels: ["三只松鼠", "良品铺子", "一扫光", "老婆大人", "怡佳人", "零食多", "舌间味"],
+            datasets: [
+                {
+                    label: "其他热门品牌",
+                    fillColor: "rgba(210, 214, 222, 1)",
+                    strokeColor: "rgba(210, 214, 222, 1)",
+                    pointColor: "rgba(210, 214, 222, 1)",
+                    pointStrokeColor: "#c1c7d1",
+                    pointHighlightFill: "#fff",
+                    pointHighlightStroke: "rgba(220,220,220,1)",
+                    data: [90000, 80000, 70000, 60000, 50000, 40000, 70500]
+                },
+                {
+                    label: "{{$thisarticleinfos['shorttitle']}}",
+                    fillColor: "rgba(60,141,188,0.9)",
+                    strokeColor: "rgba(60,141,188,0.8)",
+                    pointColor: "#3b8bba",
+                    pointStrokeColor: "rgba(60,141,188,1)",
+                    pointHighlightFill: "#fff",
+                    pointHighlightStroke: "rgba(60,141,188,1)",
+                    data: [28000, 20000, 28000, 28000, 28000, 28000, 28000]
+                }
+            ]
+        };
+
+        var areaChartOptions = {
+            //Boolean - If we should show the scale at all
+            showScale: true,
+            //Boolean - Whether grid lines are shown across the chart
+            scaleShowGridLines: false,
+            //String - Colour of the grid lines
+            scaleGridLineColor: "rgba(0,0,0,.05)",
+            //Number - Width of the grid lines
+            scaleGridLineWidth: 1,
+            //Boolean - Whether to show horizontal lines (except X axis)
+            scaleShowHorizontalLines: true,
+            //Boolean - Whether to show vertical lines (except Y axis)
+            scaleShowVerticalLines: true,
+            //Boolean - Whether the line is curved between points
+            bezierCurve: true,
+            //Number - Tension of the bezier curve between points
+            bezierCurveTension: 0.3,
+            //Boolean - Whether to show a dot for each point
+            pointDot: false,
+            //Number - Radius of each point dot in pixels
+            pointDotRadius: 4,
+            //Number - Pixel width of point dot stroke
+            pointDotStrokeWidth: 1,
+            //Number - amount extra to add to the radius to cater for hit detection outside the drawn point
+            pointHitDetectionRadius: 20,
+            //Boolean - Whether to show a stroke for datasets
+            datasetStroke: true,
+            //Number - Pixel width of dataset stroke
+            datasetStrokeWidth: 2,
+            //Boolean - Whether to fill the dataset with a color
+            datasetFill: true,
+            //String - A legend template
+            legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].lineColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>",
+      //Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
+      maintainAspectRatio: true,
+      //Boolean - whether to make the chart responsive to window resizing
+      responsive: true
+    };
+
+
+    //- PIE CHART -
+    //-------------
+    // Get context with jQuery - using jQuery's .get() method.
+    var pieChartCanvas = $("#pieChart").get(0).getContext("2d");
+    var pieChart = new Chart(pieChartCanvas);
+    var PieData = [
+      {
+        value: {{$thisarticleinfos->article['decorationpay']}},
+        color: "#f56954",
+        highlight: "#f56954",
+        label: "店铺装修费用"
+      },
+      {
+        value: {{$thisarticleinfos->article['quartersrent']}},
+        color: "#00a65a",
+        highlight: "#00a65a",
+        label: "前两季度房租"
+      },
+      {
+        value: {{$thisarticleinfos->article['equipmentcost']}},
+        color: "#f39c12",
+        highlight: "#f39c12",
+        label: "铺货/设备费用"
+      },
+      {
+        value: {{$thisarticleinfos->article['workingcapital']}},
+        color: "#00c0ef",
+        highlight: "#00c0ef",
+        label: "流动资金"
+      },
+      {
+        value: {{$thisarticleinfos->article['laborquarter']}},
+        color: "#3c8dbc",
+        highlight: "#3c8dbc",
+        label: "一季度人工开支"
+      },
+       {
+        value: {{$thisarticleinfos->article['watercoal']}},
+        color: "#ec8dbc",
+        highlight: "#3c8dbc",
+        label: "水电煤(元/月)"
+      },
+      {
+        value: {{$thisarticleinfos->article['miscellaneous']}} ,
+        color: "#d2d6de",
+        highlight: "#d2d6de",
+        label: "工商税务等杂项"
+      }
+    ];
+    var pieOptions = {
+      //Boolean - Whether we should show a stroke on each segment
+      segmentShowStroke: true,
+      //String - The colour of each segment stroke
+      segmentStrokeColor: "#fff",
+      //Number - The width of each segment stroke
+      segmentStrokeWidth: 2,
+      //Number - The percentage of the chart that we cut out of the middle
+      percentageInnerCutout: 50, // This is 0 for Pie charts
+      //Number - Amount of animation steps
+      animationSteps: 100,
+      //String - Animation easing effect
+      animationEasing: "easeOutBounce",
+      //Boolean - Whether we animate the rotation of the Doughnut
+      animateRotate: true,
+      //Boolean - Whether we animate scaling the Doughnut from the centre
+      animateScale: false,
+      //Boolean - whether to make the chart responsive to window resizing
+      responsive: true,
+      // Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
+      maintainAspectRatio: true,
+      //String - A legend template
+      legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>"
+    };
+    //Create pie or douhnut chart
+    // You can switch between pie and douhnut using the method below.
+    pieChart.Doughnut(PieData, pieOptions);
+
+    //-------------
+    //- BAR CHART -
+    //-------------
+    var barChartCanvas = $("#barChart").get(0).getContext("2d");
+    var barChart = new Chart(barChartCanvas);
+    var barChartData = areaChartData;
+    barChartData.datasets[1].fillColor = "#00a65a";
+    barChartData.datasets[1].strokeColor = "#00a65a";
+    barChartData.datasets[1].pointColor = "#00a65a";
+    var barChartOptions = {
+      //Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
+      scaleBeginAtZero: true,
+      //Boolean - Whether grid lines are shown across the chart
+      scaleShowGridLines: true,
+      //String - Colour of the grid lines
+      scaleGridLineColor: "rgba(0,0,0,.05)",
+      //Number - Width of the grid lines
+      scaleGridLineWidth: 1,
+      //Boolean - Whether to show horizontal lines (except X axis)
+      scaleShowHorizontalLines: true,
+      //Boolean - Whether to show vertical lines (except Y axis)
+      scaleShowVerticalLines: true,
+      //Boolean - If there is a stroke on each bar
+      barShowStroke: true,
+      //Number - Pixel width of the bar stroke
+      barStrokeWidth: 2,
+      //Number - Spacing between each of the X value sets
+      barValueSpacing: 5,
+      //Number - Spacing between data sets within X values
+      barDatasetSpacing: 1,
+      //String - A legend template
+      legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].fillColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>",
+      //Boolean - whether to make the chart responsive
+      responsive: true,
+      maintainAspectRatio: true
+    };
+
+    barChartOptions.datasetFill = false;
+    barChart.Bar(barChartData, barChartOptions);
+  });
+</script>
 <!--主体结束-->
 @stop

@@ -15,6 +15,7 @@ return array(
     'AddIpToUsersTable' => $baseDir . '/database/migrations/2017_03_30_223044_add_ip_to_users_table.php',
     'AddJmlcColumToAddonarticles' => $baseDir . '/database/migrations/2017_02_26_180555_add_jmlc_colum_to_addonarticles.php',
     'AddMidColumToArctypes' => $baseDir . '/database/migrations/2017_03_23_111555_add_mid_colum_to_arctypes.php',
+    'AddOthercolumToAddonarticlesTable' => $baseDir . '/database/migrations/2017_04_10_170506_add_othercolum_to_addonarticles_table.php',
     'AddonarticlesTableSeeder' => $baseDir . '/database/seeds/AddonarticlesTableSeeder.php',
     'AdminsTableSeeder' => $baseDir . '/database/seeds/AdminsTableSeeder.php',
     'ArchivesTableSeeder' => $baseDir . '/database/seeds/ArchivesTableSeeder.php',

@@ -21,8 +21,8 @@ class BrandArticleController extends Controller
             if(Archive::findOrFail($id)->mid ==1)
             {
                 $thisarticleinfos=Archive::findOrFail($id);
-                $topbrands=Archive::where('mid',1)->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
-                $latestbrands=Archive::where('mid',1)->where('published_at','<=',Carbon::now())->latest()->take(20)->get();
+                $topbrands=Archive::where('mid',1)->whereIn('typeid',[1,3,4,5,10])->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
+                $latestbrands=Archive::where('mid',1)->whereIn('typeid',[1,3,4,5,10])->where('published_at','<=',Carbon::now())->latest()->take(20)->get();
                 $comments=Comment::where('archive_id',$thisarticleinfos->id)->where('is_hidden',0)->get();
                 //dd($comments[0]->reversion);
                 return view('frontend.brand_article',compact('thisarticleinfos','topbrands','latestbrands','comments'));

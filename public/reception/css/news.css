@@ -229,7 +229,7 @@ a:hover { color: #E73727; }
 .comp_info_con h3 { text-align: center; }
 .comp_info_con ul { margin-top: 5px; }
 .comp_info_con ul li { height: 22px; line-height: 22px; overflow: hidden; margin-left: 14px; }
-.comp_info_con ul li span { display: inline-block; width: 60px; color: #717171; margin-right: 18px; line-height: 22px; }
+.comp_info_con ul li span { display: inline-block; /*width: 60px;*/ color: #717171; margin-right: 18px; line-height: 22px; }
 .comp_info_con ul li em { color: #555555; line-height: 26px; }
 .comp_fenx { padding-top: 10px; }
 .renZ_info { overflow: hidden; margin-bottom: 20px; _padding-bottom: 30px; width: 180px; margin: auto; }
@@ -257,7 +257,7 @@ a:hover { color: #E73727; }
 .w870 { float: left; background: #fff; width: 860px; }
 .inner_w870 { float: left; background: #fff; padding: 15px 30px 20px 30px; width: 810px; }
 .fixed_nav { border-bottom: 2px solid #d71318; overflow: hidden; zoom: 1; }
-.fixed_nav .cont_tab { width: 620px; height: 45px; float: left; }
+.fixed_nav .cont_tab { width: 860px; height: 45px; float: left; }
 .fixed_nav .cont_tab li { float: left; width: 120px; height: 45px; line-height: 45px; text-align: center; font-size: 14px; border-right: 1px solid #EDEDED; position: relative; }
 .fixed_nav .cont_tab li a { display: block; }
 .fixed_nav .cont_tab li a:hover { text-decoration: none; }

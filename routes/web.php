@@ -117,6 +117,9 @@ Route::get('comparision/{p1?}-{p2?}-{p3?}.shtml','Frontend\ComparisionController
 Route::post('comments','Frontend\CommentController@PostComment');
 Route::post('commentreversion/{id}','Frontend\CommentReversionController@CommentReversion');
 Route::get('about','Frontend\StatementController@about');
+Route::get('law','Frontend\StatementController@law');
+Route::get('map','Frontend\StatementController@map');
+Route::get('contact','Frontend\StatementController@contact');
 Route::post('project','Frontend\ProjectController@SearchAjax');
 Route::get('project/{p1?}-{p2?}-{p3?}-{p4?}.shtml','Frontend\ProjectController@Search');
 Route::get('{path?}','Frontend\BrandsController@BrandLists');

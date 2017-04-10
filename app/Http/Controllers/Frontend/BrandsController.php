@@ -18,7 +18,7 @@ class BrandsController extends Controller
         if(Arctype::where('real_path',$path)->value('mid')==1)
         {
             $pagelists=Archive::where('typeid',Arctype::where('real_path',$request->path())->value('id'))->where('mid',1)->where('ismake','1')->where('published_at','<=',Carbon::now())->latest()->paginate(10);
-            $topbrands=Archive::where('mid',1)->where('ismake','1')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(9)->get();
+            $topbrands=Archive::where('mid',1)->where('ismake','1')->whereIn('typeid',[1,3,4,5,10])->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(9)->get();
             $newsbrands=Archive::where('ismake','1')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
             $brandtypes=Arctype::where('mid',1)->get();
             $thistypeinfo=Arctype::where('real_path',$path)->first();

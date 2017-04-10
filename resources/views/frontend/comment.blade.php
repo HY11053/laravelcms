@@ -1,4 +1,4 @@
-<div class="comments-container">
+<div class="comments-container" id="js_join_7">
     <div class="comments-box">
         <div class="pull-left">
             <img class="avatar-32 " src="/reception/images/user-128.png" alt=""/>

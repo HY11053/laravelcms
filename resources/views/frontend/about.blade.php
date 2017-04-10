@@ -3,9 +3,7 @@
 @section('keywords') 关于我们 @stop
 @section('description')  关于我们 @stop
 @section('headlibs')
-    <link rel="stylesheet" type="text/css" href="/reception/css/global.css"/>
     <link rel="stylesheet" type="text/css" href="/reception/css/news.css"/>
-    <link rel="stylesheet" type="text/css" href="/reception/css/ask.css"/>
 @stop
 @section('main_content')
     <!--主体开始-->

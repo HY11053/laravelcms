@@ -164,7 +164,7 @@
             <div class="index_box1_r">
                 <div class="count">
                     <p>零食加盟网入驻品牌数<br>
-                        <span>63864</span>
+                        <span>61{{\App\AdminModel\Archive::where('mid',1)->count()}}</span>
                     </p>
                     <ul>
                         <li><a href="#" title="【钻石黄金】未来发展空间巨大" target="_blank">【钻石黄金】未来发展空间巨大</a></li>
@@ -386,18 +386,12 @@
                 <h2>生意百科</h2>
                 <div class="con_sec">
                     <ul>
-                        <li class=" one  bor">
-                            <span><a href="/ask/6.shtml" title="测试问题及登录验证编辑" target="_blank">测试问题及登录验证编辑</a></span>
-                            <p> 测试问题及登录验证编辑</p>
-                        </li>
-                        <li class=" two  bor">
-                            <span><a href="/ask/3.shtml" title="经济学理论模型在设计函数形式时应该注意哪些问题？" target="_blank">经济学理论模型在设计函数形式时应该注意哪些问题？</a></span>
-                            <p> 举个例子，一个生产函数写成不限范围，会不会很古怪或者错误？（α、β...</p>
-                        </li>
-                        <li class=" three  bor">
-                            <span><a href="/ask/1.shtml" title="测试问题" target="_blank">测试问题</a></span>
-                            <p> dsds</p>
-                        </li>
+                        @foreach($askrows as $index=>$askrow)
+                            <li class="@if($index==0) one @elseif ($index==1) two @else three @endif bor">
+                                <span><a href="/ask/{{$askrow->id}}.shtml" title="{{$askrow->title}}" target="_blank">{{$askrow->title}}</a></span>
+                                <p> {{str_limit(trim(strip_tags($askrow->body)),$limit =64,$end = '...')}}</p>
+                            </li>
+                        @endforeach
                     </ul>
                     <textarea class="question" onclick="this.value = '';" name="question">#说出您创业疑问，10分钟将得到答案#</textarea>
                     <input type="button" class="wd_submit" value="提问">
