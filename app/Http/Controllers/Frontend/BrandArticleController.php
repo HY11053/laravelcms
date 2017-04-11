@@ -24,8 +24,10 @@ class BrandArticleController extends Controller
                 $topbrands=Archive::where('mid',1)->whereIn('typeid',[1,3,4,5,10])->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
                 $latestbrands=Archive::where('mid',1)->whereIn('typeid',[1,3,4,5,10])->where('published_at','<=',Carbon::now())->latest()->take(20)->get();
                 $comments=Comment::where('archive_id',$thisarticleinfos->id)->where('is_hidden',0)->get();
+                $latesnews=Archive::where('ismake',1)->where('mid','<>',1)->where('published_at','<=',Carbon::now())->latest()->take(10)->get();
                 //dd($comments[0]->reversion);
-                return view('frontend.brand_article',compact('thisarticleinfos','topbrands','latestbrands','comments'));
+                $xgsearchs=Archive::where('ismake','1')->where('shorttitle','like','%'.$thisarticleinfos->shorttitle.'%')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
+                return view('frontend.brand_article',compact('thisarticleinfos','topbrands','latestbrands','comments','latesnews','xgsearchs'));
             }else{
                 $thisarticleinfos=Archive::findOrFail($id);
                 $topbrands=Archive::where('mid',1)->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();

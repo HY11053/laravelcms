@@ -128,22 +128,67 @@
 
     <!--右边 开始-->
     <div class="w260">
-        <!--选择项目 开始-->
-        <div class="choose">
-            <div class="chooseTop">
-                <p class="help-ask">没找到合适我的项目<img class="askBg" src="/reception/images/ask.png"> </p>
-                <p class="tianxie">填写您的需求，让我来帮您！</p>
-                <p> <a href="#" class="helpMe">帮我选项目</a> </p>
-            </div>
-            <div class="chooseBottom">
-                <ul>
-                    <li class="xuqiu1"><a>填写我的项目需求</a></li>
-                    <li class="xuqiu2"><a>快、精、准帮您选择好项目</a></li>
-                    <li class="xuqiu3"><a>创业有问题？帮您全面解答</a></li>
-                </ul>
-            </div>
-        </div>
-        <!--选择项目 结束-->
+		<!--计算器 开始-->
+		<div class="w260_calculator">
+			<div class="hd"><em>260000</em>元</div>
+			<div class="bd">
+				<form>
+				<ul>
+					<li>
+						<select id="r_Shen" name="r_Shen" class="select_Shen" onchange="set_city(this, document.getElementById('r_city'));">
+							<option value="0">省/市</option>
+							<option value="安徽">A 安徽</option>
+							<option value="北京">B 北京</option>
+							<option value="重庆">C 重庆</option>
+							<option value="福建">F 福建</option>
+							<option value="广西">G 广西</option>
+							<option value="贵州">G 贵州</option>
+							<option value="广东">G 广东</option>
+							<option value="甘肃">G 甘肃</option>
+							<option value="海南">H 海南</option>
+							<option value="湖北">H 湖北</option>
+							<option value="黑龙江">H 黑龙江</option>
+							<option value="河南">H 河南</option>
+							<option value="河北">H 河北</option>
+							<option value="湖南">H 湖南</option>
+							<option value="江苏">J 江苏</option>
+							<option value="吉林">J 吉林</option>
+							<option value="江西">J 江西</option>
+							<option value="辽宁">L 辽宁</option>
+							<option value="内蒙古">N 内蒙古</option>
+							<option value="宁夏">N 宁夏</option>
+							<option value="澳门">O 澳门</option>
+							<option value="青海">Q 青海</option>
+							<option value="四川">S 四川</option>
+							<option value="陕西">S 陕西</option>
+							<option value="上海">S 上海</option>
+							<option value="山东">S 山东</option>
+							<option value="山西">S 山西</option>
+							<option value="台湾">T 台湾</option>
+							<option value="天津">T 天津</option>
+							<option value="西藏">X 西藏</option>
+							<option value="香港">X 香港</option>
+							<option value="新疆">X 新疆</option>
+							<option value="云南">Y 云南</option>
+							<option value="浙江">Z 浙江</option>
+						</select>
+						<select id="r_city" name="r_city" class="select_City">
+							<option value="0">市/地区</option>
+						</select>
+					</li>
+					<li><input type="text" class="text area_text" name="dpzj" id="dpzj" placeholder="店铺租金"><em>元</em></li>
+					<li><input type="text" class="text area_text" name="rycb" id="rycb" placeholder="人员成本"><em>元</em></li>
+					<li><input type="text" class="text area_text" name="mrcb" id="mrcb" placeholder="每日成本"><em>元</em></li>
+					<li><input type="text" class="text area_text" name="mdjj" id="mdjj" placeholder="每单均价"><em>元</em></li>
+					<li><input type="text" class="text area_text" name="jmfy" id="jmfy" placeholder="加盟费用"><em>元</em></li>
+					<li><input type="text" class="text area_text" name="phone" id="zxys_phonenumber" placeholder="输入手机号，获取报价结果"></li>
+					<li><input type="button" class="btn" id="btn_hqbj" name="btn_hqbj" value="获取报价"></li>
+				</ul>
+				</form>
+			</div>
+		</div>
+		<script src="/reception/js/GlobalProvinces.js" type="text/javascript"></script>
+		<!--计算器 结束-->
 
         <!--实时评价 开始-->
         <div class="new_comments">

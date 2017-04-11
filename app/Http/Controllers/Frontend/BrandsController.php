@@ -30,6 +30,7 @@ class BrandsController extends Controller
             $brandtypes=Arctype::where('mid',1)->get();
             $thistypeinfo=Arctype::where('real_path',$path)->first();
             $comments=Comment::where('is_hidden',0)->latest()->take(5)->get();
+
             return view('frontend.brands',compact('pagelists','topbrands','newsbrands','brandtypes','thistypeinfo','comments'));
         }else{
 

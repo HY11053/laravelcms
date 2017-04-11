@@ -316,6 +316,7 @@ body, html { min-height:101%; }
 .index_box5 .cont5_left .left_two dl dd span{ float:right; color:#999;}
 .index_box5 .cont5_right{ width:238px; float:left; overflow:hidden;}
 .index_box5 .cont5_right h2{ padding-left:0;}
+.index_box5 .cont5_right .right_con{ width:220px;}
 .index_box5 .cont5_right .right_con dl dt{ padding:20px 0 5px 0}
 .index_box5 .cont5_right .right_con dl dt a img{}
 .index_box5 .cont5_right .right_con dl dd{ line-height:26px; height:26px; overflow:hidden}
@@ -743,6 +744,52 @@ table {border-collapse: collapse;border-spacing: 0; }
 .login_popup .bd .other_link label{ cursor:pointer; font-weight:100;}
 .login_popup .bd .other_link label input{ vertical-align:middle; margin:0 4px 0 0;}
 .login_popup .bd .forgot_link{float:right; margin-top:10px;}
+
+/*右侧固定*/
+.slide-help, .slide-help a { background: #fff }
+.slide-help-box { position: fixed; bottom: 170px;right:10px; margin-right: 0px; z-index: 1000 }
+.attention-code, .ielt7 .slide-help-box { position: absolute }
+.narrow_980 .slide-help-box { margin-right: -534px }
+.slide-help a { display: block; width: 58px; height: 58px; border: 1px solid #eee; text-align: center; color: grey }
+.slide-help a span { font-size: 12px }
+.slide-help i { display: block; width: 56px; height: 36px }
+.slide-help a:hover { border: 1px solid #D71318; background: #D71318; color: #fff }
+.slide-help .ico-consult i { margin-top: 6px; background: url(../images/consult.gif) }
+.slide-help .ico-consult.mes i, .slide-help .ico-consult:hover i { background: url(../images/slide_help.png) -122px 11px no-repeat }
+.slide-help .ico-feedback i { background: url(../images/slide_help.png) 12px -48px no-repeat }
+.slide-help .ico-feedback:hover i { background: url(../images/slide_help.png) -121px -47px no-repeat }
+.slide-help .ico-attention{ z-index:1; position:relative;}
+.slide-help .ico-attention i { background: url(../images/ico_code.gif) center no-repeat }
+.slide-help .ico-attention:hover i { background: url(../images/slide_help.png) -121px -105px no-repeat; }
+.slide-help .ico-backtop{ display:none;}
+.slide-help .ico-backtop i { background: url(../images/slide_help.png) 12px -166px no-repeat }
+.slide-help .ico-backtop:hover i { background: url(../images/slide_help.png) -121px -165px no-repeat }
+.attention-code { top: -118px; right: 60px; width: 0; height: 300px; overflow: hidden;}
+.attention-code-img { position: relative; width: 138px; margin-right: 6px; padding: 10px 0; background: #fff; border: 1px solid #eee }
+.attention-code-img p.new-float-loadapp { color: #D71318 }
+.attention-code-img img.new-float-loadapp { margin-top: 0 }
+.attention-code-img img { display: block; width: 100px; height: 100px; margin: 14px auto 4px }
+.attention-code-img p { line-height: 14px; text-align: center; background: #fff; color: #e7691e }
+.attention-code-img:after { position: absolute; bottom: 34px; right: -6px;  width: 6px; height: 9px; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAJCAYAAAARml2dAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo3RkM2NkQxNkY0ODcxMUU1OTQ3OEY4OTM1ODMxQTczNSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo3RkM2NkQxN0Y0ODcxMUU1OTQ3OEY4OTM1ODMxQTczNSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjdGQzY2RDE0RjQ4NzExRTU5NDc4Rjg5MzU4MzFBNzM1IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjdGQzY2RDE1RjQ4NzExRTU5NDc4Rjg5MzU4MzFBNzM1Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+qfDNyAAAAJlJREFUeNpi+P79+//Xr18/2rZtmz4DAwMbEDMDMSPDfyD48ePH/zdv3rw6fvy4LVCQHSz5Hwp+/fr1/927d5/OnTvnDZJkBAkyQMGfP38Yvnz58hOoOwlFAgQ+f/7M8O3bt+Vwo0AAKPj/+fPn621sbHjgEkAjQIJboqKiBIAaWRiQBHdDBVnBzoUK7s/OzhaBCjKB7AIIMADRtnwc2kghZwAAAABJRU5ErkJggg==) center no-repeat; content: "\200B" }
+.slide-help .ico-consult { height: 60px }
+.ico-consult .consult-message { display: none; position: absolute; top: 2px; right: 5px; width: 18px; height: 18px; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpDNUM2RkZEOENFNjQxMUU2QjhFRUM4RDBGRENENDgzNCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpDNUM2RkZEOUNFNjQxMUU2QjhFRUM4RDBGRENENDgzNCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkM1QzZGRkQ2Q0U2NDExRTZCOEVFQzhEMEZEQ0Q0ODM0IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkM1QzZGRkQ3Q0U2NDExRTZCOEVFQzhEMEZEQ0Q0ODM0Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+UvtGfgAAAPxJREFUeNqslL8OwVAUxm8vwmYSfY3aDGowGBoPIN7QIgY6YzD4l3gEDMogphq013eSQ26C0N5+yW9o2u9Lz7n3HEspJTRZoAoawAM1fiYdwQaMwAycQPxyUpBGCwzADoTqXSG/G4K27tVDumCh/tca9PQgi/9kqZJrxV6LgmwuJ0oRFLHXlmiTC+pAiuSS7HUln05ZpBd5PQpyQMkgiLwONZruQ0WY6SxFNrpLvrGmCiRf+5tBCHm3FDQGV4Mg8voUNAVzqjNFSMzeyXNEmlmMCCFBP2HI29DmQIfXwy/RGtl/WiN51FfkeSuAy5de0PY78An73NdA/+AhwAB0/PfwRRUSGAAAAABJRU5ErkJggg==) center center no-repeat; text-align: center; line-height: 18px; color:#ff4900; font-size:12px }
+.slide-help .ico-consult.mes { border: 1px solid #ff4900; background: #ff4900; color:#fff }
+.slide-help .ico-quoted, .slide-help .ico-quoted:hover { background: url(../images/slide_help.png) 0 -232px no-repeat }
+.slide-help .ico-quoted { border: 1px solid #D71318; margin: 1px 0 }
+
+/*列表右侧计算器*/
+.w260_calculator{ border:1px solid #E6E6E8; background:#fff; padding:10px 0; margin-bottom:20px;}
+.w260_calculator .hd{ width:240px; height:92px; line-height:84px; font-size:14px; text-align:center; background:url(../images/w260_calculator_hd_bg.jpg) no-repeat; margin:0 auto; padding-bottom:10px; color:#666;}
+.w260_calculator .hd em{ font-size:32px; font-weight:bold; color:#D71318; vertical-align:middle; padding-right:5px;}
+.w260_calculator .bd .select_Shen{padding-left:7px; width:112px;height:39px;padding-top:7px;padding-bottom:7px; float:left; margin-right:5px;}
+.w260_calculator .bd .select_City{padding-left:7px; width:113px; height:39px;padding-top:7px; padding-bottom:7px; float:left; }
+.w260_calculator .bd .area_text{padding:0 10px; height:36px; line-height:36px; border:1px solid #ddd; width:208px; font-size:14px;}
+.w260_calculator .bd .btn{ width:230px; height:40px; line-height:40px; text-align:center; font-size:14px; cursor:pointer; background:#D7161B; border:none; color:#fff;font-size:14px;}
+.w260_calculator .bd .btn:hover{ background:#B01F24;}
+.w260_calculator .bd{ width:230px; margin:0 auto;}
+.w260_calculator .bd li{ padding-bottom:7px; vertical-align:bottom; overflow:hidden; zoom:1; position:relative;}
+.w260_calculator .bd li em{ position:absolute; right:10px; top:8px; color:#999; font-size:14px;}
+
 /*图表*/
 .col-md-6 {
     width: 400px;

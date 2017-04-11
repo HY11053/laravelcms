@@ -16,6 +16,8 @@ return array(
     'AddJmlcColumToAddonarticles' => $baseDir . '/database/migrations/2017_02_26_180555_add_jmlc_colum_to_addonarticles.php',
     'AddMidColumToArctypes' => $baseDir . '/database/migrations/2017_03_23_111555_add_mid_colum_to_arctypes.php',
     'AddOthercolumToAddonarticlesTable' => $baseDir . '/database/migrations/2017_04_10_170506_add_othercolum_to_addonarticles_table.php',
+    'AddOtherinfosToAddonarticlesTable' => $baseDir . '/database/migrations/2017_04_11_171421_add_otherinfos_to_addonarticles_table.php',
+    'AddTitlesToArchivesTable' => $baseDir . '/database/migrations/2017_04_11_131004_add_titles_to_archives_table.php',
     'AddonarticlesTableSeeder' => $baseDir . '/database/seeds/AddonarticlesTableSeeder.php',
     'AdminsTableSeeder' => $baseDir . '/database/seeds/AdminsTableSeeder.php',
     'ArchivesTableSeeder' => $baseDir . '/database/seeds/ArchivesTableSeeder.php',

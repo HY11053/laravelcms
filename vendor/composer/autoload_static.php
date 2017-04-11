@@ -449,6 +449,8 @@ class ComposerStaticInitbcc14b164eff51c585117c27039ac457
         'AddJmlcColumToAddonarticles' => __DIR__ . '/../..' . '/database/migrations/2017_02_26_180555_add_jmlc_colum_to_addonarticles.php',
         'AddMidColumToArctypes' => __DIR__ . '/../..' . '/database/migrations/2017_03_23_111555_add_mid_colum_to_arctypes.php',
         'AddOthercolumToAddonarticlesTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_10_170506_add_othercolum_to_addonarticles_table.php',
+        'AddOtherinfosToAddonarticlesTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_11_171421_add_otherinfos_to_addonarticles_table.php',
+        'AddTitlesToArchivesTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_11_131004_add_titles_to_archives_table.php',
         'AddonarticlesTableSeeder' => __DIR__ . '/../..' . '/database/seeds/AddonarticlesTableSeeder.php',
         'AdminsTableSeeder' => __DIR__ . '/../..' . '/database/seeds/AdminsTableSeeder.php',
         'ArchivesTableSeeder' => __DIR__ . '/../..' . '/database/seeds/ArchivesTableSeeder.php',

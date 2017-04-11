@@ -124,6 +124,7 @@
             <div class="news_center">
 
                 <div class="join_cont">
+                    <div class="join_tit" style="margin-bottom: 8px">@if(!empty($thisarticleinfos->ppjstitle))  <h3>{{$thisarticleinfos->ppjstitle}}</h3> @else <span class="tit">【{{$thisarticleinfos['shorttitle']}}】<em>品牌介绍</em></span>  @endif</div>
                     <table cellspacing="0" style="border-top: 1px solid rgb(230, 230, 230);">
                         <tbody>
                         <tr>
@@ -176,23 +177,28 @@
                         </tr>
                         </tbody>
                     </table>
-                    <div class="join_tit" id="js_join_1"> <span class="tit">【{{$thisarticleinfos['shorttitle']}}】<em>加盟详情</em></span> </div>
+
+                    <div class="join_intro">
+                        {!! $thisarticleinfos->article['body'] !!}
+                    </div>
+
+                    <div class="join_tit" id="js_join_1">@if(!empty($thisarticleinfos->jmxqtitle))  <h3>{{$thisarticleinfos->jmxqtitle}}</h3> @else <span class="tit">【{{$thisarticleinfos['shorttitle']}}】<em>加盟详情</em></span>  @endif</div>
                     <div class="join_intro">
                         {!! $thisarticleinfos->article['jmxq_content'] !!}
                     </div>
-                    <div class="join_tit" id="js_join_2"> <span class="tit">【{{$thisarticleinfos['shorttitle']}}】<em>加盟条件</em></span> </div>
+                    <div class="join_tit" id="js_join_2">@if(!empty($thisarticleinfos->jmzctitle))  <h3>{{$thisarticleinfos->jmzctitle}}</h3> @else <span class="tit">【{{$thisarticleinfos['shorttitle']}}】<em>加盟条件</em></span>  @endif </div>
                     <div class="join_intro">
                         {!! $thisarticleinfos->article['jmzc_content'] !!}
                     </div>
-                    <div class="join_tit" id="js_join_3"> <span class="tit">【{{$thisarticleinfos['shorttitle']}}】<em>加盟流程</em></span> </div>
+                    <div class="join_tit" id="js_join_3">@if(!empty($thisarticleinfos->jmlctitle))  <h3>{{$thisarticleinfos->jmlctitle}}</h3> @else <span class="tit">【{{$thisarticleinfos['shorttitle']}}】<em>加盟流程</em></span>  @endif </div>
                     <div class="join_intro">
                         {!! $thisarticleinfos->article['jmlc_content'] !!}
                     </div>
-                    <div class="join_tit" id="js_join_4"> <span class="tit">【{{$thisarticleinfos['shorttitle']}}】<em>加盟优势</em></span> </div>
+                    <div class="join_tit" id="js_join_4">@if(!empty($thisarticleinfos->jmystitle))  <h3>{{$thisarticleinfos->jmystitle}}</h3> @else <span class="tit">【{{$thisarticleinfos['shorttitle']}}】<em>加盟优势</em></span>   @endif </div>
                     <div class="join_intro">
                         {!! $thisarticleinfos->article['jmys_content'] !!}
                     </div>
-                    <div class="join_tit" id="js_join_5"> <span class="tit">【{{$thisarticleinfos['shorttitle']}}】<em>加盟问答</em></span> </div>
+                    <div class="join_tit" id="js_join_5">@if(!empty($thisarticleinfos->jmasktitle))  <h3>{{$thisarticleinfos->jmasktitle}}</h3> @else <span class="tit">【{{$thisarticleinfos['shorttitle']}}】<em>加盟问答</em></span>  @endif </div>
                     <div class="join_intro">
                         {!! $thisarticleinfos->article['jmask_content'] !!}
                     </div>
@@ -301,7 +307,16 @@
                     <!--评论-->
                 @include('frontend.comment')
                 <!--评论end-->
-
+                    <div class="xg_news">
+                        <div class="title"><strong>{{$thisarticleinfos['shorttitle']}}资讯</strong></div>
+                        <div class="xw">
+                            <ul class="clearfix">
+                                @foreach($xgsearchs as $xgsearch)
+                                <li><em>{{$xgsearch->published_at}}</em><a href="/{{$xgsearch->arctype->real_path}}/{{$xgsearch->id}}.shtml" title="{{$xgsearch->title}}">{{$xgsearch->title}} </a></li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
                     <!--用户留言 开始-->
                     <div class="gbook" id="msg">
                         <div class="hd">
@@ -346,7 +361,68 @@
 
         <!--右边开始-->
         <div class="new_right">
-            <!--加盟费计算器 开始-->
+            <!--计算器 开始-->
+            <div class="w260_calculator">
+                <div class="hd"><em>260000</em>元</div>
+                <div class="bd">
+                    <form>
+                        <ul>
+                            <li>
+                                <select id="r_Shen" name="r_Shen" class="select_Shen" onchange="set_city(this, document.getElementById('r_city'));">
+                                    <option value="0">省/市</option>
+                                    <option value="安徽">A 安徽</option>
+                                    <option value="北京">B 北京</option>
+                                    <option value="重庆">C 重庆</option>
+                                    <option value="福建">F 福建</option>
+                                    <option value="广西">G 广西</option>
+                                    <option value="贵州">G 贵州</option>
+                                    <option value="广东">G 广东</option>
+                                    <option value="甘肃">G 甘肃</option>
+                                    <option value="海南">H 海南</option>
+                                    <option value="湖北">H 湖北</option>
+                                    <option value="黑龙江">H 黑龙江</option>
+                                    <option value="河南">H 河南</option>
+                                    <option value="河北">H 河北</option>
+                                    <option value="湖南">H 湖南</option>
+                                    <option value="江苏">J 江苏</option>
+                                    <option value="吉林">J 吉林</option>
+                                    <option value="江西">J 江西</option>
+                                    <option value="辽宁">L 辽宁</option>
+                                    <option value="内蒙古">N 内蒙古</option>
+                                    <option value="宁夏">N 宁夏</option>
+                                    <option value="澳门">O 澳门</option>
+                                    <option value="青海">Q 青海</option>
+                                    <option value="四川">S 四川</option>
+                                    <option value="陕西">S 陕西</option>
+                                    <option value="上海">S 上海</option>
+                                    <option value="山东">S 山东</option>
+                                    <option value="山西">S 山西</option>
+                                    <option value="台湾">T 台湾</option>
+                                    <option value="天津">T 天津</option>
+                                    <option value="西藏">X 西藏</option>
+                                    <option value="香港">X 香港</option>
+                                    <option value="新疆">X 新疆</option>
+                                    <option value="云南">Y 云南</option>
+                                    <option value="浙江">Z 浙江</option>
+                                </select>
+                                <select id="r_city" name="r_city" class="select_City">
+                                    <option value="0">市/地区</option>
+                                </select>
+                            </li>
+                            <li><input type="text" class="text area_text" name="dpzj" id="dpzj" placeholder="店铺租金"><em>元</em></li>
+                            <li><input type="text" class="text area_text" name="rycb" id="rycb" placeholder="人员成本"><em>元</em></li>
+                            <li><input type="text" class="text area_text" name="mrcb" id="mrcb" placeholder="每日成本"><em>元</em></li>
+                            <li><input type="text" class="text area_text" name="mdjj" id="mdjj" placeholder="每单均价"><em>元</em></li>
+                            <li><input type="text" class="text area_text" name="jmfy" id="jmfy" placeholder="加盟费用"><em>元</em></li>
+                            <li><input type="text" class="text area_text" name="phone" id="zxys_phonenumber" placeholder="输入手机号，获取报价结果"></li>
+                            <li><input type="button" class="btn" id="btn_hqbj" name="btn_hqbj" value="获取报价"></li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+            <script src="/reception/js/GlobalProvinces.js" type="text/javascript"></script>
+            <!--计算器 结束-->
+            <!--加盟费计算器 开始
             <div class="jmf_calculator">
                 <div class="common_bt">
                     <div class="tit">加盟费计算器</div>
@@ -371,7 +447,7 @@
                     </div>
                 </form>
             </div>
-            <!--加盟费计算器 结束-->
+            加盟费计算器 结束-->
 
             <!--排行榜-->
             <div class="new_bt">
@@ -437,12 +513,13 @@
             </div>
             <!--新闻-->
             <div class="new_bt">
-                <h3> <i></i> 相关新闻 </h3>
+                <h3> <i></i> 最新零食新闻 </h3>
                 <div class="bts com_news">
                     <div class="common">
                         <ul>
-                            <li><a href="/lsbrand/baicaowei/42.shtml" target="_blank" title="111">111</a></li>
-                            <li><a href="/lsbrand/ysg/3.shtml" target="_blank" title="一扫光零食怎么样">一扫光零食怎么样</a></li>
+                            @foreach($latesnews as $latesnew)
+                            <li><a href="/{{$latesnew->arctype->real_path}}/{{$latesnew->id}}.shtml" target="_blank" title="{{$latesnew->title}}">{{$latesnew->title}}</a></li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>

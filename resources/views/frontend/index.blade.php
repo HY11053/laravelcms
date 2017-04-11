@@ -167,11 +167,11 @@
                         <span>61{{\App\AdminModel\Archive::where('mid',1)->count()}}</span>
                     </p>
                     <ul>
-                        <li><a href="#" title="【钻石黄金】未来发展空间巨大" target="_blank">【钻石黄金】未来发展空间巨大</a></li>
-                        <li><a href="#" title="【璀璨未来】互联网+珠宝" target="_blank">【璀璨未来】互联网+珠宝</a></li>
-                        <li><a href="#" title="【加入V6】颠覆你的饰界观" target="_blank">【加入V6】颠覆你的饰界观</a></li>
-                        <li><a href="#" title="【品牌荟萃】化妆品店选梵美诗" target="_blank">【品牌荟萃】化妆品店选梵美诗</a></li>
-                        <li><a href="#" title="【私人订制】宝乐迪量贩式KTV" target="_blank">【私人订制】宝乐迪量贩式KTV</a></li>
+                        <li><a href="#" title="【三只松鼠】森林系零食品牌 不负好时光" target="_blank">【三只松鼠】森林系零食品牌 不负好时光</a></li>
+                        <li><a href="#" title="【良品铺子】良心品质 百年铺子" target="_blank">【良品铺子】良心品质 百年铺子</a></li>
+                        <li><a href="#" title="【一扫光】13国原料采购 0经验无忧开店" target="_blank">【一扫光】13国原料采购 0经验无忧开店</a></li>
+                        <li><a href="#" title="【来伊份】带你吃遍满天新" target="_blank">【来伊份】带你吃遍满天新</a></li>
+                        <li><a href="#" title="百草味】国民品牌 百草味 知心知味" target="_blank">【百草味】国民品牌 百草味 知心知味</a></li>
                     </ul>
                     <div class="btn"><a href="#">马上找好项目</a></div>
                 </div>
@@ -489,5 +489,322 @@
 
     </div>
     <!--主体结束-->
+	
+<!--底部固定计算器 开始-->
+<div id="bottom_calculator" class="bottom_slide_box" style="left: 0px; bottom:-420px;"> 
+	<!-- 以下是隐藏点击层 -->
+	<div class="bottom_slide_content"> 
+		<!-- 关闭按钮不显示 (功能正常)--> 
+		<!-- <div class="bottom_slide_close"></div> -->
+		<div class="bottom_slide_click"></div>
+		<div class="slide_box_shade"></div>
+		<div class="zxbj_details">
+			<div class="all_Calc_Container Calc_Container_zxys">
+				<div class="bottom_slide_img"></div>
+				<div class="bottom_slide_down bottom_slide_up" style="top:-50px;"></div>
+				<div class="zxbj_zxys">
+					<div class="con_bj clear"><!-- calculate -->
+						<div class="con_bj_cal col_l">
+							<h3 class="calputer_tit">开店计算器<span>今天已有 <em class="zxys_num_man">1413</em> 位业主获取了开店预算</span></h3>
+							<form>
+								<div class="mod_form bj_form">
+									<div class="form_line">
+										<label for="" class="label"><em class="label_start">*</em>所在城市：</label>
+										<div class="element">
+											<div class="province-town clear">
+												<select id="b_Shen" name="b_Shen" class="select_Shen" onchange="set_city(this, document.getElementById('b_city'));">
+													<option value="0">省/市</option>
+													<option value="安徽">A 安徽</option>
+													<option value="北京">B 北京</option>
+													<option value="重庆">C 重庆</option>
+													<option value="福建">F 福建</option>
+													<option value="广西">G 广西</option>
+													<option value="贵州">G 贵州</option>
+													<option value="广东">G 广东</option>
+													<option value="甘肃">G 甘肃</option>
+													<option value="海南">H 海南</option>
+													<option value="湖北">H 湖北</option>
+													<option value="黑龙江">H 黑龙江</option>
+													<option value="河南">H 河南</option>
+													<option value="河北">H 河北</option>
+													<option value="湖南">H 湖南</option>
+													<option value="江苏">J 江苏</option>
+													<option value="吉林">J 吉林</option>
+													<option value="江西">J 江西</option>
+													<option value="辽宁">L 辽宁</option>
+													<option value="内蒙古">N 内蒙古</option>
+													<option value="宁夏">N 宁夏</option>
+													<option value="澳门">O 澳门</option>
+													<option value="青海">Q 青海</option>
+													<option value="四川">S 四川</option>
+													<option value="陕西">S 陕西</option>
+													<option value="上海">S 上海</option>
+													<option value="山东">S 山东</option>
+													<option value="山西">S 山西</option>
+													<option value="台湾">T 台湾</option>
+													<option value="天津">T 天津</option>
+													<option value="西藏">X 西藏</option>
+													<option value="香港">X 香港</option>
+													<option value="新疆">X 新疆</option>
+													<option value="云南">Y 云南</option>
+													<option value="浙江">Z 浙江</option>
+												</select>
+												<select id="b_city" name="b_city" class="select_City">
+													<option value="0">市/地区</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="form_line">
+										<label for="" class="label"><em class="label_start">*</em>店铺租金：</label>
+										<div class="element">
+											<div class="text_wrap">
+												<input type="text" class="text area_text" name="dpzj" id="dpzj">
+										</div>
+									</div>
+									</div>
+									
+									<div class="form_line">
+										<label for="" class="label"><em class="label_start">*</em>人员成本：</label>
+										<div class="element">
+											<div class="text_wrap">
+												<input type="text" class="text area_text" name="rycb" id="rycb">
+										</div>
+									</div>
+									</div>
+									
+									<div class="form_line">
+										<label for="" class="label"><em class="label_start">*</em>每日成本：</label>
+										<div class="element">
+											<div class="text_wrap">
+												<input type="text" class="text area_text" name="mrcb" id="mrcb">
+										</div>
+									</div>
+									</div>
+									
+									<div class="form_line">
+										<label for="" class="label"><em class="label_start">*</em>每单均价：</label>
+										<div class="element">
+											<div class="text_wrap">
+												<input type="text" class="text area_text" name="mdjj" id="mdjj">
+										</div>
+									</div>
+									</div>
+									
+									<div class="form_line">
+										<label for="" class="label"><em class="label_start">*</em>加盟费用：</label>
+										<div class="element">
+											<div class="text_wrap">
+												<input type="text" class="text area_text" name="jmfy" id="jmfy">
+										</div>
+									</div>
+									</div>
+									
+
+									<div class="form_line" id="zxys_phoneInput">
+										<label for="" class="label"><em class="label_start">*</em>手机号码 ：</label>
+										<div class="element">
+											<div class="text_wrap">
+												<input id="zxys_phonenumber" type="text" class="text phonetext" name="phone">
+												</div>
+										</div>
+									</div>
+									<div class="form_line"><a href="javascript:void(0);" class="calc-btn-start" id="zxys_calc_btn">
+										<label for="zxys_calc_btn" id="zxys_btn_calc" class="calcstart">开始计算</label>
+										<!-- 开始计算 -->
+										<input type="hidden" id="zxys_myptag" name="ptag" value="1_1_1_99">
+										</a></div>
+								</div>
+							</form>
+						</div>
+						<!-- results -->
+						<div class="con_bj_res col_l"><!--<h3>计算结果</h3>-->
+							<div class="zxys_result"><span class="zxys-result-span">您的开店预算</span><b id="bprice">？</b><span>元</span></div>
+							<div class="zxgs-list">
+								<ul class="zxgs-list-before">
+									<li class=""><span>材料费：</span><strong id="materialPay"><em>？</em>元</strong></li>
+									<li class=""><span>人工费：</span><strong id="artificialPay"><em>？</em>元</strong></li>
+									<li class=""><span>设计费：</span><strong id="designPay"><em>？</em>元</strong></li>
+									<li class=""><span>质检费：</span><strong id="qualityPay"><em>？</em>元</strong></li>
+								</ul>
+							</div>
+							<div class="bj_explain zxys_explain" style="display:none">
+								<p class="attention holiday-text"><b>*</b>稍候装修管家将回电您，免费提供装修咨询服务</p>
+								<p class="text-none"><b>*</b>因材料品牌及工程量不同，具体报价以量房实测为准</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--底部固定计算器 结束-->
+
+<!--右侧固定 开始-->
+<div class="slide-help-box">
+	<div class="slide-help">
+		<a href="javascript:void(0);" class="zhiCustomBtn ico-consult" id="ico-consult1"><em class="consult-message">0</em><i></i><span>在线咨询</span></a>
+		<a target="_blank" href="#" rel="nofollow" class="ico-feedback"><i></i><span>意见反馈</span></a>
+		<a href="javascript:;" class="ico-attention"><i></i><span>关注有礼</span></a>
+		<a href="javascript:;" class="ico-quoted"></a>
+		<a href="javascript:;" class="ico-backtop"><i></i><span>回到顶部</span></a>
+		<div class="attention-code">
+			<div class="attention-code-img">
+				<img src="/reception/images/new_float_loadapp.jpg" alt="" class="new-float-loadapp">
+				<p class="new-float-loadapp">关注零食加盟</p>
+				<p class="new-float-loadapp">查看业主真实装修日记</p>
+				<img src="/reception/images/code_other_tap.jpg" alt="">
+				<p>扫微信</p>
+				<p>获10000套家居设计案例</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!--右侧固定 结束-->
+
+<!--弹窗计算器 开始-->
+<div class="calculator_popup_mask"></div>
+<div class="bottom_slide_box calculator_popup">
+<a id="calculator_popup_close" class="close" href="javascript:void(0)" title="关闭">×</a>
+<div class="zxbj_zxys">
+					<div class="con_bj clear"><!-- calculate -->
+						<div class="con_bj_cal col_l">
+							<h3 class="calputer_tit">开店计算器<span>今天已有 <em class="zxys_num_man">1413</em> 位业主获取了开店预算</span></h3>
+							<form>
+								<div class="mod_form bj_form">
+									<div class="form_line">
+										<label for="" class="label"><em class="label_start">*</em>所在城市：</label>
+										<div class="element">
+											<div class="province-town clear">
+												<select id="Shen" name="Shen" class="select_Shen" onchange="set_city(this, document.getElementById('city'));">
+													<option value="0">省/市</option>
+													<option value="安徽">A 安徽</option>
+													<option value="北京">B 北京</option>
+													<option value="重庆">C 重庆</option>
+													<option value="福建">F 福建</option>
+													<option value="广西">G 广西</option>
+													<option value="贵州">G 贵州</option>
+													<option value="广东">G 广东</option>
+													<option value="甘肃">G 甘肃</option>
+													<option value="海南">H 海南</option>
+													<option value="湖北">H 湖北</option>
+													<option value="黑龙江">H 黑龙江</option>
+													<option value="河南">H 河南</option>
+													<option value="河北">H 河北</option>
+													<option value="湖南">H 湖南</option>
+													<option value="江苏">J 江苏</option>
+													<option value="吉林">J 吉林</option>
+													<option value="江西">J 江西</option>
+													<option value="辽宁">L 辽宁</option>
+													<option value="内蒙古">N 内蒙古</option>
+													<option value="宁夏">N 宁夏</option>
+													<option value="澳门">O 澳门</option>
+													<option value="青海">Q 青海</option>
+													<option value="四川">S 四川</option>
+													<option value="陕西">S 陕西</option>
+													<option value="上海">S 上海</option>
+													<option value="山东">S 山东</option>
+													<option value="山西">S 山西</option>
+													<option value="台湾">T 台湾</option>
+													<option value="天津">T 天津</option>
+													<option value="西藏">X 西藏</option>
+													<option value="香港">X 香港</option>
+													<option value="新疆">X 新疆</option>
+													<option value="云南">Y 云南</option>
+													<option value="浙江">Z 浙江</option>
+												</select>
+												<select id="city" name="city" class="select_City">
+													<option value="0">市/地区</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="form_line">
+										<label for="" class="label"><em class="label_start">*</em>店铺租金：</label>
+										<div class="element">
+											<div class="text_wrap">
+												<input type="text" class="text area_text" name="dpzj" id="dpzj">
+										</div>
+									</div>
+									</div>
+									
+									<div class="form_line">
+										<label for="" class="label"><em class="label_start">*</em>人员成本：</label>
+										<div class="element">
+											<div class="text_wrap">
+												<input type="text" class="text area_text" name="rycb" id="rycb">
+										</div>
+									</div>
+									</div>
+									
+									<div class="form_line">
+										<label for="" class="label"><em class="label_start">*</em>每日成本：</label>
+										<div class="element">
+											<div class="text_wrap">
+												<input type="text" class="text area_text" name="mrcb" id="mrcb">
+										</div>
+									</div>
+									</div>
+									
+									<div class="form_line">
+										<label for="" class="label"><em class="label_start">*</em>每单均价：</label>
+										<div class="element">
+											<div class="text_wrap">
+												<input type="text" class="text area_text" name="mdjj" id="mdjj">
+										</div>
+									</div>
+									</div>
+									
+									<div class="form_line">
+										<label for="" class="label"><em class="label_start">*</em>加盟费用：</label>
+										<div class="element">
+											<div class="text_wrap">
+												<input type="text" class="text area_text" name="jmfy" id="jmfy">
+										</div>
+									</div>
+									</div>
+									
+
+									<div class="form_line" id="zxys_phoneInput">
+										<label for="" class="label"><em class="label_start">*</em>手机号码 ：</label>
+										<div class="element">
+											<div class="text_wrap">
+												<input id="zxys_phonenumber" type="text" class="text phonetext" name="phone">
+												</div>
+										</div>
+									</div>
+									<div class="form_line"><a href="javascript:void(0);" class="calc-btn-start" id="zxys_calc_btn">
+										<label for="zxys_calc_btn" id="zxys_btn_calc" class="calcstart">开始计算</label>
+										<!-- 开始计算 -->
+										<input type="hidden" id="zxys_myptag" name="ptag" value="1_1_1_99">
+										</a></div>
+								</div>
+							</form>
+						</div>
+						<!-- results -->
+						<div class="con_bj_res col_l"><!--<h3>计算结果</h3>-->
+							<div class="zxys_result"><span class="zxys-result-span">您的开店预算</span><b id="bprice">？</b><span>元</span></div>
+							<div class="zxgs-list">
+								<ul class="zxgs-list-before">
+									<li class=""><span>材料费：</span><strong id="materialPay"><em>？</em>元</strong></li>
+									<li class=""><span>人工费：</span><strong id="artificialPay"><em>？</em>元</strong></li>
+									<li class=""><span>设计费：</span><strong id="designPay"><em>？</em>元</strong></li>
+									<li class=""><span>质检费：</span><strong id="qualityPay"><em>？</em>元</strong></li>
+								</ul>
+							</div>
+							<div class="bj_explain zxys_explain" style="display:none">
+								<p class="attention holiday-text"><b>*</b>稍候装修管家将回电您，免费提供装修咨询服务</p>
+								<p class="text-none"><b>*</b>因材料品牌及工程量不同，具体报价以量房实测为准</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+</div>
+<!--弹窗计算器 结束-->
+<link href="/reception/css/zxbj_bottom_slide.css" rel="stylesheet" type="text/css"/>
+<script src="/reception/js/GlobalProvinces.js" type="text/javascript"></script>
 
 @stop

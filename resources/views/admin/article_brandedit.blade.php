@@ -114,6 +114,12 @@
                                     {{Form::text('country',null, array('class' => 'form-control col-md-10','id'=>'country','placeholder'=>'填写地区名称即可'))}}
                                 </div>
                             </div>
+                            <div class="form-group col-md-12">
+                                {{Form::label('bdxg_search', '百度相关搜索', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                <div class="col-md-4 col-sm-9 col-xs-12">
+                                    {{Form::text('bdxg_search', null, array('class' => 'form-control col-md-10','id'=>'bdxg_search','placeholder'=>'百度相关搜索'))}}
+                                </div>
+                            </div>
                             <div class="form-group col-md-12 ">
                                 {{Form::label('typeid', '文章所属栏目', array('class' => 'col-sm-2 control-label'))}}
                                 <div class="col-sm-5">
@@ -272,6 +278,18 @@
                                     <div class="col-md-8 col-sm-9 col-xs-12">
                                         {{Form::text('brandduty', null, array('class' => 'form-control col-md-10','id'=>'brandduty','placeholder'=>'是否区域授权'))}}
                                         {{Form::hidden('mid', '1', array('class' => 'form-control col-md-10','id'=>'mid'))}}
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    {{Form::label('licenseno', '特许加盟许可', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                    <div class="col-md-8 col-sm-9 col-xs-12">
+                                        {{Form::text('licenseno', null, array('class' => 'form-control col-md-10','id'=>'licenseno','placeholder'=>'特许加盟许可'))}}
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    {{Form::label('registeredcapital', '注册资金', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                    <div class="col-md-8 col-sm-9 col-xs-12">
+                                        {{Form::text('registeredcapital', null, array('class' => 'form-control col-md-10','id'=>'registeredcapital','placeholder'=>'注册资金'))}}
                                     </div>
                                 </div>
                             </div>

@@ -91,6 +91,12 @@ $(document).scroll(function(){
 	}else{
 		$(".side_nav").removeClass("side_nav_fixed");
 		}
+		
+	if( s > 350){
+		$(".ico-backtop").css("display","block");
+	}else{
+		$(".ico-backtop").css("display","none");
+		}	
 	
  });
  
@@ -158,6 +164,90 @@ $(document).scroll(function(){
 	  $(".login_popup_mask,.login_popup").hide();
   });
   
+  
+  //右侧固定
+$(".ico-attention").hover(function(){
+		$(".attention-code").stop();
+		$(".attention-code").animate({"width":"140px"});
+	},function(){
+		$(".attention-code").stop();
+		$(".attention-code").animate({"width":"0px"});
+		
+	});
+$(".ico-backtop").click(function(){
+	$("html,body").animate({scrollTop:0},500);
+});
+
+
+
+//右侧弹窗计算器
+
+var slideFlag=true;
+var clickFlag=true;
+
+$(".ico-quoted").click(function(){
+	$(".calculator_popup_mask,.calculator_popup").show();
+	clickFlag=false;
+});
+
+//关闭弹窗
+$("#calculator_popup_close").click(function(){
+	$(".calculator_popup_mask,.calculator_popup").hide();
+	clickFlag=true;
+});
+
+//底部计算器
+$(window).scroll(function(){
+var now_scr = $(this).scrollTop();
+if(now_scr>500&&slideFlag&&clickFlag){
+		$("#bottom_calculator").css({"bottom":"0px"});
+		$(".bottom_slide_down").removeClass("bottom_slide_up");
+		slideFlag=false;
+		return; 
+	}else if(now_scr<500&&!slideFlag&&clickFlag){
+		$("#bottom_calculator").css({"bottom":"-420px"});
+		$(".bottom_slide_down").addClass("bottom_slide_up");
+		slideFlag=true;
+		shake();
+		return; 
+}
+		
+});
+
+$(".bottom_slide_click").click(function(){
+		slide_bottom();
+		clickFlag=false;
+});	
+
+function slide_bottom(){
+	if(slideFlag){
+			$("#bottom_calculator").css({"bottom":"0px"});
+			$(".bottom_slide_down").removeClass("bottom_slide_up");
+			slideFlag=false;
+			
+	}else{
+			$("#bottom_calculator").css({"bottom":"-420px"});
+			$(".bottom_slide_down").addClass("bottom_slide_up");
+			slideFlag=true;
+			shake();
+		}
+	
+	}
+
+//不断上下滑动        
+function shake(){
+	if ($('.bottom_slide_up').css('top') == '-60px' || $('.bottom_slide_down').css('top') == '-50px') {
+		$('.bottom_slide_up').stop().animate({top:'-42px'},500,function(){
+			shake();    
+		});
+	}
+	if ($('.bottom_slide_up').css('top') == '-42px') {
+		$('.bottom_slide_up').stop().animate({top:'-60px'},500,function(){
+			shake();    
+		});
+	}    
+}
+shake();   
  
 	
 });

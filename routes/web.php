@@ -104,9 +104,11 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ()
 Route::get('phone',function(){
     return view('phone');
 });
+
 //前台界面
 Route::get('/','Frontend\IndexController@Index');
 Route::get('demo','Frontend\ComparisionController@demo');
+Route::get('xgsearch','Frontend\ComparisionController@xgsearch');
 Route::get('ask','Frontend\AskController@Index');
 Route::get('ask/hot','Frontend\AskController@HotAsks');
 Route::get('ask/pending','Frontend\AskController@PendingAsks');
