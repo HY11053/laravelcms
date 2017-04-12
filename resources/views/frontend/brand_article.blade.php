@@ -493,22 +493,11 @@
             <div class="new_bt">
                 <h3> <i></i> 大家还在搜 </h3>
                 <div class="kuishurk">
-                    <a href="#">智能电视</a>
-                    <a href="#">电视盒子</a>
-                    <a href="#">开箱晒物</a>
-                    <a href="#">智能电视</a>
-                    <a href="#">VR</a>
-                    <a href="#">智能电视</a>
-                    <a href="#">电视盒子</a>
-                    <a href="#">开箱晒物</a>
-                    <a href="#">智能电视</a>
-                    <a href="#">电视盒子</a>
-                    <a href="#">开箱晒物</a>
-                    <a href="#">智能电视</a>
-                    <a href="#">VR</a>
-                    <a href="#">智能电视</a>
-                    <a href="#">电视盒子</a>
-                    <a href="#">开箱晒物</a>
+                    @foreach(explode(',',$thisarticleinfos->article['bdxg_search']) as $bdxg_search)
+                        <a href="#">{{$bdxg_search}}</a>
+                    @endforeach
+
+
                 </div>
             </div>
             <!--新闻-->

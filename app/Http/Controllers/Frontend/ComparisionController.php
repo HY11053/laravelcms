@@ -33,23 +33,26 @@ class ComparisionController extends Controller
     {
         $articles=Archive::where('shorttitle','<>','')->pluck('shorttitle','id');
         foreach ($articles as $key=>$article){
-            $baiduurl='http://www.baidu.com/s?ie=utf-8&wd='.$article;
-            $mbaiduurl='https://m.baidu.com/ssid=37eed2bbb8f6bfd3b6f8d2d13c2f/from=844b/s?word='.$article;
-            $baiduinfos=$this->getTagData($this->Curls($baiduurl),'<div class="tt">相关搜索','</table></div>');
-            preg_match_all('#<a\b[^>]*\bhref=([^\s>]+)[^>]*>[\s\S]*?([^<>]*)</a>#', $baiduinfos,$matches);
-            $baiduinfos=$matches[2];
-            $mbdinfos=$this->getTagData($this->Curls($mbaiduurl),'<div id="relativewords" class="se-relativewords"><div class="rw-title">相关搜索','</div></div><div id="page-rcol" class="se-page-rcol"><div id="reword" class="se-reword"><div class="rw-title">相关搜索</div>');
-            preg_match_all('#<a\b[^>]*\bhref=([^\s>]+)[^>]*>[\s\S]*?([^<>]*)</a>#',$mbdinfos,$matches);
-            $mbdinfos=$matches[2];
-            if(!empty($baiduinfos) || !emptyArray($mbdinfos)){
-                $xgarrs=array_filter(array_unique(array_merge($baiduinfos,$mbdinfos)));
-                //dd($xgarrs);
-                $xgsearch='';
-                foreach ($xgarrs as $xgarr){
-                    $xgsearch.=$xgarr.',';
+            if(empty(Addonarticle::where('id',$key)->value('bdxg_search'))){
+                $baiduurl='http://www.baidu.com/s?ie=utf-8&wd='.$article;
+                $mbaiduurl='https://m.baidu.com/ssid=37eed2bbb8f6bfd3b6f8d2d13c2f/from=844b/s?word='.$article;
+                $baiduinfos=$this->getTagData($this->Curls($baiduurl),'<div class="tt">相关搜索','</table></div>');
+                preg_match_all('#<a\b[^>]*\bhref=([^\s>]+)[^>]*>[\s\S]*?([^<>]*)</a>#', $baiduinfos,$matches);
+                $baiduinfos=$matches[2];
+                $mbdinfos=$this->getTagData($this->Curls($mbaiduurl),'<div id="relativewords" class="se-relativewords"><div class="rw-title">相关搜索','</div></div><div id="page-rcol" class="se-page-rcol"><div id="reword" class="se-reword"><div class="rw-title">相关搜索</div>');
+                preg_match_all('#<a\b[^>]*\bhref=([^\s>]+)[^>]*>[\s\S]*?([^<>]*)</a>#',$mbdinfos,$matches);
+                $mbdinfos=$matches[2];
+                if(!empty($baiduinfos) || !emptyArray($mbdinfos)){
+                    $xgarrs=array_filter(array_unique(array_merge($baiduinfos,$mbdinfos)));
+                    //dd($xgarrs);
+                    $xgsearch='';
+                    foreach ($xgarrs as $xgarr){
+                        $xgsearch.=$xgarr.',';
+                    }
+                    Addonarticle::where('id',$key)->update(['bdxg_search'=>$xgsearch]);
                 }
-                Addonarticle::where('id',$key)->update(['bdxg_search'=>$xgsearch]);
             }
+
 
         }
         //dd($articles);

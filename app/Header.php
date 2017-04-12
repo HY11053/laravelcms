@@ -15,7 +15,7 @@ class Header
 {
     function HeaderLists()
     {
-        $typeinfos=Arctype::where('reid',0)->take(8)->pluck('typename','real_path');
+        $typeinfos=Arctype::where('reid',0)->take(9)->pluck('typename','real_path');
         return $typeinfos;
     }
 }
