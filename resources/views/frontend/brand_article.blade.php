@@ -112,7 +112,7 @@
                             <li class="js_join_1 cur"><a href="javascript:void(0)">品牌介绍</a></li>
                             <li class="js_join_2"><a href="javascript:void(0)">加盟优势</a></li>
                             <li class="js_join_3"><a href="javascript:void(0)">加盟流程</a></li>
-                            <li class="js_join_4"><a href="javascript:void(0)">加盟政策</a></li>
+                            <li class="js_join_4"><a href="javascript:void(0)">开店要求</a></li>
                             <li class="js_join_5"><a href="javascript:void(0)">开店必看</a></li>
                             <li class="js_join_6"><a href="javascript:void(0)">投资分析</a></li>
                             <li class="js_join_7"><a href="javascript:void(0)">用户点评</a></li>
@@ -124,7 +124,7 @@
             <div class="news_center">
 
                 <div class="join_cont">
-                    <div class="join_tit" style="margin-bottom: 8px">@if(!empty($thisarticleinfos->ppjstitle))  <h3>{{$thisarticleinfos->ppjstitle}}</h3> @else <span class="tit">【{{$thisarticleinfos['shorttitle']}}】<em>品牌介绍</em></span>  @endif</div>
+                    <div class="join_tit" id="js_join_1" style="margin-bottom: 8px">@if(!empty($thisarticleinfos->ppjstitle))  <h3 class="tit">{{$thisarticleinfos->ppjstitle}}</h3> @else <span class="tit">【{{$thisarticleinfos['shorttitle']}}】<em>品牌介绍</em></span>  @endif</div>
                     <table cellspacing="0" style="border-top: 1px solid rgb(230, 230, 230);">
                         <tbody>
                         <tr>
@@ -182,23 +182,23 @@
                         {!! $thisarticleinfos->article['body'] !!}
                     </div>
 
-                    <div class="join_tit" id="js_join_1">@if(!empty($thisarticleinfos->jmxqtitle))  <h3>{{$thisarticleinfos->jmxqtitle}}</h3> @else <span class="tit">【{{$thisarticleinfos['shorttitle']}}】<em>加盟详情</em></span>  @endif</div>
+                    <div class="join_tit" id="js_join_">@if(!empty($thisarticleinfos->jmxqtitle))  <h3 class="tit">{{$thisarticleinfos->jmxqtitle}}</h3> @else <span class="tit">【{{$thisarticleinfos['shorttitle']}}】<em>加盟详情</em></span>  @endif</div>
                     <div class="join_intro">
                         {!! $thisarticleinfos->article['jmxq_content'] !!}
                     </div>
-                    <div class="join_tit" id="js_join_2">@if(!empty($thisarticleinfos->jmzctitle))  <h3>{{$thisarticleinfos->jmzctitle}}</h3> @else <span class="tit">【{{$thisarticleinfos['shorttitle']}}】<em>加盟条件</em></span>  @endif </div>
-                    <div class="join_intro">
-                        {!! $thisarticleinfos->article['jmzc_content'] !!}
-                    </div>
-                    <div class="join_tit" id="js_join_3">@if(!empty($thisarticleinfos->jmlctitle))  <h3>{{$thisarticleinfos->jmlctitle}}</h3> @else <span class="tit">【{{$thisarticleinfos['shorttitle']}}】<em>加盟流程</em></span>  @endif </div>
-                    <div class="join_intro">
-                        {!! $thisarticleinfos->article['jmlc_content'] !!}
-                    </div>
-                    <div class="join_tit" id="js_join_4">@if(!empty($thisarticleinfos->jmystitle))  <h3>{{$thisarticleinfos->jmystitle}}</h3> @else <span class="tit">【{{$thisarticleinfos['shorttitle']}}】<em>加盟优势</em></span>   @endif </div>
+                    <div class="join_tit" id="js_join_2">@if(!empty($thisarticleinfos->jmystitle))  <h3 class="tit">{{$thisarticleinfos->jmystitle}}</h3> @else <span class="tit">【{{$thisarticleinfos['shorttitle']}}】<em>加盟优势</em></span>  @endif </div>
                     <div class="join_intro">
                         {!! $thisarticleinfos->article['jmys_content'] !!}
                     </div>
-                    <div class="join_tit" id="js_join_5">@if(!empty($thisarticleinfos->jmasktitle))  <h3>{{$thisarticleinfos->jmasktitle}}</h3> @else <span class="tit">【{{$thisarticleinfos['shorttitle']}}】<em>加盟问答</em></span>  @endif </div>
+                    <div class="join_tit" id="js_join_3">@if(!empty($thisarticleinfos->jmlctitle))  <h3 class="tit">{{$thisarticleinfos->jmlctitle}}</h3> @else <span class="tit">【{{$thisarticleinfos['shorttitle']}}】<em>加盟流程</em></span>  @endif </div>
+                    <div class="join_intro">
+                        {!! $thisarticleinfos->article['jmlc_content'] !!}
+                    </div>
+                    <div class="join_tit" id="js_join_4">@if(!empty($thisarticleinfos->jmzctitle))  <h3 class="tit">{{$thisarticleinfos->jmzctitle}}</h3> @else <span class="tit">【{{$thisarticleinfos['shorttitle']}}】<em>加盟政策</em></span>   @endif </div>
+                    <div class="join_intro">
+                        {!! $thisarticleinfos->article['jmzc_content'] !!}
+                    </div>
+                    <div class="join_tit" id="js_join_5">@if(!empty($thisarticleinfos->jmasktitle))  <h3 class="tit" >{{$thisarticleinfos->jmasktitle}}</h3> @else <span class="tit">【{{$thisarticleinfos['shorttitle']}}】<em>加盟问答</em></span>  @endif </div>
                     <div class="join_intro">
                         {!! $thisarticleinfos->article['jmask_content'] !!}
                     </div>

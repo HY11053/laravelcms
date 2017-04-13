@@ -42,7 +42,7 @@
                                 <td>{{$article->write}}</td>
                                 <td>{{$article->click}}</td>
                                 <td>@if($article->ismake) 已审核 @else <s class="red">未审核</s> @endif</td>
-                                <td class="astyle"><span class="label label-success"><a href="/{{$article->arctype->real_path}}/{{$article->id}}.shtml">预览</a></span><span class="label label-warning"><a href="/admin/article/edit/{{$article->id}}">编辑</a></span><span class="label label-danger"><a data-toggle="modal" data-target=".modal-sm{{$article->id}}" >删除</a></span>
+                                <td class="astyle"><span class="label label-success"><a href="/{{$article->arctype->real_path}}/{{$article->id}}.shtml" target="_blank">预览</a></span><span class="label label-warning"><a href="/admin/article/edit/{{$article->id}}">编辑</a></span><span class="label label-danger"><a data-toggle="modal" data-target=".modal-sm{{$article->id}}" >删除</a></span>
                                     <div class="modal fade modal-sm{{$article->id}}" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel{{$article->id}}">
                                         <div class="modal-dialog modal-sm modal-s-m{{$article->id}}" role="document">
                                             <div class="modal-content">

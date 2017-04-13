@@ -12,8 +12,8 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         //
-        factory('App\User',50)->create([
-
+        factory('App\User',1000)->create([
+            'password' => bcrypt('ysgppusers@')
         ]);
     }
 }

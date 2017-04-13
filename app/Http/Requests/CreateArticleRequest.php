@@ -24,12 +24,21 @@ class CreateArticleRequest extends FormRequest
     public function rules()
     {
         return [
-           'title'=>'required|max:50|min:5',
-            'shorttitle'=>'required|max:20',
-            'tags'=>'required|max:20',
+           //'title'=>'required|max:50|min:5',
+            //'shorttitle'=>'required|max:20',
+            //'tags'=>'required|max:20',
             'ismake'=>'required|numeric',
             'published_at'=>'date',
             'mid'=>'numeric',
+            'decorationpay'=>'numeric',
+            'quartersrent'=>'numeric',
+            'equipmentcost'=>'numeric',
+            'workingcapital'=>'numeric',
+            'laborquarter'=>'numeric',
+            'miscellaneous'=>'numeric',
+            'dailyvolume'=>'numeric',
+            'unitprice'=>'numeric',
+            'watercoal'=>'numeric',
             'body'=>'required',
             'image'=> 'mimes:jpeg,jpg,gif,bmp,png|image'
         ];
