@@ -1,0 +1,231 @@
+@extends('mobile.mobile')
+@section('main_content')
+
+    <!--分类开始-->
+    <div class="index_nav">
+        <ul>
+            <li><a href="/lingshidianpp/" class="icon1"><em></em>零食品牌</a></li>
+            <li><a href="/jinkoudian/" class="icon2"><em></em>炒货品牌</a></li>
+            <li><a href="/ganguodian/" class="icon3"><em></em>干果品牌</a></li>
+            <li><a href="/jinkoulingshi/" class="icon4"><em></em>进口零食</a></li>
+            <li><a href="/lingshizx/" class="icon5"><em></em>创业指导</a></li>
+            <li><a href="/ask/" class="icon6"><em></em>问答</a></li>
+            <li><a href="/zhanhui/" class="icon7"><em></em>展会信息</a></li>
+            <li><a href="/jinhuopf/" class="icon8"><em></em>进货批发</a></li>
+        </ul>
+    </div>
+    <!--分类结束-->
+
+    <!--最新品牌 开始-->
+    <div class="index_item">
+        <div class="common_tit">
+            <a class="tit" href="#">零食品牌</a>
+        </div>
+        <div class="bd">
+            <ul>
+                @foreach($lingshibrands as $lingshibrand)
+                <li>
+                    <a href="/{{$lingshibrand->arctype->real_path}}/{{$lingshibrand->id}}.shtml">
+                        <div class="img_show"><img src="{{$lingshibrand->litpic}}"/></div>
+                        <div class="cont">
+                            <p class="tit">{{$lingshibrand->shorttitle}}</p>
+                            <p class="desc">{{str_limit($lingshibrand->description,26,'...')}}</p>
+                            <p class="price">投资金额：<em>￥{{$lingshibrand->article->brandpay}}</em></p>
+                        </div>
+                    </a>
+                </li>
+                @endforeach
+            </ul>
+        </div>
+        <div class="list">
+            <ul>
+                @foreach($lingshibrandls as $index=>$lingshibrandl)
+                <li>
+                    <a href="/{{$lingshibrandl->arctype->real_path}}/{{$lingshibrandl->id}}.shtml">
+                        <i>{{$index}}</i><span>{{$lingshibrandl->shorttitle}}</span><em>已有{{$lingshibrandl->article->brandapply}}人申请</em>
+                    </a>
+                </li>
+              @endforeach
+            </ul>
+        </div>
+    </div>
+    <!--最新品牌 结束-->
+
+    <!--推荐品牌 开始-->
+    <div class="index_item">
+        <div class="common_tit">
+            <a class="tit" href="#">炒货品牌</a>
+        </div>
+        <div class="bd">
+            <ul>
+                @foreach($chaohuobrands as $chaohuobrand)
+                    <li>
+                        <a href="/{{$chaohuobrand->arctype->real_path}}/{{$chaohuobrand->id}}.shtml">
+                            <div class="img_show"><img src="{{$chaohuobrand->litpic}}"/></div>
+                            <div class="cont">
+                                <p class="tit">{{$chaohuobrand->shorttitle}}</p>
+                                <p class="desc">{{str_limit($chaohuobrand->description,26,'...')}}</p>
+                                <p class="price">投资金额：<em>￥{{$chaohuobrand->article->brandpay}}</em></p>
+                            </div>
+                        </a>
+                    </li>
+                @endforeach
+
+            </ul>
+        </div>
+        <div class="list">
+            <ul>
+                @foreach($chaohuobrandls as $index=>$chaohuobrandl)
+                    <li>
+                        <a href="/{{$chaohuobrandl->arctype->real_path}}/{{$chaohuobrandl->id}}.shtml">
+                            <i>{{$index}}</i><span>{{$chaohuobrandl->shorttitle}}</span><em>已有{{$chaohuobrandl->article->brandapply}}人申请</em>
+                        </a>
+                    </li>
+                @endforeach
+
+            </ul>
+        </div>
+    </div>
+    <!--推荐品牌 结束-->
+
+    <!--干果 开始-->
+    <div class="index_item">
+        <div class="common_tit">
+            <a class="tit" href="#">干果品牌</a>
+        </div>
+        <div class="bd">
+            <ul>
+                @foreach($ganguobrands as $ganguobrand)
+                    <li>
+                        <a href="/{{$ganguobrand->arctype->real_path}}/{{$ganguobrand->id}}.shtml">
+                            <div class="img_show"><img src="{{$ganguobrand->litpic}}"/></div>
+                            <div class="cont">
+                                <p class="tit">{{$ganguobrand->shorttitle}}</p>
+                                <p class="desc">{{str_limit($ganguobrand->description,26,'...')}}</p>
+                                <p class="price">投资金额：<em>￥{{$ganguobrand->article->brandpay}}</em></p>
+                            </div>
+                        </a>
+                    </li>
+                @endforeach
+
+            </ul>
+        </div>
+        <div class="list">
+            <ul>
+                @foreach($ganguobrandls as $index=>$ganguobrandl)
+                    <li>
+                        <a href="/{{$ganguobrandl->arctype->real_path}}/{{$ganguobrandl->id}}.shtml">
+                            <i>{{$index}}</i><span>{{$ganguobrandl->shorttitle}}</span><em>已有{{$ganguobrandl->article->brandapply}}人申请</em>
+                        </a>
+                    </li>
+                @endforeach
+
+            </ul>
+        </div>
+    </div>
+    <!--干果品牌 结束-->
+    <!--进口零食 开始-->
+    <div class="index_item">
+        <div class="common_tit">
+            <a class="tit" href="#">干果品牌</a>
+        </div>
+        <div class="bd">
+            <ul>
+                @foreach($jinkoubrands as $jinkoubrand)
+                    <li>
+                        <a href="/{{$jinkoubrand->arctype->real_path}}/{{$jinkoubrand->id}}.shtml">
+                            <div class="img_show"><img src="{{$jinkoubrand->litpic}}"/></div>
+                            <div class="cont">
+                                <p class="tit">{{$jinkoubrand->shorttitle}}</p>
+                                <p class="desc">{{str_limit($jinkoubrand->description,26,'...')}}</p>
+                                <p class="price">投资金额：<em>￥{{$jinkoubrand->article->brandpay}}</em></p>
+                            </div>
+                        </a>
+                    </li>
+                @endforeach
+
+            </ul>
+        </div>
+        <div class="list">
+            <ul>
+                @foreach($jinkoubrandls as $index=>$jinkoubrandl)
+                    <li>
+                        <a href="/{{$jinkoubrandl->arctype->real_path}}/{{$jinkoubrandl->id}}.shtml">
+                            <i>{{$index}}</i><span>{{$jinkoubrandl->shorttitle}}</span><em>已有{{$jinkoubrandl->article->brandapply}}人申请</em>
+                        </a>
+                    </li>
+                @endforeach
+
+            </ul>
+        </div>
+    </div>
+    <!--进口零食 结束-->
+    <!--最新品牌 开始-->
+    <div class="index_item">
+        <div class="common_tit">
+            <a class="tit" href="#">最新品牌</a>
+        </div>
+        <div class="bd">
+            <ul>
+                @foreach($newbrands as $newbrand)
+                    <li>
+                        <a href="/{{$newbrand->arctype->real_path}}/{{$newbrand->id}}.shtml">
+                            <div class="img_show"><img src="{{$newbrand->litpic}}"/></div>
+                            <div class="cont">
+                                <p class="tit">{{$newbrand->shorttitle}}</p>
+                                <p class="desc">{{str_limit($newbrand->description,26,'...')}}</p>
+                                <p class="price">投资金额：<em>￥{{$newbrand->article->brandpay}}</em></p>
+                            </div>
+                        </a>
+                    </li>
+                @endforeach
+
+            </ul>
+        </div>
+        <div class="list">
+            <ul>
+                @foreach($newbrandls as $index=>$newbrandl)
+                    <li>
+                        <a href="/{{$newbrandl->arctype->real_path}}/{{$newbrandl->id}}.shtml">
+                            <i>{{$index}}</i><span>{{$newbrandl->shorttitle}}</span><em>已有{{$newbrandl->article->brandapply}}人申请</em>
+                        </a>
+                    </li>
+                @endforeach
+
+            </ul>
+        </div>
+    </div>
+    <!--进口零食 结束-->
+    <!--加盟快讯 开始-->
+    <div class="index_news">
+        <div class="common_tit">
+            <a class="more" href="#">更多&gt;&gt;</a>
+            <a class="tit" href="#">加盟快讯</a>
+        </div>
+        <div class="bd">
+            <ul>
+                @foreach($newsarticles as $newsarticle)
+                <li><span class="date">{{$newsarticle->published_at}}</span><a class="txt" href="/{{$newsarticle->arctype->real_path}}/{{$newsarticle->id}}.shtml">{{$newsarticle->title}}</a></li>
+            @endforeach
+            </ul>
+        </div>
+    </div>
+    <!--加盟快讯 结束-->
+
+    <!--创业指南 开始-->
+    <div class="index_news">
+        <div class="common_tit">
+            <a class="more" href="#">更多&gt;&gt;</a>
+            <a class="tit" href="#">创业指南</a>
+        </div>
+        <div class="bd">
+            <ul>
+                @foreach($asks as $ask)
+                <li><span class="date">{{$ask->cerated_at}}</span><a class="txt" href="/ask/{{$ask->id}}.shtml">{{$ask->title}}</a></li>
+               @endforeach
+            </ul>
+        </div>
+    </div>
+    <!--创业指南 结束-->
+
+@stop

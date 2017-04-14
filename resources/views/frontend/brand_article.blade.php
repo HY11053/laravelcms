@@ -6,8 +6,7 @@
     <link rel="stylesheet" type="text/css" href="/reception/css/news.css"/>
 @stop
 @section('main_content')
-<div class="bn1190"><a href="#" target="_blank"><img src="/reception/images/temp/bn5.jpg" alt=""/></a></div>
-<div class="path">当前位置：<a href="#">首页</a> &gt; <a href="#">零售行业资讯</a></div>
+@include('frontend.position')
 
 <!--主体开始1-->
 <div class="main clearfix">
@@ -35,7 +34,7 @@
         <!--幻灯片结束-->
 
         <div class="info">
-            <div class="tit">【{{$thisarticleinfos['shorttitle']}}】</div>
+            <div class="tit">【{{$thisarticleinfos->article['brandname']}}】</div>
             <div class="detail">
                 <ul>
                     <li>投资金额：<span class="price">{{$thisarticleinfos->article['brandpay']}}</span></li>

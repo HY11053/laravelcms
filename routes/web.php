@@ -106,6 +106,9 @@ Route::get('phone',function(){
 });
 
 //前台界面
+Route::group(['domain' => 'm.shangjicms.com'], function () {
+    Route::get('/', 'Mobile\MobileController@Index');
+});
 Route::get('/','Frontend\IndexController@Index');
 Route::get('demo','Frontend\ComparisionController@demo');
 Route::get('xgsearch','Frontend\ComparisionController@xgsearch');
@@ -124,7 +127,7 @@ Route::get('map','Frontend\StatementController@map');
 Route::get('contact','Frontend\StatementController@contact');
 Route::post('project','Frontend\ProjectController@SearchAjax');
 Route::get('project/{p1?}-{p2?}-{p3?}-{p4?}.shtml','Frontend\ProjectController@Search');
-Route::get('{path?}','Frontend\BrandsController@BrandLists');
+Route::get('{path}','Frontend\BrandsController@BrandLists');
 Route::get('{path?}/page/{page}','Frontend\BrandsController@BrandLists')->name('pagelists');
 Route::get('{path?}/{id}.shtml','Frontend\BrandArticleController@BrandArticle');
 
