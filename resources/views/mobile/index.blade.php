@@ -4,14 +4,10 @@
     <!--分类开始-->
     <div class="index_nav">
         <ul>
-            <li><a href="/lingshidianpp/" class="icon1"><em></em>零食品牌</a></li>
-            <li><a href="/jinkoudian/" class="icon2"><em></em>炒货品牌</a></li>
-            <li><a href="/ganguodian/" class="icon3"><em></em>干果品牌</a></li>
-            <li><a href="/jinkoulingshi/" class="icon4"><em></em>进口零食</a></li>
-            <li><a href="/lingshizx/" class="icon5"><em></em>创业指导</a></li>
-            <li><a href="/ask/" class="icon6"><em></em>问答</a></li>
-            <li><a href="/zhanhui/" class="icon7"><em></em>展会信息</a></li>
-            <li><a href="/jinhuopf/" class="icon8"><em></em>进货批发</a></li>
+            @foreach($headers as $index=>$header)
+
+            <li><a href="{{$header->real_path}}" class="icon{{$index}}"><em></em>{{$header->typename}}</a></li>
+            @endforeach
         </ul>
     </div>
     <!--分类结束-->
@@ -19,7 +15,7 @@
     <!--最新品牌 开始-->
     <div class="index_item">
         <div class="common_tit">
-            <a class="tit" href="#">零食品牌</a>
+            <a class="tit" href="/{{\App\AdminModel\Arctype::where('id',1)->value('real_path')}}/">零食品牌</a>
         </div>
         <div class="bd">
             <ul>
@@ -54,7 +50,7 @@
     <!--推荐品牌 开始-->
     <div class="index_item">
         <div class="common_tit">
-            <a class="tit" href="#">炒货品牌</a>
+            <a class="tit" href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}/">炒货品牌</a>
         </div>
         <div class="bd">
             <ul>
@@ -91,7 +87,7 @@
     <!--干果 开始-->
     <div class="index_item">
         <div class="common_tit">
-            <a class="tit" href="#">干果品牌</a>
+            <a class="tit" href="/{{\App\AdminModel\Arctype::where('id',4)->value('real_path')}}/">干果品牌</a>
         </div>
         <div class="bd">
             <ul>
@@ -127,7 +123,7 @@
     <!--进口零食 开始-->
     <div class="index_item">
         <div class="common_tit">
-            <a class="tit" href="#">干果品牌</a>
+            <a class="tit" href="/{{\App\AdminModel\Arctype::where('id',1)->value('real_path')}}/">进口零食品牌</a>
         </div>
         <div class="bd">
             <ul>
@@ -163,7 +159,7 @@
     <!--最新品牌 开始-->
     <div class="index_item">
         <div class="common_tit">
-            <a class="tit" href="#">最新品牌</a>
+            <a class="tit" href="">最新品牌</a>
         </div>
         <div class="bd">
             <ul>
@@ -199,8 +195,8 @@
     <!--加盟快讯 开始-->
     <div class="index_news">
         <div class="common_tit">
-            <a class="more" href="#">更多&gt;&gt;</a>
-            <a class="tit" href="#">加盟快讯</a>
+            <a class="more" href="/{{\App\AdminModel\Arctype::where('id',2)->value('real_path')}}/">更多&gt;&gt;</a>
+            <a class="tit" href="/{{\App\AdminModel\Arctype::where('id',2)->value('real_path')}}/">加盟快讯</a>
         </div>
         <div class="bd">
             <ul>
@@ -215,13 +211,13 @@
     <!--创业指南 开始-->
     <div class="index_news">
         <div class="common_tit">
-            <a class="more" href="#">更多&gt;&gt;</a>
-            <a class="tit" href="#">创业指南</a>
+            <a class="more" href="/ask/">更多&gt;&gt;</a>
+            <a class="tit" href="/ask/">创业指南</a>
         </div>
         <div class="bd">
             <ul>
                 @foreach($asks as $ask)
-                <li><span class="date">{{$ask->cerated_at}}</span><a class="txt" href="/ask/{{$ask->id}}.shtml">{{$ask->title}}</a></li>
+                <li><span class="date">{{$ask->created_at}}</span><a class="txt" href="/ask/{{$ask->id}}.shtml">{{$ask->title}}</a></li>
                @endforeach
             </ul>
         </div>

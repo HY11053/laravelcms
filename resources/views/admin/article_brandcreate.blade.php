@@ -433,44 +433,7 @@
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 }
             });
-            $('.summernote').summernote({
-                height: 300,
-                lang : 'zh-CN',
-                callbacks: {
-                    onImageUpload: function(files) {
-                        //上传图片到服务器，使用了formData对象，至于兼容性...据说对低版本IE不太友好
-                        var formData = new FormData();
-                        var thisnode=$(this).attr('id');
-                        formData.append('file',files[0]);
-                        $.ajax({
-                            type: 'POST',
-                            url : '/admin/upload/articleimages',//后台文件上传接口
-                            data : formData,
-                            enctype: 'multipart/form-data',
-                            processData : false,
-                            contentType : false,
-                            success: function(filename) {
-                                var file_path ='/images/thread/'+ filename;
-                                //console.log(file_path);
-                                $('#'+thisnode).summernote("insertImage", file_path);
-                            }
-                        });
-                    },
-                    onChange: function(contents, $editable) {
-                        // console.log('onChange:', contents, $editable);
-                        //alert();
-                        $("#"+$(this).attr('id')+'contcontents').val(contents)
-                        //alert($(this).contents);
-                        //$("#lawsContent").val(contents)
-                        //console.log($("#"+$(this).attr('id')+'contcontents').val())
-                    },
-                }
-            });
-
-
-
         })
-
     </script>
 
     <script>

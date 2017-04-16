@@ -105,23 +105,24 @@ input[type="search"]::-webkit-search-decoration {-webkit-appearance:none}
 
 
 /*分页*/
-.page { height: 28px; text-align: center; background: #fff; padding: 5px 0 35px 0; margin-bottom: 15px; }
-.page ol {
+.pagination { height: 28px; text-align: center; background: #fff; padding: 5px 0 35px 0; margin-bottom: 15px; }
+ul.pagination {
 *zoom:1; display: inline; }
-.page ol li {
+ul.pagination li {
 *zoom:1; display: inline-block; height: 28px; line-height: 28px; overflow: hidden; margin: 0 2px; }
-* html .page ol li { margin: 0 3px; }
-* html .page ol li { display: inline; }
-.page a {
+* html ul.pagination li { margin: 0 3px; }
+* html ul.pagination li { display: inline; }
+.pagination a {
 *zoom:1; display: inline-block; }
-.page a, .page span, .page span a {
+.pagination a, .paginationspan, .pagination span a {
 *zoom:1; display: inline-block; }
-.page a { padding: 0 10px; height: 28px; line-height: 28px; border: 1px solid #DFDFDF; color: #333; background-color: #fff; box-sizing: border-box; }
-.page ol li a:hover { background: #f6f6f6; border: 1px solid #ddd; color: #333; }
-.page ol li a { font-family: Arial, Helvetica, sans-serif; }
-.page ol li.thisclass { font-family: Arial, Helvetica, sans-serif; background-color: #E94338; color: #fff; font-weight: bold; padding: 0 10px; height: 28px; line-height: 28px; }
-.page ol li .pageinfo { color: #666; }
-.page ol li strong { color: #E94338; font-weight: 100; padding: 0 2px; }
+.brand_list ul.pagination li{display: inline-block; padding: 5px;}
+.pagination a { padding: 0 10px; height: 28px; line-height: 28px; border: 1px solid #DFDFDF; color: #333; background-color: #fff; box-sizing: border-box; }
+ul.pagination li a:hover { background: #f6f6f6; border: 1px solid #ddd; color: #333; }
+ul.pagination li a { font-family: Arial, Helvetica, sans-serif; }
+ul.pagination li.active { font-family: Arial, Helvetica, sans-serif; background-color: #E94338; color: #fff; font-weight: bold; padding: 0 10px; height: 28px; line-height: 28px; }
+ul.pagination li .pageinfo { color: #666; }
+ul.pagination li strong { color: #E94338; font-weight: 100; padding: 0 2px; }
 
 
 /*普通文章列表页*/

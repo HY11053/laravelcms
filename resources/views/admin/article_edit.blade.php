@@ -321,9 +321,9 @@
                         <h3 class="timeline-header"><a href="#">文档处理</a>文章内容编辑</h3>
 
                         <div class="timeline-body">
-                            @include('admin.layouts.summernote')
-
-                            <div style="display: none">{{Form::textarea('body', null, array('id'=>'lawsContent'))}}</div>
+                        @include('admin.layouts.ueditor')
+                            <!-- 编辑器容器 -->
+                            <script id="container" name="body" type="text/plain" style="height:500px" > {!! $articleinfos->body!!}</script>
                         </div>
                         <div class="timeline-footer">
                             <button type="submit"  class="btn btn-md bg-maroon">提交文档</button>
@@ -374,49 +374,13 @@
 
 
     <script>
-
-
-
         $(document).ready(function() {
             $.ajaxSetup({
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 }
             });
-            $('#summernote').summernote({
-                height: 500,
-                lang : 'zh-CN',
-                callbacks: {
-                    onImageUpload: function(files) {
-                        //上传图片到服务器，使用了formData对象，至于兼容性...据说对低版本IE不太友好
-                        var formData = new FormData();
-                        formData.append('file',files[0]);
-                        $.ajax({
-                            type: 'POST',
-                            url : '/admin/upload/articleimages',//后台文件上传接口
-                            data : formData,
-                            enctype: 'multipart/form-data',
-                            processData : false,
-                            contentType : false,
-                            success: function(filename) {
-                                var file_path ='/images/thread/'+ filename;
-                                console.log(file_path);
-                                $('#summernote').summernote("insertImage", file_path);
-                            }
-                        });
-                    },
-                    onChange: function(contents, $editable) {
-                        // console.log('onChange:', contents, $editable);
-                        $("#lawsContent").val(contents)
-                        console.log($("#lawsContent").val())
-                    },
-                }
-            });
-
-
-
         })
-
     </script>
 
     <script>
@@ -460,8 +424,6 @@
                         "{{$pic}}",
                 // IMAGE DATA
                 @endforeach
-
-
             ],
             initialPreviewAsData: true, // identify if you are sending preview data only and not the raw markup
             initialPreviewFileType: 'image', // image is the default and can be overridden in config below

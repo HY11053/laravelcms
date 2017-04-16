@@ -3,7 +3,7 @@
         Options -MultiViews
     </IfModule>
 RewriteEngine On
-    RedirectMatch permanent ^/([^admin])([\w\/]+[^/]$) /$1$2/
+    RedirectMatch permanent ^/([^admin|uploads])([\w\/]+[^/]$) /$1$2/
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
