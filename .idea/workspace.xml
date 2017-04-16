@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3319fa8-ff1b-48ab-89cf-976377a9e35d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/ueditor.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/mobile/article_article.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/mobile/brand_article.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/mobile/brands_list.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/mobile/header.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/mobile/lists.blade.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/mobiles/articleinfo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/mobiles/articlelist.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/mobiles/brandinfo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/mobiles/brandlist.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/mobiles/index.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/icons.png" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/images/icons.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/laravel5.3cms.iml" afterPath="$PROJECT_DIR$/.idea/laravel5.3cms.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Mobile/MobileController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Mobile/MobileController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/.htaccess" afterPath="$PROJECT_DIR$/public/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/mobiles/css/css.css" afterPath="$PROJECT_DIR$/public/mobiles/css/css.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/css/ueditor.css" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/default/css/ueditor.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendor/ueditor/themes/iframe.css" afterPath="$PROJECT_DIR$/public/vendor/ueditor/themes/iframe.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/article_brandcreate.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/article_brandcreate.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/article_brandedit.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/article_brandedit.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/article_create.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/article_create.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/article_edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/article_edit.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/askadd.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/askadd.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/layouts/brand_summernote.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/brand_summernote.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/mobile/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/mobile/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/mobile/mobile.blade.php" afterPath="$PROJECT_DIR$/resources/views/mobile/mobile.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -685,7 +657,7 @@
     <property name="nodejs_interpreter_path" value="$PROJECT_DIR$/../../bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="$PROJECT_DIR$/../../bin/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cs_ysgjiameng" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../child2" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://F:/wamp64/www/laravelcms/resources/views/admin/article_create.blade.php&#10;iframe&#9;FILE&#9;file://F:/wamp64/www/laravelcms/public/vendor/ueditor/themes/iframe.css&#10;uedi&#9;FILE&#9;file://F:/wamp64/www/laravelcms/public/vendor/ueditor/themes/default/css/ueditor.css&#10;.htacc&#9;FILE&#9;file://F:/wamp64/www/laravelcms/public/.htaccess&#10;.ha&#9;null&#9;null&#10;web&#9;FILE&#9;file://F:/wamp64/www/laravelcms/routes/web.php&#10;css.css&#9;FILE&#9;file://F:/wamp64/www/laravelcms/public/mobiles/css/css.css&#10;index&#9;FILE&#9;file://F:/wamp64/www/laravelcms/app/Http/Controllers/Frontend/IndexController.php&#10;mob&#9;FILE&#9;file://F:/wamp64/www/laravelcms/app/Http/Controllers/Mobile/MobileController.php&#10;ask&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/askadd.blade.php&#10;brand&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/article_brandcreate.blade.php&#10;pos&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Position.php&#10;fron&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/frontend.blade.php&#10;bra&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/brand_article.blade.php&#10;fronte&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/frontend.blade.php&#10;article_b&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/article_brandedit.blade.php&#10;article&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/article_brandcreate.blade.php&#10;indexc&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/IndexController.php&#10;route&#9;null&#9;null&#10;hta&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/.htaccess&#10;brands&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/brands.blade.php&#10;ar&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/brand_article.blade.php&#10;we&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/routes/web.php&#10;head&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Header.php&#10;29551ee6dfd9d9947617db7d88204ee70bea0cd.php&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/storage/framework/views/f29551ee6dfd9d9947617db7d88204ee70bea0cd.php&#10;article.b&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/article.blade.php&#10;.en&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/.env&#10;CommentReversionController&#9;FILE&#9;file:///usr/local/websites/laravelcmsgit/app/Http/Controllers/Frontend/CommentReversionController.php&#10;ComparisionController&#9;null&#9;null&#10;addona&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/AdminModel/Addonarticle.php&#10;style&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/css/style.css&#10;archive&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/AdminModel/Archive.php&#10;brand_su&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/layouts/brand_summernote.blade.php&#10;article_a&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/article_article.blade.php&#10;branda&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/BrandArticleController.php&#10;addonarticle&#9;null&#9;null&#10;news&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/css/news.css&#10;comm&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/comment.blade.php&#10;index.js&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/js/index.js&#10;news.css&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/css/news.css&#10;sty&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/public/reception/css/style.css&#10;brand_a&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/brand_article.blade.php&#10;ask_&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/ask_article.blade.php&#10;footer&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/admin/layouts/footer.blade.php&#10;BrandsController&#9;null&#9;null&#10;BrandArticleController&#9;null&#9;null&#10;comme&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/comment.blade.php&#10;commen&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/CommentController.php&#10;aska&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/resources/views/frontend/ask_article.blade.php&#10;askc&#9;FILE&#9;file://F:/wamp64/www/shangji_v2/app/Http/Controllers/Frontend/AskController.php" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -848,12 +820,12 @@
       <workItem from="1492054228119" duration="4877000" />
       <workItem from="1492140666665" duration="17386000" />
       <workItem from="1492229521965" duration="13410000" />
-      <workItem from="1492328453920" duration="15348000" />
+      <workItem from="1492328453920" duration="15806000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="729925000" />
+    <option name="totallyTimeSpent" value="730383000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
