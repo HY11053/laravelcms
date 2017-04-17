@@ -107,7 +107,7 @@
                                                 'emotion', 'fullscreen']
                                         ],
                                         elementPathEnabled: false,
-                                        enableContextMenu: false,
+                                       enableContextMenu: true,
                                         autoClearEmptyNode:true,
                                         wordCount:false,
                                         imagePopup:false,
@@ -205,7 +205,7 @@
                                                 'emotion', 'fullscreen']
                                         ],
                                         elementPathEnabled: false,
-                                        enableContextMenu: false,
+                                       enableContextMenu: true,
                                         autoClearEmptyNode:true,
                                         wordCount:false,
                                         imagePopup:false,
@@ -304,7 +304,7 @@
                                                 'emotion', 'fullscreen']
                                         ],
                                         elementPathEnabled: false,
-                                        enableContextMenu: false,
+                                       enableContextMenu: true,
                                         autoClearEmptyNode:true,
                                         wordCount:false,
                                         imagePopup:false,
@@ -403,7 +403,7 @@
                                                 'emotion', 'fullscreen']
                                         ],
                                         elementPathEnabled: false,
-                                        enableContextMenu: false,
+                                       enableContextMenu: true,
                                         autoClearEmptyNode:true,
                                         wordCount:false,
                                         imagePopup:false,
@@ -502,7 +502,7 @@
                                                 'emotion', 'fullscreen']
                                         ],
                                         elementPathEnabled: false,
-                                        enableContextMenu: false,
+                                       enableContextMenu: true,
                                         autoClearEmptyNode:true,
                                         wordCount:false,
                                         imagePopup:false,

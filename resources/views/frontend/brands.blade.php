@@ -90,12 +90,12 @@
             @foreach($pagelists as $pagelist)
             <div class="brand_list_item">
                 <div class="pro-Img fl">
-                    <a target="_blank" href="/{{$pagelist->arctype->real_path}}/{{$pagelist->id}}.shtml" class="pp-pic-name" title="{{$pagelist->shorttitle}}"><img src="{{$pagelist->litpic}}" alt="{{$pagelist->shorttitle}}"></a>
+                    <a target="_blank" href="/{{$pagelist->arctype->real_path}}/{{$pagelist->id}}.shtml" class="pp-pic-name" title="{{$pagelist->article->brandname}}"><img src="{{$pagelist->litpic}}" alt="{{$pagelist->article->brandname}}"></a>
                     <p class="pro_p">{!! strip_tags($pagelist->description) !!}</p>
                 </div>
                 <div class="indrouce-r fl">
                     <div class="list list-one">
-                        <a target="_blank" href="/{{$pagelist->arctype->real_path}}/{{$pagelist->id}}.shtml" title="{{$pagelist->shorttitle}}"><h3 class="list-Name fl">{{$pagelist->shorttitle}}</h3></a>
+                        <a target="_blank" href="/{{$pagelist->arctype->real_path}}/{{$pagelist->id}}.shtml" title="{{$pagelist->article->brandname}}"><h3 class="list-Name fl">{{$pagelist->article->brandname}}</h3></a>
                         <span class="money fr h4">投资额度：&nbsp;<em class="red">{{$pagelist->article->brandpay}}</em>&nbsp;&nbsp;&nbsp;所在地区：&nbsp;<em class="red">{{$pagelist->article->brandorigin}}</em>&nbsp;&nbsp;</span>
                     </div>
                     <div class="list list-two">

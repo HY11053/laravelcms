@@ -54,7 +54,7 @@
                 'emotion', 'fullscreen']
         ],
         elementPathEnabled: false,
-        enableContextMenu: false,
+        enableContextMenu: true,
         autoClearEmptyNode:true,
         wordCount:false,
         imagePopup:false,
