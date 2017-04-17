@@ -2,6 +2,17 @@
 @section('title') {{ config('app.webname', '零食加盟网') }} @stop
 @section('keywords') {{ config('app.keywords', '零食加盟网') }} @stop
 @section('description') {{ config('app.description', '零食加盟网') }} @stop
+@section('headlibs')
+    <meta name="Copyright" content="58零食网-{{env('APP_URL')}}"/>
+    <meta name="author" content="58零食网" />
+    <meta http-equiv="mobile-agent" content="format=wml; url={{str_replace('http://www.','http://m.',env('APP_URL'))}}" />
+    <meta http-equiv="mobile-agent" content="format=xhtml; url={{str_replace('http://www.','http://m.',env('APP_URL'))}}" />
+    <meta http-equiv="mobile-agent" content="format=html5; url={{str_replace('http://www.','http://m.',env('APP_URL'))}}" />
+    <link rel="alternate" media="only screen and(max-width: 640px)" href="{{str_replace('http://www.','http://m.',env('APP_URL'))}}" >
+    <link rel="canonical" href="{{env('APP_URL')}}"/>
+    <meta name="applicable-device" content="pc" />
+    <meta property="og:image" content="{{env('APP_URL')}}/reception/images/logo.jpg"/>
+@stop
 @section('subnav')
     <div class="sub_nav">
         <dl>
@@ -126,8 +137,8 @@
                     </div>
                     <div class="bd">
                         <ul>
-                            <li><a href="#" target="_blank"><img src="/reception/images/temp/banner1.jpg" /></a></li>
-                            <li><a href="#" target="_blank"><img src="/reception/images/temp/banner2.jpg" /></a></li>
+                            <li><a href="/chaohuodian/5.shtml" target="_blank"><img src="/reception/images/temp/banner1.jpg" /></a></li>
+                            <li><a href="/lingshidianpp/38.shtml" target="_blank"><img src="/reception/images/temp/banner2.jpg" /></a></li>
                             <li><a href="#" target="_blank"><img src="/reception/images/temp/banner3.jpg" /></a></li>
                             <li><a href="#" target="_blank"><img src="/reception/images/temp/banner4.jpg" /></a></li>
                         </ul>
@@ -167,10 +178,10 @@
                         <span>61{{\App\AdminModel\Archive::where('mid',1)->count()}}</span>
                     </p>
                     <ul>
-                        <li><a href="#" title="【三只松鼠】森林系零食品牌 不负好时光" target="_blank">【三只松鼠】森林系零食品牌 不负好时光</a></li>
-                        <li><a href="#" title="【良品铺子】良心品质 百年铺子" target="_blank">【良品铺子】良心品质 百年铺子</a></li>
+                        <li><a href="/chaohuodian/5.shtml" title="【三只松鼠】森林系零食品牌 不负好时光" target="_blank">【三只松鼠】森林系零食品牌 不负好时光</a></li>
+                        <li><a href="/lingshidianpp/38.shtml" title="【良品铺子】良心品质 百年铺子" target="_blank">【良品铺子】良心品质 百年铺子</a></li>
                         <li><a href="#" title="【一扫光】13国原料采购 0经验无忧开店" target="_blank">【一扫光】13国原料采购 0经验无忧开店</a></li>
-                        <li><a href="#" title="【来伊份】带你吃遍满天新" target="_blank">【来伊份】带你吃遍满天新</a></li>
+                        <li><a href="/lingshidianpp/35.shtml" title="【来伊份】带你吃遍满天新" target="_blank">【来伊份】带你吃遍满天新</a></li>
                         <li><a href="#" title="百草味】国民品牌 百草味 知心知味" target="_blank">【百草味】国民品牌 百草味 知心知味</a></li>
                     </ul>
                     <div class="btn"><a href="#">马上找好项目</a></div>
@@ -179,12 +190,12 @@
                     <div class="hd">创业必备工具</div>
                     <div class="bd">
                         <ul>
-                            <li><a href="#" target="_blank" title="成本计算"><img src="/reception/images/icon_1.png">成本计算</a></li>
-                            <li><a href="#" target="_blank" title="贷款计算"><img src="/reception/images/icon_2.png">贷款计算</a></li>
-                            <li><a href="#" target="_blank" title="投资预测"><img src="/reception/images/icon_3.png">投资预测</a></li>
-                            <li><a href="#" target="_blank" title="创业红包"><img src="/reception/images/icon_4.png">创业红包</a></li>
-                            <li><a href="#" target="_blank" title="先行赔付"><img src="/reception/images/icon_5.png">先行赔付</a></li>
-                            <li><a href="#" target="_blank" title="一扫光金融"><img src="/reception/images/icon_6.png">一扫光金融</a></li>
+                            <li><a href="javascript:;" rel="nofollow" target="_self" title="成本计算"><img src="/reception/images/icon_1.png">成本计算</a></li>
+                            <li><a href="javascript:;" rel="nofollow" target="_self"  title="贷款计算"><img src="/reception/images/icon_2.png">贷款计算</a></li>
+                            <li><a href="javascript:;" rel="nofollow" target="_self"  title="投资预测"><img src="/reception/images/icon_3.png">投资预测</a></li>
+                            <li><a href="javascript:;" rel="nofollow" target="_self"  title="创业红包"><img src="/reception/images/icon_4.png">创业红包</a></li>
+                            <li><a href="javascript:;" rel="nofollow" target="_self"  title="先行赔付"><img src="/reception/images/icon_5.png">先行赔付</a></li>
+                            <li><a href="javascript:;" rel="nofollow" target="_self"  title="一扫光金融"><img src="/reception/images/icon_6.png">一扫光金融</a></li>
                         </ul>
                     </div>
                 </div>
@@ -199,13 +210,13 @@
             <div class="hd">
                 <span class="tit">创业好店</span>
                 @foreach($cybrands as $cybrand)
-                <span class="txt"><a href="/{{$cybrand->arctype->real_path}}/{{$cybrand->id}}.shtml" target="_blank">{{$cybrand->shorttitle}}</a> |  </span>
+                <span class="txt"><a href="/{{$cybrand->arctype->real_path}}/{{$cybrand->id}}.shtml" target="_blank">{{$cybrand->article->brandname}}</a> |  </span>
                 @endforeach
             </div>
             <div class="bd">
                 <ul>
                     @foreach($cysbrands as $cysbrand)
-                    <li><a href="/{{$cysbrand->arctype->real_path}}/{{$cysbrand->id}}.shtml" target="_blank"><img src="{{$cysbrand->litpic}}" title="{{$cysbrand->shorttitle}}" alt="{{$cysbrand->shorttitle}}"><span>{{$cysbrand->shorttitle}}</span></a></li>
+                    <li><a href="/{{$cysbrand->arctype->real_path}}/{{$cysbrand->id}}.shtml" target="_blank"><img src="{{$cysbrand->litpic}}" title="{{$cysbrand->article->brandname}}" alt="{{$cysbrand->article->brandname}}"><span>{{$cysbrand->article->brandname}}</span></a></li>
                     @endforeach
                 </ul>
             </div>
@@ -225,16 +236,16 @@
         <!--第三部分 开始-->
         <div class="index_box3 clearfix">
             <div class="index_box3_l">
-                <div class="img_show"><a href="#" target="_blank"><img src="/reception/images/index_pic1.jpg" alt="零食店加盟"/></a></div>
-                <p class="tit"><a href="/lsbrand" target="_blank">零食店加盟</a></p>
+                <div class="img_show"><a href="/{{\App\AdminModel\Arctype::where('id',1)->value('real_path')}}/" target="_blank"><img src="/reception/images/index_pic1.jpg" alt="零食店加盟"/></a></div>
+                <p class="tit"><a href="/{{\App\AdminModel\Arctype::where('id',1)->value('real_path')}}/" target="_blank">零食店加盟</a></p>
                 <p class="desc">中西美食 烹炸涮烤</p>
-                <p class="more"><a href="/lsbrand" target="_blank">查看详情&gt;</a></p>
+                <p class="more"><a href="/{{\App\AdminModel\Arctype::where('id',1)->value('real_path')}}/" target="_blank">查看详情&gt;</a></p>
             </div>
             <div class="index_box3_r">
                 <div class="hd">
                     <span class="tit">零食品牌</span>
                     <span class="desc">美式快餐 抢占商机</span>
-                    <span class="more"><a href="/lsbrand" target="_blank">更多&gt;&gt;</a></span>
+                    <span class="more"><a href="/{{\App\AdminModel\Arctype::where('id',1)->value('real_path')}}/" target="_blank">更多&gt;&gt;</a></span>
                 </div>
                 <div class="bd">
                     <div class="bd_l">
@@ -271,16 +282,16 @@
         <!--第四部分 开始-->
         <div class="index_box3 clearfix">
             <div class="index_box3_l h420">
-                <div class="img_show"><a href="/chaohuodian" target="_blank"><img src="/reception/images/index_pic2.jpg" alt="炒货品牌"/></a></div>
-                <p class="tit"><a href="/chaohuodian" target="_blank">炒货品牌</a></p>
+                <div class="img_show"><a href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}/" target="_blank"><img src="/reception/images/index_pic2.jpg" alt="炒货品牌"/></a></div>
+                <p class="tit"><a href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}/" target="_blank">炒货品牌</a></p>
                 <p class="desc">中西美食 烹炸涮烤</p>
-                <p class="more"><a href="/chaohuodian" target="_blank">查看详情&gt;</a></p>
+                <p class="more"><a href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}/" target="_blank">查看详情&gt;</a></p>
             </div>
             <div class="index_box3_r">
                 <div class="hd">
                     <span class="tit">炒货品牌</span>
                     <span class="desc">美式快餐 抢占商机</span>
-                    <span class="more"><a href="/chaohuodian" target="_blank">更多&gt;&gt;</a></span>
+                    <span class="more"><a href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}/" target="_blank">更多&gt;&gt;</a></span>
                 </div>
                 <div class="bd">
                     <div class="bd_l">
@@ -312,16 +323,16 @@
         <!--第五部分 开始-->
         <div class="index_box3 clearfix">
             <div class="index_box3_l h420">
-                <div class="img_show"><a href="#" target="_blank"><img src="/reception/images/index_pic3.jpg" alt="进口零食"/></a></div>
-                <p class="tit"><a href="/jinkoulingshi" target="_blank">进口零食</a></p>
+                <div class="img_show"><a href="/{{\App\AdminModel\Arctype::where('id',5)->value('real_path')}}/" target="_blank"><img src="/reception/images/index_pic3.jpg" alt="进口零食"/></a></div>
+                <p class="tit"><a href="/{{\App\AdminModel\Arctype::where('id',5)->value('real_path')}}/" target="_blank">进口零食</a></p>
                 <p class="desc">中西美食 烹炸涮烤</p>
-                <p class="more"><a href="/jinkoulingshi" target="_blank">查看详情&gt;</a></p>
+                <p class="more"><a href="/{{\App\AdminModel\Arctype::where('id',5)->value('real_path')}}/" target="_blank">查看详情&gt;</a></p>
             </div>
             <div class="index_box3_r">
                 <div class="hd">
                     <span class="tit">进口零食</span>
                     <span class="desc">美式快餐 抢占商机</span>
-                    <span class="more"><a href="/jinkoulingshi" target="_blank">更多&gt;&gt;</a></span>
+                    <span class="more"><a href="/{{\App\AdminModel\Arctype::where('id',5)->value('real_path')}}/" target="_blank">更多&gt;&gt;</a></span>
                 </div>
                 <div class="bd">
                     <div class="bd_l">

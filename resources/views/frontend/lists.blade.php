@@ -3,12 +3,18 @@
 @section('keywords') {{$thistypeinfo->keywords}} @stop
 @section('description')  {{$thistypeinfo->description}}  @stop
 @section('headlibs')
+    <meta name="Copyright" content="58零食网-{{env('APP_URL')}}"/>
+    <meta name="author" content="58零食网" />
+    <meta http-equiv="mobile-agent" content="format=wml; url={{str_replace('http://www.','http://m.',env('APP_URL'))}}{{Request::getrequesturi()}}" />
+    <meta http-equiv="mobile-agent" content="format=xhtml; url={{str_replace('http://www.','http://m.',env('APP_URL'))}}{{Request::getrequesturi()}}" />
+    <meta http-equiv="mobile-agent" content="format=html5; url={{str_replace('http://www.','http://m.',env('APP_URL'))}}{{Request::getrequesturi()}}" />
+    <link rel="alternate" media="only screen and(max-width: 640px)" href="{{str_replace('http://www.','http://m.',env('APP_URL'))}}{{Request::getrequesturi()}}" >
+    <link rel="canonical" href="{{env('APP_URL')}}{{Request::getrequesturi()}}"/>
+    <meta name="applicable-device" content="pc" />
     <link rel="stylesheet" type="text/css" href="/reception/css/news.css"/>
 @stop
 @section('main_content')
     @include('frontend.position')
-
-<!--主体开始-->
 <div class="main clearfix">
     <div class="center_list clearfix">
         <!--左边内容开始-->
@@ -30,7 +36,7 @@
             <!--分页 开始-->
 
             <div class="page">
-                {!! $pagelists->links() !!}
+                {!! preg_replace('/<a href=[\'\"]?([^\'\" ]+).*?>/','<a href="${1}/">',$pagelists->links()) !!}
             </div>
 
             <!--分页 结束-->

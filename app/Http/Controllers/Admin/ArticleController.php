@@ -131,6 +131,7 @@ class ArticleController extends Controller
      */
     function PostEdit(CreateArticleRequest $request,$id)
     {
+        //dd($request->all());
 
         if(isset($request['flags']))
         {

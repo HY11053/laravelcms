@@ -292,7 +292,7 @@
                    @include('admin.layouts.ueditor')
 
                         <!-- 编辑器容器 -->
-                        <script id="container" name="body" type="text/plain" style="height:500px"></script>
+                        <script id="container" name="body" type="text/plain" ></script>
                         <!--<div style="display: none"><textarea  name="body" id="lawsContent"></textarea></div>-->
                     </div>
                     <div class="timeline-footer">

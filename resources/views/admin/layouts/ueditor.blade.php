@@ -56,6 +56,7 @@
         elementPathEnabled: false,
         enableContextMenu: true,
         autoClearEmptyNode:true,
+        initialFrameHeight:500,
         wordCount:false,
         imagePopup:false,
         autotypeset:{ indent: true,imageBlockLine: 'center' }

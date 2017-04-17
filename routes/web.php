@@ -109,7 +109,7 @@ Route::get('phone',function(){
 Route::group(['domain' => 'm.laravelcms.com'], function () {
     Route::get('/', 'Mobile\MobileController@Index');
     Route::get('{path}','Mobile\MobileController@BrandLists');
-    Route::get('{path?}/page/{page}','Mobile\MobileController@BrandLists')->name('pagelists');
+    Route::get('{path?}/page/{page}/','Mobile\MobileController@BrandLists')->name('pagelists');
     Route::get('{path?}/{id}.shtml','Mobile\MobileController@BrandArticle');
 });
 Route::get('/','Frontend\IndexController@Index');
@@ -131,7 +131,7 @@ Route::get('contact','Frontend\StatementController@contact');
 Route::post('project','Frontend\ProjectController@SearchAjax');
 Route::get('project/{p1?}-{p2?}-{p3?}-{p4?}.shtml','Frontend\ProjectController@Search');
 Route::get('{path}','Frontend\BrandsController@BrandLists');
-Route::get('{path?}/page/{page}','Frontend\BrandsController@BrandLists')->name('pagelists');
+Route::get('{path?}/page/{page}/','Frontend\BrandsController@BrandLists')->name('pagelists');
 Route::get('{path?}/{id}.shtml','Frontend\BrandArticleController@BrandArticle');
 
 

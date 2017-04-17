@@ -5,7 +5,7 @@
         <div class="inner">
             <div class="top_l">您好，欢迎访问零食加盟网！</div>
             <div class="top_r">
-                <div class="tel">7*24小时免费直拨 400-618-1717</div>
+                <div class="tel">7*24小时免费直拨 400-8896-216</div>
                 <div class="add_wx" id="js_add_wx">
                     <img src="/reception/images/wx_link.jpg" width="76" height="22" alt="官方微信"/>
                     <div class="wx_drop_down">
@@ -13,7 +13,7 @@
                     </div>
                 </div>
                 <div class="add_wb">
-                    <iframe scrolling="no" allowtransparency="true" marginwidth="0" marginheight="0" border="0" src="http://widget.weibo.com/relationship/followbutton.php?language=zh_cn&amp;width=63&amp;height=24&amp;uid=3083675110&amp;style=1&amp;btn=light&amp;dpc=1" frameborder="0" height="24" width="63"></iframe>
+                    <iframe rel="nofollow" scrolling="no" allowtransparency="true" marginwidth="0" marginheight="0" border="0" src="http://widget.weibo.com/relationship/followbutton.php?language=zh_cn&amp;width=63&amp;height=24&amp;uid=3083675110&amp;style=1&amp;btn=light&amp;dpc=1" frameborder="0" height="24" width="63"></iframe>
                 </div>
             </div>
         </div>
@@ -46,16 +46,16 @@
             <div class="quick_btn">
                 <ul>
                     <li>
-                        <a href="/paihangbang"><i class="icon1"></i><span class="tit">排行榜</span></a>
+                        <a href="/paihangbang/"><i class="icon1"></i><span class="tit">排行榜</span></a>
                     </li>
                     <li>
-                        <a href="/search"><i class="icon2"></i><span class="tit">项目搜索</span></a>
+                        <a href="/search" rel="nofollow"><i class="icon2"></i><span class="tit">项目搜索</span></a>
                     </li>
                     <li>
-                        <a href="/lsbrand"><i class="icon3"></i><span class="tit">品牌大全</span></a>
+                        <a href="/pinpai/"><i class="icon3"></i><span class="tit">品牌大全</span></a>
                     </li>
                     <li>
-                        <a href="/ask"><i class="icon4"></i><span class="tit">加盟问答</span></a>
+                        <a href="/ask/"><i class="icon4"></i><span class="tit">加盟问答</span></a>
                     </li>
                 </ul>
             </div>

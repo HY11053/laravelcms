@@ -334,11 +334,11 @@
     <div class="timeline-item">
         <span class="time"><i class="fa fa-clock-o"></i> {{date('H:m:s')}}</span>
 
-        <h3 class="timeline-header"><a href="#">加盟政策</a> 内容编辑</h3>
+        <h3 class="timeline-header"><a href="#">开店要求</a> 内容编辑</h3>
         <div class="form-group col-md-10" style="margin: 5px;">
-            {{Form::label('jmzctitle', '加盟政策标题', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12','style'=>'padding-top:5px;'))}}
+            {{Form::label('jmzctitle', '开店要求', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12','style'=>'padding-top:5px;'))}}
             <div class="col-md-8 col-sm-9 col-xs-12">
-                {{Form::text('jmzctitle', null, array('class' => 'form-control col-md-10','id'=>'jmzctitle','placeholder'=>'加盟政策标题'))}}
+                {{Form::text('jmzctitle', null, array('class' => 'form-control col-md-10','id'=>'jmzctitle','placeholder'=>'开店要求'))}}
             </div>
         </div>
         <div class="timeline-body">
@@ -433,7 +433,7 @@
     <div class="timeline-item">
         <span class="time"><i class="fa fa-clock-o"></i> {{date('H:m:s')}}</span>
 
-        <h3 class="timeline-header"><a href="#">加盟问答</a> 内容编辑</h3>
+        <h3 class="timeline-header"><a href="#">开店必看</a> 内容编辑</h3>
         <div class="form-group col-md-10" style="margin: 5px;">
             {{Form::label('jmasktitle', '加盟问答标题', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12','style'=>'padding-top:5px;'))}}
             <div class="col-md-8 col-sm-9 col-xs-12">

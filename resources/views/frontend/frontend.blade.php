@@ -3,6 +3,9 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="applicable-device" content="pc" />
     <meta name="csrf-token" content=" {{ csrf_token() }}">
     <title>@yield('title'),58零食加盟网</title>
     <meta name="keywords" content="@yield('keywords')"/>
