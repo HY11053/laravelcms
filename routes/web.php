@@ -106,7 +106,7 @@ Route::get('phone',function(){
 });
 
 //前台界面
-Route::group(['domain' => 'm.laravelcms.com'], function () {
+Route::group(['domain' => 'm.shangjicms.com'], function () {
     Route::get('/', 'Mobile\MobileController@Index');
     Route::get('{path}','Mobile\MobileController@BrandLists');
     Route::get('{path?}/page/{page}/','Mobile\MobileController@BrandLists')->name('pagelists');

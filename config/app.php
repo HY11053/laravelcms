@@ -132,8 +132,8 @@ return [
     | Site home page key words and description and record information
     | and other related settings
     */
-    'webname'=>'零食加盟网-零食招商加盟综合服务平台,汇聚海量零食项目品牌商机',
-    'indexname'=>'零食加盟网',
+    'webname'=>'58零食网-零食招商加盟综合服务平台,汇聚海量零食项目品牌商机',
+    'indexname'=>'58零食网',
     'keywords'=>'零食加盟网,零食店加盟,零食品牌加盟',
     'description'=>'招商加盟综合服务平台,汇聚精选品牌商机,拥有海量招商加盟项目,致力于服务广大有投资需求的创业人群,以及想快速拓展渠道建设的招商企业、加盟商,辅创业者',
     /*

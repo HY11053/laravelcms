@@ -239,13 +239,13 @@ body, html { min-height:101%; }
 .index_box3 .index_box3_r .bd .bd_r .index_txt_list_wrap .index_txt_list{width:728px; height:252px; overflow:hidden; zoom:1; margin-top:-9px; position:relative;}
 
 .index_box3 .index_box3_r .bd .bd_l dl{ clear:both; margin-bottom:23px; overflow:auto}
-.index_box3 .index_box3_r .bd .bd_l dl dd{ float:left; width:66px}
+.index_box3 .index_box3_r .bd .bd_l dl dd{ float:left; width:66px; overflow: hidden;}
 .index_box3 .index_box3_r .bd .bd_l dl dd a{line-height:22px}
 
 .index_box3 .index_box3_r .bd .bd_r{ overflow:hidden; zoom:1; padding:0 0 0 22px;}
-.index_box3 .index_box3_r .bd .bd_r dl{ overflow:hidden; width:120px; border-right:1px dotted #D6D6D6; border-bottom:1px dotted #D6D6D6; padding:9px 0; float:left;}
+.index_box3 .index_box3_r .bd .bd_r dl{ overflow:hidden; width:144px; border-right:1px dotted #D6D6D6; border-bottom:1px dotted #D6D6D6; padding:9px 0; float:left;}
 
-.index_box3 .index_box3_r .bd .bd_r dl dd{ float:left; line-height:22px; height:22px; overflow:hidden; padding:0 8px 0 10px;}
+.index_box3 .index_box3_r .bd .bd_r dl dd{ float:left; line-height:22px; height:22px;  width:54px; overflow:hidden; padding:0 8px 0 10px;}
 
 .index_box3 .index_box3_r .bd .bd_r .index_brand_list{ width:725px; height:329px; overflow:hidden;}
 .index_box3 .index_box3_r .bd .bd_r ul{width:730px; height:345px; overflow:hidden; zoom:1; margin-top:-9px;}

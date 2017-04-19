@@ -26,7 +26,7 @@
             <dt>项目分类</dt>
             <dd><a class="hover" target="_self" href="#">全部</a></dd>
             @foreach($brandtypes as $brandtype)
-            <dd><a target="_self" href="/{{$brandtype->real_path}}">{{$brandtype->typename}}</a></dd>
+            <dd><a target="_self" href="/{{$brandtype->real_path}}/">{{$brandtype->typename}}</a></dd>
             @endforeach
 
         </dl>

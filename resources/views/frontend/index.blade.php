@@ -18,20 +18,20 @@
         <dl>
             <dt class="icon1"><a href="#" target="_blank">零食加盟品牌大全</a></dt>
             @foreach($lingshibrands as $lingshibrand)
-            <dd><a href="/{{$lingshibrand->arctype->real_path}}/{{$lingshibrand->id}}.shtml" target="_blank" title="{{$lingshibrand->shorttitle}}">{{$lingshibrand->shorttitle}}</a></dd>
+            <dd><a href="/{{$lingshibrand->arctype->real_path}}/{{$lingshibrand->id}}.shtml" target="_blank" title="{{$lingshibrand->article->brandname}}">{{$lingshibrand->article->brandname}}</a></dd>
             @endforeach
         </dl>
         <dl class="dl_wid1">
             <dt class="icon2"><a href="#" target="_blank" >干果店加盟品牌</a></dt>
             @foreach($chaohuobrands as $chaohuobrand)
-                <dd><a href="/{{ $chaohuobrand->arctype->real_path}}/{{ $chaohuobrand->id}}.shtml" target="_blank" title="{{ $chaohuobrand->shorttitle}}">{{ $chaohuobrand->shorttitle}}</a></dd>
+                <dd><a href="/{{ $chaohuobrand->arctype->real_path}}/{{ $chaohuobrand->id}}.shtml" target="_blank" title="{{ $chaohuobrand->article->brandname}}">{{ $chaohuobrand->article->brandname}}</a></dd>
             @endforeach
 
         </dl>
         <dl class="dl_wid1">
             <dt class="icon3"><a href="#" target="_blank">进口零食品牌加盟</a></dt>
             @foreach($jinkoubrands as $jinkoubrand)
-            <dd><a href="/{{ $jinkoubrand->arctype->real_path}}/{{$jinkoubrand->id}}.shtm" target="_blank" title="{{$jinkoubrand->shorttitle}}">{{$jinkoubrand->shorttitle}}</a></dd>
+            <dd><a href="/{{ $jinkoubrand->arctype->real_path}}/{{$jinkoubrand->id}}.shtm" target="_blank" title="{{$jinkoubrand->article->brandname}}">{{$jinkoubrand->article->brandname}}</a></dd>
             @endforeach
         </dl>
 
@@ -139,8 +139,8 @@
                         <ul>
                             <li><a href="/chaohuodian/5.shtml" target="_blank"><img src="/reception/images/temp/banner1.jpg" /></a></li>
                             <li><a href="/lingshidianpp/38.shtml" target="_blank"><img src="/reception/images/temp/banner2.jpg" /></a></li>
-                            <li><a href="#" target="_blank"><img src="/reception/images/temp/banner3.jpg" /></a></li>
-                            <li><a href="#" target="_blank"><img src="/reception/images/temp/banner4.jpg" /></a></li>
+                            <li><a href="/lingshidianpp/91.shtml" target="_blank"><img src="/reception/images/temp/banner3.jpg" /></a></li>
+                            <li><a href="/lingshidianpp/111.shtml" target="_blank"><img src="/reception/images/temp/banner4.jpg" /></a></li>
                         </ul>
                     </div>
                 </div>
@@ -174,15 +174,15 @@
 
             <div class="index_box1_r">
                 <div class="count">
-                    <p>零食加盟网入驻品牌数<br>
+                    <p>58零食网入驻品牌数<br>
                         <span>61{{\App\AdminModel\Archive::where('mid',1)->count()}}</span>
                     </p>
                     <ul>
                         <li><a href="/chaohuodian/5.shtml" title="【三只松鼠】森林系零食品牌 不负好时光" target="_blank">【三只松鼠】森林系零食品牌 不负好时光</a></li>
                         <li><a href="/lingshidianpp/38.shtml" title="【良品铺子】良心品质 百年铺子" target="_blank">【良品铺子】良心品质 百年铺子</a></li>
-                        <li><a href="#" title="【一扫光】13国原料采购 0经验无忧开店" target="_blank">【一扫光】13国原料采购 0经验无忧开店</a></li>
+                        <li><a href="/lingshidianpp/91.shtml" title="【一扫光】13国原料采购 0经验无忧开店" target="_blank">【一扫光】13国原料采购 0经验无忧开店</a></li>
                         <li><a href="/lingshidianpp/35.shtml" title="【来伊份】带你吃遍满天新" target="_blank">【来伊份】带你吃遍满天新</a></li>
-                        <li><a href="#" title="百草味】国民品牌 百草味 知心知味" target="_blank">【百草味】国民品牌 百草味 知心知味</a></li>
+                        <li><a href="/lingshidianpp/111.shtml" title="百草味】国民品牌 百草味 知心知味" target="_blank">【百草味】国民品牌 百草味 知心知味</a></li>
                     </ul>
                     <div class="btn"><a href="#">马上找好项目</a></div>
                 </div>
@@ -224,7 +224,7 @@
                 <ul>
                     @foreach($cybsbrands as $cybsbrand)
                     <li>
-                        <a href="/{{$cybsbrand->arctype->real_path}}/{{$cybsbrand->id}}.shtml" target="_blank" data="{{$cybsbrand->litpic}}"><img src="{{$cybsbrand->litpic}}" width="140" height="81" alt="{{$cybsbrand->title}}" title="{{$cybsbrand->shorttitle}}"/></a>
+                        <a href="/{{$cybsbrand->arctype->real_path}}/{{$cybsbrand->id}}.shtml" target="_blank" data="{{$cybsbrand->litpic}}"><img src="{{$cybsbrand->litpic}}" width="140" height="81" alt="{{$cybsbrand->title}}" title="{{$cybsbrand->article->brandname}}"/></a>
                     </li>
                     @endforeach
                 </ul>
@@ -236,10 +236,10 @@
         <!--第三部分 开始-->
         <div class="index_box3 clearfix">
             <div class="index_box3_l">
-                <div class="img_show"><a href="/{{\App\AdminModel\Arctype::where('id',1)->value('real_path')}}/" target="_blank"><img src="/reception/images/index_pic1.jpg" alt="零食店加盟"/></a></div>
+                <div class="img_show"><a href="/{{\App\AdminModel\Arctype::where('id',1)->value('real_path')}}/" target="_blank"><img src="/reception/images/index_pic1.jpg" title="{{\App\AdminModel\Arctype::where('id',1)->value('typename')}}" alt="零食店加盟"/></a></div>
                 <p class="tit"><a href="/{{\App\AdminModel\Arctype::where('id',1)->value('real_path')}}/" target="_blank">零食店加盟</a></p>
                 <p class="desc">中西美食 烹炸涮烤</p>
-                <p class="more"><a href="/{{\App\AdminModel\Arctype::where('id',1)->value('real_path')}}/" target="_blank">查看详情&gt;</a></p>
+                <p class="more"><a href="/{{\App\AdminModel\Arctype::where('id',1)->value('real_path')}}/" target="_blank" title="{{\App\AdminModel\Arctype::where('id',1)->value('typename')}}">查看详情&gt;</a></p>
             </div>
             <div class="index_box3_r">
                 <div class="hd">
@@ -253,7 +253,7 @@
 
                         @if($index==0 || $index %9 ==0) <dl> @endif
 
-                            <dd><a href="/{{$latestlingshibrand->arctype->real_path}}/{{$latestlingshibrand->id}}.shtml" title="{{$latestlingshibrand->shorttitle}}" target="_blank">{{str_limit($latestlingshibrand->shorttitle, $limit = 8, $end = '')}}</a></dd>
+                            <dd><a href="/{{$latestlingshibrand->arctype->real_path}}/{{$latestlingshibrand->id}}.shtml" title="{{$latestlingshibrand->article->brandname}}" target="_blank">{{$latestlingshibrand->article->brandname}}</a></dd>
 
                         @if(($index+1) %9 ==0 || $index==count($latestlingshibrands)) </dl> @endif
                             @endforeach
@@ -265,7 +265,7 @@
                                 @foreach($latestrlingshibrands as $indes=>$latestrlingshibrand)
 
                                     @if($indes==0 || $indes%2 ==0) <dl> @endif
-                                    <dd><a href="/{{$latestrlingshibrand->arctype->real_path}}/{{$latestrlingshibrand->id}}.shtml" title="{{$latestrlingshibrand->shorttitle}}" target="_blank">{{str_limit($latestrlingshibrand->shorttitle, $limit = 16, $end = '')}}</a></dd>
+                                    <dd><a href="/{{$latestrlingshibrand->arctype->real_path}}/{{$latestrlingshibrand->id}}.shtml" title="{{$latestrlingshibrand->article->brandname}}" target="_blank">{{$latestrlingshibrand->article->brandname}}</a></dd>
 
                                     @if($indes%2 !=0 || $indes+1==count($latestrlingshibrands)) </dl>  @endif
 
@@ -285,13 +285,13 @@
                 <div class="img_show"><a href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}/" target="_blank"><img src="/reception/images/index_pic2.jpg" alt="炒货品牌"/></a></div>
                 <p class="tit"><a href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}/" target="_blank">炒货品牌</a></p>
                 <p class="desc">中西美食 烹炸涮烤</p>
-                <p class="more"><a href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}/" target="_blank">查看详情&gt;</a></p>
+                <p class="more"><a href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}/" target="_blank" title="{{\App\AdminModel\Arctype::where('id',3)->value('typename')}}">查看详情&gt;</a></p>
             </div>
             <div class="index_box3_r">
                 <div class="hd">
                     <span class="tit">炒货品牌</span>
                     <span class="desc">美式快餐 抢占商机</span>
-                    <span class="more"><a href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}/" target="_blank">更多&gt;&gt;</a></span>
+                    <span class="more"><a href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}/" target="_blank" title="{{\App\AdminModel\Arctype::where('id',3)->value('typename')}}">更多&gt;&gt;</a></span>
                 </div>
                 <div class="bd">
                     <div class="bd_l">
@@ -300,7 +300,7 @@
 
                             @if($index==0 || $index %9 ==0) <dl> @endif
 
-                                <dd><a href="/{{$latestchaohuobrand->arctype->real_path}}/{{$latestchaohuobrand->id}}.shtml" title="{{$latestchaohuobrand->shorttitle}}" target="_blank">{{str_limit($latestchaohuobrand->shorttitle, $limit = 8, $end = '')}}</a></dd>
+                                <dd><a href="/{{$latestchaohuobrand->arctype->real_path}}/{{$latestchaohuobrand->id}}.shtml" title="{{$latestchaohuobrand->article->brandname}}" target="_blank">{{str_limit($latestchaohuobrand->article->brandname, $limit = 8, $end = '')}}</a></dd>
 
                                 @if(($index+1) %9 ==0 || $index==count($latestchaohuobrands)) </dl> @endif
                         @endforeach
@@ -310,7 +310,7 @@
                         <div class="index_brand_list">
                             <ul>
                                 @foreach($latestrchaohuobrands as $latestrchaohuobrand)
-                                <li><a href="/{{$latestrchaohuobrand->arctype->real_path}}/{{$latestrchaohuobrand->id}}.shtml" target="_blank"><img src="{{$latestrchaohuobrand->litpic}}" title="{{$latestrchaohuobrand->shorttitle}}" alt="{{$latestrchaohuobrand->shorttitle}}"><span>{{$latestrchaohuobrand->shorttitle}}</span></a></li>
+                                <li><a href="/{{$latestrchaohuobrand->arctype->real_path}}/{{$latestrchaohuobrand->id}}.shtml" target="_blank"><img src="{{$latestrchaohuobrand->litpic}}" title="{{$latestrchaohuobrand->article->brandname}}" alt="{{$latestrchaohuobrand->article->brandname}}"><span>{{$latestrchaohuobrand->article->brandname}}</span></a></li>
                                 @endforeach
                             </ul>
                         </div>
@@ -340,7 +340,7 @@
 
                             @if($index==0 || $index %9 ==0) <dl> @endif
 
-                                <dd><a href="/{{$latestjinkoubrand->arctype->real_path}}/{{$latestjinkoubrand->id}}.shtml" title="{{$latestchaohuobrand->shorttitle}}" target="_blank">{{str_limit($latestjinkoubrand->shorttitle, $limit = 8, $end = '')}}</a></dd>
+                                <dd><a href="/{{$latestjinkoubrand->arctype->real_path}}/{{$latestjinkoubrand->id}}.shtml" title="{{$latestchaohuobrand->article->brandname}}" target="_blank">{{str_limit($latestjinkoubrand->article->brandname, $limit = 8, $end = '')}}</a></dd>
 
                                 @if(($index+1) %9 ==0 || $index==count($latestjinkoubrands)) </dl> @endif
                         @endforeach
@@ -350,7 +350,7 @@
                             <ul>
 
                                 @foreach($latestrjinkoubrands as $latestrjinkoubrand)
-                                    <li><a href="/{{$latestrjinkoubrand->arctype->real_path}}/{{$latestrjinkoubrand->id}}.shtml" target="_blank"><img src="{{$latestrjinkoubrand->litpic}}" title="{{$latestrjinkoubrand->shorttitle}}" alt="{{$latestrjinkoubrand->shorttitle}}"><span>{{$latestrjinkoubrand->shorttitle}}</span></a></li>
+                                    <li><a href="/{{$latestrjinkoubrand->arctype->real_path}}/{{$latestrjinkoubrand->id}}.shtml" target="_blank"><img src="{{$latestrjinkoubrand->litpic}}" title="{{$latestrjinkoubrand->article->brandname}}" alt="{{$latestrjinkoubrand->article->brandname}}"><span>{{$latestrjinkoubrand->article->brandname}}</span></a></li>
                                 @endforeach
                             </ul>
                         </div>
@@ -378,7 +378,7 @@
                     <div class="fir_left">
                         @foreach($seesrbrands as $seesrbrand)
 
-                        <div class="li_div"><a href="/{{$seesrbrand->arctype->real_path}}/{{$seesrbrand->id}}.shtml" title="{{$seesrbrand->shorttitle}}" target="_blank"><img src="{{$seesrbrand->litpic}}"></a><span><a href="/{{$seesrbrand->arctype->real_path}}/{{$seesrbrand->id}}.shtml" target="_blank">{{$seesrbrand->shorttitle}}</a><br><font color="#9c9c9c">{{$seesrbrand->article->brandattch}}人</font><em><a href="#" target="_blank">咨询</a></em></span></div>
+                        <div class="li_div"><a href="/{{$seesrbrand->arctype->real_path}}/{{$seesrbrand->id}}.shtml" title="{{$seesrbrand->article->brandname}}" target="_blank"><img src="{{$seesrbrand->litpic}}"></a><span><a href="/{{$seesrbrand->arctype->real_path}}/{{$seesrbrand->id}}.shtml" target="_blank">{{$seesrbrand->article->brandname}}</a><br><font color="#9c9c9c">{{$seesrbrand->article->brandattch}}人</font><em><a href="#" target="_blank">咨询</a></em></span></div>
                         @endforeach
                     </div>
                     <div class="fir_right">
@@ -386,7 +386,7 @@
                             @foreach($seesrbrands as $seesrbrand)
                             <li>
                                 <div class="jg">￥{{$seesrbrand->article->brandpay}}</div>
-                                <div class="wz"><a href="/{{$seesrbrand->arctype->real_path}}/{{$seesrbrand->id}}.shtml" title="{{$seesrbrand->shorttitle}}" target="_blank">{{$seesrbrand->shorttitle}}</a><br><span class="fl">行业：<font color="#666">{{str_replace('加盟','',$seesrbrand->arctype->typename)}}</font></span><span class="fr">{{$seesrbrand->article->brandattch}}人咨询</span></div>
+                                <div class="wz"><a href="/{{$seesrbrand->arctype->real_path}}/{{$seesrbrand->id}}.shtml" title="{{$seesrbrand->article->brandname}}" target="_blank">{{$seesrbrand->article->brandname}}</a><br><span class="fl">行业：<font color="#666">{{str_replace('加盟','',$seesrbrand->arctype->typename)}}</font></span><span class="fr">{{$seesrbrand->article->brandattch}}人咨询</span></div>
                             </li>
                             @endforeach
                         </ul>

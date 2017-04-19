@@ -13,7 +13,7 @@ class IndexController extends Controller
     function Index()
     {
         //零食头部推荐品牌文档
-        $lingshibrands=Archive::where('flags','like','%'.'c'.'%')->where('mid','1')->where('typeid',1)->take(10)->latest()->get();
+        $lingshibrands=Archive::where('mid','1')->whereIn('id',[5,38,91, 51,35,115,53,85,72,80])->take(10)->orderBy('id','asc')->get();
         $chaohuobrands=Archive::where('flags','like','%'.'c'.'%')->where('mid','1')->where('typeid',3)->take(10)->latest()->get();
         $ganguobrands=Archive::where('flags','like','%'.'c'.'%')->where('mid','1')->where('typeid',4)->take(10)->latest()->get();
         $jinkoubrands=Archive::where('flags','like','%'.'c'.'%')->where('mid','1')->where('typeid',5)->take(10)->latest()->get();
